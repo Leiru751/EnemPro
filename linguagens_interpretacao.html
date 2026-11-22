@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretação Textual - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-lang"> <!-- Tema Linguagens -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link active" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Linguagens / Interpretação Textual</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Interpretação Textual</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>Na prova de Linguagens do ENEM, interpretar um texto não significa "adivinhar o que o autor quis dizer", mas <strong>rastrear pistas linguísticas, estruturais e contextuais</strong> que sustentam uma leitura lógica e comprovável.</p>
+
+                        <h2 style="margin-top: 2.5rem;">1. Compreensão vs. Interpretação</h2>
+                        <p>Embora caminhem juntas, operam em níveis diferentes de leitura:</p>
+                        <ul>
+                            <li><strong>Compreensão:</strong> Refere-se à decodificação do que está <em>explícito</em> na superfície do texto — dados, fatos e afirmações literais feitas pelo autor (geralmente introduzidas por comandos como <em>"Segundo o texto..."</em> ou <em>"O autor afirma que..."</em>).</li>
+                            <li><strong>Interpretação:</strong> Exige ir além das linhas, realizando <em>inferências e deduções lógicas</em> a partir da articulação entre as pistas deixadas no texto e o conhecimento de mundo do leitor (comandos como <em>"Infere-se que..."</em>, <em>"Depreende-se que..."</em> ou <em>"O texto permite concluir que..."</em>).</li>
+                        </ul>
+
+                        <div class="example-box" style="margin-top: 2rem;">
+                            <strong>2. Análise do Enunciado (A Regra de Ouro do ENEM):</strong><br>
+                            A alternativa correta deve satisfazer <strong>simultaneamente</strong> ao que está no texto-base e ao que o comando específico pergunta. A banca elabora intencionalmente alternativas que trazem informações verdadeiras presentes no texto, mas que não respondem ao recorte do enunciado (por exemplo, o texto fala de causas e consequências, mas o comando pede apenas a consequência; uma alternativa que cita a causa estará errada). <em>Antes de olhar as alternativas, sublinhe exatamente o que o comando pede.</em>
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">3. Reconhecimento de Distratores</h2>
+                        <p>Os distratores são as quatro alternativas incorretas projetadas para atrair o candidato desatento. Os três tipos mais recorrentes na prova são:</p>
+                        <ul>
+                            <li><strong>Extrapolação:</strong> A alternativa vai além dos limites do texto, inserindo ideias externas, generalizações absolutas (<em>"sempre", "nunca", "todos"</em>) ou conclusões que não têm respaldo no que foi escrito.</li>
+                            <li><strong>Redução:</strong> A alternativa foca apenas em um detalhe isolado, um exemplo secundário ou uma parte restrita do texto, ignorando a ideia global ou o propósito central.</li>
+                            <li><strong>Contradição:</strong> A alternativa afirma exatamente o oposto do que o texto defende, muitas vezes alterando apenas uma palavra-chave, um advérbio de negação ou invertendo a relação de causa e efeito.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">4. Coesão Referencial (Anáfora e Catáfora)</h2>
+                        <p>É o mecanismo gramatical que evita repetições desnecessárias e garante a continuidade do assunto por meio de pronomes, sinônimos, hiperônimos (termos mais amplos, como <em>veículo</em> retomando <em>carro</em>) e elipses (omissão de um termo facilmente identificável pelo contexto). Divide-se em dois movimentos essenciais:</p>
+                        <ul>
+                            <li><strong>Termos Anafóricos (Anáfora):</strong> Retomam uma informação que já foi mencionada anteriormente no texto (ex.: <em>"A tecnologia avançou rápido. <strong>Ela</strong> transformou as relações de trabalho."</em>).</li>
+                            <li><strong>Termos Catafóricos (Catáfora):</strong> Antecipam uma informação que ainda será apresentada na sequência do texto (ex.: <em>"O problema da educação brasileira é <strong>este</strong>: a falta de valorização docente."</em>).</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">5. Coesão Sequencial e Operadores Argumentativos</h2>
+                        <p>Refere-se ao encadeamento lógico entre frases e parágrafos por meio de conectivos (conjunções e preposições) que orientam a argumentação do texto. O ENEM cobra com altíssima frequência a diferença semântica entre duas classes de conectivos de oposição:</p>
+                        <ul>
+                            <li><strong>Conjunções Adversativas (<em>mas, porém, contudo, todavia, entretanto, no entanto</em>):</strong> Introduzem uma oposição direta e direcionam a força argumentativa para a ideia que vem <strong>depois</strong> do conectivo. Exemplo: <em>"O projeto é caro, <strong>mas</strong> é indispensável"</em> — o argumento que prevalece é a indispensabilidade.</li>
+                            <li><strong>Conjunções Concessivas (<em>embora, ainda que, mesmo que, posto que, conquanto</em>):</strong> Introduzem um argumento contrário ou uma quebra de expectativa, mas sem anular a validade da <strong>oração principal</strong>. Exemplo: <em>"<strong>Embora</strong> o projeto seja caro, é indispensável"</em> — admite-se o custo elevado, mas o foco continua sendo a necessidade de realizá-lo.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">6. Intertextualidade: Paráfrase vs. Paródia</h2>
+                        <p>É o diálogo explícito ou implícito que um texto estabelece com outro texto preexistente (literário, histórico, publicitário, visual ou musical). No ENEM, é fundamental distinguir dois processos intertextuais:</p>
+                        <ul>
+                            <li><strong>Paráfrase:</strong> Ocorre quando um texto retoma ou reescreve outro texto com novas palavras, <em>preservando a ideia central e o sentido original</em> do texto-fonte.</li>
+                            <li><strong>Paródia:</strong> Ocorre quando um texto recria o texto-fonte para <em>subverter, ironizar, criticar ou ridicularizar</em> seu sentido original, geralmente produzindo efeito cômico ou denúncia social.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">7. Marcas de Modalização e Subjetividade</h2>
+                        <p>Mesmo em textos escritos em 3ª pessoa que aparentam neutralidade, o autor deixa marcas sutis de seu posicionamento ideológico, julgamento moral ou grau de certeza sem precisar escrever "eu acho". Essas marcas aparecem na escolha de:</p>
+                        <ul>
+                            <li><strong>Advérbios:</strong> <em>infelizmente, supostamente, certamente, meramente</em>.</li>
+                            <li><strong>Adjetivos valorativos:</strong> <em>medida desastrosa, avanço notável, reforma cosmética</em>.</li>
+                            <li><strong>Verbos auxiliares modais:</strong> <em>deve, precisa, pode</em>.</li>
+                            <li><strong>Pontuação e recursos gráficos:</strong> Aspas irônicas (usadas para relativizar ou desqualificar uma expressão), exclamações e reticências.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">8. Leitura de Textos Multimodais</h2>
+                        <p>Textos como charges, cartuns, tirinhas, infográficos e anúncios publicitários articulam diferentes linguagens (verbal, visual, espacial, cromática). A regra de leitura é a <strong>integração</strong>: a imagem não funciona como mero enfeite ilustrativo do texto escrito, e o texto escrito não é apenas uma legenda dispensável. O sentido completo — especialmente a crítica ou o humor — nasce da <em>interdependência</em> entre o que está escrito e o que está desenhado ou fotografado.</p>
+
+                        <h2 style="margin-top: 2.5rem;">9. Tese e Argumentos</h2>
+                        <p>Em textos opinativos, ensaísticos e jornalísticos analíticos, é indispensável separar a <strong>tese</strong> (a ideia central, o ponto de vista defendido pelo autor sobre o tema) dos <strong>argumentos</strong> (as justificativas, dados estatísticos, citações de especialistas, comparações históricas ou exemplos concretos mobilizados para provar que a tese é verdadeira). Confundir um exemplo ilustrativo com a tese leva diretamente ao erro por <em>redução</em>.</p>
+
+                        <h2 style="margin-top: 2.5rem;">10. Figuras de Linguagem na Construção do Sentido</h2>
+                        <p>O ENEM não cobra a simples nomenclatura isolada das figuras de linguagem, mas o <strong>efeito de sentido</strong> que elas produzem no texto:</p>
+                        <ul>
+                            <li><strong>Ironia:</strong> Consiste em afirmar o oposto do que realmente se pensa, contando com o contexto e o conhecimento prévio do leitor para desmascarar uma contradição e produzir crítica social ou política.</li>
+                            <li><strong>Metáfora:</strong> Estabelece uma comparação implícita entre dois elementos distintos a partir de uma semelhança subjetiva, transferindo características de um campo para outro a fim de gerar impacto poético ou persuasivo.</li>
+                            <li><strong>Metonímia:</strong> Substitui um termo por outro com o qual mantém uma relação lógica e objetiva de proximidade (como o autor pela obra — <em>"ler Clarice Lispector"</em> —, a marca pelo produto, o continente pelo conteúdo ou a parte pelo todo).</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">11. Ambiguidade e Duplo Sentido</h2>
+                        <p>A ambiguidade ocorre quando uma palavra (<strong>polissemia</strong>) ou uma construção sintática permite mais de uma interpretação simultânea. Enquanto na redação dissertativa a ambiguidade acidental é um problema de clareza, na literatura, no humor e na publicidade o <strong>duplo sentido intencional</strong> é um recurso expressivo sofisticado usado para surpreender o leitor, gerar humor ou aumentar o poder de persuasão de uma mensagem.</p>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (SIMULADO PADRÃO ENEM)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O consumo acelerado de vídeos curtos nas plataformas digitais tem alterado silenciosamente os hábitos de leitura dos jovens. Embora o acesso a textos escritos nunca tenha sido tão amplo e barato quanto na era da internet, muitos estudantes relatam dificuldade crescente para sustentar a atenção diante de parágrafos longos ou narrativas que exigem construção gradual de sentido. Não se trata de uma perda biológica de inteligência, mas de um condicionamento cognitivo: o cérebro habitua-se a recompensas imediatas a cada poucos segundos e passa a interpretar o esforço contínuo da leitura profunda como tédio.</p>
+                                <p>A partir da leitura do texto, infere-se que a dificuldade contemporânea na leitura de textos longos decorre:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> da redução genética da capacidade intelectual das novas gerações conectadas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> do custo financeiro elevado dos livros físicos em comparação aos vídeos gratuitos.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> da adaptação do cérebro a estímulos rápidos que desestimulam a concentração prolongada.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> da escassez de conteúdos escritos de qualidade disponíveis no ambiente virtual.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> da proibição escolar do uso de recursos audiovisuais durante o processo de alfabetização.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Ao articular as informações do texto, infere-se logicamente que o hábito de consumir vídeos curtos condiciona o cérebro a buscar recompensas rápidas a cada segundo, fazendo com que a leitura longa — que exige esforço contínuo — seja percebida como entediante.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong><br>
+                                    • <strong>A (Contradição):</strong> O texto afirma explicitamente que "Não se trata de uma perda biológica de inteligência", contradizendo a ideia de redução genética.<br>
+                                    • <strong>B (Contradição):</strong> O texto diz que o acesso a textos escritos "nunca tenha sido tão amplo e barato quanto na era da internet", negando a barreira financeira.<br>
+                                    • <strong>D (Extrapolação/Contradição):</strong> O texto não afirma que faltam textos de qualidade na internet, mas sim que há dificuldade em sustentar a atenção diante de parágrafos longos.<br>
+                                    • <strong>E (Extrapolação):</strong> Não há qualquer menção a proibições escolares de recursos audiovisuais no texto-base.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A implementação de hortas comunitárias em terrenos baldios de grandes centros urbanos tem gerado benefícios que ultrapassam a produção de alimentos orgânicos. Em bairros periféricos, esses espaços funcionam como pontos de encontro intergeracionais, reduzem o descarte irregular de lixo e diminuem a temperatura local em até 3 °C. Contudo, a continuidade dessas iniciativas esbarra frequentemente na insegurança jurídica da posse da terra, já que muitos terrenos pertencem ao poder público ou à iniciativa privada e podem ser reivindicados a qualquer momento, desmobilizando os moradores voluntários.</p>
+                                <p>De acordo com o texto, o principal obstáculo para a manutenção das hortas comunitárias nas metrópoles é o(a):</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> resistência dos moradores periféricos em consumir alimentos cultivados sem agrotóxicos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> falta de comprovação científica sobre os efeitos térmicos da vegetação nas cidades.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> ausência de garantia legal permanente sobre a ocupação dos terrenos utilizados.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> excesso de verbas públicas destinadas exclusivamente à compra de sementes orgânicas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> conflito entre jovens e idosos na divisão das tarefas agrícolas nos bairros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O texto afirma explicitamente no último período que a continuidade esbarra na "insegurança jurídica da posse da terra", pois os terrenos podem ser reivindicados a qualquer momento por proprietários públicos ou privados.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong><br>
+                                    • <strong>A (Extrapolação):</strong> Não menciona resistência aos alimentos orgânicos; ao contrário, os moradores são voluntários.<br>
+                                    • <strong>B (Contradição):</strong> Afirma como dado comprovado que as hortas "diminuem a temperatura local em até 3 °C".<br>
+                                    • <strong>D (Extrapolação):</strong> Não há referência a excesso de verbas públicas para compra de sementes.<br>
+                                    • <strong>E (Contradição):</strong> Afirma que funcionam como "pontos de encontro intergeracionais" (integração), não como espaços de conflito.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A preservação da Amazônia exige uma mudança profunda na forma como o desenvolvimento econômico é concebido no país. <strong>Ela</strong> não pode continuar sendo encarada apenas como uma fronteira de recursos naturais a serem extraídos a curto prazo. Na verdade, o futuro da bioeconomia brasileira depende <strong>disto</strong>: da valorização do conhecimento tradicional das populações locais aliado à pesquisa científica de ponta sobre a biodiversidade florestal.</p>
+                                <p>No fragmento, os pronomes destacados exercem, respectivamente, função coesiva:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> catafórica e anafórica, pois ambos antecipam informações que surgem apenas no parágrafo seguinte.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> anafórica e catafórica, pois o primeiro retoma “a Amazônia” e o segundo anuncia a explicação posterior.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> anafórica e anafórica, pois ambos retomam a expressão “desenvolvimento econômico” citada no início.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> catafórica e catafórica, pois ambos substituem termos omitidos por elipse na primeira oração.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> exofórica e anafórica, pois o primeiro aponta para fora do texto e o segundo retoma “pesquisa científica”.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O pronome pessoal “Ela” funciona como <strong>termo anafórico</strong>, pois retoma um referente já mencionado na frase anterior (“a Amazônia”). Já o pronome demonstrativo “disto” funciona como <strong>termo catafórico</strong>, pois antecipa uma informação que será explicada logo após os dois-pontos (“da valorização do conhecimento tradicional...”).</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> Invertem a ordem dos fenômenos (A), atribuem referentes errados (C), confundem com elipse (D) ou apontam incorretamente para referência fora do texto — exofórica (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Período I:</strong> As políticas públicas de saneamento básico avançaram nas capitais brasileiras na última década, <strong>mas</strong> milhões de moradores das zonas rurais e periferias ainda convivem com esgoto a céu aberto.<br>
+                                <strong>Período II:</strong> <strong>Embora</strong> milhões de moradores das zonas rurais e periferias ainda convivam com esgoto a céu aberto, as políticas públicas de saneamento básico avançaram nas capitais brasileiras na última década.</p>
+                                <p>A comparação entre os dois períodos revela que a escolha dos conectivos “mas” e “Embora” altera a orientação argumentativa porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> no Período I, a conjunção adversativa destaca a persistência da desigualdade como problema central; no Período II, a concessiva dá maior peso aos avanços obtidos nas capitais.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> no Período I, a conjunção anula completamente os avanços citados; no Período II, o conectivo nega a existência de esgoto a céu aberto nas periferias.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> em ambos os períodos, os conectivos estabelecem relação de causa e consequência entre o saneamento rural e o urbano.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> no Período I, predomina uma relação de concessão hipotética; no Período II, estabelece-se uma oposição excludente.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a troca dos conectivos não provoca qualquer mudança de ênfase argumentativa, mantendo exatamente o mesmo foco discursivo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa A</strong></p>
+                                    <p>Conjunções <strong>adversativas</strong> (<em>mas</em>) dão maior peso argumentativo à oração que introduzem (no Período I, o foco recai sobre os milhões que ainda convivem com esgoto a céu aberto). Já as conjunções <strong>concessivas</strong> (<em>Embora</em>) admitem um fato contrário, mas mantêm o peso argumentativo principal na oração principal (no Período II, o foco recai sobre os avanços obtidos nas capitais).</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> Os conectivos não anulam a veracidade dos fatos (B), não expressam causa e consequência (C), têm suas classificações invertidas em (D) e modificam diretamente a ênfase discursiva, contrariando (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto I</strong><br>
+                                Minha terra tem palmeiras,<br>
+                                Onde canta o Sabiá;<br>
+                                As aves, que aqui gorjeiam,<br>
+                                Não gorjeiam como lá.<br>
+                                <em>(DIAS, Gonçalves. Primeiros cantos. 1846).</em></p>
+                                <p><strong>Texto II</strong><br>
+                                Minha terra tem antenas,<br>
+                                Onde chia o sinal fraco;<br>
+                                Os dados, que aqui carregam,<br>
+                                Não carregam como lá.<br>
+                                Mas se a rede cai de vez,<br>
+                                Ninguém sabe conversar.<br>
+                                <em>(Texto adaptado de crônica contemporânea).</em></p>
+                                <p>Na relação intertextual estabelecida com o poema romântico de Gonçalves Dias, o Texto II configura uma paródia porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> reproduz fielmente a exaltação ufanista da natureza brasileira do século XIX sem alterar seu sentido.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> traduz para a norma-padrão contemporânea os termos arcaicos presentes nos versos originais.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> subverte a estrutura do poema original para criticar com humor a dependência tecnológica atual.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> apresenta uma análise literária técnica sobre a métrica e as rimas utilizadas pelo poeta romântico.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> comprova que a fauna brasileira foi completamente extinta pela instalação de torres de telecomunicação.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>A <strong>paródia</strong> apropria-se da estrutura formal e sonora de um texto conhecido (“Minha terra tem palmeiras / Onde canta o Sabiá”) para subverter seu sentido original, substituindo a exaltação ufanista da natureza pela crítica bem-humorada à precariedade da internet e ao isolamento comunicativo.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> Preservar o sentido original define a paráfrase (A); não se trata de tradução de arcaísmos (B); não é uma crítica literária técnica (D); e afirmar a extinção completa da fauna é extrapolação (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Depois de prometer durante toda a campanha que a revitalização do centro histórico seria prioridade absoluta, a administração municipal anunciou <strong>finalmente</strong> o início das obras. O projeto, porém, limita-se a pintar fachadas de prédios comerciais e instalar postes ornamentais, deixando intactos os problemas estruturais de moradia e saneamento da região. Trata-se de uma <strong>reforma meramente cosmética</strong>, celebrada com grande entusiasmo oficial como se fosse uma revolução urbana.</p>
+                                <p>Nesse trecho jornalístico, o posicionamento crítico do autor manifesta-se linguisticamente por meio de marcas de modalização como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a citação direta de documentos oficiais e planilhas orçamentárias da prefeitura.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> o uso dos advérbios “finalmente” e “meramente” e da expressão avaliativa “reforma cosmética”.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> o emprego exclusivo de verbos no modo imperativo para convocar protestos populares.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a narração impessoal e neutra de todas as etapas de engenharia civil da obra.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a utilização de termos técnicos da arquitetura colonial sem qualquer adjetivação.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A <strong>modalização discursiva</strong> revela a avaliação crítica do enunciador sem uso de 1ª pessoa: o advérbio “finalmente” sugere demora após promessas de campanha; “meramente” minimiza o alcance da obra; e o adjetivo “cosmética” julga a intervenção como superficial e enganosa.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> Não há citações de planilhas (A); todos os verbos estão no indicativo, sem imperativos (C); o texto é opinativo e crítico, não neutro (D); e apresenta forte adjetivação avaliativa, sem jargões de arquitetura colonial (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p><em>[Descrição de Campanha Publicitária Multimodal]</em> A peça mostra a fotografia de um prato vazio sobre uma mesa de madeira rústica. No centro do prato, em vez de comida, há um smartphone com a tela iluminada exibindo curtidas e corações de redes sociais. Acima da imagem, lê-se em letras grandes: “Curtidas não matam a fome”. No canto inferior, o logotipo de uma organização social acompanha o texto: “Enquanto você compartilha indignação, 21 milhões de pessoas não têm o que comer. Doe alimentos reais.”</p>
+                                <p>Na campanha descrita, a articulação entre a linguagem verbal e a visual constrói a persuasão do leitor ao:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> criticar o engajamento digital superficial em contraste com a urgência material da insegurança alimentar.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> promover a venda de aparelhos celulares mais modernos para populações em situação de vulnerabilidade.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> demonstrar que as redes sociais já resolveram o problema da distribuição de alimentos no país.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> sugerir que a fotografia de pratos vazios deve substituir as doações financeiras às instituições.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> descrever de modo neutro o funcionamento dos algoritmos de recomendação das plataformas digitais.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa A</strong></p>
+                                    <p>Na <strong>leitura multimodal integrada</strong>, a imagem do smartphone cheio de curtidas dentro de um prato vazio soma-se à frase “Curtidas não matam a fome” para denunciar o ativismo superficial nas redes sociais diante da realidade concreta da fome de 21 milhões de pessoas.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> A peça critica a substituição da ajuda real pelo engajamento virtual, não vende celulares (B) nem afirma que as redes resolveram a fome (C); o prato vazio é metáfora visual da fome (D); e não há descrição técnica de algoritmos (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A democratização do acesso ao cinema nacional não se resolve apenas com a construção de salas em shoppings de grandes capitais. Em mais de 80% dos municípios brasileiros, não existe sequer uma sala de exibição comercial, o que exclui milhões de cidadãos da fruição audiovisual coletiva. Programas de cineclubes itinerantes em escolas públicas, praças e associações de bairro mostram-se alternativas viáveis e de baixo custo para descentralizar a cultura. Quando o cinema vai ao encontro do público periférico e interiorano, o audiovisual deixa de ser artigo de luxo e cumpre seu papel de formação cidadã.</p>
+                                <p>Considerando a organização argumentativa do texto, a tese central defendida pelo autor consiste na ideia de que:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a construção de shoppings no interior do país é a única solução para o setor audiovisual.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> mais de 80% das cidades brasileiras não possuem salas comerciais de exibição cinematográfica.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> a ampliação democrática do acesso ao cinema exige políticas descentralizadas além dos circuitos comerciais das capitais.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> as escolas públicas devem substituir as aulas regulares por sessões diárias de cinema nacional.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> o cinema brasileiro tornou-se um produto cultural inacessível devido ao alto preço das produções.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>A <strong>tese</strong> (ponto de vista central do autor) é defendida ao longo do texto: para democratizar o cinema e fazê-lo cumprir seu papel cidadão, é necessário ir além dos circuitos comerciais das capitais, levando exibições descentralizadas (como cineclubes itinerantes) às periferias e ao interior.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong><br>
+                                    • <strong>A (Contradição):</strong> Afirma logo no início que não se resolve apenas com salas em shoppings.<br>
+                                    • <strong>B (Redução / Confusão entre tese e argumento):</strong> O dado de 80% é verdadeiro e está no texto, mas funciona como <em>argumento estatístico</em> para comprovar o problema, não como a tese central.<br>
+                                    • <strong>D e E (Extrapolação):</strong> Não propõe substituir aulas regulares nem menciona custos de produção dos filmes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O novo aplicativo de entregas promete “flexibilidade total” e “autonomia empreendedora” aos seus entregadores. Na prática, o trabalhador pedala doze horas por dia sob chuva ou sol escaldante, sem férias, sem décimo terceiro, sem seguro contra acidentes e sujeito a bloqueios sumários por um algoritmo invisível caso recuse corridas mal remuneradas. <strong>Realmente, nunca se viu tamanha liberdade no mercado de trabalho contemporâneo.</strong></p>
+                                <p>No último período do texto (“Realmente, nunca se viu tamanha liberdade no mercado de trabalho contemporâneo”), o autor recorre à ironia com o propósito de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> elogiar os avanços trabalhistas conquistados pelos entregadores de aplicativos digitais.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> denunciar a precarização do trabalho mascarada pelo discurso empresarial de autonomia.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> comprovar matematicamente que o ganho por hora dos entregadores supera o de trabalhadores formais.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> ensinar os usuários de aplicativos a avaliar positivamente os entregadores após cada corrida.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> defender a extinção completa das leis trabalhistas em favor da autorregulação algorítmica.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A <strong>ironia</strong> ocorre quando o enunciador afirma o oposto do que pensa (“tamanha liberdade”) logo após listar jornadas de doze horas sem direitos e sob controle algorítmico, expondo a contradição entre a propaganda de “autonomia empreendedora” e a precarização real do trabalho.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> O elogio aparente é irônico, não literal (A); não há cálculos comparativos de remuneração (C); não dá instruções aos usuários (D); e critica a desproteção trabalhista em vez de defender o fim das leis (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Interpretação Textual</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Anúncio de uma clínica oftalmológica:</strong><br>
+                                “Não feche os olhos para o que realmente importa: agende sua consulta e enxergue a vida com outros olhos.”</p>
+                                <p>Nesse anúncio publicitário, a exploração intencional do duplo sentido nas expressões “fechar os olhos” e “enxergar com outros olhos” tem como objetivo:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> confundir o leitor sobre os horários de atendimento médico da clínica anunciada.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> unir o sentido literal da saúde ocular ao sentido figurado de cuidado e valorização da vida.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> criticar pacientes que se recusam a utilizar óculos de grau em ambientes profissionais.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> apresentar dados científicos sobre as principais doenças degenerativas da retina.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> advertir sobre os riscos da exposição prolongada à luz solar sem proteção adequada.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O anúncio explora intencionalmente a <strong>polissemia</strong> das expressões: no plano literal, remete à visão biológica e à saúde dos olhos (objetivo comercial da clínica oftalmológica); no plano figurado, significa não ignorar o que é essencial e renovar a perspectiva de vida.</p>
+                                    <p><strong>Por que as outras estão incorretas?</strong> O duplo sentido é recurso criativo de persuasão, não falha informativa (A); não critica quem evita usar óculos (C); não é um texto científico sobre doenças da retina (D); e não menciona radiação solar ou raios UV (E).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Níveis de Leitura</span>
+                                        <div class="large-text">Qual é a diferença entre Compreensão e Interpretação textual?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Explícito (na linha) vs. Inferência lógica (além da linha).</div>
+                                        <span class="card-hint">Compreensão é identificar o que está explícito na superfície do texto (fatos e afirmações literais do autor). Interpretação é realizar inferências e deduções lógicas a partir das pistas textuais e do conhecimento de mundo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Estratégia de Prova</span>
+                                        <div class="large-text">Qual é a regra de ouro para analisar o Enunciado (Comando) no ENEM?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Atender ao texto-base E ao recorte do comando.</div>
+                                        <span class="card-hint">A resposta correta deve satisfazer simultaneamente o que está no texto-base e o que o comando específico pergunta. Alternativas verdadeiras segundo o texto, mas que respondem a outro aspecto não pedido no enunciado, são armadilhas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Armadilhas da Banca</span>
+                                        <div class="large-text">Quais são os três principais tipos de Distratores em questões de interpretação?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Extrapolação, Redução e Contradição.</div>
+                                        <span class="card-hint"><strong>Extrapolação:</strong> vai além do texto, inserindo ideias externas ou generalizações. <strong>Redução:</strong> foca em um detalhe/exemplo isolado ignorando o todo. <strong>Contradição:</strong> afirma o oposto do que o texto defende.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Coesão Referencial</span>
+                                        <div class="large-text">Como diferenciar termos Anafóricos de termos Catafóricos na coesão referencial?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Anáfora retoma (antes); Catáfora antecipa (depois).</div>
+                                        <span class="card-hint">Anáfora retoma um termo já citado anteriormente no texto. Catáfora antecipa um termo que ainda será apresentado na sequência do texto.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Operadores Argumentativos</span>
+                                        <div class="large-text">Qual é a diferença argumentativa entre conjunções Adversativas (<em>mas, porém</em>) e Concessivas (<em>embora, ainda que</em>)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Adversativa destaca o que vem depois; Concessiva preserva a principal.</div>
+                                        <span class="card-hint">As adversativas dão maior peso argumentativo à ideia que vem depois do conectivo. As concessivas admitem uma oposição ou quebra de expectativa, mas mantêm a força argumentativa principal na oração principal.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Intertextualidade</span>
+                                        <div class="large-text">O que distingue Paráfrase de Paródia na intertextualidade?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Preservação do sentido vs. Subversão crítica/irônica.</div>
+                                        <span class="card-hint"><strong>Paráfrase:</strong> reescreve o texto original com novas palavras, mantendo seu sentido original. <strong>Paródia:</strong> recria o texto original para subverter, ironizar ou criticar seu sentido.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Modalização</span>
+                                        <div class="large-text">Como identificar Marcas de Modalização em um texto aparentemente objetivo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Advérbios, adjetivos valorativos, modais e aspas.</div>
+                                        <span class="card-hint">Observando palavras e sinais que revelam o julgamento ou grau de certeza do autor sem usar "eu acho": advérbios (<em>infelizmente, supostamente</em>), adjetivos valorativos (<em>cosmética, desastrosa</em>), verbos modais (<em>dever, precisar</em>) e aspas irônicas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Multimodalidade</span>
+                                        <div class="large-text">Qual é o princípio fundamental da Leitura de Textos Multimodais (charges, cartuns, campanhas)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Interdependência entre linguagem verbal e visual.</div>
+                                        <span class="card-hint">A linguagem verbal e a visual são interdependentes; a imagem não é mero enfeite do texto, e o sentido completo (humor, crítica ou persuasão) nasce da integração entre ambas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Estrutura Argumentativa</span>
+                                        <div class="large-text">Como separar a Tese dos Argumentos em um texto opinativo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Ponto de vista central vs. Provas e exemplos.</div>
+                                        <span class="card-hint">A <strong>tese</strong> é o ponto de vista central defendido pelo autor sobre o tema (a conclusão principal). Os <strong>argumentos</strong> são as provas, dados estatísticos, citações e exemplos usados para justificar e sustentar essa tese.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Recursos Expressivos</span>
+                                        <div class="large-text">Qual é a função comunicativa da Ironia e do Duplo Sentido Intencional?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Desmascarar contradições e persuadir com polissemia.</div>
+                                        <span class="card-hint">A <strong>ironia</strong> afirma o oposto do que se pensa para desmascarar contradições e fazer crítica social/política. O <strong>duplo sentido intencional</strong> explora a polissemia para surpreender o leitor, gerar humor ou aumentar o impacto persuasivo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Financeira - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para Fórmulas Matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-math"> <!-- Tema Azul (Matemática) ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <!-- Matemática recebe a classe active -->
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Matemática Financeira</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Matemática Financeira</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (MATEMÁTICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <p>A matemática financeira é a área que estuda o comportamento e o valor do dinheiro ao longo do tempo. Ela é a ferramenta lógica por trás das compras parceladas, dos rendimentos de investimentos e do funcionamento dos cartões de crédito.</p>
+
+                        <!-- SEÇÃO 1: Porcentagem -->
+                        <h2 style="margin-top: 2rem;">Porcentagem</h2>
+                        <ul>
+                            <li><strong>Conceito Base:</strong> A porcentagem é uma razão cujo denominador é 100. Dizer "20%" é literalmente dizer "20 por cada 100", ou seja, a fração $20/100$.</li>
+                            <li><strong>Fator Multiplicativo (Decimal):</strong> Para agilizar cálculos, a porcentagem deve ser convertida em um número decimal. Calcular 25% de R$ 80,00 é o mesmo que multiplicar 80 pelo fator decimal $0,25$ ($80 \cdot 0,25 = 20$).</li>
+                        </ul>
+
+                        <!-- SEÇÃO 2: Aumentos e Descontos Sucessivos -->
+                        <h2 style="margin-top: 3rem;">Aumentos e Descontos Sucessivos</h2>
+                        
+                        <div class="example-box">
+                            <strong>⚠️ O Maior Erro:</strong> Nunca some ou subtraia porcentagens diretamente quando elas ocorrem em sequência. Um aumento de 10% seguido de um desconto de 10% <strong>não devolve o preço original</strong>, pois o desconto incidirá sobre um valor que já está maior.
+                        </div>
+
+                        <ul>
+                            <li><strong>Fator de Aumento:</strong> Para aumentar um valor, multiplique pelo fator $(1 + \text{taxa})$. Um aumento de 20% significa multiplicar o valor por $1,20$.</li>
+                            <li><strong>Fator de Desconto:</strong> Para reduzir um valor, multiplique pelo fator $(1 - \text{taxa})$. Um desconto de 30% significa que você pagará 70% do produto, logo, multiplica-se por $0,70$.</li>
+                            <li><strong>Efeito Cascata:</strong> Para aumentos e descontos sucessivos, basta multiplicar os fatores em cadeia. Um produto que sofre um aumento de 10% e depois um desconto de 20% sofreu a seguinte variação:<br>
+                            $$ 1,10 \cdot 0,80 = 0,88 $$
+                            Como $0,88$ é o mesmo que $1 - 0,12$, o efeito final foi um desconto real de <strong>12%</strong>.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 3: Juros Simples -->
+                        <h2 style="margin-top: 3rem;">Juros Simples</h2>
+                        <p><strong>Mecânica:</strong> O juro simples é calculado exclusivamente sobre o capital inicial (o valor original da dívida ou investimento). O valor do juro gerado é fixo em todos os meses.</p>
+                        <p><strong>Comportamento:</strong> Cresce de forma linear, funcionando como uma Progressão Aritmética (PA). É como pagar um "aluguel" fixo pelo dinheiro emprestado.</p>
+                        
+                        <p><strong>Fórmulas:</strong></p>
+                        $$ J = C \cdot i \cdot t $$
+                        <p><em>(Onde $J$ são os Juros, $C$ é o Capital, $i$ é a taxa em decimal e $t$ é o tempo).</em></p>
+                        
+                        $$ M = C + J $$
+                        <p><em>(Para achar o Montante final, soma-se o Capital aos Juros gerados).</em></p>
+
+                        <div class="example-box">
+                            <strong>Atenção às Unidades!</strong><br>
+                            A taxa ($i$) e o tempo ($t$) devem estar <strong>obrigatoriamente na mesma unidade</strong> (ex: se a taxa é ao mês, o tempo deve estar em meses; se a taxa é ao ano, o tempo em anos).
+                        </div>
+
+                        <!-- SEÇÃO 4: Juros Compostos -->
+                        <h2 style="margin-top: 3rem;">Juros Compostos</h2>
+                        <p><strong>Mecânica:</strong> É o famoso "juros sobre juros". A taxa de juros incide sobre o montante acumulado do período anterior, e não apenas sobre o valor inicial.</p>
+                        <p><strong>Comportamento:</strong> Cresce de forma exponencial, funcionando como uma Progressão Geométrica (PG). É o efeito "bola de neve": no começo cresce devagar, mas com o tempo a curva dispara para o alto. É o sistema utilizado por bancos, financiamentos e investimentos reais.</p>
+
+                        <p><strong>Fórmula:</strong></p>
+                        $$ M = C \cdot (1 + i)^t $$
+                        <p><em>(Onde $M$ é o Montante final, $C$ o Capital inicial, $i$ a taxa decimal e $t$ o tempo elevado como um expoente).</em></p>
+
+                        <p>A expressão $(1 + i)$ nada mais é do que o <strong>Fator de Aumento</strong> visto anteriormente. A fórmula apenas pega esse fator e o multiplica por ele mesmo $t$ vezes, por isso o expoente.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - MATEMÁTICA FINANCEIRA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O gerente de uma loja de eletrodomésticos decidiu aproveitar o mês da "Black Friday" para realizar uma promoção. Semanas antes do evento, ele aumentou o preço de todos os televisores em 20%. Chegada a semana da promoção, ele anunciou um desconto de 20% sobre o preço de etiqueta (o preço já reajustado). Um cliente que acompanhava o preço de um televisor antes de qualquer alteração resolveu comprá-lo durante a promoção.</p>
+                                <p><strong>Enunciado:</strong> Comparando o preço final pago pelo cliente com o preço original do televisor (antes do primeiro aumento), constata-se que o cliente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> pagou exatamente o mesmo preço original.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> teve um desconto real de 4%.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> teve um acréscimo real de 4%.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> teve um desconto real de 20%.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> teve um acréscimo real de 40%.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Utilizamos o sistema de fatores multiplicativos. Aumento de 20% gera o fator $1,20$. Desconto de 20% gera o fator $0,80$. Multiplicando os fatores em sequência: $1,20 \times 0,80 = 0,96$. O fator final de $0,96$ significa que ele pagou $96\%$ do preço base original, ou seja, houve um <strong>desconto real de 4%</strong> ($1,00 - 0,96 = 0,04$).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> É o "erro fatal" da porcentagem: subtrair as taxas diretamente ($+20\% - 20\% = 0\%$). Lembre-se: o desconto incidiu sobre um valor que já estava inchado, tirando mais dinheiro do que o aumento havia colocado.</li>
+                                        <li><strong>C:</strong> Chegou no número 4%, mas interpretou o fator $0,96$ como aumento, não como redução.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma pessoa tem R$ 10.000,00 para investir e o gerente do seu banco oferece duas opções de aplicação financeira pelo período de 2 anos:<br>
+                                • Opção I: Juros simples a uma taxa de 10% ao ano.<br>
+                                • Opção II: Juros compostos a uma taxa de 10% ao ano.</p>
+                                <p><strong>Enunciado:</strong> Buscando a maior rentabilidade, o cliente calcula o montante que receberia ao final dos 2 anos em cada uma das opções. A diferença em reais entre o montante gerado pela Opção II e o montante gerado pela Opção I é igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 0,00.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> R$ 100,00.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 200,00.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 1.000,00.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 2.100,00.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p><strong>Opção I (Simples):</strong> O juro rende sempre igual (10% de 10.000 = 1.000 por ano). Em 2 anos rende R$ 2.000,00. Montante I = R$ 12.000,00.<br>
+                                    <strong>Opção II (Compostos):</strong> $M = C \times (1 + i)^t \Rightarrow 10.000 \times (1,10)^2 \Rightarrow 10.000 \times 1,21 = \text{R\$} 12.100,00$.<br>
+                                    A diferença a favor da opção II é de $12.100 - 12.000 = \text{R\$} 100,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Acha que mesma taxa e tempo nos dois sistemas geram lucro igual (esquecendo que o juro sobre juro acelera o rendimento).</li>
+                                        <li><strong>E:</strong> É o valor total ganho APENAS nos juros compostos, subtraindo o capital. O comando pediu a <em>diferença entre os dois montantes</em>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Para precificar corretamente os seus produtos, um comerciante utiliza a seguinte estratégia: ele compra as mercadorias de um fornecedor e estipula um preço de etiqueta que lhe permita oferecer um desconto de 20% para o cliente final e, ainda assim, obter um lucro líquido equivalente a 25% sobre o preço de custo (valor que ele pagou ao fornecedor).</p>
+                                <p><strong>Enunciado:</strong> Sabendo que o comerciante comprou um produto por R$ 80,00, qual deverá ser o preço de etiqueta afixado nesse produto?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 100,00</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> R$ 116,00</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 120,00</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> R$ 125,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 145,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p><strong>Passo 1:</strong> Qual deve ser o valor que o dinheiro cai no caixa da loja para bater a meta de lucro?<br>
+                                    Custo de 80 + Lucro de 25% de 80 ($0,25 \times 80 = 20$). Ele DEVE receber $\text{R\$} 100,00$ em dinheiro vivo.<br>
+                                    <strong>Passo 2:</strong> O preço de etiqueta ($P$) menos 20% de desconto deve sobrar os 100. Ou seja, $P \times 0,80 = 100 \Rightarrow P = 100 \div 0,80 \Rightarrow P = \text{R\$} 125,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Fez o cálculo perfeito de lucro (chegou a R$ 100,00), mas esqueceu de inflar o preço (embutir o desconto) para colocar na etiqueta.</li>
+                                        <li><strong>E:</strong> Somou as taxas brutas (25% + 20% = 45%) e jogou direto em cima do 80, violando as regras do fator multiplicativo sucessivo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O setor financeiro de um país registrou as seguintes taxas mensais de inflação durante o primeiro trimestre de um ano: Janeiro (2%), Fevereiro (3%), Março (5%). Ao apresentar o relatório trimestral para o governo, o economista responsável precisou informar a inflação acumulada nesse período de três meses.</p>
+                                <p><strong>Enunciado:</strong> A taxa de inflação acumulada no trimestre foi de, aproximadamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 10,00%</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 10,31%</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 15,00%</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 30,00%</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 103,10%</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A inflação de um país é um processo contínuo de <strong>juros compostos</strong>. Portanto, calculamos multiplicando os fatores de aumento sucessivo: $1,02 \times 1,03 \times 1,05 = 1,10313$.<br>
+                                    Como o fator inicial é 1 (o inteiro), a parte excedente representa o aumento (lucro/inflação): $0,10313 = 10,313\%$, arredondado para $10,31\%$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Soma os valores numéricos como se fosse matemática pura ($2+3+5=10$), esquecendo que as taxas incidem sobre a inflação acumulada do mês anterior.</li>
+                                        <li><strong>D:</strong> Multiplica as taxas como números puros na tabuada ($2 \times 3 \times 5 = 30$), o que matematicamente não faz sentido com porcentagem.</li>
+                                        <li><strong>E:</strong> Erro na casa decimal ao retornar do fator multiplicativo para percentual; transformou o total ($110,31\%$) no "aumento".</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Para comprar um notebook novo, um estudante encontra a seguinte promoção em uma loja de informática: "Compre à vista com 10% de desconto ou leve a prazo em 2 parcelas fixas iguais, sendo a primeira no ato da compra e a segunda 30 dias depois, sem juros". O preço de etiqueta do notebook é de R$ 2.000,00.</p>
+                                <p><strong>Enunciado:</strong> O estudante decide fazer as contas para descobrir qual é a taxa de juros real escondida na opção parcelada "sem juros". A taxa mensal de juros efetivamente cobrada pela loja na opção a prazo é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 5,0%</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 10,0%</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 11,1%</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 20,0%</button>
+                                <button class="option-btn" data-correct="true"><span>E)</span> 25,0%</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa E</strong></p>
+                                    <p>A vista, o produto sai por $2.000 - 10\% = \text{R\$} 1.800$. Este é o preço real do bem. <br>
+                                    A prazo, paga-se $2\times$ de $1.000$ (uma entrada no ato). Como a entrada de R$ 1.000 é dada no ato, o comprador fica devendo na prática apenas $\text{R\$} 800$ (1.800 do valor real menos 1.000 de entrada). <br>
+                                    Daqui a 30 dias, ele vai pagar R$ 1.000 para quitar essa dívida que era de 800. Ele está pagando R$ 200 de juros em cima de uma dívida de 800.<br>
+                                    A taxa é $\frac{200}{800} = 0,25$, ou seja, juros abusivos de <strong>25% ao mês</strong>.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> Dividem/usam a taxa de 10% diretamente, sem calcular o fluxo de caixa pago pelo consumidor e retido pela loja.</li>
+                                        <li><strong>C:</strong> Faz a divisão $200 / 1800$, esquecendo que o banco só financia o que sobrou após o abatimento da entrada à vista.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um investidor aplicou um capital em um fundo que rende juros compostos a uma taxa constante de 5% ao ano. Ele não fará novos depósitos nem retiradas e deseja saber em quanto tempo, aproximadamente, o seu capital inicial irá dobrar de valor.</p>
+                                <p><strong>Enunciado:</strong> (Considere: $\log 2 = 0,30$ e $\log 1,05 = 0,02$). O tempo necessário para que esse capital seja duplicado é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 10 anos.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 15 anos.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 20 anos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 25 anos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 30 anos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Equação dos Juros Compostos: $M = C \times (1 + i)^t$. Se queremos <em>dobrar</em>, o Montante ($M$) será $2C$. Substituindo: <br>
+                                    $2C = C \times (1,05)^t$. <br>
+                                    Cortando o $C$: $2 = 1,05^t$. Aplicamos logaritmo dos dois lados: $\log 2 = \log(1,05^t)$.<br>
+                                    Pela regra do tombo: $\log 2 = t \cdot \log 1,05$. <br>
+                                    Substituindo os valores dados: $0,30 = t \cdot 0,02 \Rightarrow t = \frac{0,30}{0,02} = 15\text{ anos}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>C:</strong> Utilizou raciocínio de <em>juros simples</em>: "se rende 5% ao ano e tem que chegar a 100%, 100/5 = 20 anos". O juros sobre juros encurta esse tempo!</li>
+                                        <li><strong>A e D:</strong> Erro simples na divisão das casas decimais.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um empresário precisou de um empréstimo de capital de giro e recorreu a uma financeira que opera exclusivamente com regime de juros simples. Ele pegou emprestado o valor de R$ 15.000,00, combinando uma taxa de 3% ao mês. Após 8 meses de carência, ele procurou a financeira para quitar sua dívida de uma só vez (capital + juros).</p>
+                                <p><strong>Enunciado:</strong> O valor total (montante) pago pelo empresário para quitar sua dívida no final do oitavo mês foi de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 3.600,00</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> R$ 15.360,00</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> R$ 18.600,00</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 19.001,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 36.000,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Fórmula de Juros Simples: $J = C \cdot i \cdot t$.<br>
+                                    $J = 15.000 \cdot 0,03 \cdot 8 = 3.600$. <br>
+                                    Como ele vai quitar a dívida inteira na financeira, ele tem que devolver o Capital original mais os Juros que foram gerados (montante).<br>
+                                    Montante = $15.000 + 3.600 = \text{R\$} 18.600,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Calculou o Juro perfeito, mas não respondeu ao comando da questão (montante para quitar).</li>
+                                        <li><strong>D:</strong> Usou erroneamente a fórmula complexa de Juros Compostos ($15.000 \cdot 1,03^8$), ignorando o texto da questão que é taxativo em "juros simples".</li>
+                                        <li><strong>E:</strong> Não converteu a taxa (3%) em decimal ($0,03$), o que elevou o resultado numérico dez vezes mais que o real.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma investidora diversificou sua carteira aplicando seu dinheiro em dois tipos de ativos financeiros. Ela colocou 40% do seu capital total no Ativo Alfa e os 60% restantes no Ativo Beta. Após um ano, ela verificou que o Ativo Alfa teve uma valorização de 20%, enquanto o Ativo Beta sofreu uma desvalorização de 10%.</p>
+                                <p><strong>Enunciado:</strong> A variação real do capital total dessa investidora ao final de um ano representou:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> um lucro de 2,0%.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> um lucro de 5,0%.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> um lucro de 10,0%.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> um prejuízo de 2,0%.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> um prejuízo de 5,0%.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p><strong>Macete de Ouro:</strong> Atribua um valor fictício (R$ 100,00) para o total. Assim: Alfa recebeu R$ 40 e Beta recebeu R$ 60.<br>
+                                    Alfa valorizou 20%: $40 \cdot 1,20 = 48$.<br>
+                                    Beta desvalorizou 10%: $60 \cdot 0,90 = 54$.<br>
+                                    Montante final = $48 + 54 = 102$. Se o valor original era 100 e passou para 102, o capital da carteira da investidora teve um lucro limpo e real de <strong>2%</strong>.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Tirou uma média aritmética burra da porcentagem de subida e descida $(+20 - 10) / 2 = 5$, ignorando as proporções ($40\%$ e $60\%$) onde o dinheiro estava distribuído.</li>
+                                        <li><strong>C:</strong> Fez $20\% - 10\% = 10\%$, o pior erro em questões de fator ponderado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O vendedor de uma concessionária possui duas opções de plano de trabalho para definir sua remuneração mensal:<br>
+                                • Plano A: Um salário fixo de R$ 1.800,00 mais uma comissão de 5% sobre o valor total das vendas que realizar.<br>
+                                • Plano B: Sem salário fixo, mas recebendo uma comissão maior, de 8% sobre o valor total das vendas.</p>
+                                <p><strong>Enunciado:</strong> O vendedor está confiante em sua capacidade e deseja escolher o plano que lhe permita receber a maior remuneração. A partir de qual valor em vendas mensais o Plano B passa a ser mais vantajoso que o Plano A?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 14.400,00</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> R$ 22.500,00</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 36.000,00</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> R$ 60.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 72.000,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Precisamos achar o ponto de intersecção/equilíbrio na álgebra, onde $B = A$. <br>
+                                    Eq(A): $1800 + 0,05V$<br>
+                                    Eq(B): $0,08V$<br>
+                                    Igualando as duas: $0,08V = 1800 + 0,05V$<br>
+                                    $0,08V - 0,05V = 1800 \Rightarrow 0,03V = 1800 \Rightarrow V = \frac{1800}{0,03} \Rightarrow V = 60.000$. Acima de $\text{R\$} 60.000,00$ em vendas (ponto de virada), a taxa pesada de 8% rompe o benefício da garantia fixa e o Plano B paga mais.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Igualou o salário fixo do Plano A à comissão total do Plano B ($1.800 = 0,08V$), desconsiderando que o Plano A <em>também</em> vai gerar comissão.</li>
+                                        <li><strong>E:</strong> Erro bobo em movimentação de casas decimais ($1800 \div 0,03$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Após a compra de um carro zero quilômetro, o seu valor de mercado sofre depreciação (perda de valor) de forma exponencial. Uma revista automotiva avaliou que um modelo específico perde 20% do seu valor a cada ano que passa. Um consumidor comprou esse modelo na concessionária, zero quilômetro, pagando o montante de R$ 100.000,00.</p>
+                                <p><strong>Enunciado:</strong> Após exatos 3 anos de uso, mantidas as condições avaliadas, qual será o valor de mercado desse carro para revenda?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 40.000,00</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> R$ 51.200,00</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 60.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 64.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 80.000,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A depreciação anual comporta-se como <strong>juros compostos negativos</strong> (a perda de 20% incide sobre o valor desvalorizado do ano anterior). <br>
+                                    Perder 20% é multiplicar pelo fator desconto de $0,80$. <br>
+                                    Para 3 anos: $100.000 \times (0,80)^3$. O fator de 3 anos seguidos é $0,80 \cdot 0,80 \cdot 0,80 = 0,512$. <br>
+                                    Multiplicando pelo valor do carro novo: $100.000 \times 0,512 = \text{R\$} 51.200,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Calculou de forma linear (juros simples de 60%) e concluiu que restaram R$ 40.000,00.</li>
+                                        <li><strong>C:</strong> Fez os 60% lineares da (A), mas assinalou no formulário o <em>valor de desconto</em> em vez do que sobrou do valor do carro.</li>
+                                        <li><strong>D e E:</strong> Fez a conta para 2 anos de uso ou apenas 1 ano de uso, errando a data final pedida no texto.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 7 • Porcentagem Sucessiva</span>
+                                        <div class="large-text">Um produto sofre um aumento de 20% e, em seguida, um desconto de 20%. Em relação ao valor inicial, houve lucro, prejuízo ou o preço se manteve?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Prejuízo de 4%.</div>
+                                        <span class="card-hint">Fator multiplicativo: $1,20 \cdot 0,80 = 0,96$. O desconto de 20% recaiu sobre um valor que já estava maior (inchado).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 7 • Precificação e Taxas</span>
+                                        <div class="large-text">Ao vender um serviço digital de análise de perfil ou ranqueamento, a plataforma retém 20% de taxa. Se você quer sacar exatamente R$ 40,00 líquidos, basta anunciar o serviço por R$ 48,00 (somando 20%)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Não. O correto é R$ 50,00.</div>
+                                        <span class="card-hint">Se anunciar por R$ 48, a taxa leva R$ 9,60 e sobra R$ 38,40. O correto é dividir o valor desejado pelo fator de desconto da plataforma: $40 \div 0,80 = \text{R\$} 50,00$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 7 • Juros e Funções</span>
+                                        <div class="large-text">[LACUNA] Relacionando financeira e funções: o rendimento a juros ________ cresce como uma Função Afim (reta/PA), enquanto os juros ________ crescem como uma Função Exponencial (curva/PG).</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Simples; Compostos.</div>
+                                        <span class="card-hint">Juros simples possuem um crescimento fixo e linear. Juros compostos têm crescimento acelerado devido ao efeito "juros sobre juros".</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 7 • Depreciação</span>
+                                        <div class="large-text">Uma bicicleta aro 29 nova sofre uma depreciação (perda de valor) de 10% ao ano. Para estimar o valor de revenda dela após 3 anos, é correto subtrair 30% do valor de compra?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Não, isso seria juros simples.</div>
+                                        <span class="card-hint">A depreciação atua como juros compostos negativos. O cálculo correto é multiplicar o preço original pelo fator de desconto ao cubo: $\text{Preço} \cdot (0,90)^3$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 7 • Juros Embutidos</span>
+                                        <div class="large-text">Anúncio: "R$ 900 à vista (já com 10% de desconto) ou 2x de R$ 500 sem juros (entrada no ato + 30 dias)". Qual é o valor real da dívida sobre a qual estão correndo juros para o mês seguinte?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">R$ 400,00.</div>
+                                        <span class="card-hint">O bem vale R$ 900. Pagando R$ 500 de entrada no ato, você fica devendo R$ 400. Pagar R$ 500 no 2º mês embute 25% de juros ($100/400$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 7 • Matemática Financeira e Logaritmos</span>
+                                        <div class="large-text">Em problemas de juros compostos, quando a variável que a questão pede para você descobrir é o tempo ($t$), qual ferramenta matemática você fatalmente terá que aplicar na equação?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Logaritmos.</div>
+                                        <span class="card-hint">Você precisará aplicar o log dos dois lados para usar a "regra do tombo" ($\log a^b = b \cdot \log a$) e conseguir isolar o tempo que está no expoente.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 7 • Simples x Compostos</span>
+                                        <div class="large-text">Dois valores idênticos são investidos à mesma taxa de 5% ao mês, o primeiro em juros simples e o segundo em juros compostos. No fim do primeiro mês, qual dos dois terá rendido mais?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Nenhum. Renderão o mesmo.</div>
+                                        <span class="card-hint">No exato primeiro mês, ambos rendem exatamente o mesmo valor. O efeito "bola de neve" dos juros compostos só passa a fazer diferença a partir do segundo mês de aplicação.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

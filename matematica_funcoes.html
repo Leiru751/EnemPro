@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e Modelagem - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-math"> <!-- Tema Matemática -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Funções e Modelagem Matemática</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Funções e Modelagem Matemática</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>O estudo das funções modela matematicamente a relação de interdependência entre grandezas. No ENEM, a habilidade exigida não é apenas o cálculo algébrico, mas a interpretação do comportamento de uma variável em resposta à alteração de outra dentro de contextos sociais, econômicos ou naturais.</p>
+
+                        <h2 style="margin-top: 2.5rem;">1. Conceito Geral (Domínio e Imagem)</h2>
+                        <p>Toda função recebe valores de entrada, que formam o <strong>Domínio (eixo x)</strong> (ex: tempo, quantidade produzida), e devolve valores de saída, que compõem a <strong>Imagem (eixo y)</strong> (ex: lucro, temperatura, população). A leitura de gráficos consiste em associar o evento no eixo horizontal ao seu respectivo resultado no eixo vertical.</p>
+
+                        <h2 style="margin-top: 2.5rem;">2. Função do 1º Grau (Afim)</h2>
+                        <p>Apresenta o formato <strong>f(x) = ax + b</strong>. Seu gráfico é uma <strong>reta</strong>.</p>
+                        <ul>
+                            <li><strong>Coeficiente angular (a):</strong> Representa a <em>taxa de variação constante</em> (o quanto y cresce ou decresce a cada unidade de x).</li>
+                            <li><strong>Coeficiente linear (b):</strong> É o valor inicial (o exato ponto onde a reta corta o eixo y).</li>
+                            <li><strong>Aplicações:</strong> Modela contas de consumo com tarifas fixas e variáveis, lucros com custo inicial e movimentos com velocidade constante.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">3. Função do 2º Grau (Quadrática)</h2>
+                        <p>Expressa por <strong>f(x) = ax² + bx + c</strong>, com gráfico em formato de <strong>parábola</strong>. O ENEM frequentemente a utiliza em problemas de otimização (lucro, área, alcance).</p>
+                        <ul>
+                            <li><strong>Raízes:</strong> Os pontos onde o gráfico cruza o eixo x (onde y = 0). Em um lançamento de projétil, representam os instantes de lançamento e de impacto no solo.</li>
+                            <li><strong>Vértice (Máximos e Mínimos):</strong>
+                                <ul>
+                                    <li><strong>Xv (-b / 2a):</strong> Responde <em>"quando"</em> ou <em>"quanto produzir"</em> para atingir o limite máximo/mínimo.</li>
+                                    <li><strong>Yv (-Δ / 4a):</strong> Responde <em>"qual é"</em> esse valor máximo ou mínimo atingido.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="example-box" style="margin-top: 2.5rem;">
+                            <strong>4. Função Exponencial e Logarítmica</strong><br>
+                            <ul style="margin-top: 0.5rem;">
+                                <li><strong>Exponencial:</strong> Modela variações que se multiplicam ao longo do tempo (<em>f(x) = a · bˣ</em>), gerando curvas de crescimento acelerado. Aparece muito associada a juros compostos, proliferação de bactérias e <strong>meia-vida</strong> (tempo exato para que a quantidade de uma substância caia pela metade).</li>
+                                <li><strong>Logarítmica:</strong> Operação inversa da exponencial. Transforma variações multiplicativas gigantescas em escalas aditivas pequenas. É a base da Escala Richter e do pH. Na base 10, um acréscimo de 1 unidade no logaritmo indica que o valor real foi multiplicado por 10.</li>
+                            </ul>
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">5. Funções Trigonométricas (Seno e Cosseno)</h2>
+                        <p>Modelam fenômenos <strong>periódicos</strong> (que se repetem em intervalos regulares), como as fases da lua, marés, movimento de pêndulos e rodas-gigantes.</p>
+                        <ul>
+                            <li><strong>Amplitude:</strong> É a oscilação máxima a partir do centro do gráfico.</li>
+                            <li><strong>Período:</strong> É o tempo (ou distância) necessário para que um ciclo completo se repita.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">6. Modelagem de Gráficos de Recipientes</h2>
+                        <p>O ENEM adora cobrar o formato do gráfico da altura da água (eixo y) ao encher recipientes com vazão constante (tempo no eixo x):</p>
+                        <ul>
+                            <li><strong>Cilindros e prismas retos:</strong> Geram retas (função de 1º grau), pois a área não muda.</li>
+                            <li><strong>Vasos que alargam no topo (cone invertido):</strong> Geram curvas com <em>concavidade para baixo</em>, pois o nível da água sobe cada vez mais devagar.</li>
+                            <li><strong>Vasos que estreitam no topo (cone normal):</strong> Geram curvas com <em>concavidade para cima</em>, pois o nível da água sobe cada vez mais rápido.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Uma locadora de veículos oferece dois planos de aluguel para carros populares. O Plano A cobra uma diária fixa de R$ 80,00 mais R$ 1,50 por quilômetro rodado. O Plano B cobra uma diária fixa de R$ 120,00 mais R$ 0,70 por quilômetro rodado.</p>
+                                <p>Um cliente que precisa alugar um carro por um único dia e deseja escolher o plano mais econômico deve optar pelo Plano B caso pretenda percorrer uma distância:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> exatamente igual a 40 km.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> inferior a 50 km.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> superior a 50 km.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> inferior a 80 km.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> superior a 80 km.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Modelamos o custo de cada plano como funções afins:<br>
+                                    Plano A: C_A(x) = 80 + 1,50x<br>
+                                    Plano B: C_B(x) = 120 + 0,70x</p>
+                                    <p>Para o Plano B ser mais econômico, seu custo deve ser menor que o do Plano A:<br>
+                                    120 + 0,70x &lt; 80 + 1,50x<br>
+                                    120 - 80 &lt; 1,50x - 0,70x<br>
+                                    40 &lt; 0,80x<br>
+                                    x &gt; 40 / 0,80<br>
+                                    x &gt; 50 km</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O proprietário de uma pequena fábrica de calçados percebeu que o lucro líquido mensal (L), em reais, é modelado por uma função quadrática cujo domínio é a quantidade de pares vendidos (x). A função é dada por <strong>L(x) = -x² + 80x - 1200</strong>.</p>
+                                <p>Para que a fábrica obtenha o lucro máximo possível na venda desse modelo, a quantidade de pares de sapatos que devem ser vendidos e o valor desse lucro máximo são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> 40 pares e R$ 400,00.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 40 pares e R$ 2.000,00.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 80 pares e R$ 1.600,00.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 20 pares e R$ 60 pares.</button> <!-- Cópia do prompt original mantida como distrator -->
+                                <button class="option-btn" data-correct="false"><span>E)</span> 60 pares e R$ 1.200,00.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa A</strong></p>
+                                    <p>Quantidade para o lucro máximo é o <strong>X do vértice (Xv)</strong>:<br>
+                                    Xv = -b / 2a = -80 / (2 * -1) = -80 / -2 = 40 pares.</p>
+                                    <p>O lucro máximo é o <strong>Y do vértice (Yv)</strong>. Podemos achar substituindo o Xv na função:<br>
+                                    L(40) = -(40)² + 80(40) - 1200<br>
+                                    L(40) = -1600 + 3200 - 1200<br>
+                                    L(40) = 1600 - 1200 = R$ 400,00.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Durante um treinamento, um projétil é lançado verticalmente para cima. A altura h(t) atingida, em metros, após t segundos do lançamento, é descrita pela função <strong>h(t) = -5t² + 20t</strong>.</p>
+                                <p>O intervalo de tempo total que o projétil permanece no ar, do momento do lançamento até atingir o solo novamente, é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 2 segundos.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 4 segundos.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 5 segundos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 10 segundos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 20 segundos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O projétil atinge o solo quando a altura é zero (h(t) = 0). Devemos encontrar as raízes da função quadrática:<br>
+                                    -5t² + 20t = 0<br>
+                                    Colocando 't' em evidência: t(-5t + 20) = 0</p>
+                                    <p>Logo, temos duas soluções:<br>
+                                    t = 0 (instante do lançamento)<br>
+                                    -5t + 20 = 0 &rarr; 5t = 20 &rarr; t = 4 (instante da queda)</p>
+                                    <p>Portanto, o projétil permanece no ar por 4 segundos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A meia-vida de um antibiótico na corrente sanguínea é de 4 horas. Um médico prescreveu uma dose inicial de 500 mg às 08h00. Sabe-se que a eliminação segue o modelo exponencial <strong>M(t) = M₀ · (1/2)^(t/k)</strong>, onde M₀ é a massa inicial, t é o tempo decorrido e k é a meia-vida.</p>
+                                <p>Qual será a massa aproximada desse antibiótico restante no organismo às 20h00 do mesmo dia?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 125,0 mg</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 62,5 mg</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 31,25 mg</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 15,62 mg</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 0 mg</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O tempo total decorrido entre 08h00 e 20h00 é de t = 12 horas.<br>
+                                    A meia-vida (k) é de 4 horas. Portanto, ocorrem 3 ciclos de meia-vida (12 / 4 = 3).</p>
+                                    <p>Massa restante = 500 · (1/2)³<br>
+                                    Massa = 500 · (1/8)<br>
+                                    Massa = 500 / 8 = 62,5 mg.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Para dimensionar um projeto, uma equipe analisa um recipiente que armazena água com um formato de cone invertido (vértice pontiagudo voltado para baixo, e base larga para cima). Uma bomba injeta água nesse reservatório a uma taxa constante de 5 litros por minuto.</p>
+                                <p>O gráfico que melhor relaciona a altura <em>h</em> da coluna de água no recipiente em função do tempo <em>t</em> desde o início do enchimento é uma:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> reta inclinada passando pela origem.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> curva com concavidade voltada para baixo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> curva com concavidade voltada para cima.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> parábola com o vértice na origem e concavidade para cima.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> reta horizontal.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O cone invertido possui área de secção transversal cada vez maior à medida que a água sobe (ele "alarga" para cima). Portanto, a mesma quantidade de água (5L/min) provoca um aumento de altura cada vez MENOR.</p>
+                                    <p>O gráfico da altura em relação ao tempo é crescente, mas sobe cada vez mais lentamente. Matematicamente, isso é representado por uma curva com <strong>concavidade voltada para baixo</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A Escala Richter mede a magnitude de terremotos pela função <strong>M = log₁₀(E/E₀)</strong>, onde E é a energia liberada. Em 1960, um terremoto no Chile registrou magnitude 9,5 na escala. Anos depois, um terremoto menor registrou magnitude 7,5.</p>
+                                <p>A razão entre a energia liberada pelo terremoto de 1960 (E₁) e a energia liberada pelo terremoto menor (E₂) é igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 2</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 20</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 100</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 1.000</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 10.000</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>A diferença de magnitude é ΔM = 9,5 - 7,5 = 2 graus.<br>
+                                    Como a escala é logarítmica na base 10, cada 1 grau a mais significa que a energia foi multiplicada por 10.</p>
+                                    <p>Para um aumento de 2 graus, a energia foi multiplicada por 10² = 100 vezes. Logo, a razão (divisão) entre a energia do maior e a do menor é 100.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A altura da maré em um porto é modelada pela função trigonométrica: <strong>P(t) = 8 + 4 · cos(πt / 6)</strong>, em que P(t) é a profundidade em metros e t é o tempo em horas após a meia-noite.</p>
+                                <p>Qual é a profundidade máxima alcançada pela água e o tempo necessário para que a maré complete um ciclo inteiro (período)?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 12 metros; 6 horas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 8 metros; 12 horas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 12 metros; 12 horas.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 4 metros; 6 horas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 12 metros; 24 horas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p><strong>Valor máximo:</strong> O cosseno atinge no máximo o valor 1. Substituindo na fórmula:<br>
+                                    P_max = 8 + 4 · (1) = 12 metros.</p>
+                                    <p><strong>Período (T):</strong> É calculado pela fórmula T = 2π / |C|, onde C é quem acompanha o 't' dentro do cosseno (neste caso, π/6).<br>
+                                    T = 2π / (π/6) = 2π · (6/π) = 12 horas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O crescimento populacional de uma colônia de bactérias é expresso por <strong>P(t) = P₀ · 3^(0,5t)</strong>, em que P₀ é a população inicial e t é o tempo em horas. Sabendo que havia inicialmente 2.000 bactérias.</p>
+                                <p>Após quantas horas a população de bactérias será de 54.000 indivíduos?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 2 horas</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 3 horas</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 4 horas</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 6 horas</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 9 horas</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>Substituímos os valores na equação:<br>
+                                    54.000 = 2.000 · 3^(0,5t)<br>
+                                    54.000 / 2.000 = 3^(0,5t)<br>
+                                    27 = 3^(0,5t)</p>
+                                    <p>Fatorando 27 na base 3, temos 27 = 3³.<br>
+                                    3³ = 3^(0,5t)<br>
+                                    Igualando os expoentes: 3 = 0,5t &rarr; t = 3 / 0,5 &rarr; t = 6 horas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Uma fábrica produz caixas a um custo fixo mensal de R$ 1.500,00, além de um custo variável de R$ 0,50 por unidade produzida. A receita gerada pela venda de cada caixa é de R$ 2,00. O lucro mensal é a receita menos o custo total.</p>
+                                <p>Para que a fábrica não tenha prejuízo (lucro igual a zero), a quantidade mínima de caixas que deve ser produzida e vendida mensalmente é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 500</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 600</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 750</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 1.000</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 3.000</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>Montamos as funções Afins:<br>
+                                    Custo Total: C(x) = 1500 + 0,50x<br>
+                                    Receita: R(x) = 2,00x</p>
+                                    <p>O lucro nulo ocorre quando a Receita empata com o Custo (Ponto de Nivelamento):<br>
+                                    2,00x = 1500 + 0,50x<br>
+                                    2,00x - 0,50x = 1500<br>
+                                    1,50x = 1500<br>
+                                    x = 1500 / 1,50 = 1000 caixas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O centro de uma roda-gigante está a 1,5 m de altura do solo e o seu raio mede 1,0 m. Considerando h(0) o momento em que a cabine inicia o movimento a partir do <strong>ponto mais baixo possível</strong> em relação ao solo.</p>
+                                <p>A expressão que modela a altura <em>h</em> da cabine em função do tempo <em>t</em> pode ser dada por:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> h(t) = 1,5 + sen(kt)</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> h(t) = 1,0 + 1,5 cos(kt)</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> h(t) = 1,5 - cos(kt)</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> h(t) = 2,5 - 1,5 sen(kt)</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> h(t) = 1,5 + 1,0 cos(kt)</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O eixo central da roda-gigante está em 1,5m (termo independente da função). A amplitude é o raio, 1,0m (multiplica a função trigonométrica).</p>
+                                    <p>Como ela inicia no <strong>ponto mais baixo</strong>, a altura inicial (t=0) deve ser 1,5 - 1,0 = 0,5m. Sabendo que cos(0) = 1 e sen(0) = 0, testamos a opção C:<br>
+                                    h(0) = 1,5 - cos(0) = 1,5 - 1 = 0,5m. Esta é a única que descreve fisicamente o cenário proposto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Função Afim (Custo)</span>
+                                        <div class="large-text">O que significa, no contexto empresarial do ENEM, o ponto onde o gráfico de uma função afim de "Custo Total" cruza o eixo vertical (eixo y)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O Custo Fixo.</div>
+                                        <span class="card-hint">Representa o custo fixo da operação — o valor que já é gasto ou contabilizado (coeficiente linear "b") mesmo quando nenhuma unidade é produzida (x = 0).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Funções Trigonométricas</span>
+                                        <div class="large-text">Como se identifica o período de oscilação na fórmula de uma função trigonométrica como f(x) = A + B · sen(Cx + D)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Usando T = 2π / |C|</div>
+                                        <span class="card-hint">Divide-se o período natural da função (2π) pelo coeficiente absoluto (C) que está multiplicando a variável "x" dentro do argumento do seno ou cosseno.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Modelagem de Recipientes</span>
+                                        <div class="large-text">Na modelagem do enchimento, que formato geométrico de recipiente gera um gráfico de altura x tempo na forma de uma reta inclinada constante?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Cilindros e Prismas.</div>
+                                        <span class="card-hint">Recipientes que possuem área de base e seções transversais constantes, como cilindros retos e prismas retangulares. A altura sobe de maneira linear (1º grau).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Função Quadrática</span>
+                                        <div class="large-text">O que o X do vértice (Xv) e o Y do vértice (Yv) representam, na prática, em uma questão de arremesso de projétil?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Quando ocorre e Qual é o valor.</div>
+                                        <span class="card-hint">O <strong>Xv</strong> (-b/2a) é o instante de tempo (quando) a altura máxima é atingida. O <strong>Yv</strong> (-Δ/4a) é o valor exato dessa altura máxima alcançada.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Logaritmos</span>
+                                        <div class="large-text">Qual é a relação de dependência básica entre as grandezas medidas na Escala Richter usando a função logarítmica na base 10?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Soma +1 grau = Multiplica x10 energia.</div>
+                                        <span class="card-hint">Um aumento <em>aditivo</em> de apenas 1 grau na magnitude representa um salto <em>multiplicativo</em> brutal de 10 vezes na amplitude/energia da onda sísmica.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Função Exponencial</span>
+                                        <div class="large-text">O que significa, quimicamente e matematicamente, o conceito de "meia-vida" muito cobrado no ENEM?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O tempo para cair pela metade.</div>
+                                        <span class="card-hint">É o tempo exato necessário para que a quantidade restante de uma substância (seja ela um isótopo radioativo ou a massa de um medicamento no sangue) se reduza pela metade.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Conceitos Iniciais</span>
+                                        <div class="large-text">Na teoria dos conjuntos e na leitura de gráficos, o que são, respectivamente, o Domínio e a Imagem de uma função?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Eixo X e Eixo Y.</div>
+                                        <span class="card-hint">O <strong>Domínio</strong> é o conjunto dos valores de entrada possíveis (eixo X horizontal). A <strong>Imagem</strong> é o conjunto dos valores resultantes/de saída (eixo Y vertical).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Parábolas</span>
+                                        <div class="large-text">Geometricamente, o que as "raízes" de uma função do 2º grau representam no gráfico cartesiano?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O cruzamento com o eixo X.</div>
+                                        <span class="card-hint">As raízes (ou zeros da função) são os exatos pontos coordenados onde a parábola "corta" ou "toca" o eixo horizontal X, pois ali a altura (Y) é igual a zero.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Geometria e Gráficos</span>
+                                        <div class="large-text">Se enchermos um vaso que é largo embaixo e estreita no topo (como uma garrafa afunilada) com uma torneira constante, como será a curva da altura?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Concavidade para cima.</div>
+                                        <span class="card-hint">Como o vaso vai ficando mais apertado em cima, a água sobe cada vez mais rápido. O gráfico é crescente e fica cada vez mais íngreme (concavidade voltada para cima).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Taxa de Variação</span>
+                                        <div class="large-text">O que o "coeficiente angular" (letra 'a' na fórmula y = ax + b) representa em fenômenos cotidianos modelados pelo 1º grau?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A Taxa de Variação.</div>
+                                        <span class="card-hint">Ele define o quão rápido a reta sobe ou desce. É a taxa constante de mudança: o valor da tarifa por Km rodado, a velocidade constante de um carro, etc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

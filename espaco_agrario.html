@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Agrário - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-human"> <!-- Tema Ciências Humanas -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link active" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Geografia / Dinâmicas do Espaço Agrário</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Espaço Agrário</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO 
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>1. Estrutura Agrária Brasileira e Concentração Fundiária</h2>
+                        <p>A estrutura agrária do Brasil é marcada pela extrema desigualdade, reflexo direto do período colonial (Capitanias Hereditárias e Sesmarias) e da <strong>Lei de Terras de 1850</strong>, que determinou que a terra pública só poderia ser adquirida por compra, excluindo escravizados libertos e imigrantes pobres. Atualmente, isso é medido pelo <strong>Índice de Gini</strong>, que no campo brasileiro é altíssimo (próximo a 0,73), indicando que poucas propriedades (latifúndios) ocupam a maior parte das terras cultiváveis do país, enquanto milhões de pequenas propriedades dividem uma parcela mínima de área.</p>
+
+                        <h2 style="margin-top: 2.5rem;">2. Sistemas Agrícolas: Intensivo vs. Extensivo</h2>
+                        <ul>
+                            <li><strong>Intensivo:</strong> Caracterizado pelo alto investimento em capital e tecnologia. Utiliza insumos modernos (fertilizantes, sementes selecionadas, biotecnologia), maquinário pesado e mão de obra qualificada. O foco é a alta produtividade por hectare.</li>
+                            <li><strong>Extensivo:</strong> Baseia-se em técnicas tradicionais, menor capitalização e pouca ou nenhuma mecanização. A produtividade é baixa e depende da extensão territorial. Na pecuária extensiva, por exemplo, o gado é criado solto em grandes pastagens.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">3. Modernização e Revolução Verde</h2>
+                        <p>A partir das décadas de 1960 e 1970, o Brasil passou pela <strong>Revolução Verde</strong>, uma política internacional de modernização do campo baseada em "pacotes tecnológicos": agrotóxicos, fertilizantes químicos, maquinário e sementes geneticamente modificadas (transgênicos). Esse processo consolidou o Agronegócio moderno. O foco produtivo passou a ser as <strong>commodities</strong> (produtos básicos padronizados para exportação, como soja, milho, carne e celulose). Como consequência social, a mecanização gerou forte desemprego no campo, acelerando o <strong>êxodo rural</strong>.</p>
+
+                        <h2 style="margin-top: 2.5rem;">4. Fronteiras Agrícolas e Expansão do Agro</h2>
+                        <p>Fronteira agrícola é a área de avanço da produção rural sobre o meio natural. Atualmente, as principais frentes de expansão no Brasil são:</p>
+                        <ul>
+                            <li><strong>MATOPIBA:</strong> Acrônimo para Maranhão, Tocantins, Piauí e Bahia. É a mais vigorosa fronteira agrícola atual, com avanço severo da monocultura da soja sobre o bioma Cerrado.</li>
+                            <li><strong>Amazônia Legal:</strong> O avanço ocorre principalmente nas bordas da floresta (conhecido como "Arco do Desmatamento"), impulsionado pela extração de madeira, seguida pela pecuária bovina e, posteriormente, pela soja.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">5. Relações de Trabalho no Campo</h2>
+                        <ul>
+                            <li><strong>Assalariados rurais:</strong> Trabalhadores com carteira assinada e direitos trabalhistas (minoria na base da pirâmide).</li>
+                            <li><strong>Boias-frias (ou volantes):</strong> Trabalhadores temporários e sazonais, contratados geralmente por "gatos" (empreiteiros informais) apenas na época da colheita (ex: corte de cana). Ganham por produção, sem garantias trabalhistas.</li>
+                            <li><strong>Posseiros:</strong> Trabalhadores que ocupam uma terra sem ter a escritura (título de propriedade), tornando-a produtiva. São os mais vulneráveis em conflitos de terra.</li>
+                            <li><strong>Parceiros (Meeiros/Terceiros):</strong> Pagam o aluguel da terra com uma porcentagem da produção (metade, um terço).</li>
+                            <li><strong>Arrendatários:</strong> Alugam a terra pagando em dinheiro, funcionando como "inquilinos" do campo.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">6. Agricultura Familiar vs. Agronegócio</h2>
+                        <p>A <strong>agricultura familiar</strong> é responsável por cerca de 70% dos alimentos que compõem a mesa do brasileiro (mandioca, feijão, hortaliças). Baseia-se na policultura, mão de obra familiar e pequenas/médias propriedades.</p>
+                        <p>Já o <strong>agronegócio (patronal/empresarial)</strong> é voltado para a exportação, operando no sistema de monocultura (soja, cana), em latifúndios altamente mecanizados, gerando muito PIB, mas menos empregos diretos por hectare.</p>
+
+                        <h2 style="margin-top: 2.5rem;">7. Impactos Ambientais do Agro</h2>
+                        <ul>
+                            <li><strong>Desmatamento e Perda de Biodiversidade:</strong> Especialmente no Cerrado e na Amazônia.</li>
+                            <li><strong>Uso de Agrotóxicos:</strong> O Brasil é um dos maiores consumidores mundiais, causando contaminação do solo, dos lençóis freáticos e intoxicação de trabalhadores.</li>
+                            <li><strong>Arenização:</strong> Processo de formação de bancos de areia, muito comum no bioma Pampa (sul do RS), causado pelo solo naturalmente arenoso aliado ao pisoteio do gado e agricultura intensiva. <em>(Cuidado: difere da desertificação, que ocorre na Caatinga pela aridez)</em>.</li>
+                            <li><strong>Salinização:</strong> Acúmulo de sais no solo, frequente no semiárido nordestino, devido a técnicas de irrigação inadequadas e alta evaporação.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">8. Conflitos no Campo e Reforma Agrária</h2>
+                        <p>A Constituição de 1988 estabelece que a propriedade deve cumprir sua <strong>função social</strong> (ser produtiva, respeitar leis trabalhistas e ambientais). Terras que não cumprem isso podem ser desapropriadas para Reforma Agrária. O principal ator dessa luta é o MST (Movimento dos Trabalhadores Rurais Sem Terra).</p>
+                        <p>Do outro lado, grandes proprietários e grileiros defendem a posse da terra. A <strong>grilagem</strong> é a apropriação ilegal de terras (geralmente públicas) por meio da falsificação de documentos (historicamente colocados em caixas com grilos para envelhecer o papel).</p>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">ENEM - Adaptada</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A Lei de Terras de 1850 determinou que a aquisição de terras públicas no Brasil só poderia ocorrer mediante compra, e não mais por ocupação ou doação. No contexto da época, a principal consequência socioespacial dessa lei foi:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A democratização do acesso à terra para os imigrantes europeus.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> A consolidação do latifúndio e o impedimento do acesso à terra por ex-escravizados e pobres.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> A modernização imediata da agricultura brasileira com a introdução de maquinários.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> O fim dos conflitos agrários nas áreas de fronteira do país.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A distribuição equitativa de terras devolutas no interior paulista.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Ao determinar que as terras devolutas (públicas) só poderiam ser adquiridas por compra, a elite agrária (que tinha dinheiro) monopolizou as terras, excluindo ex-escravizados e pessoas de baixa renda, consolidando a concentração fundiária (latifúndio).</p>
+                                    <p><em>As demais estão incorretas:</em> A lei impediu o acesso democrático; a modernização só ocorreu na Revolução Verde (1960); os conflitos agrários se intensificaram; e não houve distribuição equitativa, tornando a terra mercadoria restrita.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O pacote tecnológico associado à Revolução Verde a partir da década de 1960 alterou profundamente as dinâmicas espaciais brasileiras. Uma das principais contradições desse modelo agrícola no Brasil foi:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> O aumento da produtividade aliado à fixação do trabalhador no campo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A expansão da agricultura orgânica nas regiões Centro-Oeste e Norte.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> O crescimento acelerado da produção de commodities acompanhado da expropriação de pequenos produtores e êxodo rural.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A redução drástica do uso de fertilizantes químicos devido ao aprimoramento genético.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A equiparação das terras dedicadas à agricultura familiar e às grandes monoculturas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O pacote tecnológico da Revolução Verde era muito caro. O grande produtor comprou máquinas e expandiu a produção de exportação (commodities), enquanto o pequeno produtor, sem capital para competir, perdeu sua terra e migrou para as cidades (êxodo rural).</p>
+                                    <p><em>A mecanização substituiu a mão de obra, gerou desemprego no campo, aumentou brutalmente o uso de agrotóxicos/fertilizantes e acentuou a desigualdade fundiária.</em></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Uma nova fronteira agrícola vem se consolidando no Brasil desde os anos 2000, abrangendo áreas de quatro estados. Caracterizada pelo relevo plano que favorece a mecanização, essa região tem sofrido rápido desmatamento do seu bioma original (Cerrado) para o plantio de soja. A região descrita atende pelo acrônimo:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Bico do Papagaio.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Vale do São Francisco.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> MAPITO.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> MATOPIBA.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Zona da Mata.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>MATOPIBA é a sigla atualizada para Maranhão, Tocantins, Piauí e Bahia, principal fronteira de expansão do agronegócio da soja no Brasil hoje, avançando fortemente sobre o Cerrado.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A respeito dos impactos ambientais causados pela má gestão das práticas agropecuárias nos biomas brasileiros, assinale a correlação correta entre o fenômeno e a região onde ele é mais proeminente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Arenização – Caatinga.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Salinização – Pampa gaúcho.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Desertificação – Amazônia Legal.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Arenização – Pampa gaúcho.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Lixiviação – Semiárido nordestino.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>A arenização ocorre no sul do Brasil, no bioma Pampa (RS). O solo é arenoso e a pecuária intensiva e agricultura retiram a cobertura vegetal, expondo o solo e formando bancos de areia.</p>
+                                    <p><em>As outras correlações:</em> Caatinga sofre com Desertificação; Nordeste (Semiárido) sofre com Salinização; Amazônia sofre com Desmatamento/Savanização; Áreas úmidas sofrem com Lixiviação.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Trabalhadores rurais que são contratados por empreiteiros clandestinos ("gatos") de forma sazonal, geralmente para o corte de cana-de-açúcar ou colheitas específicas, recebendo por produção e sem qualquer garantia ou vínculo empregatício. O texto refere-se aos:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Arrendatários.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Posseiros.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Boias-frias.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Parceiros.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Grileiros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Boias-frias (ou volantes) são contratados de forma temporária, geralmente por intermediários ilegais, apenas para o período de safra, recebendo por produção sem direitos trabalhistas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">ENEM - Adaptada</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A Constituição Federal de 1988 estabelece que a terra deve cumprir sua "função social". O descumprimento desse preceito legal serve de base jurídica para as ações de movimentos sociais no campo e para o Estado realizar a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Demarcação de terras indígenas.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Desapropriação para fins de reforma agrária.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Legalização da grilagem de terras produtivas.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Isenção de impostos rurais, como o ITR.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Privatização de terras devolutas em áreas de fronteira.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Se um latifúndio é improdutivo, descumpre leis trabalhistas ou comete crimes ambientais, ele não cumpre sua função social exigida pela Constituição. Por isso, pode ser desapropriado pelo Estado para assentamento de famílias na Reforma Agrária.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Embora ocupe a menor parcela da área total de propriedades rurais no Brasil, a agricultura familiar desempenha um papel socioeconômico estratégico. A sua principal função na dinâmica nacional é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A produção em larga escala de commodities para a balança comercial.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> O abastecimento do mercado interno com alimentos da cesta básica.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> O controle das inovações genéticas por meio de transgênicos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A exploração predominante de sistemas de pastagens extensivas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> O financiamento e manutenção dos principais polos logísticos de exportação (portos).</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A agricultura familiar produz através da policultura e é a principal responsável por colocar os alimentos básicos na mesa da população brasileira (aprox. 70%). A produção em larga escala para exportação é tarefa do agronegócio.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O processo de grilagem é uma prática histórica no espaço agrário brasileiro. Ele consiste essencialmente em:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Utilizar técnicas biológicas de controle de pragas usando insetos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Invadir terras indígenas exclusivamente para mineração.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Falsificar documentos de posse para se apropriar ilegalmente de terras públicas ou de terceiros.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Arrendar parte de uma grande propriedade para pequenos produtores em troca de lucro.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Contratar trabalhadores rurais sem formalização trabalhista.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>A grilagem é a tomada de terras por meio da falsificação de títulos de propriedade. O termo vem da antiga prática de colocar documentos em caixas com grilos para dar uma aparência envelhecida e de falsa autenticidade ao papel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um sistema agrícola intensivo difere de um sistema extensivo por apresentar:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Grandes extensões de terras baseadas na ocupação de posseiros.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Baixo índice de produtividade por hectare e uso de queimadas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Elevada aplicação de capital, tecnologia e maquinário, com alta produtividade.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Uso exclusivo de mão de obra familiar sem auxílio de insumos externos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Foco total no mercado interno com técnicas tradicionais de rotação de culturas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O conceito de "intensivo" na geografia agrária refere-se ao uso massivo de capital, biotecnologia, fertilizantes e maquinário pesado, visando extrair a maior produtividade possível por hectare.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A expansão do agronegócio e a irrigação mal planejada em áreas de clima semiárido, caracterizadas por altas taxas de evaporação e solos ricos em minerais, têm provocado um grave impacto ambiental que inviabiliza o cultivo a longo prazo. Esse impacto é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Laterização.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Eutrofização.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Salinização.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Arenização.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Assoreamento.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>No semiárido, o solo costuma ser rico em sais minerais. A irrigação joga água na terra; com o forte calor, a água evapora muito rápido e os sais ficam acumulados na superfície, tornando o solo infértil, processo conhecido como salinização.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • História Agrária</span>
+                                        <div class="large-text">O que determinou a Lei de Terras de 1850?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Aquisição apenas por compra.</div>
+                                        <span class="card-hint">Determinou que terras públicas só poderiam ser adquiridas por compra, consolidando o latifúndio e impedindo o acesso à terra por pobres e ex-escravizados.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Tipos de Agricultura</span>
+                                        <div class="large-text">Qual é a diferença estrutural entre a Agricultura Familiar e o Agronegócio?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Policultura vs Monocultura.</div>
+                                        <span class="card-hint"><strong>Familiar:</strong> policultura, foco no mercado interno, menor tamanho, mais mão de obra.<br><strong>Agro:</strong> monocultura, exportação, latifúndio, alta mecanização.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Fronteiras</span>
+                                        <div class="large-text">Quais estados formam o MATOPIBA e qual o principal bioma afetado?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">MA, TO, PI, BA e o Cerrado.</div>
+                                        <span class="card-hint">Maranhão, Tocantins, Piauí e Bahia. O principal bioma afetado é o Cerrado, desmatado para o avanço agressivo da soja.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Conflitos</span>
+                                        <div class="large-text">O que caracteriza a prática criminosa da "grilagem"?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Falsificação de documentos.</div>
+                                        <span class="card-hint">É a falsificação de documentos para apropriação ilegal de terras, geralmente públicas (devolutas), para transformá-las em propriedades privadas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Trabalho Rural</span>
+                                        <div class="large-text">Quem são os boias-frias (volantes)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Trabalhadores sazonais sem vínculo.</div>
+                                        <span class="card-hint">Trabalhadores temporários contratados apenas na época de colheitas intensas (ex: corte de cana), geralmente sem garantias trabalhistas e ganhando por produção.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Modernização</span>
+                                        <div class="large-text">Quais são os 3 pilares tecnológicos da Revolução Verde?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Máquinas, Sementes e Químicos.</div>
+                                        <span class="card-hint">Maquinário moderno, sementes modificadas geneticamente/híbridas de alto rendimento, e o uso de agroquímicos (fertilizantes e agrotóxicos).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Legislação</span>
+                                        <div class="large-text">O que é a "Função Social da Terra" segundo a Constituição Brasileira?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Dever de produtividade e leis.</div>
+                                        <span class="card-hint">A exigência de que a propriedade seja produtiva e respeite leis ambientais e trabalhistas. Se descumprida, a terra pode ser desapropriada para reforma agrária.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Relações de Posse</span>
+                                        <div class="large-text">Qual a diferença entre Posseiro, Parceiro e Arrendatário?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Sem título / % Produção / Dinheiro.</div>
+                                        <span class="card-hint"><strong>Posseiro:</strong> Ocupa terra sem título.<br><strong>Parceiro (Meeiro):</strong> Paga com parte da produção.<br><strong>Arrendatário:</strong> Paga o aluguel em dinheiro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Impactos Ambientais</span>
+                                        <div class="large-text">Qual é a diferença entre Arenização e Salinização e onde ocorrem?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Pisoteio (SUL) vs Irrigação (NE).</div>
+                                        <span class="card-hint"><strong>Arenização:</strong> Formação de areais pelo pisoteio do gado (Bioma Pampa/RS).<br><strong>Salinização:</strong> Acúmulo de sal por irrigação malfeita (Semiárido).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Desigualdade</span>
+                                        <div class="large-text">O que o Índice de Gini mede no contexto agrário brasileiro?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Concentração Fundiária.</div>
+                                        <span class="card-hint">Mede a desigualdade. No Brasil, o índice é muito alto, o que indica que grande parte da terra está concentrada na mão de pouquíssimos proprietários (latifundiários).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

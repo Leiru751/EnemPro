@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil Colônia - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-human"> <!-- Tema laranja/terracota ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <!-- História recebe a classe active -->
+            <a href="historia.html" class="nav-link active" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">História / Brasil Colônia</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Brasil Colônia (1500–1822)</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (HISTÓRIA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <!-- SEÇÃO 1: Pré-Colonial -->
+                        <h2>O Período Pré-Colonial (1500–1530)</h2>
+                        <ul>
+                            <li><strong>Extrativismo do Pau-Brasil:</strong> O primeiro ciclo econômico não envolveu plantio ou colonização, mas o corte da madeira (usada para tingir tecidos na Europa).</li>
+                            <li><strong>Escambo e Estanco Real:</strong> A extração era feita através do <em>escambo</em>, uma troca direta onde os indígenas cortavam e transportavam a madeira em troca de ferramentas e bugigangas europeias. O lucro era exclusividade do Rei de Portugal, monopólio conhecido como <em>estanco real</em>.</li>
+                            <li><strong>Postura de Portugal:</strong> O Brasil era um "plano B". O foco absoluto da Coroa era o comércio de especiarias nas Índias, que era infinitamente mais lucrativo. Por isso, construíram apenas <em>feitorias</em> (armazéns fortificados no litoral) para guardar a madeira, sem fundar cidades.</li>
+                            <li><strong>Ameaças Estrangeiras:</strong> Como a costa era gigantesca e desprotegida, corsários franceses começaram a invadir e contrabandear o pau-brasil. Isso forçou Portugal a ocupar a terra de fato para não perdê-la.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 2: Açúcar e Administração -->
+                        <h2 style="margin-top: 3rem;">A Administração Colonial e a Economia Açucareira</h2>
+                        <ul>
+                            <li><strong>Capitanias Hereditárias (1534):</strong> Sem dinheiro para colonizar, o Rei "terceirizou" a tarefa. Dividiu o território em 15 faixas de terra e entregou a nobres e burgueses (donatários). O modelo fracassou devido à falta de recursos, distância e ataques indígenas. Apenas São Vicente e Pernambuco prosperaram.</li>
+                            <li><strong>Governo-Geral (1549):</strong> Para salvar o projeto, a Coroa centralizou a administração. Enviou um Governador-Geral para fundar a primeira capital (Salvador) e organizar a defesa.</li>
+                            <li><strong>Sociedade Açucareira:</strong> Era rural, conservadora e patriarcal. A vida girava em torno do engenho, comandado pelo Senhor de Engenho a partir da Casa-Grande. A mobilidade social era nula. O açúcar foi escolhido por seu alto valor na Europa e pelo clima favorável no Nordeste.</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>O Sistema de Plantation e o Pacto Colonial</strong><br><br>
+                            <strong>Plantation:</strong> Baseava-se em quatro pilares: latifúndio (grandes propriedades), monocultura (foco em um só produto), trabalho escravo e produção voltada para a exportação.<br><br>
+                            <strong>Pacto Colonial (Exclusivo Metropolitano):</strong> A regra de ouro. A colônia (Brasil) só podia comprar manufaturados de sua metrópole (Portugal) e só podia vender suas riquezas para ela.
+                        </div>
+
+                        <ul>
+                            <li><strong>A Parceria Holandesa:</strong> Portugal sabia plantar, mas não tinha frota nem tecnologia de refino. Os holandeses financiaram engenhos, transportavam o açúcar bruto, refinavam na Europa e ficavam com a maior parte do lucro.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 3: Trabalho Compulsório -->
+                        <h2 style="margin-top: 3rem;">O Trabalho Compulsório: Escravidão Indígena e Africana</h2>
+                        <p><strong>A Transição da Mão de Obra:</strong> Inicialmente, escravizaram-se indígenas. A mudança para a mão de obra africana ocorreu por três fatores centrais:</p>
+                        <ul>
+                            <li><em>Epidemias:</em> Indígenas não tinham anticorpos para doenças europeias (gripe, varíola).</li>
+                            <li><em>Resistência e Fugas:</em> Conhecendo o território, fugiam facilmente. Além disso, a Igreja (jesuítas) passou a proibir sua escravização.</li>
+                            <li><em>O Lucro do Tráfico Negreiro:</em> O fator principal. O comércio no Atlântico tornou-se extraordinariamente lucrativo para a burguesia e a Coroa. Lucrava-se vendendo o escravizado e com o açúcar que ele produzia.</li>
+                        </ul>
+
+                        <h4>Formas de Resistência</h4>
+                        <ul>
+                            <li><strong>Sobrevivência Cultural:</strong> O sincretismo religioso foi a estratégia de associar Orixás a santos católicos para cultuar sua fé disfarçadamente.</li>
+                            <li><strong>Quilombos:</strong> Comunidades de fugitivos. O Quilombo dos Palmares (liderado por Zumbi e Dandara) foi o maior e mais duradouro símbolo de resistência.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 4: Expansão -->
+                        <h2 style="margin-top: 3rem;">A Expansão Territorial e as "Outras" Economias</h2>
+                        <ul>
+                            <li><strong>Entradas e Bandeiras:</strong> Expedições rumo ao interior. Entradas eram oficiais; Bandeiras eram particulares (paulistas).</li>
+                            <li><strong>O Papel dos Bandeirantes:</strong> Tinham três funções: <em>apresamento</em> (caçar indígenas), <em>sertanismo de contrato</em> (destruir quilombos) e <em>prospecção</em> (busca por ouro). Foram os responsáveis por rasgar o Tratado de Tordesilhas e expandir o Brasil.</li>
+                            <li><strong>Pecuária e Drogas do Sertão:</strong> O gado interiorizou o Nordeste: criado solto no sertão para não ocupar terras férteis do litoral, fornecia carne, couro e força motriz. Na Amazônia, a economia girava em torno das "Drogas do Sertão" (cacau, guaraná), extraídas por indígenas.</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>União Ibérica (1580–1640) e Invasões Holandesas</strong><br><br>
+                            O rei de Portugal morreu sem herdeiros e a Espanha assumiu o trono (União Ibérica). Como Holanda e Espanha eram inimigas, o comércio de açúcar Brasil-Holanda foi proibido. Para não perder os lucros, <strong>os holandeses invadiram o Nordeste</strong>, onde ficaram por décadas (Governo de Maurício de Nassau) até serem expulsos na Insurreição Pernambucana.
+                        </div>
+
+                        <!-- SEÇÃO 5: Ouro -->
+                        <h2 style="margin-top: 3rem;">O Período Minerador (Século XVIII)</h2>
+                        <ul>
+                            <li><strong>A Corrida do Ouro e a Sociedade:</strong> A descoberta de ouro em MG gerou explosão demográfica. Diferente da rigidez do açúcar, a vida nas minas era urbana, dinâmica e formou uma classe média expressiva (artesãos, tropeiros). Havia maior mobilidade social.</li>
+                        </ul>
+                        
+                        <h4>O Arrocho Fiscal da Coroa</h4>
+                        <ul>
+                            <li><strong>Quinto:</strong> 20% de todo o ouro extraído pertencia ao rei.</li>
+                            <li><strong>Casas de Fundição:</strong> Proibido circular ouro em pó. Todo ouro devia ser derretido em barras com o selo real.</li>
+                            <li><strong>Derrama:</strong> Cobrança forçada caso não se atingisse a meta anual de 100 arrobas de ouro. Soldados confiscavam bens da população.</li>
+                        </ul>
+                        <p><strong>Mudança da Capital (1763):</strong> A capital mudou de Salvador para o Rio de Janeiro (porto natural por onde o ouro escoava), transferindo o eixo econômico para o Sudeste.</p>
+
+                        <!-- SEÇÃO 6: Rebeliões -->
+                        <h2 style="margin-top: 3rem;">As Rebeliões Coloniais</h2>
+                        <p>Com o tempo, interesses colidiam. Dividimos os conflitos em dois grupos:</p>
+
+                        <h4>Revoltas Nativistas (Não queriam independência)</h4>
+                        <p>Eram conflitos locais que não questionavam o Pacto Colonial:</p>
+                        <ul>
+                            <li><strong>Guerra dos Emboabas (MG):</strong> Paulistas vs forasteiros (emboabas) pelo controle das minas.</li>
+                            <li><strong>Guerra dos Mascates (PE):</strong> Senhores de engenho de Olinda (falidos) vs comerciantes de Recife (mascates) por poder político.</li>
+                            <li><strong>Revolta de Vila Rica (MG):</strong> Contra a criação das Casas de Fundição.</li>
+                        </ul>
+
+                        <h4>Revoltas Emancipacionistas (Queriam a Independência)</h4>
+                        <p>Influenciadas pelo Iluminismo e pela Independência dos EUA. Defendiam repúblicas:</p>
+                        <ul>
+                            <li><strong>Inconfidência Mineira (1789):</strong> Movimento elitista motivado pelo medo da Derrama. Defendiam universidade e indústrias, mas <strong>silenciaram sobre a escravidão</strong> (dependiam dela).</li>
+                            <li><strong>Conjuração Baiana (1798):</strong> Movimento <strong>fortemente popular</strong> (alfaiates, ex-escravizados). Defendiam o livre comércio, igualdade racial e, principalmente, a <strong>Abolição da Escravidão</strong>.</li>
+                        </ul>
+
+                    </div>
+
+</div>
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - HISTÓRIA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "A primeira forma de exploração econômica do território brasileiro pelos portugueses baseou-se na extração do pau-brasil. Para isso, os europeus não precisaram organizar o cultivo ou a fixação de grandes populações na nova terra. O trabalho braçal dependia inteiramente dos nativos, que derrubavam as árvores e as transportavam até as feitorias no litoral." <em>(Adaptado de FAUSTO, Boris. História do Brasil.)</em></p>
+                                <p><strong>Enunciado:</strong> A relação de trabalho descrita no texto, estabelecida entre indígenas e portugueses nas primeiras décadas do século XVI, era viabilizada pela prática do:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> trabalho assalariado, pago em moedas de ouro e prata trazidas da metrópole.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> escambo, consistindo na troca da força de trabalho e da madeira por produtos manufaturados europeus.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> estanco, que permitia o livre comércio da madeira por qualquer nação europeia aliada.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> encomienda, sistema ibérico de escravização justificado pela catequização forçada.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> escravismo de ganho, no qual o indígena repassava parte do lucro da venda da madeira ao rei.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A extração do pau-brasil baseava-se no escambo, uma troca direta (sem uso de moeda) onde os indígenas forneciam a madeira em troca de ferramentas e utensílios europeus (facões, espelhos, etc.).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não havia circulação de moeda ou trabalho assalariado.</li>
+                                        <li><strong>C:</strong> O estanco era o monopólio real absoluto (não havia livre comércio).</li>
+                                        <li><strong>D:</strong> A encomienda foi uma instituição espanhola, não portuguesa.</li>
+                                        <li><strong>E:</strong> Escravos de ganho foram típicos do período minerador urbano, séculos depois.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "O fracasso de muitas capitanias hereditárias não significou o fim do projeto colonial. Diante da ameaça de perder o território para os franceses e das perdas de donatários isolados contra populações indígenas hostis, o rei de Portugal alterou sua estratégia em 1549, enviando Tomé de Souza para a Bahia."</p>
+                                <p><strong>Enunciado:</strong> A medida adotada pela Coroa portuguesa em 1549, mencionada no texto, teve como principal objetivo político:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> descentralizar o poder, criando novos polos independentes de tributação.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> extinguir o sistema de capitanias hereditárias, confiscando as terras da nobreza.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> centralizar a administração colonial, oferecendo suporte militar e institucional aos donatários.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> transferir o controle administrativo da colônia para a Igreja Católica e os jesuítas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> estabelecer a capital no Rio de Janeiro para facilitar o escoamento de ouro.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O Governo-Geral foi criado para centralizar a administração, unificar a defesa contra estrangeiros e indígenas, e apoiar o desenvolvimento das capitanias (que continuaram existindo).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A medida visava centralizar, não descentralizar.</li>
+                                        <li><strong>B:</strong> O Governo-Geral não extinguiu as capitanias; sobrepôs-se a elas.</li>
+                                        <li><strong>D:</strong> A administração continuou secular, sob o Estado português.</li>
+                                        <li><strong>E:</strong> A primeira capital foi Salvador. O Rio de Janeiro só viraria capital em 1763.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "O engenho era o centro absoluto da vida na colônia. Tudo orbitava ao seu redor. A casa-grande representava não apenas a residência da família proprietária, mas o centro do poder político, econômico e social daquela localidade. Abaixo dela, uma rígida hierarquia se estendia até a senzala."</p>
+                                <p><strong>Enunciado:</strong> A estrutura social do Brasil açucareiro colonial, descrita no texto, era essencialmente caracterizada por ser:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> igualitária, com forte mobilidade entre as classes trabalhadoras livres.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> matriarcal, com as decisões políticas centradas nas herdeiras das capitanias.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> patriarcal, aristocrática e com baixíssima mobilidade social, baseada na posse de terras e escravizados.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> urbana, dependente do comércio local e da pequena manufatura.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> burocrática, liderada por funcionários concursados enviados pela Coroa.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A sociedade açucareira era rural, dominada pela figura masculina (patriarcal) do senhor de engenho (aristocrática), sem espaço para mudança de classe (quem nascia escravo ou livre pobre, continuava assim).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> Não havia igualitarismo, e a sociedade era profundamente machista/patriarcal.</li>
+                                        <li><strong>D:</strong> A sociedade era focada no campo (rural), não nas cidades.</li>
+                                        <li><strong>E:</strong> O poder era privado (donos de terras), não burocrático-estatal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Durante o século XVI, houve um intenso debate, especialmente promovido pelos jesuítas, sobre a escravização dos nativos. Paralelamente, o tráfico transatlântico começou a trazer milhares de africanos para as lavouras de cana. Essa substituição gradual da mão de obra indígena pela africana não se deu por acaso.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista da metrópole, o principal fator econômico que impulsionou a adoção da mão de obra escravizada africana em detrimento da indígena foi:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a ausência de resistência dos africanos ao trabalho agrícola nas colônias.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> a inadequação biológica dos indígenas ao clima tropical do Nordeste.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> a enorme lucratividade gerada pelo tráfico negreiro no Atlântico, que enriquecia comerciantes e a Coroa.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a falta de conhecimento dos nativos sobre o plantio e manejo de qualquer tipo de vegetal.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a determinação papal que proibia o trabalho braçal na América sob pena de excomunhão.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O tráfico negreiro tornou-se um negócio autônomo e altamente rentável. A Coroa arrecadava altos impostos com o comércio de seres humanos, lucrando duas vezes (no tráfico em si e no açúcar produzido).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Os africanos resistiram de inúmeras formas (fugas, revoltas, quilombos).</li>
+                                        <li><strong>B:</strong> Indígenas são nativos, logo perfeitamente adaptados ao próprio clima.</li>
+                                        <li><strong>D:</strong> Indígenas já praticavam agricultura de subsistência (mandioca).</li>
+                                        <li><strong>E:</strong> A Igreja protegeu os indígenas para catequizá-los, mas nunca proibiu o trabalho braçal na América em si.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "Quando as invasões holandesas desestruturaram os engenhos em Pernambuco, as fugas de escravizados se intensificaram. Muitos buscaram abrigo na serra da Barriga, onde formaram o mais célebre reduto de resistência negra das Américas, que chegou a reunir cerca de 20 mil habitantes em seu auge."</p>
+                                <p><strong>Enunciado:</strong> O texto refere-se à formação do Quilombo dos Palmares. No contexto do Brasil Colonial, os quilombos representavam:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> colônias penais construídas pela Coroa para aprisionar rebeldes políticos europeus.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> feitorias holandesas estabelecidas no interior para monopolizar o algodão.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> uma estratégia fundamental de resistência ao sistema escravista, preservando culturas e garantindo a sobrevivência física.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> milícias armadas formadas por bandeirantes paulistas para proteger os engenhos nordestinos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> aldeamentos jesuíticos voltados exclusivamente para a catequização de negros libertos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Os quilombos foram a maior expressão de oposição direta e prática contra a opressão da escravidão, abrigando fugitivos e permitindo a manutenção de práticas culturais e sociais de origem africana.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não eram obras do Estado, mas contra ele.</li>
+                                        <li><strong>B:</strong> Holandeses focaram no litoral e os quilombos eram de negros fugidos.</li>
+                                        <li><strong>D:</strong> Bandeirantes eram inimigos dos quilombos (contratados para destruí-los).</li>
+                                        <li><strong>E:</strong> Aldeamentos jesuíticos focavam em indígenas, não em africanos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "Com sede em São Vicente e São Paulo de Piratininga, os vicentinos adentraram o território americano em jornadas que duravam meses ou anos. Iam motivados pela busca por indígenas para escravização e, posteriormente, pelo sonho de encontrar metais preciosos, uma vez que a agricultura local era pobre."</p>
+                                <p><strong>Enunciado:</strong> O movimento das "Bandeiras", descrito no texto, teve como principal consequência geopolítica para a colônia:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a manutenção estrita dos limites territoriais impostos pelo Tratado de Tordesilhas.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> a expansão territorial do Brasil para além do meridiano de Tordesilhas, incorporando vastas áreas do interior.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> a fundação de novas capitanias hereditárias exclusivamente dedicadas à pecuária.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a aliança militar definitiva entre indígenas e portugueses contra as incursões espanholas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a expulsão dos franceses do Rio de Janeiro após a fundação da França Antártica.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>As expedições bandeirantes desbravaram o interior, ignoraram as linhas imaginárias e garantiram, na prática, a expansão e o atual formato territorial brasileiro em direção ao oeste.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Romperam o tratado de Tordesilhas, não o mantiveram.</li>
+                                        <li><strong>C:</strong> Capitanias foram criadas muito antes, e nenhuma era exclusiva de pecuária.</li>
+                                        <li><strong>D:</strong> Bandeirantes caçavam indígenas, não formavam alianças pacíficas.</li>
+                                        <li><strong>E:</strong> A expulsão de franceses foi obra do Governo-Geral (Estado), não das Bandeiras (particulares).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "A economia colonial não se resumia à cana-de-açúcar. Enquanto o litoral nordestino se enchia de engenhos, o sertão tornou-se o domínio dos vaqueiros. O gado foi levado para o interior, pois os senhores de engenho não queriam desperdiçar terras de massapê (férteis) com pastagem."</p>
+                                <p><strong>Enunciado:</strong> No processo de colonização do Brasil, a pecuária desempenhou um papel socioeconômico central caracterizado por:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> utilizar exclusivamente o trabalho escravo africano, com alta densidade demográfica.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> produzir bens de alto valor agregado para exportação direta ao mercado europeu.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> promover a interiorização da ocupação colonial e abastecer o mercado interno (litoral) com alimentos e força motriz.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> ser monopolizada por empresas estatais portuguesas para garantir o estanco da carne.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> substituir a economia açucareira após a crise de preços no mercado internacional no século XVI.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A pecuária precisava de vastas terras e foi empurrada para o sertão. Sua função primária não era exportar, mas manter os engenhos funcionando (com força animal, couro e alimento).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Utilizava muita mão de obra livre (vaqueiros) e tinha baixíssima densidade.</li>
+                                        <li><strong>B:</strong> O gado era para o mercado interno, não para exportação de luxo.</li>
+                                        <li><strong>D:</strong> Não havia monopólio (estanco) sobre a criação de gado.</li>
+                                        <li><strong>E:</strong> O gado complementava o açúcar, nunca o substituiu como eixo principal nesse período.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> No século XVIII, a descoberta de jazidas de ouro alterou radicalmente o perfil do Brasil colonial. O eixo econômico deslocou-se, surgiram novas vilas e o fluxo de pessoas provocou a urbanização da região central do território.</p>
+                                <p><strong>Enunciado:</strong> Comparada à sociedade açucareira do Nordeste (séculos XVI e XVII), a sociedade mineradora de Minas Gerais no século XVIII diferenciava-se pela:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> completa abolição da escravidão nas zonas urbanas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> maior estratificação social, impedindo o surgimento de classes médias ou intelectuais.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> total independência política em relação a Portugal, garantida pelas riquezas do ouro.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> dinamização de um mercado interno, vida urbana mais complexa e maior possibilidade de mobilidade social.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> redução dos impostos cobrados pela Coroa devido à fartura de metais.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O ouro gerou cidades ricas que precisavam de serviços variados (artesãos, tropeiros, comerciantes), criando uma classe média e permitindo maior mobilidade social (inclusive alforrias compradas com pepitas).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A mineração usou massivamente escravizados africanos.</li>
+                                        <li><strong>B:</strong> Ocorreu o oposto: surgimento de classes médias e vida intelectual (Arcadismo).</li>
+                                        <li><strong>C:</strong> O domínio político de Portugal e o pacto colonial continuaram.</li>
+                                        <li><strong>E:</strong> Os impostos aumentaram brutalmente (Quinto, Derrama).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "Em 1580, com a morte do último rei da dinastia de Avis, o rei da Espanha assumiu o trono português, unificando as coroas. Como a Holanda lutava por sua independência contra a Espanha, a Coroa espanhola proibiu que o açúcar brasileiro fosse comercializado com os holandeses."</p>
+                                <p><strong>Enunciado:</strong> A proibição mencionada no texto provocou uma reação imediata da Holanda (Companhia das Índias Ocidentais), que consistiu na:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> invasão e ocupação do Nordeste brasileiro para garantir o controle da produção e distribuição do açúcar.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> aliança bélica com os franceses para invadir as minas de ouro na Capitania de São Vicente.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> mudança da matriz econômica holandesa, abandonando o comércio de açúcar pelo comércio do pau-brasil.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> assinatura de um tratado de paz com a Espanha, aceitando o fechamento dos portos portugueses.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> criação do Quilombo dos Palmares como base militar para atacar as feitorias espanholas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>Como os holandeses já lucravam muito transportando e refinando o açúcar brasileiro, ao serem proibidos pelos espanhóis de acessar a mercadoria, resolveram invadir militarmente a principal região produtora (Nordeste) para garantir o negócio.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Ouro não era a riqueza do momento, e as invasões focaram no Nordeste.</li>
+                                        <li><strong>C:</strong> A Holanda não abandonou o açúcar, pois era o "petróleo" da época.</li>
+                                        <li><strong>D:</strong> Houve guerra pelas áreas coloniais, não tratado de paz pacífico.</li>
+                                        <li><strong>E:</strong> Palmares foi criado por africanos escravizados.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Brasil Colônia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong><br>
+                                <em>Texto I:</em> "Em 1789, magistrados, poetas, clérigos e militares de alta patente planejaram uma revolta em Vila Rica contra a derrama. Influenciados pelas ideias iluministas, defendiam a república, mas silenciaram sobre a mão de obra escrava."<br>
+                                <em>Texto II:</em> "Em 1798, na Bahia, panfletos amanheceram colados nas igrejas. Eram assinados por soldados, artesãos e alfaiates – muitos negros e mulatos. Pediam república livre de Portugal, liberdade de comércio, aumento de soldos e o fim da escravidão."</p>
+                                <p><strong>Enunciado:</strong> Ao comparar a Inconfidência Mineira (Texto I) e a Conjuração Baiana (Texto II), nota-se que, apesar de ambas serem movimentos emancipacionistas, elas diferiam substancialmente quanto:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> ao modelo político desejado, visto que os mineiros queriam uma monarquia absolutista e os baianos uma democracia.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> à influência intelectual, pois a revolta mineira rejeitava o Iluminismo, baseando-se no pensamento medieval.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> à composição social e aos objetivos sociais, evidenciados pelo caráter elitista da mineira e o perfil popular e abolicionista da baiana.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> ao sentimento antilusitano, presente apenas no movimento baiano, que sofreu embargos comerciais severos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> à região de abrangência, uma vez que a Conjuração Baiana propunha a independência de todo o continente americano.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A grande diferença cobrada no ENEM é a base de classes: a Mineira era feita por elites que dependiam de escravos, logo não propuseram a Abolição. A Baiana era composta por trabalhadores livres pobres e negros, pautando ativamente o fim da escravidão e a igualdade.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Ambos queriam instalar uma República.</li>
+                                        <li><strong>B:</strong> A Inconfidência Mineira foi fortemente inspirada pelo Iluminismo.</li>
+                                        <li><strong>D:</strong> Ambos queriam romper com Portugal.</li>
+                                        <li><strong>E:</strong> O foco era regional/nacional (Minas e Bahia), não o continente americano todo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 12 • Período Pré-Colonial</span>
+                                        <div class="large-text">Por que Portugal priorizou a construção de feitorias e evitou o povoamento definitivo do Brasil entre 1500 e 1530?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Foco nas especiarias da Índia.</div>
+                                        <span class="card-hint">O foco econômico da Coroa era o comércio nas Índias. O Brasil era apenas uma rota secundária para extração rápida de pau-brasil.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 12 • Período Pré-Colonial</span>
+                                        <div class="large-text">[Lacuna] Durante a extração do pau-brasil, o _______ era o monopólio da Coroa sobre a exploração, enquanto o _______ era a relação de troca direta de trabalho por ferramentas com os indígenas.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Estanco real / Escambo.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 12 • Economia Açucareira</span>
+                                        <div class="large-text">Qual era o papel estratégico e econômico da Holanda (Companhia das Índias Ocidentais) no auge da economia açucareira colonial?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Financiamento, refino e distribuição.</div>
+                                        <span class="card-hint"><strong>Financiar e transportar:</strong> Bancava os engenhos e levava o açúcar bruto.<br><br><strong>Refinar e distribuir:</strong> Fazia o refino na Europa, ficando com a maior margem de lucro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 12 • Mão de Obra</span>
+                                        <div class="large-text">Qual fator econômico metropolitano determinou a transição da mão de obra indígena para a escravização africana no Brasil?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O lucro do tráfico negreiro.</div>
+                                        <span class="card-hint">A extrema lucratividade do comércio de pessoas no Atlântico gerava altas taxas e impostos diretamente para a Coroa e comerciantes europeus.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 12 • Resistência Escrava</span>
+                                        <div class="large-text">Como os africanos escravizados utilizavam o sincretismo religioso como forma de sobrevivência e resistência cultural?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Associação com santos católicos.</div>
+                                        <span class="card-hint">Eles associavam seus Orixás a santos católicos, permitindo que cultuassem suas próprias crenças religiosas disfarçadamente sob os olhos da Igreja e dos senhores.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 12 • Pecuária Colonial</span>
+                                        <div class="large-text">Diferente da cana-de-açúcar (focada no litoral e exportação), qual foi a principal consequência geográfica da pecuária no Brasil colonial?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A interiorização da colônia.</div>
+                                        <span class="card-hint">O gado foi empurrado para o sertão nordestino para não ocupar as terras férteis do litoral (reservadas exclusivamente à cana-de-açúcar).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 12 • Invasões Holandesas</span>
+                                        <div class="large-text">Qual a relação de causa e consequência direta entre a União Ibérica (1580-1640) e as invasões no Nordeste brasileiro?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O bloqueio espanhol.</div>
+                                        <span class="card-hint">A Espanha assumiu Portugal e proibiu o Brasil de comerciar com os holandeses (seus inimigos). A Holanda reagiu invadindo o Nordeste para não perder o negócio açucareiro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 12 • Bandeirantismo</span>
+                                        <div class="large-text">O movimento das Bandeiras paulistas teve uma consequência geopolítica fundamental que alterou o mapa da América do Sul. Qual foi?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A expansão para o Oeste.</div>
+                                        <span class="card-hint">A expansão territorial do Brasil, rompendo e ultrapassando na prática as fronteiras originais impostas pelo Tratado de Tordesilhas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 12 • Ouro vs Açúcar</span>
+                                        <div class="large-text">Contraste a organização social de Minas Gerais no século XVIII (período minerador) com a do Nordeste no século XVI (período açucareiro).</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Urbana vs. Rural</div>
+                                        <span class="card-hint"><strong>Mineradora:</strong> Urbana, dinâmica, com surgimento de classe média e maior mobilidade social.<br><br><strong>Açucareira:</strong> Rural, patriarcal, rígida e praticamente sem mobilidade.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 12 • Ciclo do Ouro</span>
+                                        <div class="large-text">Qual era a função da "Derrama", mecanismo fiscal implementado pela Coroa Portuguesa no período minerador?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Cobrança forçada de impostos.</div>
+                                        <span class="card-hint">Acionada com violência militar contra a população (confisco de bens) se a região não atingisse a meta anual de 100 arrobas de ouro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 11 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 11 de 12 • Revoltas Coloniais</span>
+                                        <div class="large-text">Qual a principal diferença de objetivos políticos entre as Revoltas Nativistas (ex: Guerra dos Emboabas) e as Emancipacionistas (ex: Conjuração Baiana)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O desejo de Independência.</div>
+                                        <span class="card-hint">As Nativistas eram conflitos locais que não questionavam o Pacto Colonial. As Emancipacionistas queriam a independência total de Portugal e a fundação de repúblicas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 12 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 12 de 12 • Revoltas Coloniais</span>
+                                        <div class="large-text">[Lacuna] A Inconfidência Mineira foi um movimento _______ que silenciou sobre a escravidão, enquanto a Conjuração Baiana foi um movimento _______ que defendia a abolição.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Elitista / Popular.</div>
+                                        <span class="card-hint">Inconfidência Mineira: Elitista (burguês/aristocrático).<br><br>Conjuração Baiana: Popular (artesãos, negros livres, escravizados).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

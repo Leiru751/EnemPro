@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomística - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para notação química e matemática -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+     <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link active" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Química / Atomística</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Atomística</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (ATOMÍSTICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>Introdução à Atomística</h2>
+                        <p>A atomística é a base estrutural da química focada no estudo do átomo, desde a sua concepção filosófica até a comprovação de seu complexo comportamento quântico. Compreender a estrutura íntima e invisível da matéria é o que permite aos cientistas explicar propriedades macroscópicas, interações elétricas, transformações de substâncias e fenômenos visuais diários, funcionando como o alicerce para todos os outros ramos químicos.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Evolução dos Modelos Atômicos</h2>
+                        <ul>
+                            <li><strong>Dalton (1808):</strong> Propôs o modelo da "bola de bilhar". O átomo era descrito como uma esfera maciça, indivisível, indestrutível e sem cargas elétricas. Átomos de um mesmo elemento seriam rigorosamente idênticos em massa e propriedades.</li>
+                            <li><strong>Thomson (1897):</strong> Com a descoberta do elétron, apresentou o modelo do "pudim de passas". Quebrou a ideia da indivisibilidade, propondo o átomo como uma esfera de carga elétrica positiva, não maciça, onde elétrons negativos ficavam incrustados, garantindo a neutralidade do sistema.</li>
+                            <li><strong>Rutherford (1911):</strong> Através do experimento de espalhamento de partículas alfa em uma lâmina de ouro, estabeleceu o modelo planetário. Provou que o átomo é predominantemente um imenso espaço vazio (eletrosfera) e possui um núcleo minúsculo, extremamente denso e positivo.</li>
+                            <li><strong>Bohr (1913):</strong> Aprimorou o modelo de Rutherford ao integrar a quantização da energia. Estabeleceu que os elétrons orbitam o núcleo em camadas circulares restritas (níveis de energia), sem emitir radiação ou perder energia enquanto permanecem nessas órbitas permitidas.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Estrutura Atômica e Partículas Subatômicas</h2>
+                        <p>O átomo moderno é espacialmente dividido em duas regiões. O <strong>núcleo</strong> abriga os prótons (partículas de carga positiva) e os nêutrons (partículas sem carga que isolam os prótons, evitando a repulsão e estabilizando o núcleo). A <strong>eletrosfera</strong> é a região periférica de baixíssima densidade onde orbitam os elétrons, que possuem carga negativa e massa cerca de 1.836 vezes menor que a de um próton (considerada desprezível no cálculo da massa total).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Número Atômico, Número de Massa e Íons</h2>
+                        <ul>
+                            <li><strong>Número Atômico (Z):</strong> Representa a quantidade exata de prótons no núcleo ($Z = p$). É o "RG" do elemento, definindo sua identidade química na Tabela Periódica.</li>
+                            <li><strong>Número de Massa (A):</strong> É a soma das partículas nucleares pesadas, ou seja, prótons e nêutrons ($A = p + n$).</li>
+                            <li><strong>Íons:</strong> São espécies químicas eletricamente carregadas, formadas quando um átomo neutro ganha ou perde elétrons (o núcleo nunca se altera em reações químicas comuns). O <strong>cátion</strong> perde elétrons e assume carga positiva; o <strong>ânion</strong> ganha elétrons e assume carga negativa.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Semelhanças Atômicas</h2>
+                        <ul>
+                            <li><strong>Isótopos:</strong> Mesmo número de prótons (mesmo elemento), mas diferem na quantidade de nêutrons e no número de massa (ex: Carbono-12 e Carbono-14).</li>
+                            <li><strong>Isóbaros:</strong> Mesmo número de massa, mas possuem números atômicos diferentes (são elementos químicos distintos).</li>
+                            <li><strong>Isótonos:</strong> Mesmo número de nêutrons, mas diferem nos prótons e na massa.</li>
+                            <li><strong>Isoeletrônicos:</strong> Átomos ou íons diferentes que apresentam exatamente a mesma quantidade de elétrons em suas eletrosferas.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Distribuição Eletrônica (Diagrama de Linus Pauling)</h2>
+                        <p>Os elétrons são organizados ao redor do núcleo em sete camadas principais (K, L, M, N, O, P, Q) e acomodados em subníveis (s, p, d, f). O diagrama de Linus Pauling norteia o preenchimento da eletrosfera mapeando a <strong>ordem estritamente crescente de energia</strong>. A distribuição não ocorre fechando uma camada inteira para depois ir para a próxima, mas sim seguindo diagonais energéticas ($1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p,$ etc.).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Camada de Valência e Estados Eletrônicos</h2>
+                        <p>A <strong>camada de valência</strong> é o nível mais distante do núcleo ocupado por elétrons (o maior coeficiente numérico na distribuição). Ela dita o comportamento químico do elemento, pois é nela que ocorrem a perda, o ganho ou o compartilhamento de elétrons para formar ligações. Quando todos os elétrons ocupam as posições de menor energia disponíveis, o átomo encontra-se em seu <strong>estado fundamental</strong>. Ao absorver energia térmica ou luminosa, os elétrons saltam para camadas mais externas, configurando o <strong>estado excitado</strong> (altamente instável).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Saltos Quânticos e Emissão de Luz</h2>
+                        <p>Devido à instabilidade do estado excitado, o elétron tende a retornar rapidamente à sua órbita fundamental de origem. Ao realizar esse retorno (<strong>salto quântico</strong>), ele devolve a exata fração de energia absorvida, ejetando-a na forma de um fóton (luz). É esse princípio físico que gera as cores no teste de chama em laboratório e as explosões coloridas dos fogos de artifício. Como cada elemento possui distâncias únicas entre suas camadas eletrônicas, a energia devolvida varia, emitindo ondas eletromagnéticas de cores inconfundíveis (o estrôncio emite luz vermelha, o bário luz verde, o sódio luz amarela, etc.).</p>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Durante as celebrações de Ano Novo, o céu é iluminado por fogos de artifício que exibem diversas cores vibrantes. Os fabricantes adicionam sais de diferentes metais à pólvora para obter esse efeito: sais de estrôncio produzem a cor vermelha, sais de bário geram a cor verde e sais de cobre resultam em um tom azulado. A energia térmica liberada pela explosão interage diretamente com as eletrosferas desses metais.</p>
+                                <p><strong>Enunciado:</strong> O fenômeno luminoso responsável pelas cores dos fogos de artifício ocorre devido:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> À fusão nuclear dos átomos de metal, que liberam grande quantidade de energia luminosa.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> À transição de elétrons para níveis de energia mais externos, absorvendo luz visível.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Ao retorno dos elétrons, previamente excitados pelo calor, para suas órbitas de menor energia, emitindo fótons.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> À perda definitiva de elétrons da camada de valência, transformando os átomos em cátions metálicos brilhantes.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Ao choque mecânico entre os nêutrons e os prótons presentes no núcleo denso do átomo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Segundo o modelo de Bohr, quando um elétron absorve energia (calor da explosão), ele salta para uma camada mais externa (estado excitado). Como esse estado é instável, o elétron retorna rapidamente para a sua camada de origem (estado fundamental). Durante esse retorno (<strong>salto quântico</strong>), ele <strong>devolve a energia excedente na forma de luz (fóton)</strong>.</p>
+                                    <ul>
+                                        <li><strong>A:</strong> Fusão nuclear não ocorre em reações químicas cotidianas; demandaria condições estelares.</li>
+                                        <li><strong>B:</strong> A ida para o nível mais externo absorve energia, não emite luz visível. A emissão ocorre no retorno.</li>
+                                        <li><strong>D:</strong> A perda de elétrons forma íons, não sendo a causa primária do brilho colorido, que se deve a saltos dentro da eletrosfera.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> No final do século XIX, J. J. Thomson realizou experimentos com uma ampola de vidro submetida a vácuo e altas tensões elétricas (tubo de raios catódicos). Ele observou que um feixe luminoso (o raio catódico) partia do polo negativo e era atraído para uma placa carregada positivamente.</p>
+                                <p><strong>Enunciado:</strong> A principal conclusão desse experimento provocou a queda do modelo atômico de Dalton, pois Thomson comprovou que o átomo:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> É majoritariamente formado por espaços vazios.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Possui um núcleo central de carga positiva e alta densidade.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> É divisível, contendo partículas subatômicas de carga negativa.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Apresenta níveis quantizados de energia onde orbitam os elétrons.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> É uma esfera maciça, indestrutível e eletricamente neutra por natureza.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O desvio dos raios em direção à placa positiva provou que eles possuíam carga elétrica <strong>negativa</strong>. Thomson descobriu, assim, o <strong>elétron</strong>. Isso derrubou a ideia de Dalton (átomo como a menor partícula indivisível), comprovando que o átomo é <strong>divisível</strong> e possui partículas subatômicas.</p>
+                                    <p>As alternativas A e B referem-se ao modelo de Rutherford. A alternativa D refere-se a Bohr. A alternativa E descreve exatamente o modelo de Dalton, refutado por Thomson.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O Ferro ($Fe$, $Z = 26$) é essencial para a molécula de hemoglobina. Ele atua na forma do cátion bivalente, derivado do isótopo mais abundante do elemento, que possui Número de Massa ($A$) igual a $56$.</p>
+                                <p><strong>Enunciado:</strong> As quantidades de prótons, nêutrons e elétrons presentes, respectivamente, no íon $Fe^{2+}$ descrito são:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 26, 30 e 26.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 26, 30 e 24.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 26, 56 e 28.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 24, 30 e 26.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 28, 30 e 26.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O número atômico ($Z=26$) indica $26$ prótons. O número de massa é $56$, logo, os nêutrons são $A - Z = 56 - 26 = 30$. O íon é um <strong>cátion bivalente</strong> (+2), o que significa que perdeu 2 elétrons de valência. Assim, os elétrons são $26 - 2 = 24$.</p>
+                                    <ul>
+                                        <li><strong>A:</strong> Representa o átomo de ferro neutro.</li>
+                                        <li><strong>C:</strong> Confunde número de massa com nêutrons e soma a carga em vez de subtrair.</li>
+                                        <li><strong>D e E:</strong> Prótons não são alterados na formação de íons comuns.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O Carbono-14 ($Z=6$) é usado na arqueologia. Na atmosfera terrestre, um elemento muito abundante é o Nitrogênio, cujo isótopo mais comum possui $Z=7$ e também apresenta Número de Massa igual a $14$.</p>
+                                <p><strong>Enunciado:</strong> Considerando a estrutura atômica dessas duas espécies (Carbono-14 e Nitrogênio-14), é correto afirmar que eles são classificados entre si como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Isótopos, pois pertencem ao mesmo período da Tabela Periódica.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Isótonos, pois possuem o mesmo número de nêutrons.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Isoeletrônicos, pois apresentam a mesma configuração na eletrosfera.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Isómeros, pois arranjam seus prótons e nêutrons de forma diferente.</button>
+                                <button class="option-btn" data-correct="true"><span>E)</span> Isóbaros, pois possuem o mesmo número de massa e diferentes números atômicos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa E</strong></p>
+                                    <p>O Carbono-14 e o Nitrogênio-14 possuem o <strong>mesmo número de massa</strong> ($A = 14$), mas pertencem a elementos diferentes ($Z$ diferentes: 6 e 7). Átomos distintos com a mesma massa são chamados de <strong>isóbaros</strong>.</p>
+                                    <p>Isótopos seriam átomos do mesmo elemento (mesmo $Z$). Isótonos teriam o mesmo número de nêutrons ($14-6 = 8$ para o Carbono e $14-7 = 7$ para o Nitrogênio, logo, não são isótonos).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O Titânio ($Ti$) é um metal de transição valorizado na indústria aeroespacial, localizado no quarto período da Tabela Periódica, com $Z = 22$.</p>
+                                <p><strong>Enunciado:</strong> Seguindo o Diagrama de Linus Pauling para o átomo de Titânio em seu estado fundamental, a sua correta distribuição eletrônica e o subnível mais energético são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6 \ 4s^2 \ 3d^2$ ; subnível $3d^2$.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6 \ 4s^2 \ 3d^2$ ; subnível $4s^2$.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6 \ 3d^4$ ; subnível $3d^4$.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6 \ 4s^4$ ; subnível $4s^4$.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^{10}$ ; subnível $3p^{10}$.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>Distribuindo $22$ elétrons (ordem de Pauling): $1s^2 (2), 2s^2 (4), 2p^6 (10), 3s^2 (12), 3p^6 (18), 4s^2 (20), 3d^2 (22)$. O subnível <strong>mais energético</strong> é sempre o <strong>último</strong> a ser preenchido, ou seja, o $3d^2$. (O $4s^2$ é a camada de valência, mas é energeticamente inferior ao $3d$).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Sais de reidratação oral contêm Cloreto de Sódio ($NaCl$). O Cloro ($Z = 17$) atua como o ânion monovalente cloreto ($Cl^-$).</p>
+                                <p><strong>Enunciado:</strong> A distribuição eletrônica em subníveis de energia para o ânion cloreto ($Cl^-$) encontra-se corretamente representada em:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^5$</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^4$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6 \ 4s^1$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 4s^2 \ 3p^4$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O átomo neutro de Cloro tem 17 elétrons (distribuição $A$). Ao formar o ânion $Cl^-$, ele <strong>ganha 1 elétron</strong>, totalizando 18 elétrons. A distribuição com 18 elétrons é $1s^2 \ 2s^2 \ 2p^6 \ 3s^2 \ 3p^6$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um laboratório mapeou a seguinte configuração eletrônica para um átomo: $1s^2 \ 2s^2 \ 2p^6 \ 3s^1 \ 3p^1$. Sabe-se que o elemento possui $Z = 12$.</p>
+                                <p><strong>Enunciado:</strong> Com base nessas informações, a configuração eletrônica lida pelo sensor corresponde a um:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Átomo de Magnésio em seu estado fundamental.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Cátion monovalente que perdeu um elétron do subnível $3s$.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Ânion bivalente que ganhou elétrons para completar o subnível $3p$.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Átomo de Magnésio em um estado eletrônico excitado.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Átomo isótopo do Sódio com excesso de nêutrons no núcleo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O átomo possui $Z=12$ e a configuração apresentada soma 12 elétrons ($2+2+6+1+1=12$), indicando um átomo neutro. No entanto, o estado fundamental seria $1s^2 \ 2s^2 \ 2p^6 \ 3s^2$. A presença de um elétron no subnível $3p$ enquanto o $3s$ não está completo indica que um elétron absorveu energia e "saltou", caracterizando um <strong>estado excitado</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O cátion $X^{2+}$ é isoeletrônico do gás nobre Neônio ($Ne$, $Z = 10$). Além disso, o átomo $X$ neutro é isótono do átomo $Y$, o qual apresenta $Z=9$ e $A=19$.</p>
+                                <p><strong>Enunciado:</strong> A partir das relações atômicas, o Número de Massa ($A$) do átomo $X$ é igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 12.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 20.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 22.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 24.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 29.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <ol>
+                                        <li>Como $X^{2+}$ é isoeletrônico do Neônio ($10$ elétrons), $X^{2+}$ tem 10 elétrons. Se perdeu 2 para ficar com 10, o átomo $X$ neutro possui 12 elétrons, logo, $Z = 12$.</li>
+                                        <li>O átomo $Y$ ($Z=9, A=19$) tem $19 - 9 = 10$ nêutrons. Se $X$ é isótono, também tem 10 nêutrons.</li>
+                                        <li>A massa de $X$ ($A$) é $Z + n = 12 + 10 = 22$.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O núcleo do átomo é uma estrutura incrivelmente pequena e densa, onde prótons e nêutrons se mantêm aglomerados. Ao redor desse núcleo gira a eletrosfera, que ocupa um volume milhares de vezes maior, mas é praticamente oca.</p>
+                                <p><strong>Enunciado:</strong> Considerando a relação de massas e cargas entre essas partículas fundamentais formadoras do átomo, é correto afirmar que:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> O elétron possui carga negativa e massa equivalente à do próton, justificando a neutralidade de um átomo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> O nêutron possui carga neutra, porém a sua massa é desprezível comparada à do próton.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> A massa total do átomo concentra-se essencialmente na eletrosfera, pois seu volume é drasticamente maior.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> A massa do elétron é ínfima (cerca de 1.836 vezes menor que a do próton), de modo que o núcleo concentra quase 100% da massa atômica.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Prótons possuem carga positiva e localizam-se na eletrosfera para contrabalancear os nêutrons do núcleo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A massa de um elétron é tão pequena (cerca de 1/1836 da massa de um próton ou nêutron) que é considerada desprezível no cálculo do número de massa ($A = p + n$). Consequentemente, toda a massa significativa do átomo reside no seu minúsculo núcleo.</p>
+                                    <p>As alternativas A e B erram nas equivalências de massa. A C inverte o local da massa. A E posiciona os prótons incorretamente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Observe as configurações eletrônicas das camadas de valência de dois elementos químicos diferentes. O Elemento A termina sua distribuição eletrônica em $3s^1$. O Elemento B termina sua distribuição em $3s^2 \ 3p^5$.</p>
+                                <p><strong>Enunciado:</strong> De acordo com os elétrons da camada de valência e os conceitos de estabilidade iônica, qual a tendência provável desses dois átomos para se tornarem íons estáveis?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ambos tenderão a ganhar elétrons, formando ânions.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> O Elemento A tenderá a ganhar 7 elétrons e o B a perder 5 elétrons.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> O Elemento A tenderá a perder 1 elétron (virando cátion) e o Elemento B a ganhar 1 elétron (virando ânion).</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> O Elemento A tenderá a perder 1 elétron (virando ânion) e o Elemento B a ganhar 1 elétron (virando cátion).</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Ambos já possuem o octeto completo, portanto são gases nobres inertes.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O Elemento A possui 1 elétron na camada de valência; sua tendência energética é perder esse elétron para se estabilizar, tornando-se um cátion monovalente (+1). O Elemento B possui 7 elétrons na camada de valência ($2$ no $s$ + $5$ no $p$ = $7$); sua tendência é receber 1 elétron para completar 8 (regra do octeto), tornando-se um ânion monovalente (-1).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+               <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 6 • Modelos Atômicos</span>
+                                        <div class="large-text">Qual a diferença essencial entre os modelos de Thomson e Rutherford?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Carga positiva difusa vs. Núcleo central denso.</div>
+                                        <span class="card-hint">Thomson propôs uma esfera positiva com elétrons incrustados ("pudim de passas"). Rutherford descobriu um núcleo pequeno, denso e positivo com grande espaço vazio ao redor.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 6 • Bohr e Luz</span>
+                                        <div class="large-text">Como o modelo de Bohr explica as cores dos fogos de artifício?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Retorno do elétron emite fóton de luz.</div>
+                                        <span class="card-hint">O calor excita elétrons para camadas mais externas; ao retornarem para camadas mais internas, liberam energia na forma de luz visível.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 6 • Partículas e Íons</span>
+                                        <div class="large-text">O que muda e o que NÃO muda quando um átomo vira cátion ou ânion?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Só muda o número de elétrons; prótons ($Z$) não mudam.</div>
+                                        <span class="card-hint">Cátion = perde elétrons (carga $+$). Ânion = ganha elétrons (carga $-$). O número atômico $Z$ permanece constante.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 6 • Semelhanças Atômicas</span>
+                                        <div class="large-text">Diferencie isótopos, isóbaros e isótonos.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Isótopos: mesmo $Z$ | Isóbaros: mesmo $A$ | Isótonos: mesmos nêutrons.</div>
+                                        <span class="card-hint">Use as iniciais para lembrar: <strong>p</strong>rótons (isótopos), m<strong>a</strong>ssa (isóbaros) e <strong>n</strong>êutrons (isótonos).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 6 • Distribuição Eletrônica</span>
+                                        <div class="large-text">Ao formar um cátion de metal de transição (ex.: $\text{Fe}^{2+}$), de onde saem os elétrons?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Da camada mais externa (maior $n$), como o $4s$.</div>
+                                        <span class="card-hint">Elétrons são removidos da camada de valência (maior número quântico principal), não necessariamente do último subnível preenchido na ordem energética.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 6 • Camada de Valência</span>
+                                        <div class="large-text">O que é a camada de valência e qual sua importância?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Camada mais externa do átomo.</div>
+                                        <span class="card-hint">Os elétrons da camada de valência participam diretamente das ligações químicas e determinam grande parte da reatividade do elemento.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

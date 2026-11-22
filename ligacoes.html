@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligações e Forças Intermoleculares - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para notação química e matemática -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link active" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Química / Ligações Químicas e Forças Intermoleculares</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Interações: Ligações e Forças Intermoleculares</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (LIGAÇÕES QUÍMICAS)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>Introdução às Interações Químicas e Forças Intermoleculares</h2>
+                        <p>Na natureza, a imensa maioria dos elementos químicos não é encontrada na forma de átomos isolados, pois essa condição apresenta alta instabilidade energética. Para atingir um estado de menor energia e maior estabilidade, os átomos interagem entre si, formando ligações químicas. Compreender como os átomos se unem e como as moléculas resultantes interagem macroscopicamente é fundamental para explicar desde o ponto de fusão do gelo até o funcionamento dos sabões e a estrutura tridimensional do DNA.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Regra do Octeto e Estabilidade dos Átomos</h2>
+                        <p>A base da formação das ligações é a <strong>regra do octeto</strong>, que postula que os átomos tendem a ganhar, perder ou compartilhar elétrons até que fiquem com oito elétrons na sua camada de valência, adquirindo a configuração eletrônica de um gás nobre (ou dois elétrons, no caso do Hélio). Embora existam exceções (como o Fósforo e o Enxofre, que sofrem expansão do octeto), essa regra guia a estabilização da maioria dos elementos representativos.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Ligação Iônica</h2>
+                        <p>Ocorre tipicamente entre um <strong>metal</strong> (baixa eletronegatividade, tendência a perder elétrons) e um <strong>ametal</strong> (alta eletronegatividade, tendência a ganhar elétrons). Há uma <strong>transferência definitiva de elétrons</strong>, formando íons de cargas opostas (cátions e ânions) que se atraem por forças eletrostáticas fortíssimas, formando retículos cristalinos. Compostos iônicos (como o $NaCl$) são sólidos à temperatura ambiente, possuem altos pontos de fusão e ebulição e, devido à imobilidade dos íons no estado sólido, só conduzem corrente elétrica quando fundidos (líquidos) ou dissolvidos em água (dissociação iônica).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Ligação Covalente</h2>
+                        <p>Ocorre entre <strong>ametais e/ou hidrogênio</strong>, caracterizando-se pelo <strong>compartilhamento de pares de elétrons</strong> para que ambos os átomos atinjam o octeto simultaneamente. O resultado é a formação de moléculas distintas (como $H_2O$, $CO_2$, $CH_4$). Compostos moleculares podem ser encontrados nos três estados físicos à temperatura ambiente, possuem pontos de fusão e ebulição geralmente menores que os iônicos e, via de regra, não conduzem corrente elétrica (com exceção de ácidos em meio aquoso, que sofrem ionização).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Ligação Metálica</h2>
+                        <p>Ocorre entre átomos de metais. O modelo do "mar de elétrons" descreve um arranjo onde os cátions metálicos estão dispostos de forma ordenada, envoltos por uma nuvem de elétrons de valência deslocalizados e livres para se movimentar. Essa alta mobilidade eletrônica justifica a excepcional <strong>condutividade elétrica e térmica</strong> dos metais, além de suas propriedades de maleabilidade (fazer lâminas) e ductilidade (fazer fios).</p>
+
+                        <h2 style="margin-top: 2.5rem;">Geometria Molecular e Polaridade</h2>
+                        <p>A disposição espacial de uma molécula (geometria) é definida pela repulsão entre as nuvens eletrônicas (ligantes e pares livres) ao redor do átomo central (Teoria VSEPR). As principais são: linear ($CO_2$), angular ($H_2O$), trigonal plana ($BH_3$), piramidal ($NH_3$) e tetraédrica ($CH_4$).</p>
+                        <p>A <strong>polaridade</strong> de uma molécula depende de dois fatores: a diferença de eletronegatividade entre os átomos (que cria um vetor momento dipolar na ligação) e a geometria (que determina se esses vetores se anulam ou se somam). Uma molécula é <strong>apolar</strong> se a soma dos vetores for zero, e <strong>polar</strong> se for diferente de zero.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Forças Intermoleculares e Propriedades Físicas</h2>
+                        <p>Enquanto as ligações (iônica, covalente, metálica) ocorrem dentro da molécula (intramoleculares), as forças intermoleculares atuam <em>entre</em> as moléculas, determinando seus estados físicos e pontos de ebulição (PE) e fusão (PF).</p>
+                        <ul>
+                            <li><strong>Dipolo induzido (Forças de London):</strong> Ocorrem em moléculas <strong>apolares</strong>. São forças muito fracas geradas por flutuações momentâneas na nuvem eletrônica. Geralmente resultam em gases à temperatura ambiente ou líquidos voláteis (ex: $CH_4$, $N_2$, $O_2$).</li>
+                            <li><strong>Dipolo permanente (Dipolo-dipolo):</strong> Ocorrem em moléculas <strong>polares</strong>. O polo positivo de uma molécula atrai o polo negativo de outra. São mais fortes que as forças de London (ex: $HCl$, $H_2S$).</li>
+                            <li><strong>Ligações de Hidrogênio:</strong> É um caso extremo de dipolo permanente. Ocorrem quando o Hidrogênio está <strong>ligado diretamente aos três elementos mais eletronegativos e pequenos</strong> da tabela: Flúor ($F$), Oxigênio ($O$) ou Nitrogênio ($N$). São as forças intermoleculares mais intensas, gerando PE e PF anomalamente altos (ex: $H_2O$, $NH_3$, $HF$).</li>
+                        </ul>
+                        <div class="example-box">
+                            <strong>Atenção para a prova:</strong> Quanto mais forte for a força intermolecular, maior a energia (calor) necessária para separar as moléculas. Consequentemente, maior será o ponto de ebulição e menor será a volatilidade (facilidade de evaporar) da substância.
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">Regra de Solubilidade</h2>
+                        <p>A regra de ouro da química de soluções é <strong>"semelhante dissolve semelhante"</strong>: substâncias polares tendem a dissolver outras substâncias polares (e compostos iônicos), enquanto substâncias apolares dissolvem substâncias apolares. O óleo (apolar) não se mistura com a água (polar). </p>
+                        <p>No entanto, moléculas <strong>anfifílicas ou anfipáticas</strong> (como os tensoativos presentes em sabões e detergentes) possuem uma longa cadeia carbônica (apolar) e uma extremidade carregada (polar). Isso permite que interajam simultaneamente com o óleo e a água, formando micelas e possibilitando a limpeza.</p>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Para que uma lâmpada acenda em um circuito líquido simples, é necessário que o líquido possua partículas eletricamente carregadas com mobilidade. Um professor mergulha os terminais em um béquer contendo sal de cozinha ($NaCl$) sólido, e a lâmpada não acende. Ao aquecer o béquer até que o sal derreta (fusão a mais de 800 °C), a lâmpada acende brilhantemente.</p>
+                                <p><strong>Enunciado:</strong> O fenômeno que justifica o acendimento da lâmpada quando o $NaCl$ passa para o estado líquido é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Quebra das ligações covalentes, liberando elétrons para o meio.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Destruição da nuvem eletrônica que envolvia os átomos neutros de sódio.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Ruptura do retículo cristalino, permitindo a livre movimentação de íons previamente fixos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Sublimação do cloro, que atua como gás condutor de eletricidade no sistema.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Ionização das moléculas de cloreto de sódio geradas pela energia térmica do aquecimento.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O $NaCl$ é um composto iônico. No estado sólido, seus cátions ($Na^+$) e ânions ($Cl^-$) estão presos num retículo cristalino rígido, sem mobilidade (não conduzem corrente). A fusão quebra essa estrutura rígida, dando <strong>mobilidade aos íons</strong>, permitindo o fechamento do circuito elétrico.</p>
+                                    <ul>
+                                        <li><strong>A:</strong> $NaCl$ tem ligação iônica (não covalente) e a condução é iônica (não por elétrons livres como nos metais).</li>
+                                        <li><strong>E:</strong> Compostos iônicos sofrem dissociação (separam íons já existentes), não ionização.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O dióxido de carbono ($CO_2$) é o principal gás de efeito estufa. Na sua estrutura molecular, o átomo de carbono (Grupo 14) estabelece ligações com dois átomos de oxigênio (Grupo 16), a fim de que todos atinjam a estabilidade da regra do octeto.</p>
+                                <p><strong>Enunciado:</strong> Para que a molécula de dióxido de carbono atinja a estabilidade, os átomos envolvidos compartilham elétrons formando:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Quatro ligações simples, sendo duas covalentes e duas iônicas.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Duas ligações duplas, unindo o carbono central a cada oxigênio.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Uma ligação tripla e uma ligação simples, para acomodar a geometria.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Duas ligações simples e dois pares de elétrons livres no carbono.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Uma ponte de hidrogênio dupla devido à alta eletronegatividade do oxigênio.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O Carbono precisa de 4 elétrons para completar o octeto e cada Oxigênio precisa de 2. O Carbono compartilha dois pares com o primeiro oxigênio (ligação dupla) e dois pares com o segundo (ligação dupla). A estrutura correta é $O=C=O$.</p>
+                                    <ul>
+                                        <li><strong>A:</strong> Ligação entre ametais (C e O) é 100% covalente.</li>
+                                        <li><strong>C:</strong> Isso ocorre no $CO$, não no $CO_2$.</li>
+                                        <li><strong>E:</strong> Não há hidrogênio na molécula para formar pontes de hidrogênio.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A água pura ($H_2O$) apresenta uma disposição espacial específica devido à presença de pares de elétrons não ligantes no átomo de oxigênio, que exercem forte repulsão sobre as ligações covalentes com os hidrogênios.</p>
+                                <p><strong>Enunciado:</strong> Em função da Teoria da Repulsão dos Pares Eletrônicos, a geometria molecular assumida pela molécula de água é classificada como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Linear.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Trigonal plana.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Tetraédrica.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Angular.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Piramidal.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O oxigênio possui 6 elétrons de valência. Usa 2 para ligar-se aos hidrogênios, sobrando 4 elétrons (2 pares livres). Esses pares repelem as ligações $O-H$, empurrando-as "para baixo". Átomo central com dois ligantes e sobra de pares livres resulta em geometria <strong>angular</strong>.</p>
+                                    <p>Se não houvesse sobra de pares (como no $CO_2$), seria linear. Piramidal exige 3 ligantes ($NH_3$).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Apesar de serem moléculas covalentes, o tetracloreto de carbono ($CCl_4$) e o clorofórmio ($CHCl_3$) apresentam polaridades diferentes. O cloro é muito mais eletronegativo que o carbono e o hidrogênio.</p>
+                                <p><strong>Enunciado:</strong> Analisando a estrutura tridimensional tetraédrica de ambas as moléculas, é correto afirmar que:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ambas são apolares, pois a geometria tetraédrica anula automaticamente os vetores.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Ambas são polares, pois o cloro atrai fortemente os elétrons quebrando a simetria.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> O $CCl_4$ é apolar devido ao cancelamento dos vetores de dipolo, enquanto o $CHCl_3$ é polar pela quebra dessa simetria.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> O $CCl_4$ é polar por possuir quatro átomos de cloro, enquanto o $CHCl_3$ é apolar devido à presença do hidrogênio.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> O $CCl_4$ conduz corrente elétrica em solução, enquanto o $CHCl_3$ é um isolante molecular.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>No $CCl_4$, os 4 vetores de força puxam para 4 cloros idênticos nos vértices do tetraedro. A simetria perfeita zera a soma vetorial (molécula apolar). No $CHCl_3$, há 3 cloros e 1 hidrogênio. A diferença de ligantes <strong>quebra a simetria</strong>, gerando um vetor resultante não-nulo (molécula polar).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O Kevlar, usado em coletes à prova de balas, possui força baseada não apenas nas ligações covalentes da sua cadeia, mas também em fortes interações laterais entre cadeias adjacentes, onde um átomo de hidrogênio (ligado a um nitrogênio) interage fortemente com o oxigênio de outra cadeia.</p>
+                                <p><strong>Enunciado:</strong> As interações intermoleculares responsáveis pela coesão lateral das cadeias de Kevlar são denominadas:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Forças de London.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Ligações Iônicas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Ligações de Hidrogênio.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Dipolo Induzido.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Interações Íon-Dipolo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A <strong>Ligação de Hidrogênio</strong> ocorre sempre que o hidrogênio está covalentemente ligado ao $F, O$ ou $N$ (elementos muito eletronegativos), sendo atraído por pares livres de $F, O$ ou $N$ de moléculas vizinhas. O texto descreve o $H$ (ligado ao $N$) interagindo com o $O$ de outra cadeia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um pesquisador observa metano ($CH_4$), propano ($C_3H_8$) e octano ($C_8H_{18}$). A 25 °C, o metano e propano são gases, enquanto o octano é líquido.</p>
+                                <p><strong>Enunciado:</strong> Todos esses compostos são moléculas apolares. O fator que justifica a diferença do estado físico do octano em relação aos demais é o(a):</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Presença de ligações de hidrogênio no octano, que aumentam sua coesão.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Aumento da massa molar e do tamanho da cadeia, que intensificam as forças de dipolo induzido.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Quebra das ligações covalentes pela maior quantidade de hidrogênios no metano.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Transição estrutural de apolares para dipolos permanentes em cadeias longas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Repulsão metálica observada nas cadeias carbônicas maiores.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Hidrocarbonetos são apolares e interagem por <strong>Forças de London (dipolo induzido)</strong>. Quanto maior a cadeia (maior massa e nuvem eletrônica polarizável), <strong>mais intensas</strong> são essas forças. O octano é grande o suficiente para gerar interações que o mantêm líquido à temperatura ambiente.</p>
+                                    <p>A: Hidrocarbonetos não fazem ligações de hidrogênio. D: O octano continua apolar, não vira dipolo permanente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O etanol e o éter dimetílico possuem a mesma fórmula molecular ($C_2H_6O$). Contudo, o etanol ferve a 78 °C, enquanto o éter ferve a -24 °C (sendo gás à temperatura ambiente).</p>
+                                <p><strong>Enunciado:</strong> A imensa disparidade nos pontos de ebulição dessas substâncias isômeras é explicada pelo fato de que apenas no:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> Etanol ocorrem fortes ligações de hidrogênio, devido à ligação direta entre oxigênio e hidrogênio (-OH).</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Éter ocorrem interações íon-dipolo, pois a molécula se dissocia facilmente.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Etanol há geometria linear que facilita o empacotamento cristalino.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Éter as forças de dipolo induzido são neutralizadas pelo carbono central.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Etanol a quebra das ligações covalentes C-O exige maior energia térmica.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>O etanol possui o grupo <strong>-OH</strong> (hidrogênio ligado ao oxigênio), o que permite formar fortes <strong>Ligações de Hidrogênio</strong> intermoleculares (alto P.E.). No éter ($CH_3-O-CH_3$), os hidrogênios estão presos nos carbonos, realizando apenas dipolo-dipolo (força mais fraca, P.E. mais baixo).</p>
+                                    <p>E: Ebulição quebra forças intermoleculares, NÃO quebra ligações covalentes da molécula.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Determinada vitamina apresenta longa cadeia carbônica, com baixíssima afinidade com a água, mas alta capacidade de se dissolver em óleos, acumulando-se no tecido adiposo humano em vez de ser excretada pela urina.</p>
+                                <p><strong>Enunciado:</strong> De acordo com os princípios de solubilidade e ligações, as vitaminas com o comportamento descrito são caracterizadas como moléculas:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Polares e, portanto, hidrossolúveis.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Iônicas, formando eletrólitos fortes no sangue.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Metálicas, atuando como condutoras celulares.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Apolares e, portanto, lipossolúveis.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Anfifílicas, atuando como tensoativos orgânicos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A regra de solubilidade dita que "semelhante dissolve semelhante". Óleos e gorduras (lipídios) são substâncias <strong>apolares</strong>. Como a vitamina se dissolve neles e repele a água (que é polar), conclui-se que a vitamina é predominantemente apolar e lipossolúvel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A sujeira impregnada oleosa não sai apenas com água. O sabão atua como um mediador estrutural que resolve esse problema e limpa as superfícies.</p>
+                                <p><strong>Enunciado:</strong> A ação detergente do sabão ocorre porque a sua molécula é classificada como anfipática, possuindo uma:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Cadeia polar que atrai o óleo e uma extremidade iônica que repele a água.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Extensa cadeia carbônica apolar que interage com o óleo, e uma extremidade polar que interage com a água.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Estrutura esférica com elétrons deslocalizados que isolam a sujeira do meio aquoso.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Dupla extremidade polar, que quebra as moléculas de óleo em $CO_2$ e água.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Cadeia de pontes de hidrogênio que destroem as forças de London da gordura.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Moléculas anfipáticas (sabão) possuem dupla afinidade: uma cauda carbônica longa e <strong>apolar</strong> (que interage com a gordura via dipolo induzido) e uma cabeça <strong>polar/iônica</strong> (que interage com a água via ligações de hidrogênio ou íon-dipolo), formando as micelas de limpeza.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Aves aquáticas untam as penas com uma secreção oleosa impermeabilizante. Se entram em contato com petróleo no mar, o petróleo atua como solvente, removendo o óleo das penas e causando hipotermia na ave.</p>
+                                <p><strong>Enunciado:</strong> Esse fenômeno fundamenta-se no fato de que o óleo da ave e o petróleo interagem predominantemente por:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ligações covalentes dativas formadas entre estruturas iônicas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Dipolos permanentes, já que ambos possuem altíssima polaridade celular.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Pontes de hidrogênio cruzadas, devido à concentração de oxigênio.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Forças de London (dipolo induzido), pois ambas as substâncias apresentam natureza apolar.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Ligações metálicas formadas por traços minerais no óleo das penas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Tanto o óleo impermeabilizante quanto o petróleo bruto são hidrocarbonetos ou lipídios de caráter fortemente <strong>apolar</strong>. Eles se misturam e dissolvem através da regra de solubilidade, atuando entre si exclusivamente por <strong>Forças de London (ou dipolo induzido)</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 5 • Condutividade</span>
+                                        <div class="large-text">O metal Cobre conduz eletricidade no estado sólido. O Sal ($NaCl$) conduz apenas derretido ou dissolvido na água. Explique brevemente o portador de carga em cada caso.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Elétrons vs Íons.</div>
+                                        <span class="card-hint"><strong>Cobre (Lig. Metálica):</strong> Elétrons livres e deslocalizados.<br><strong>Sal (Lig. Iônica):</strong> Íons com mobilidade, libertos da rede cristalina.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 5 • Polaridade</span>
+                                        <div class="large-text">Amônia ($NH_3$, piramidal, sobra 1 par no N) e Trifluoreto de Boro ($BF_3$, trigonal, não sobra par no B). Qual delas será uma molécula POLAR?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A Amônia ($NH_3$).</div>
+                                        <span class="card-hint">A sobra do par de elétrons no átomo central torna a geometria assimétrica, impedindo o cancelamento vetorial e tornando a molécula polar.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 5 • Mudança de Estado</span>
+                                        <div class="large-text">Na água fervendo, as bolhas que sobem são de vapor d'água ($H_2O$ gás). Qual força as moléculas romperam para ferver: ligações covalentes ou forças intermoleculares? Nomeie-a.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Forças Intermoleculares.</div>
+                                        <span class="card-hint">Romperam as <strong>Ligações de Hidrogênio</strong> entre as moléculas. A ligação covalente $O-H$ não se quebra no processo de ebulição física.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 5 • Forças de London</span>
+                                        <div class="large-text">Propano ($C_3H_8$) e Octano ($C_8H_{18}$) são apolares e sofrem Dipolo Induzido. Por que o Octano é líquido a 25 °C e o Propano é um gás?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Tamanho da Molécula.</div>
+                                        <span class="card-hint">Porque a molécula do Octano é muito maior, gerando nuvens eletrônicas mais polarizáveis e forças intermoleculares muito mais intensas (alto PE).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 5 • Ação Detergente</span>
+                                        <div class="large-text">Como a estrutura molecular "anfipática" dos sabões atua para remover uma mancha de óleo de um tecido na máquina de lavar contendo água?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Formação de Micelas.</div>
+                                        <span class="card-hint">O sabão possui uma cauda apolar (liga-se ao óleo) e uma cabeça polar (liga-se à água). Ele "encapsula" o óleo, permitindo que a água o arraste.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

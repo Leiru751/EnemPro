@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-math">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <!-- Sidebar atualizada com Simulados e Cronograma -->
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática e suas Tecnologias</div>
+        </header>
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Trilha de Matemática</h1>
+            </header>
+            <div class="topic-grid">
+                
+                
+                <a href="matematica-basica.html" class="topic-card">
+                    <h3>Matemática Básica</h3>
+                </a>
+              
+                <a href="razao-proporcao.html" class="topic-card">
+                    <h3>Razão e Proporção</h3>
+                </a>
+
+                <a href="matematica-financeira.html" class="topic-card">
+                    <h3>Matemática Financeira</h3>
+                </a>
+
+                <a href="estatistica.html" class="topic-card">
+                    <h3>Estatística: Média, Moda e Mediana</h3>
+                </a>
+
+                <a href="matematica_funcoes.html" class="topic-card">
+                    <h3>Funções</h3>
+                </a>
+               
+                <a href="matematica_geometria_espacial.html" class="topic-card">
+                    <h3>Geometria Espacial</h3>
+                </a>
+
+                <a href="matematica_geometria_plana.html" class="topic-card">
+                    <h3>Geometria Plana</h3>
+                </a>
+
+                
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

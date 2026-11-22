@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <main class="login-container">
+        
+        <!-- =========================================
+             CAIXA DE LOGIN (Visível por padrão)
+             ========================================= -->
+        <div class="login-box" id="loginBox">
+            <h1>ENEM<span>Pro</span></h1>
+            <p class="login-subtitle">Acesso ao Portal de Estudos</p>
+            
+            <form action="home.html" class="login-form">
+                <div class="input-group">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" id="matricula" placeholder="Digite sua matrícula" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Sua senha secreta" required>
+                </div>
+                <button type="submit" class="btn-primary">Entrar na Plataforma</button>
+            </form>
+
+            <div class="form-footer">
+                <p>Não possui acesso? <button type="button" class="toggle-btn" id="showRegisterBtn">Crie uma conta</button></p>
+            </div>
+        </div>
+
+        <!-- =========================================
+             CAIXA DE CADASTRO (Escondida por padrão)
+             ========================================= -->
+        <div class="login-box hidden" id="registerBox">
+            <h1>ENEM<span>Pro</span></h1>
+            <p class="login-subtitle">Crie sua Conta</p>
+            
+            <form action="home.html" class="login-form">
+                <div class="input-group">
+                    <label for="reg-nome">Nome Completo</label>
+                    <input type="text" id="reg-nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-matricula">Matrícula</label>
+                    <input type="text" id="reg-matricula" placeholder="Crie sua matrícula" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-senha">Senha</label>
+                    <input type="password" id="reg-senha" placeholder="Crie uma senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-senha-conf">Confirmar Senha</label>
+                    <input type="password" id="reg-senha-conf" placeholder="Repita sua senha" required>
+                </div>
+                <button type="submit" class="btn-primary">Finalizar Cadastro</button>
+            </form>
+
+            <div class="form-footer">
+                <p>Já tem uma conta? <button type="button" class="toggle-btn" id="showLoginBtn">Faça login</button></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Agora o index também precisa do script para fazer a troca funcionar -->
+    <script src="script.js"></script>
+</body>
+</html>

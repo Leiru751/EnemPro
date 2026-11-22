@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Urbano - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-human"> <!-- Tema Ciências Humanas -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link active" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Geografia / Dinâmicas do Espaço Urbano</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Espaço Urbano</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>1. Urbanização Brasileira: Histórico e Ritmos</h2>
+                        <p>A urbanização no Brasil foi tardia, rápida e desordenada. Ela ganhou força a partir da década de 1930 (Era Vargas) e explodiu nos anos 1950 (governo JK) com a forte industrialização de substituição de importações. A mecanização do campo (Revolução Verde) impulsionou um intenso <strong>êxodo rural</strong>. Ao contrário dos países desenvolvidos, onde a urbanização foi gradual e acompanhou a infraestrutura, no Brasil as cidades não estavam preparadas para receber essa massa populacional.</p>
+
+                        <h2 style="margin-top: 2.5rem;">2. Macrocefalia Urbana e Metropolização Espraiada</h2>
+                        <p>Esse inchaço rápido e sem planejamento das grandes metrópoles gerou a <strong>macrocefalia urbana</strong> — uma hipertrofia da cidade principal que concentra infraestrutura, serviços e população, enquanto o entorno carece do básico. A expansão dessas cidades ocorreu no modelo de <em>metropolização espraiada</em>, crescendo horizontalmente para as periferias, criando vastas áreas de expansão com baixíssima densidade de serviços, o que obriga a população a longos deslocamentos diários.</p>
+
+                        <h2 style="margin-top: 2.5rem;">3. Processos Urbanos Centrais</h2>
+                        <ul>
+                            <li><strong>Conurbação:</strong> É o encontro físico (junção da malha urbana) de duas ou mais cidades vizinhas devido ao seu crescimento horizontal. Isso forma as Regiões Metropolitanas.</li>
+                            <li><strong>Megalópole:</strong> Junção de duas ou mais metrópoles (e suas regiões metropolitanas). No Brasil, temos em formação a megalópole Rio-São Paulo, conectada pela Via Dutra.</li>
+                            <li><strong>Deseconomias de Aglomeração:</strong> Quando uma metrópole cresce demais, os custos de produção sobem (trânsito caótico, terrenos caros, altos impostos, violência, sindicatos fortes).</li>
+                            <li><strong>Desmetropolização:</strong> Causada pelas deseconomias. Indústrias e pessoas passam a migrar para cidades médias no interior, que oferecem melhor infraestrutura logística, incentivos fiscais e menor custo de vida.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">4. Redes e Hierarquia Urbana</h2>
+                        <p>As cidades estão interligadas por fluxos de capital, informações, pessoas e mercadorias, formando a rede urbana. A hierarquia atual é flexível (devido às telecomunicações e transportes).</p>
+                        <ul>
+                            <li><strong>Cidades Globais:</strong> São Paulo e Rio de Janeiro. Não se definem apenas pelo tamanho, mas pelo poder de comando na economia global (bolsas de valores, sedes de multinacionais, aeroportos internacionais, centros de pesquisa).</li>
+                            <li><strong>Metrópoles Nacionais e Regionais:</strong> Centros de alto nível de serviços (Fortaleza, Recife, Curitiba, BH).</li>
+                            <li><strong>Capitais Regionais e Centros Locais:</strong> Exercem influência em áreas menores no interior.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">5. Segregação Socioespacial e Gentrificação</h2>
+                        <p>A urbanização gerou a exclusão. A população de baixa renda é empurrada para áreas periféricas de risco (encostas, margens de rios), onde a terra é mais barata, configurando a <strong>segregação socioespacial</strong> <em>(um excelente paralelo para usar Zygmunt Bauman em redações, evidenciando como a "modernidade líquida" afasta fisicamente e invisibiliza os mais vulneráveis)</em>.</p>
+                        <p>Já a <strong>gentrificação</strong> é a revitalização de áreas degradadas ou antigas (geralmente centrais). O Estado ou a iniciativa privada melhora a infraestrutura, o que encarece o custo de vida (aluguel, IPTU, comércio) e "expulsa" a população pobre original, substituindo-a por classes de maior renda.</p>
+
+                        <h2 style="margin-top: 2.5rem;">6. Problemas Socioambientais Urbanos</h2>
+                        <ul>
+                            <li><strong>Ilhas de Calor:</strong> O centro da cidade apresenta temperaturas mais altas que a periferia rural, devido à concentração de asfalto, concreto, vidros e pouca vegetação.</li>
+                            <li><strong>Inversão Térmica:</strong> Fenômeno natural mais comum no inverno. O ar frio (pesado) fica retido próximo à superfície, preso por uma camada de ar quente acima dele. Em cidades poluídas, isso aprisiona os gases tóxicos na baixa atmosfera, causando problemas respiratórios.</li>
+                            <li><strong>Impermeabilização e Alagamentos:</strong> O asfalto impede a infiltração da água da chuva no solo. A água escoa rapidamente para os rios, que transbordam, causando enchentes severas.</li>
+                            <li><strong>Lixo (Resíduos Sólidos):</strong> A predominância histórica de lixões a céu aberto contamina o solo e os lençóis freáticos com o chorume.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">7. Mobilidade Urbana e Pendularidade</h2>
+                        <p>O sistema de transporte brasileiro é predominantemente rodoviarista, priorizando o automóvel individual em detrimento do transporte público de massa (metrô, trem). Isso gera engarrafamentos crônicos. Nessas áreas de conurbação, ocorre o <strong>movimento pendular</strong>: o deslocamento diário de milhares de trabalhadores de suas "cidades-dormitório" (periferia) para o centro da metrópole, retornando ao final do dia.</p>
+
+                        <h2 style="margin-top: 2.5rem;">8. Planejamento Urbano e Estatuto da Cidade</h2>
+                        <p>Criado em 2001, o Estatuto da Cidade visa garantir o direito à cidade. Sua principal ferramenta é o Plano Diretor (obrigatório para cidades com mais de 20 mil habitantes). O princípio central é a <strong>função social da propriedade</strong>: um terreno na área urbana não pode ficar vazio apenas esperando valorização (especulação imobiliária), sob pena de cobrança de IPTU Progressivo no Tempo e, em último caso, desapropriação.</p>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A urbanização brasileira ocorreu de forma acelerada a partir de meados do século XX. Diferentemente do que ocorreu em países centrais, no Brasil esse processo resultou no fenômeno da <strong>macrocefalia urbana</strong>. Esse conceito geográfico refere-se:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> À desconcentração industrial para as cidades médias do interior.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Ao planejamento estratégico integrado entre as capitais regionais.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Ao crescimento desordenado e hipertrofiado das grandes metrópoles, concentrando população e serviços e gerando déficit de infraestrutura.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Ao processo de formação de pequenas cidades voltadas exclusivamente para a agroindústria.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> À fusão física de duas ou mais metrópoles globais.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Macrocefalia (literalmente "cabeça grande") refere-se ao inchaço desproporcional do núcleo metropolitano. A cidade cresce sem planejamento, concentrando pessoas além de sua capacidade de ofertar empregos formais, moradia e saneamento básico.</p>
+                                    <p><em>As demais:</em> A é desmetropolização; B é oposto do caos urbano; D foca no agro; E é Megalópole.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Quando duas ou mais manchas urbanas de municípios vizinhos crescem horizontalmente até se encontrarem, apagando as fronteiras físicas entre as cidades, estabelece-se um processo geográfico que dá origem, frequentemente, às Regiões Metropolitanas. Esse processo é denominado:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Gentrificação.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Conurbação.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Favelização.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Desmetropolização.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Segregação socioespacial.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Conurbação é o termo técnico para o "emendamento" físico da malha urbana de duas ou mais cidades devido ao seu crescimento horizontal contínuo. Exemplo: atravessar uma rua e estar em outro município sem perceber a divisão geográfica.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">ENEM - Adaptada</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Nas últimas décadas, o Brasil registrou um fenômeno de repulsão de indústrias e pessoas dos grandes centros metropolitanos em direção a cidades médias, principalmente no interior paulista. O principal fator motivador desse movimento, conhecido como <strong>desmetropolização</strong>, é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A ausência de mercado consumidor nas metrópoles.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A busca por áreas de preservação ambiental permanente.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> As deseconomias de aglomeração nas capitais, como trânsito caótico, altos impostos e custo imobiliário.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A escassez de fontes de energia elétrica nos grandes centros costeiros.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A obrigatoriedade do cumprimento da função social da propriedade urbana.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Deseconomias de aglomeração são os custos extras gerados pelo inchaço metropolitano: trânsito parado (atrasa frete), terrenos caríssimos (dificulta expansão das fábricas), altos impostos e criminalidade. Isso força empresas a buscarem o interior.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O deslocamento diário de milhares de trabalhadores que residem em cidades-dormitório na periferia e se dirigem ao núcleo metropolitano para trabalhar ou estudar, retornando no final do dia, é uma marca da mobilidade urbana falha no Brasil. Esse fluxo é conceituado como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Movimento sazonal.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Migração de retorno.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Movimento pendular.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Transumância urbana.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Êxodo urbano.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O pêndulo vai e volta diariamente. É o deslocamento casa-trabalho-casa típico de quem mora na periferia e trabalha no centro metropolitano, evidenciando a dependência das áreas periféricas em relação ao núcleo central.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um bairro na região central que abrigava galpões e cortiços passa por uma grande reforma pública. Ganha asfalto, iluminação e condomínios de alto padrão. Como consequência, o aluguel e IPTU sobem vertiginosamente e os antigos moradores pobres são forçados a se mudar para a periferia. O processo descrito é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Macrocefalia urbana.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Conurbação.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Gentrificação.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Inversão térmica.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Desmetropolização.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Gentrificação (do inglês <em>gentry</em> = elite) é o fenômeno onde uma área degradada é revitalizada, os preços sobem absurdamente, e a população pobre original é "expulsa" de forma invisível pelo mercado imobiliário para áreas mais distantes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Sobre os impactos socioambientais nos espaços urbanos brasileiros, o fenômeno climático que agrava doenças respiratórias no inverno, <strong>aprisionando a poluição atmosférica</strong> perto da superfície devido à interrupção das correntes de convecção, é denominado:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ilha de calor.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Chuva ácida.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Inversão térmica.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Efeito estufa.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Buraco na camada de ozônio.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>No inverno, o ar frio (denso e pesado) fica retido na superfície, sem força para subir. A fumaça das fábricas e veículos fica "presa" nesse ar frio na altura dos pulmões da população, criando uma névoa densa e tóxica típica da inversão térmica.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O Estatuto da Cidade busca combater a especulação imobiliária. Para garantir que terrenos dotados de infraestrutura não fiquem vazios aguardando supervalorização (sem cumprir função social), os municípios podem aplicar um instrumento chamado:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Isenção total de impostos territoriais.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> IPTU progressivo no tempo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Privatização do espaço público.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Concessão de uso especial para fins comerciais.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Grilagem de terras urbanas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O IPTU Progressivo no Tempo pune terrenos ociosos na área urbana. Se o proprietário não construir nada, a prefeitura aumenta o IPTU anualmente para forçá-lo a dar uma utilidade ao terreno, evitando a especulação puramente imobiliária.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O modelo rodoviarista de transporte, aliado à pavimentação intensiva do solo nas cidades, provocou alterações diretas na dinâmica hidrológica. A principal consequência dessas alterações urbanas durante as fortes chuvas de verão é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A formação de ilhas de calor nos bairros rurais.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> O aumento da taxa de infiltração nos lençóis freáticos.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> A impermeabilização do solo, acelerando o escoamento superficial e causando alagamentos severos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A redução drástica do consumo de água potável pela população.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A descontaminação natural dos rios urbanos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>O asfalto e o concreto agem como uma "capa" sobre a terra (impermeabilização). A chuva não infiltra; corre toda de uma vez para as galerias e rios (aumentando velozmente o escoamento superficial), que transbordam, causando enchentes severas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>De acordo com a rede urbana mundial, uma Cidade Global não é classificada pelo tamanho de sua população. São Paulo se encaixa nessa categoria internacional porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Concentra a maior frota agrícola do país.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Possui a maior extensão territorial do Brasil.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Sedia bolsas de valores, escritórios de transnacionais, centros de pesquisa e exerce poder de comando em fluxos de capital internacional.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Erradicou completamente seus problemas de segregação socioespacial.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> É o principal centro de extração de minério de ferro da América Latina.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Cidades Globais (como SP, Nova York, Londres, Tóquio) são os "nós" da rede capitalista. São os centros de comando que influenciam o mundo economicamente, independente de quantas pessoas possuam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Geografia</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A expansão horizontal periférica das cidades brasileiras tem como característica empurrar a população de baixa renda para áreas desprovidas de infraestrutura básica, muitas vezes em encostas de morros ou planícies de inundação. Geograficamente, essa dinâmica é classificada como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Metropolização compacta.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Segregação socioespacial.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Planejamento participativo.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Integração territorial.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Função social habitacional.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A segregação socioespacial é a tradução geográfica da desigualdade econômica. Os ricos ocupam áreas centrais nobres com infraestrutura; os pobres são empurrados para periferias perigosas e sem acesso aos serviços urbanos básicos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Inchaço Urbano</span>
+                                        <div class="large-text">O que é a Macrocefalia Urbana?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Inchaço sem infraestrutura.</div>
+                                        <span class="card-hint">É o crescimento desordenado e hipertrofiado das grandes metrópoles, que concentram população além da capacidade de oferta de serviços, gerando caos e déficit urbano.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Fusões Urbanas</span>
+                                        <div class="large-text">Qual a diferença entre Conurbação e Megalópole?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Cidades x Metrópoles.</div>
+                                        <span class="card-hint"><strong>Conurbação:</strong> Encontro físico de manchas urbanas vizinhas.<br><strong>Megalópole:</strong> Junção em larga escala de duas ou mais metrópoles (ex: formação Rio-SP).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Fluxo Industrial</span>
+                                        <div class="large-text">O que motiva a Desmetropolização no Brasil?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Deseconomias de Aglomeração.</div>
+                                        <span class="card-hint">Os custos altíssimos nas metrópoles (imóveis, trânsito parado, altos impostos) impulsionam a migração de empresas para Cidades Médias no interior.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Especulação e Expulsão</span>
+                                        <div class="large-text">Como ocorre o processo de Gentrificação?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Elitização de áreas centrais.</div>
+                                        <span class="card-hint">Áreas degradadas são revitalizadas. O custo de vida sobe muito (aluguéis/IPTU), provocando a expulsão invisível dos moradores de baixa renda para as periferias.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Mobilidade Urbana</span>
+                                        <div class="large-text">O que é o Movimento Pendular?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Deslocamento diário.</div>
+                                        <span class="card-hint">Deslocamento diário da população das suas casas (cidades-dormitório na periferia) para o local de trabalho ou estudo no núcleo metropolitano, com retorno no final do dia.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Clima Urbano</span>
+                                        <div class="large-text">Por que ocorre o fenômeno das Ilhas de Calor?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Asfalto e Concreto.</div>
+                                        <span class="card-hint">A área central densamente construída retém muito mais calor devido ao excesso de concreto, asfalto, poluição e falta de vegetação, tornando-se mais quente que o entorno.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Clima Urbano de Inverno</span>
+                                        <div class="large-text">O que é a Inversão Térmica e qual seu principal impacto?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Prisão de poluentes.</div>
+                                        <span class="card-hint">Comum no inverno, o ar frio (pesado) fica retido na superfície, impedindo o ar quente de subir. Impacto: aprisiona os gases tóxicos na altura dos pulmões, causando crises respiratórias.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Hidrologia Urbana</span>
+                                        <div class="large-text">Como a urbanização agrava o problema dos alagamentos?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Impermeabilização do solo.</div>
+                                        <span class="card-hint">A cobertura de asfalto impede que a água da chuva infiltre na terra. Ela escoa toda de uma vez pela superfície para os rios, que transbordam rapidamente.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Lei e Propriedade</span>
+                                        <div class="large-text">Qual o papel do IPTU Progressivo no Estatuto da Cidade?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Combater a especulação.</div>
+                                        <span class="card-hint">Cobra impostos cada vez mais caros sobre terrenos ociosos no centro para forçar o proprietário a construir ou vender, garantindo a função social do espaço urbano.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Rede Urbana</span>
+                                        <div class="large-text">O que define uma Cidade Global (como São Paulo e RJ)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Influência Financeira Mundial.</div>
+                                        <span class="card-hint">Não é o tamanho da população, mas a sua influência na economia global: sede de bolsas de valores, escritórios de transnacionais, centros de pesquisa e nós logísticos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

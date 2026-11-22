@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Plana - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-math"> <!-- Tema Matemática -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Geometria Plana</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Geometria Plana</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>A geometria plana é a base espacial para a resolução de problemas bidimensionais. No ENEM, as figuras geométricas quase nunca aparecem isoladas; elas assumem o papel de terrenos, plantas arquitetônicas, peças de engenharia e obras de arte, exigindo a habilidade de calcular espaços, contornos e proporções com base em dados numéricos.</p>
+
+                        <h2 style="margin-top: 2.5rem;">1. Áreas e Perímetros Básicos</h2>
+                        <p>O <strong>perímetro</strong> é a soma de todos os lados (o contorno). A <strong>área</strong> é o espaço interno (o preenchimento).</p>
+                        <ul>
+                            <li><strong>Exemplo:</strong> Um terreno retangular mede 30 m por 40 m. Seu perímetro é a soma (30 + 30 + 40 + 40 = 140 m de cerca). Sua área é Base &times; Altura (30 &middot; 40 = 1.200 m&sup2; de grama).</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">2. Triângulo Retângulo e Pitágoras</h2>
+                        <p>O Teorema de Pitágoras (<strong>a&sup2; = b&sup2; + c&sup2;</strong>) é a base da geometria. O ENEM utiliza frequentemente os <strong>triângulos pitagóricos inteiros (como o 3-4-5)</strong> para agilizar os cálculos.</p>
+                        <ul>
+                            <li><strong>Exemplo:</strong> Se você precisa calcular a diagonal de um retângulo cujos lados são 6 m e 8 m, repare que eles são o dobro de 3 e 4. A hipotenusa será o dobro de 5, ou seja, 10 m. Não é necessário fazer o cálculo extenso de x&sup2; = 6&sup2; + 8&sup2;.</li>
+                        </ul>
+
+                        <div class="example-box" style="margin-top: 2.5rem;">
+                            <strong>3. Semelhança e Razão de Áreas (Cuidado no ENEM!)</strong><br>
+                            <ul style="margin-top: 0.5rem;">
+                                <li><strong>Semelhança Linear (k):</strong> Quando duas figuras são ampliações proporcionais. Ex: Se a sombra de uma pessoa de 1,80 m mede 0,90 m (metade), um prédio cuja sombra mede 15 m terá altura igual a 30 m (dobro).</li>
+                                <li><strong>Razão para Áreas (k&sup2;):</strong> Se uma planta está em uma escala linear <em>k</em>, a escala para descobrir a área real deve ser elevada ao quadrado (<strong>k&sup2;</strong>). Ex: Em escala 1:100 (k=100), um quarto no papel medindo 6 cm&sup2; ocupa na vida real 6 &middot; (100)&sup2; = 60.000 cm&sup2; (e não apenas 600).</li>
+                            </ul>
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">4. Trigonometria no Triângulo Retângulo</h2>
+                        <p>Usada quando temos <strong>ângulos</strong> envolvidos: <strong>sen</strong> (Oposto/Hipotenusa), <strong>cos</strong> (Adjacente/Hipotenusa) e <strong>tg</strong> (Oposto/Adjacente).</p>
+                        <ul>
+                            <li><strong>Exemplo:</strong> Um cadeirante sobe uma rampa de 10 m de comprimento, inclinada a 30&deg; em relação ao solo. Sabendo que sen(30&deg;) = 0,5, a altura alcançada é: 0,5 = Altura / 10 &rarr; Altura = 5 m.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">5. Círculo e Circunferência</h2>
+                        <ul>
+                            <li><strong>Circunferência (Contorno/Linha):</strong> C = 2&pi;R.</li>
+                            <li><strong>Círculo (Área/Preenchimento):</strong> A = &pi;R&sup2;.</li>
+                            <li><strong>Exemplo:</strong> Para uma praça circular de raio 10 m (usando &pi; = 3), o comprimento da calçada será 2 &middot; 3 &middot; 10 = 60 m. A área de grama será 3 &middot; (10)&sup2; = 300 m&sup2;.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">6. Quadriláteros Notáveis</h2>
+                        <ul>
+                            <li><strong>Trapézio:</strong> Área = <strong>(B + b) &middot; h / 2</strong>. Ex: Terreno com frente 20m, fundo 10m e altura perpendicular 30m. Área = (20+10)&middot;30 / 2 = 450 m&sup2;.</li>
+                            <li><strong>Losango:</strong> Área = <strong>D &middot; d / 2</strong>. Ex: Uma pipa com varetas de 40 cm e 30 cm gasta 40&middot;30 / 2 = 600 cm&sup2; de papel.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">7. Polígonos Regulares (Soma dos Ângulos)</h2>
+                        <p>A soma dos ângulos internos é <strong>S = (n - 2) &middot; 180&deg;</strong>.</p>
+                        <ul>
+                            <li><strong>Exemplo:</strong> Para um octógono regular (8 lados), S = (8 - 2) &middot; 180&deg; = 6 &middot; 180&deg; = 1.080&deg;. O valor de um único ângulo interno será 1.080&deg; / 8 = 135&deg;.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">8. Polígonos Inscritos e Composição de Áreas</h2>
+                        <ul>
+                            <li><strong>Inscritos/Circunscritos:</strong> No quadrado inscrito em um círculo, a <strong>diagonal do quadrado</strong> (L&radic;2) tem o exato tamanho do <strong>diâmetro do círculo</strong> (2R).</li>
+                            <li><strong>Áreas Hachuradas:</strong> Para calcular uma área de formato irregular, subtrai-se a área "vazia" da área total envolvente. Ex: Chapa quadrada de lado 10 (Área=100) com furo circular de raio 2 (Área = &pi;&middot;2&sup2; &asymp; 12). Restam 88 m&sup2; de chapa útil.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um fazendeiro deseja cercar um terreno retangular de 30 m de largura por 40 m de comprimento com <strong>4 fios</strong> de arame farpado. Após cercá-lo, ele planeja aplicar fertilizante em toda a superfície, sabendo que cada saco de fertilizante cobre exatos 100 m&sup2;.</p>
+                                <p>A quantidade de metros de arame farpado e o número de sacos de fertilizante necessários para essa obra são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 140 m e 12 sacos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 280 m e 12 sacos.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 560 m e 12 sacos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 560 m e 24 sacos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 1200 m e 12 sacos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p><strong>Arame (Perímetro):</strong> O contorno de 1 volta é 30 + 30 + 40 + 40 = 140 metros. Como são 4 fios, ele gastará 140 &times; 4 = <strong>560 metros</strong> de arame.</p>
+                                    <p><strong>Fertilizante (Área):</strong> O terreno tem 30 &times; 40 = 1.200 m&sup2;. Se cada saco cobre 100 m&sup2;, ele precisará de 1.200 / 100 = <strong>12 sacos</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um gramado retangular tem 12 metros de comprimento por 5 metros de largura. Muitas pessoas cortam caminho caminhando em linha reta pela <strong>diagonal</strong> do gramado, em vez de seguirem pelas calçadas que contornam as bordas.</p>
+                                <p>Ao optar por cortar caminho pela diagonal, a distância que uma pessoa economiza, em relação ao trajeto pelas calçadas, é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> 4 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 5 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 8 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 13 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 17 metros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa A</strong></p>
+                                    <p>O trajeto <em>pelas calçadas</em> (os catetos do triângulo) medirá: 12 + 5 = <strong>17 metros</strong>.</p>
+                                    <p>O trajeto <em>cortando caminho pela diagonal</em> (hipotenusa) é calculado por Pitágoras: d&sup2; = 12&sup2; + 5&sup2; &rarr; d&sup2; = 144 + 25 = 169 &rarr; d = <strong>13 metros</strong>.</p>
+                                    <p>A economia gerada é a diferença entre os dois trajetos: 17 - 13 = <strong>4 metros economizados</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>No mesmo instante em que a sombra de um poste de iluminação mede 8 metros no chão, a sombra de um balizador cilíndrico, de 1,5 metro de altura, mede 2 metros.</p>
+                                <p>Assumindo que os raios solares são paralelos, qual é a altura total do poste de iluminação?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 4,5 metros.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 6,0 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 8,0 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 10,6 metros.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 12,0 metros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Pela semelhança de triângulos, a razão entre a altura e a sombra do poste deve ser idêntica à razão entre a altura e a sombra do balizador.</p>
+                                    <p>H_poste / S_poste = H_baliz / S_baliz<br>
+                                    H_poste / 8 = 1,5 / 2</p>
+                                    <p>Multiplicando cruzado: 2 &middot; H_poste = 12 &rarr; H_poste = 12 / 2 = <strong>6,0 metros</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um projeto arquitetônico de uma praça pública foi desenhado em uma planta na escala de <strong>1:500</strong>. Na planta impressa no papel, a área do espelho d'água ocupa exatos <strong>20 cm&sup2;</strong>.</p>
+                                <p>A área real, em metros quadrados (m&sup2;), que esse espelho d'água ocupará depois de construído será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 10 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 50 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 100 m&sup2;.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 500 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 1.000 m&sup2;.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>Para Áreas, devemos utilizar o quadrado da escala linear (k&sup2;). A escala é k = 500.<br>
+                                    Área_Real = Área_Papel &middot; k&sup2;<br>
+                                    Área_Real = 20 cm&sup2; &middot; (500)&sup2; = 20 &middot; 250.000 = <strong>5.000.000 cm&sup2;</strong>.</p>
+                                    <p>Para converter de cm&sup2; para m&sup2;, dividimos por 10.000 (corta-se 4 zeros).<br>
+                                    5.000.000 cm&sup2; / 10.000 = <strong>500 m&sup2;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um engenheiro projeta uma rampa reta que ligará o nível da rua ao piso da recepção, que se encontra a 1,5 metro de altura. O ângulo de elevação da rampa em relação ao solo será de 30&deg;.</p>
+                                <p>O comprimento total da pista dessa rampa, pela qual os cadeirantes passarão, deverá ser de:<br>
+                                <em>(Considere sen30&deg;=0,5; cos30&deg;=0,86; tg30&deg;=0,57)</em></p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1,50 m.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 1,74 m.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 2,63 m.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 3,00 m.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 4,50 m.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>No triângulo formado pela rampa, a "altura" é o Cateto Oposto (1,5m), e o "comprimento da pista" é a Hipotenusa (H).</p>
+                                    <p>Usamos o Seno: sen(30&deg;) = Cat.Oposto / Hipotenusa.<br>
+                                    0,5 = 1,5 / H<br>
+                                    H = 1,5 / 0,5 = <strong>3,00 metros</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um roteador Wi-Fi é instalado no canto de um galpão retangular limpo, tendo alcance em um raio de 10 metros. Devido à sua posição bem na quina da parede externa, que bloqueia o sinal para fora, a área coberta forma um setor circular perfeito no interior do galpão.</p>
+                                <p>Considerando &pi; = 3,14, a área de cobertura do sinal <strong>no interior do galpão</strong> é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 31,4 m&sup2;.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 78,5 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 157,0 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 314,0 m&sup2;.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 628,0 m&sup2;.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>O roteador está instalado numa quina (ângulo de 90&deg;). Portanto, o sinal que entra no galpão corresponde a exatamente 1/4 (25%) de um círculo completo.</p>
+                                    <p>Área Círculo Total = &pi;R&sup2; = 3,14 &middot; (10)&sup2; = 3,14 &middot; 100 = 314 m&sup2;.</p>
+                                    <p>A cobertura útil (um quarto de círculo) será: 314 / 4 = <strong>78,5 m&sup2;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A prefeitura vai desapropriar um terreno em formato de <strong>trapézio retângulo</strong>. O terreno tem duas frentes paralelas: uma voltada para a Av. Principal (40m) e outra para a rua dos Fundos (20m). O lado perpendicular que liga essas ruas mede 30 metros.</p>
+                                <p>Sabendo que a indenização é fixada em R$ 200,00 por metro quadrado, qual será o valor total pago ao proprietário?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 120.000,00</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> R$ 180.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 240.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 360.000,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 480.000,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Área do Trapézio = (Base Maior + Base Menor) &middot; altura / 2.<br>
+                                    A = (40 + 20) &middot; 30 / 2 = 60 &middot; 30 / 2 = 1800 / 2 = <strong>900 m&sup2;</strong>.</p>
+                                    <p>Valor total = 900 m&sup2; &times; R$ 200,00 = <strong>R$ 180.000,00</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um marceneiro foi contratado para produzir tampos de mesa com o formato de um <strong>hexágono regular</strong>. Para instalar fitas de borda perfeitamente na quina, ele precisa cortar a fita na mesma inclinação do ângulo do móvel.</p>
+                                <p>O marceneiro deverá cortar a fita com base no <strong>ângulo interno</strong> do hexágono regular, que mede:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 60&deg;</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 90&deg;</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 108&deg;</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 120&deg;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 150&deg;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>Fórmula da soma dos ângulos internos: S = (n - 2) &middot; 180&deg;.<br>
+                                    S_hexágono = (6 - 2) &middot; 180&deg; = 4 &middot; 180&deg; = 720&deg; (soma total).</p>
+                                    <p>Como ele é regular, seus 6 ângulos internos são idênticos.<br>
+                                    Cada ângulo mede: 720&deg; / 6 = <strong>120&deg;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um tronco de árvore perfeitamente cilíndrico será desbastado para virar uma viga com base em formato de <strong>quadrado</strong>, aproveitando o máximo de madeira (os vértices da viga vão tocar a casca do tronco).</p>
+                                <p>Se o diâmetro do tronco da árvore é de 40 cm, a medida do <strong>lado</strong> da viga quadrada obtida será de aproximadamente: <em>(Utilize &radic;2 = 1,4)</em></p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 20 cm</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 28 cm</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 30 cm</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 40 cm</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 56 cm</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A situação descreve um <strong>Quadrado Inscrito numa Circunferência</strong>. Nessa geometria, a diagonal (D) do quadrado é exatamente igual ao diâmetro do tronco (40 cm).</p>
+                                    <p>Fórmula da diagonal do quadrado: D = L&radic;2<br>
+                                    40 = L &middot; 1,4<br>
+                                    L = 40 / 1,4 &asymp; <strong>28,57 cm</strong> (a opção mais próxima é 28cm).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Em uma fábrica, uma chapa de aço quadrada de 10 cm de lado tem um orifício circular vazado perfeitamente em seu centro, com 6 cm de <strong>diâmetro</strong>. A área residual (chapa útil restante) será lubrificada com um óleo especial.</p>
+                                <p>Utilizando a aproximação &pi; = 3, qual é a medida da <strong>área residual da chapa</strong> metálica após a remoção do orifício circular?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 27 cm&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 64 cm&sup2;</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 73 cm&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 91 cm&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 100 cm&sup2;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>Estratégia: Área Útil = Área Total - Área do Buraco.</p>
+                                    <p>Área Total (Quadrado) = 10 &times; 10 = 100 cm&sup2;.</p>
+                                    <p>O buraco tem diâmetro 6cm, logo o <strong>raio é 3cm</strong>.<br>
+                                    Área do Círculo Vazado = &pi;R&sup2; = 3 &middot; (3)&sup2; = 3 &middot; 9 = 27 cm&sup2;.</p>
+                                    <p>Subtraindo: 100 - 27 = <strong>73 cm&sup2;</strong> restantes de chapa de aço.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Semelhança de Áreas</span>
+                                        <div class="large-text">Qual a diferença entre a escala linear de um mapa (k) e a escala usada para calcular a área de um terreno no ENEM?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Linear é K, Área é K².</div>
+                                        <span class="card-hint">A escala linear (usada para distâncias) usa a proporção simples 'k'. Para transformar uma área do papel em área real, você deve multiplicar pela proporção <strong>elevada ao quadrado (k&sup2;)</strong>.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Truque Pitagórico</span>
+                                        <div class="large-text">O que é e como o triângulo pitagórico básico (3-4-5) salva tempo na prova do ENEM?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Regra da Proporção do 3-4-5.</div>
+                                        <span class="card-hint">Se você vir catetos que são proporcionais a 3 e 4, a hipotenusa será obrigatoriamente proporcional a 5 (ex: lados de 30 e 40 terão diagonal 50). Isso dispensa cálculos extensos no Pitágoras.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Quadrados e Triângulos</span>
+                                        <div class="large-text">Como se determina a fórmula da diagonal do quadrado (L) e da altura de um triângulo equilátero (L)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">L√2 e L√3 / 2</div>
+                                        <span class="card-hint"><strong>Diagonal do quadrado</strong> = L&radic;2.<br><strong>Altura do Triângulo Equilátero</strong> = L&radic;3 / 2. Ambas deduzidas por Pitágoras, mas fundamentais de estarem memorizadas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Semelhança Prática</span>
+                                        <div class="large-text">Se a sombra de uma estátua mede 3 vezes mais que a sombra de uma pessoa em um mesmo instante ensolarado, o que isso indica sobre as alturas reais?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A altura da estátua é o Triplo.</div>
+                                        <span class="card-hint">Pela lei fundamental da semelhança de triângulos para raios solares: se o comprimento da sombra do objeto A é o triplo da sombra de B, a <strong>altura real</strong> de A também é o triplo da de B.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Lógica Universal de Áreas</span>
+                                        <div class="large-text">Qual a estratégia universal, e mais cobrada, para calcular a área de uma figura "estranha" (como o logo da Batman, uma arruela, etc.)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Decomposição / Área Hachurada.</div>
+                                        <span class="card-hint">Nunca calcule a forma torta. Calcule a <strong>área da figura principal envolvente</strong> (geralmente quadrado ou retângulo) e <strong>SUBTRAIA a área das formas geométricas básicas</strong> que estão "recortadas" do miolo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CARD 6 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Relações Métricas</span>
+                                        <div class="large-text">O que a regra mnemônica SOH CAH TOA significa na trigonometria de Triângulos Retângulos?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Sen=O/H, Cos=A/H, Tg=O/A</div>
+                                        <span class="card-hint"><strong>SOH</strong>: Seno = Oposto / Hipotenusa.<br><strong>CAH</strong>: Cosseno = Adjacente / Hipotenusa.<br><strong>TOA</strong>: Tangente = Oposto / Adjacente.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Inscritos e Circunscritos</span>
+                                        <div class="large-text">Em um quadrado perfeitamente inscrito (desenhado dentro) de uma circunferência, qual é a relação entre a diagonal do quadrado e o círculo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Diagonal = Diâmetro (2R)</div>
+                                        <span class="card-hint">Os vértices do quadrado tocam o círculo. Assim, a linha que cruza de ponta a ponta o quadrado é o exato diâmetro da circunferência. Matemáticamente: L&radic;2 = 2R.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Polígonos Regulares</span>
+                                        <div class="large-text">Qual é a fórmula geral para encontrar a SOMA de todos os ângulos internos de um polígono qualquer de N lados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">S = (n - 2) × 180°</div>
+                                        <span class="card-hint">Essa fórmula se baseia na premissa de que você pode dividir qualquer polígono de 'N' lados em 'N-2' triângulos internos (e cada triângulo soma 180&deg;).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Círculo vs Circunferência</span>
+                                        <div class="large-text">No cálculo de materiais para construir uma praça redonda, quando usamos C=2πR e quando usamos A=πR²?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Contorno (C) vs Superfície (A).</div>
+                                        <span class="card-hint">Usamos <strong>2&pi;R</strong> para calcular a borda ou contorno (metros lineares de cerca, por exemplo). Usamos <strong>&pi;R&sup2;</strong> para calcular o preenchimento inteiro (metros quadrados de grama).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Área de Quadriláteros</span>
+                                        <div class="large-text">Qual é a fórmula geral e unificadora para o cálculo da área de um Trapézio comum cobrado no ENEM?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A = (Base Maior + Base menor) × H / 2</div>
+                                        <span class="card-hint">Você soma as duas bases horizontais (paralelas), multiplica pela altura (perpendicular entre elas) e divide por dois. A mesma lógica se aplica ao terreno de muitas construções.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

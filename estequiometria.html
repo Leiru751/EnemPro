@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estequiometria - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para notação química e matemática -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link active" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Química / Estequiometria e Leis Ponderais</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Cálculo Estequiométrico</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (ESTEQUIOMETRIA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>Introdução à Estequiometria</h2>
+                        <p>A estequiometria é a "contabilidade" da química. É a área que estuda as proporções quantitativas (em massa, volume, quantidade de matéria e número de partículas) entre os reagentes consumidos e os produtos formados em uma reação química. Esse cálculo é a base de processos industriais, controle de qualidade, farmacologia e análises ambientais, garantindo que saibamos exatamente o quanto de matéria-prima é necessário para atingir uma produção desejada, sem desperdícios.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Leis Ponderais</h2>
+                        <p>O cálculo estequiométrico sustenta-se nas Leis Ponderais:</p>
+                        <ul>
+                            <li><strong>Lei de Lavoisier (Conservação da Massa):</strong> Afirma que, em um sistema fechado, a soma das massas dos reagentes é igual à soma das massas dos produtos ("Na natureza, nada se cria, nada se perde, tudo se transforma").</li>
+                            <li><strong>Lei de Proust (Proporções Constantes):</strong> Determina que uma substância composta é formada por elementos em proporções de massa fixas e definidas, garantindo que as receitas químicas possam ser ampliadas ou reduzidas mantendo a mesma proporção geométrica.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">O Mol, Massa Molar e Número de Avogadro</h2>
+                        <p>Como é impossível contar átomos individualmente, os químicos utilizam o <strong>Mol</strong>, a unidade de quantidade de matéria. Um mol equivale a $6,02 \times 10^{23}$ entidades elementares (Número de Avogadro). A <strong>Massa Molar</strong> (expressa em $\text{g/mol}$) é a ponte entre o mundo microscópico e a balança do laboratório, possuindo o mesmo valor numérico da massa atômica/molecular, mas expressa em gramas. Por exemplo, 1 mol de água ($H_2O$) contém $6,02 \times 10^{23}$ moléculas e possui massa de 18 gramas.</p>
+
+                        <h2 style="margin-top: 2.5rem;">Volume Molar de Gases</h2>
+                        <p>Para gases ideais, o volume ocupado por 1 mol depende apenas da pressão e temperatura, e não da natureza do gás. Nas <strong>CNTP</strong> (Condições Normais de Temperatura e Pressão: 0 °C e 1 atm), qualquer gás ocupa exatos <strong>22,4 Litros</strong>. Para gases fora das CNTP, aplica-se a <strong>Equação de Clapeyron</strong> ($PV = nRT$), onde a quantidade de mols ($n$) interliga a estequiometria ao comportamento gasoso.</p>
+
+                        <div class="example-box" style="margin-top: 2.5rem;">
+                            <strong>Casos Especiais no Cálculo Estequiométrico</strong>
+                            <ul>
+                                <li><strong>Reagente Limitante e em Excesso:</strong> Em processos reais, os reagentes raramente são misturados na proporção estequiométrica exata. O reagente limitante é aquele que é totalmente consumido primeiro, determinando o fim da reação e a quantidade máxima de produto formado. O que sobra intocado no recipiente é o reagente em excesso.</li>
+                                <li><strong>Grau de Pureza:</strong> Minérios e reagentes comerciais contêm impurezas inertes que não participam da reação desejada. O desconto da pureza deve ser feito <em>antes</em> de iniciar a regra de três estequiométrica.</li>
+                                <li><strong>Rendimento da Reação:</strong> Devido a perdas físicas, reações paralelas ou reversibilidade, a quantidade real de produto obtido é sempre menor que a teórica calculada. O rendimento é aplicado <em>no final</em> do cálculo, sobre o produto esperado.</li>
+                                <li><strong>Reações Consecutivas:</strong> Processos industriais frequentemente ocorrem em várias etapas (ex: obtenção de ácido sulfúrico). Deve-se somar e balancear as equações intermediárias para obter a Equação Global antes de relacionar o reagente inicial com o produto final.</li>
+                                <li><strong>Foco Ambiental:</strong> No Enem, a estequiometria brilha em questões de impacto ambiental. Cálculos de pegada de carbono (massa de $CO_2$ emitida na combustão de gasolina, diesel ou etanol), neutralização de chuvas ácidas (reação de $SO_2$ e $NO_x$ com calcário) e eficiência energética são figurinhas carimbadas.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em um laboratório, realiza-se duas queimas ao ar livre (sistema aberto). Exp. 1: queima-se 100 g de palha de aço (ferro) sobre uma balança. Exp. 2: queima-se 100 g de carvão (carbono) sobre a balança.</p>
+                                <p><strong>Enunciado:</strong> Considerando a Lei de Lavoisier e as reações envolvidas em um sistema aberto, as balanças ao final dos experimentos 1 e 2 indicarão, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> Aumento de massa e diminuição de massa.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Diminuição de massa e aumento de massa.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Manutenção da massa inicial em ambos os casos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Aumento de massa em ambos os casos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Diminuição de massa em ambos os casos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>A Lei de Lavoisier vale perfeitamente, mas o sistema é <strong>aberto</strong> (troca de gases).<br>
+                                    No Exp. 1 (aço), o Ferro sólido reage com o Oxigênio gasoso formando Óxido de Ferro sólido ($Fe + O_2 \rightarrow Fe_2O_3$). O $O_2$ invisível do ar é incorporado ao sólido, logo, <strong>a massa sobre a balança aumenta</strong>.<br>
+                                    No Exp. 2 (carvão), o Carbono reage com o Oxigênio formando Dióxido de Carbono gasoso ($C + O_2 \rightarrow CO_2$). O gás formado escapa para a atmosfera deixando apenas cinzas, logo, <strong>a massa sobre a balança diminui</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O funcionamento do airbag baseia-se na decomposição do azida de sódio ($NaN_3$).<br>
+                                Equação não balanceada: $NaN_3(s) \rightarrow Na(s) + N_2(g)$<br>
+                                <em>Dados: N = 14; Na = 23 g/mol. Vol. molar nas CNTP = 22,4 L/mol.</em></p>
+                                <p><strong>Enunciado:</strong> Para inflar o airbag com exatos 67,2 Litros de gás $N_2$ nas CNTP, a massa mínima de $NaN_3$ na cápsula deve ser de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 65 g.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 130 g.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 195 g.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 260 g.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 390 g.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>1º passo: Balancear a equação: $2 NaN_3 \rightarrow 2 Na + 3 N_2$<br>
+                                    2º passo: A proporção é de <strong>2 mols de $NaN_3$</strong> para <strong>3 mols de $N_2$</strong>.<br>
+                                    Massa molar do $NaN_3 = 23 + (3 \cdot 14) = 65$ g/mol. Logo, 2 mols = $130$ g.<br>
+                                    Volume de 3 mols de $N_2$ nas CNTP $= 3 \cdot 22,4 = 67,2$ Litros.<br>
+                                    A estequiometria balanceada já aponta exatamente para a quantidade pedida: <strong>130 g</strong> de $NaN_3$ produzem 67,2 L de $N_2$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A fermentação alcoólica converte glicose em etanol e $CO_2$:<br>
+                                Equação: $C_6H_{12}O_6 \rightarrow 2 C_2H_5OH + 2 CO_2$<br>
+                                <em>Massas molares em g/mol: H = 1; C = 12; O = 16.</em></p>
+                                <p><strong>Enunciado:</strong> Uma usina processou 900 kg de glicose pura. Sabendo que o rendimento real do processo fermentativo é de 80%, a massa de etanol obtida foi de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 184 kg.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 368 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 460 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 552 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 720 kg.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Massa da Glicose = 180 g/mol. Massa do Etanol = 46 g/mol.<br>
+                                    1 mol de glicose (180 kg) produz 2 mols de etanol ($2 \cdot 46 = 92$ kg).<br>
+                                    Regra de três (Rendimento Teórico 100%):<br>
+                                    180 kg glicose --- 92 kg etanol<br>
+                                    900 kg glicose --- $X$<br>
+                                    $X = (900 \cdot 92) / 180 = 460$ kg.<br>
+                                    Aplicando o <strong>rendimento de 80%</strong>: Massa real $= 460 \cdot 0,80 = \mathbf{368\ kg}$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Na siderurgia, a hematita ($Fe_2O_3$) reage para produzir ferro metálico (Fe):<br>
+                                $Fe_2O_3 + 3 CO \rightarrow 2 Fe + 3 CO_2$<br>
+                                <em>Massas molares em g/mol: Fe = 56; O = 16.</em></p>
+                                <p><strong>Enunciado:</strong> Para produzir 1.120 toneladas de Fe metálico a partir de um minério com <strong>pureza de 80%</strong> em $Fe_2O_3$, a massa total de minério que deve ser usada é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1.280 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 1.600 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 1.800 toneladas.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 2.000 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 2.240 toneladas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Massa $Fe_2O_3 = 160$ g/mol. Massa de 2 mols de $Fe = 112$ g.<br>
+                                    160 t de $Fe_2O_3$ puro produzem 112 t de Fe.<br>
+                                    $X$ t de $Fe_2O_3$ puro produzem 1.120 t de Fe $\rightarrow X = 1.600$ toneladas.<br>
+                                    Como o minério é apenas 80% puro, precisamos de mais massa total:<br>
+                                    1.600 toneladas --- 80% (parte pura)<br>
+                                    $Y$ toneladas --- 100% (minério bruto)<br>
+                                    $Y = (1600 \cdot 100) / 80 = \mathbf{2.000\ toneladas}$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Processo Haber-Bosch: $N_2(g) + 3 H_2(g) \rightarrow 2 NH_3(g)$<br>
+                                <em>Massas molares em g/mol: H = 1; N = 14.</em></p>
+                                <p><strong>Enunciado:</strong> Um engenheiro injeta no reator 28 kg de $N_2$ e 12 kg de $H_2$. Considerando rendimento de 100% sobre o limitante, a massa de amônia ($NH_3$) produzida e a massa de reagente em excesso que sobrará são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> 34 kg de $NH_3$ e 6 kg de excesso.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 40 kg de $NH_3$ e 0 kg de excesso.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 34 kg de $NH_3$ e 2 kg de excesso.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 68 kg de $NH_3$ e 6 kg de excesso.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 17 kg de $NH_3$ e 23 kg de excesso.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>A estequiometria exige a proporção: 28 kg de $N_2$ para cada 6 kg de $H_2$ (3 mols).<br>
+                                    Foram injetados exatamente 28 kg de $N_2$, que vão consumir apenas 6 kg de $H_2$.<br>
+                                    Logo, o <strong>Nitrogênio é o limitante</strong> e o <strong>Hidrogênio está em excesso</strong> ($12 - 6 = 6$ kg sobram).<br>
+                                    Massa de $NH_3$ formada pelo limitante (1 mol de $N_2$): $2 \cdot 17 = \mathbf{34\ kg}$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Combustão incompleta não balanceada do etanol:<br>
+                                $C_2H_6O(l) + O_2(g) \rightarrow CO_2(g) + H_2O(v)$<br>
+                                <em>Massas molares em g/mol: H = 1; C = 12; O = 16.</em></p>
+                                <p><strong>Enunciado:</strong> O tanque de um veículo requer 46 kg de etanol. Caso queime integralmente esse etanol em uma viagem, a massa aproximada de gás carbônico ($CO_2$) lançada pelo escapamento será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 22 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 44 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 46 kg.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 88 kg.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 132 kg.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>1º passo: Balancear a equação: $1 C_2H_6O + 3 O_2 \rightarrow 2 CO_2 + 3 H_2O$<br>
+                                    Proporção: 1 mol de Etanol para 2 mols de $CO_2$.<br>
+                                    Massa do Etanol $= 46$ g/mol. Massa do $CO_2 = 44$ g/mol.<br>
+                                    46 g (1 mol) de etanol geram $2 \cdot 44 = \mathbf{88\ g}$ de $CO_2$.<br>
+                                    Assim, 46 kg produzirão 88 kg. O carro gera mais massa de gás que o peso do combustível porque incorpora o $O_2$ do ar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um biodigestor gera 1.600 g de metano ($CH_4$) a uma temperatura de 27 °C e pressão de 0,82 atm.<br>
+                                <em>Massa molar $CH_4$ = 16 g/mol; $R = 0,082$ atm·L/(mol·K); K = °C + 273.</em></p>
+                                <p><strong>Enunciado:</strong> Para abrigar todo o metano produzido nessa noite, o volume do reservatório cilíndrico deverá ser de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 300 Litros.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 2.240 Litros.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 3.000 Litros.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 22.400 Litros.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 30.000 Litros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>1º: Achar o número de mols ($n$): $1600 \text{ g} / 16 \text{ g/mol} = 100$ mols.<br>
+                                    2º: Temperatura em Kelvin: $27 + 273 = 300$ K.<br>
+                                    3º: Equação de Clapeyron ($PV = nRT$):<br>
+                                    $0,82 \cdot V = 100 \cdot 0,082 \cdot 300$<br>
+                                    $0,82 \cdot V = 8,2 \cdot 300 \rightarrow 0,82 \cdot V = 2460$<br>
+                                    $V = 2460 / 0,82 = \mathbf{3.000\ Litros}$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A produção de $H_2SO_4$ ocorre em três etapas:<br>
+                                I: $S + O_2 \rightarrow SO_2$<br>
+                                II: $2 SO_2 + O_2 \rightarrow 2 SO_3$<br>
+                                III: $SO_3 + H_2O \rightarrow H_2SO_4$<br>
+                                <em>Massas molares em g/mol: S = 32; H = 1; O = 16.</em></p>
+                                <p><strong>Enunciado:</strong> Supondo rendimento de 100%, a massa de ácido sulfúrico fabricada a partir de 32 toneladas de enxofre mineral (S) é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 49 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 64 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 80 toneladas.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 98 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 196 toneladas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Para cancelar os intermediários, as etapas I e III precisam ser multiplicadas por 2.<br>
+                                    A Equação Global fica: $2 S + 3 O_2 + 2 H_2O \rightarrow 2 H_2SO_4$.<br>
+                                    Proporção: 2 mols de S formam 2 mols de $H_2SO_4$ (proporção 1:1).<br>
+                                    Massa do S = 32 g/mol. Massa do $H_2SO_4 = 98$ g/mol.<br>
+                                    Logo, 32 t de S geram exatamente \mathbf{98\ t} de $H_2SO_4$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Exalamos cerca de 400 mL de água ($H_2O$) por dia. Considere a densidade = 1,0 g/mL.<br>
+                                <em>Massa Molar $H_2O$ = 18 g/mol; Avogadro = $6,0 \times 10^{23}$ moléculas/mol.</em></p>
+                                <p><strong>Enunciado:</strong> O número de moléculas de água exaladas diariamente pelos pulmões é de, aproximadamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $6,0 \times 10^{23}$ moléculas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $1,3 \times 10^{24}$ moléculas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> $1,3 \times 10^{25}$ moléculas.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $2,4 \times 10^{25}$ moléculas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $4,3 \times 10^{26}$ moléculas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Massa = 400 g de água. 1 mol (18 g) tem $6,0 \times 10^{23}$ moléculas.<br>
+                                    18 g --- $6,0 \times 10^{23}$<br>
+                                    400 g --- $X$<br>
+                                    $X = (400 \cdot 6,0 \times 10^{23}) / 18 = 2400 \times 10^{23} / 18$<br>
+                                    $X \approx 133,33 \times 10^{23} = \mathbf{1,3 \times 10^{25}}$ moléculas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> "Lavadores de gases" usam $CaCO_3$ para capturar o $SO_2$ gerado pelo carvão:<br>
+                                $2 CaCO_3(s) + 2 SO_2(g) + O_2(g) \rightarrow 2 CaSO_4(s) + 2 CO_2(g)$<br>
+                                <em>Massas molares: Ca=40; C=12; O=16; S=32.</em></p>
+                                <p><strong>Enunciado:</strong> Para neutralizar por completo 64 toneladas de $SO_2$ em um dia, a massa de $CaCO_3$ necessária no filtro da chaminé deverá ser de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 50 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 64 toneladas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 100 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 128 toneladas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 200 toneladas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Proporção: 2 mols de $CaCO_3$ para 2 mols de $SO_2$ (simplificando, proporção 1:1).<br>
+                                    Massa molar $CaCO_3 = 40 + 12 + 48 = 100$ g/mol.<br>
+                                    Massa molar $SO_2 = 32 + 32 = 64$ g/mol.<br>
+                                    Pela estequiometria: 100 g de $CaCO_3$ neutralizam 64 g de $SO_2$.<br>
+                                    Logo, para neutralizar 64 t de $SO_2$, precisaremos exatamente de \mathbf{100\ toneladas} de $CaCO_3$.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 5 • Regra de Ouro</span>
+                                        <div class="large-text">Nos três passos sagrados para resolver qualquer questão de estequiometria, qual é, sem exceção, a obrigação fundamental do passo número 1?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Balancear a equação.</div>
+                                        <span class="card-hint">Verificar se a equação química está rigorosamente balanceada (garantindo a Lei de Lavoisier).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 5 • Reagente Limitante</span>
+                                        <div class="large-text">Misturam-se A e B, descobre-se que A é o "reagente limitante". Para que serve o reagente limitante na matemática da estequiometria?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Calcular o produto final.</div>
+                                        <span class="card-hint">É com base <em>exclusivamente</em> no limitante que se deve calcular o total de produto formado, pois é ele quem esgota primeiro e paralisa a reação.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 5 • Pureza</span>
+                                        <div class="large-text">Se uma questão fornecer o "Grau de Pureza" de um minério no início e pedir o produto final, o que você deve fazer com essa porcentagem?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Descontar antes.</div>
+                                        <span class="card-hint">Descontar a impureza <strong>antes</strong> de iniciar a regra de três. Apenas a massa da parte pura participa do cálculo estequiométrico.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 5 • Rendimento</span>
+                                        <div class="large-text">Você calculou que a reação produziria 100 gramas de um remédio. Porém, a questão informa que o rendimento é de 75%. Como proceder?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Aplicar no final.</div>
+                                        <span class="card-hint">Aplicar a porcentagem <strong>no final</strong> sobre o resultado encontrado. O rendimento real será de 75 gramas (o teórico sempre representa 100%).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 5 • Gases fora das CNTP</span>
+                                        <div class="large-text">Em uma queima fora das CNTP ($1,2$ atm e $300$ K), a questão pede o volume do gás. Qual equação matemática acopla a estequiometria nesse caso?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Equação de Clapeyron.</div>
+                                        <span class="card-hint">$PV = nRT$. Você resolve a estequiometria padrão para achar os Mols ($n$) e, depois, joga os dados na fórmula para achar o Volume ($V$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

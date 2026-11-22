@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecologia - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link active" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Biologia / Ecologia</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Ecologia e Sustentabilidade</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        <h2>Ecologia e Sustentabilidade</h2>
+
+                        <h3>Conceitos Básicos e Cadeias Alimentares</h3>
+                        
+                        <h4>Habitat e Nicho Ecológico</h4>
+                        <p>Pense no habitat como o "endereço" de um organismo (ex: a copa de uma árvore) e no nicho ecológico como a sua "profissão" (o que ele come, a que horas caça, como se reproduz). Se duas espécies têm o mesmo nicho no mesmo habitat, haverá competição.</p>
+                        
+                        <h4>Níveis de Organização</h4>
+                        <p>Na biologia, organizamos os seres vivos assim: <strong>População</strong> (indivíduos da mesma espécie juntos) $ \rightarrow $ <strong>Comunidade</strong> (várias populações interagindo) $ \rightarrow $ <strong>Ecossistema</strong> (comunidade somada aos fatores não vivos, como luz e água) $ \rightarrow $ <strong>Biosfera</strong> (conjunto de todos os ecossistemas da Terra).</p>
+
+                        <h4>Cadeia, Teia Alimentar e Fluxo de Energia</h4>
+                        <ul>
+                            <li><strong>Cadeia alimentar:</strong> É uma linha reta de quem come quem. Produtores (plantas/algas) $ \rightarrow $ Consumidores (herbívoros e carnívoros) $ \rightarrow $ Decompositores (fungos e bactérias).</li>
+                            <li><strong>Teia alimentar:</strong> É um emaranhado de várias cadeias interligadas, refletindo a realidade da natureza onde um animal tem um cardápio variado.</li>
+                            <li><strong>Fluxo de Energia:</strong> A energia na natureza tem "prazo de validade" e não se recicla. Ela flui de forma unidirecional. A cada nível trófico que avança, a energia disponível diminui, pois grande parte é gasta na respiração e perdida como calor.</li>
+                        </ul>
+
+                        <h4>Pirâmides Ecológicas</h4>
+                        <ul>
+                            <li><strong>Pirâmide de Número:</strong> Conta quantos indivíduos existem por nível. Pode ser invertida (ex: 1 árvore sustenta 100 insetos).</li>
+                            <li><strong>Pirâmide de Biomassa:</strong> Mostra a quantidade de matéria orgânica. Só pode ser invertida em ambientes aquáticos (onde uma pequena massa de algas se reproduz tão rápido que sustenta uma massa maior de peixes).</li>
+                            <li><strong>Pirâmide de Energia:</strong> Mostra a quantidade de energia. <strong>Nunca pode ser invertida</strong>, pois a energia sempre diminui da base para o topo.</li>
+                        </ul>
+
+                        <h3>Dinâmica de Populações e Relações Ecológicas</h3>
+
+                        <h4>Gráficos de Crescimento Populacional</h4>
+                        <ul>
+                            <li><strong>Curva de Potencial Biótico (Curva em "J"):</strong> Como a população cresceria se houvesse comida e espaço infinitos (crescimento exponencial).</li>
+                            <li><strong>Curva de Crescimento Real (Curva em "S"):</strong> A população cresce até bater de frente com a Resistência do Meio (falta de comida, predadores, doenças). Ela se estabiliza quando atinge a Carga Suporte (número máximo de indivíduos que o ambiente sustenta).</li>
+                        </ul>
+
+                        <h4>Relações Harmônicas (Ninguém sai prejudicado)</h4>
+                        <ul>
+                            <li><strong>Mutualismo (+/+):</strong> Os dois ganham e a relação é obrigatória para a sobrevivência (ex: líquens = fungos + algas).</li>
+                            <li><strong>Protocooperação (+/+):</strong> Os dois ganham, mas não é obrigatório (ex: pássaro-palito e crocodilo).</li>
+                            <li><strong>Comensalismo (+/0):</strong> Um ganha e para o outro é indiferente. Geralmente envolve restos de comida ou transporte (ex: rêmora e tubarão).</li>
+                            <li><strong>Sociedade (+/+):</strong> Indivíduos da mesma espécie, separados fisicamente, com clara divisão de trabalho (ex: abelhas, formigas).</li>
+                            <li><strong>Colônia (+/+):</strong> Indivíduos da mesma espécie colados fisicamente uns nos outros (ex: corais).</li>
+                        </ul>
+
+                        <h4>Relações Desarmônicas (Alguém sai perdendo)</h4>
+                        <ul>
+                            <li><strong>Competição (-/-):</strong> Disputa por recursos. Ambos gastam energia, logo é negativo para os dois.</li>
+                            <li><strong>Predação (+/-):</strong> Um mata e come o outro (ex: leão e zebra).</li>
+                            <li><strong>Parasitismo (+/-):</strong> O parasita suga os recursos do hospedeiro, mas geralmente evita matá-lo logo de cara para não perder sua "casa" (ex: carrapato e cachorro).</li>
+                            <li><strong>Amensalismo (+/-):</strong> Uma espécie libera substâncias químicas que inibem o crescimento da outra (ex: fungo Penicillium que mata bactérias).</li>
+                        </ul>
+
+                        <h3>Ciclos Biogeoquímicos</h3>
+                        <ul>
+                            <li><strong>Ciclo do Carbono e Oxigênio:</strong> A fotossíntese retira $CO_2$ do ar e libera $O_2$. A respiração celular e a combustão fazem o oposto: consomem $O_2$ e devolvem $CO_2$.</li>
+                            <li><strong>Ciclo do Nitrogênio:</strong> Essencial para o DNA. O ar é 78% nitrogênio ($N_2$), mas plantas e animais não conseguem respirá-lo diretamente.
+                                <ul style="margin-top: 0.5rem;">
+                                    <li><em>Fixação:</em> Bactérias nas raízes de leguminosas pegam o $N_2$ do ar e transformam em Amônia.</li>
+                                    <li><em>Nitrificação:</em> Bactérias no solo transformam a Amônia em Nitrato (forma que as plantas conseguem absorver).</li>
+                                    <li><em>Desnitrificação:</em> Bactérias devolvem o excesso de nitrato para o ar na forma de $N_2$.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ciclo do Fósforo:</strong> É o único ciclo principal que não passa pela atmosfera (não tem fase gasosa). Circula apenas entre o solo, a água, as rochas e os seres vivos.</li>
+                        </ul>
+
+                        <h3>Sucessão Ecológica e Biomas</h3>
+                        
+                        <h4>Fases da Sucessão Ecológica</h4>
+                        <ul>
+                            <li><strong>Ecese (Comunidade Pioneira):</strong> Os primeiros a chegar em um ambiente hostil (ex: rocha nua). Líquens ou gramíneas quebram a rocha e formam o solo.</li>
+                            <li><strong>Sere (Comunidades Intermediárias):</strong> Com solo formado, chegam arbustos e pássaros. A biodiversidade aumenta rapidamente.</li>
+                            <li><strong>Clímax:</strong> A comunidade atinge o auge de estabilidade e a biodiversidade é máxima. A produtividade líquida se iguala a zero (tudo o que a floresta produz, ela consome).</li>
+                        </ul>
+
+                        <h4>Biomas Brasileiros</h4>
+                        <ul>
+                            <li><strong>Amazônia:</strong> Clima quente e muito úmido, biodiversidade gigantesca.</li>
+                            <li><strong>Cerrado:</strong> Savana brasileira. Duas estações bem definidas (seca e chuva). Vegetação com casca grossa adaptada ao fogo natural.</li>
+                            <li><strong>Caatinga:</strong> Exclusivamente brasileiro. Clima semiárido, plantas xerófitas que perdem as folhas na seca.</li>
+                            <li><strong>Mata Atlântica:</strong> Floresta tropical litorânea. Biodiversidade incrível, mas é o bioma mais devastado do Brasil.</li>
+                            <li><strong>Pantanal:</strong> Maior planície inundável do mundo, regulada pelos pulsos de cheia e seca dos rios.</li>
+                            <li><strong>Pampa:</strong> Relevo plano coberto principalmente por gramíneas no Sul do Brasil.</li>
+                        </ul>
+
+                        <h3>Impactos Ambientais</h3>
+                        
+                        <div class="example-box">
+                            <strong>Eutrofização:</strong> Excesso de nutrientes (esgoto/fertilizantes) na água gera superpopulação de algas. A camada verde bloqueia o Sol. Plantas submersas morrem, bactérias decompositoras se multiplicam, esgotam o oxigênio da água e matam os peixes por asfixia.
+                        </div>
+
+                        <div class="example-box">
+                            <strong>Magnificação Trófica:</strong> Toxinas não biodegradáveis (ex: mercúrio) se acumulam a cada nível trófico. O predador do topo da cadeia recebe a maior e mais letal dose da toxina.
+                        </div>
+
+                        <ul>
+                            <li><strong>Aquecimento Global:</strong> O Efeito Estufa é natural, mas a emissão desenfreada de gases ($CO_2$ e Metano) deixa o "cobertor" grosso demais, aquecendo o planeta e alterando o clima.</li>
+                            <li><strong>Chuva Ácida:</strong> Poluentes gasosos reagem com o vapor d'água formando ácidos fortes. Corrói monumentos, queima folhas e altera o pH de lagos.</li>
+                            <li><strong>Inversão Térmica:</strong> Uma camada de ar quente no alto prende uma camada de ar frio rente ao chão, aprisionando a poluição nas cidades no inverno.</li>
+                            <li><strong>Espécies Exóticas:</strong> Trazidas de outro ambiente, reproduzem-se descontroladamente por falta de predadores naturais e eliminam nativas por competição.</li>
+                        </ul>
+                        
+                    </div>
+
+
+                </div>
+
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O rompimento de barragens de mineração frequentemente lança nos rios um grande volume de rejeitos contendo metais pesados, como mercúrio e chumbo. Esses compostos não são biodegradáveis e não são metabolizados pelos organismos aquáticos. Um estudo realizado em um lago afetado por esse tipo de contaminação analisou a concentração do metal nos tecidos de diferentes organismos da teia alimentar local.</p>
+                                <p><strong>Enunciado:</strong> Nesse ecossistema, o organismo que apresentará a maior concentração do metal pesado em seus tecidos será o(a):</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> alga planctônica (fitoplâncton).</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> peixe herbívoro de pequeno porte.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> microcrustáceo (zooplâncton).</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> ave piscívora que se alimenta no lago.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> molusco filtrador do fundo do lago.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A questão aborda o conceito de magnificação trófica (ou bioacumulação). Como os metais pesados não são eliminados pelos organismos, eles se acumulam nos tecidos ao longo da vida. O animal no topo da cadeia alimentar (a ave piscívora) devora muitos peixes contaminados e, consequentemente, acumula a maior e mais letal concentração do poluente.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Sendo o produtor, a alga terá a menor concentração do metal, pois é o ponto de entrada inicial.</li>
+                                        <li><strong>B e C:</strong> Como consumidores primários, terão uma concentração maior que a alga, mas muito inferior à dos predadores de topo.</li>
+                                        <li><strong>E:</strong> Embora filtrem a água, os moluscos atuam como consumidores primários. A ave acumulará uma dose muito maior.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma prática agrícola tradicional e sustentável conhecida como rotação de culturas consiste em alternar, no mesmo terreno, o plantio de diferentes espécies vegetais. Uma combinação muito comum é alternar o cultivo de milho com o de uma leguminosa, como a soja ou o feijão. Essa prática reduz drasticamente a necessidade de aplicação de fertilizantes químicos sintéticos.</p>
+                                <p><strong>Enunciado:</strong> A redução da necessidade de fertilizantes no solo após o cultivo das leguminosas deve-se à:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> capacidade das leguminosas de realizar a desnitrificação, liberando oxigênio para o solo.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> associação mutualística entre as raízes das leguminosas e bactérias fixadoras de nitrogênio.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> decomposição lenta das folhas do milho, que enriquece o solo com fósforo e enxofre.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> inibição do crescimento de ervas daninhas devido às toxinas liberadas pelas raízes das leguminosas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> alta taxa de respiração radicular do feijão, que disponibiliza $CO_2$ diretamente para o milho.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O ciclo do nitrogênio é vital para as plantas. As leguminosas possuem nódulos em suas raízes onde abrigam bactérias do gênero Rhizobium. Essas bactérias capturam o gás nitrogênio ($N_2$) da atmosfera e o transformam em compostos nitrogenados (como a amônia) que fertilizam o solo naturalmente, processo chamado de fixação.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A desnitrificação é o processo inverso: pegar nitrato do solo e devolvê-lo para o ar. Isso empobrece o solo.</li>
+                                        <li><strong>C:</strong> Folhas de milho sozinhas não repõem o nitrogênio com a mesma eficiência que as bactérias.</li>
+                                        <li><strong>D:</strong> Toxinas matam plantas (amensalismo), mas não nutrem o solo.</li>
+                                        <li><strong>E:</strong> A respiração libera $CO_2$ no ar, mas isso não substitui os minerais (nitrogênio) que o solo precisa.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Certas orquídeas e bromélias vivem sobre os troncos de árvores de grande porte nas florestas tropicais, como a Mata Atlântica. Posicionando-se no alto da copa, essas plantas conseguem captar a luz solar necessária para a fotossíntese, um recurso escasso no chão da floresta. As árvores que lhes servem de suporte não sofrem nenhum dano, perda de seiva ou benefício com essa presença.</p>
+                                <p><strong>Enunciado:</strong> A relação ecológica descrita entre as orquídeas e as árvores de grande porte é classificada como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Parasitismo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Mutualismo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Competição interespecífica.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Inquilinismo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Amensalismo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O inquilinismo (ou epifitismo) é uma relação harmônica do tipo (+/0). A orquídea (epífita) ganha vantagem ao conseguir melhor iluminação (+), enquanto para a árvore a relação é completamente neutra (0), servindo apenas como suporte físico.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> No parasitismo (+/-), a orquídea extrairia seiva da árvore, o que não acontece.</li>
+                                        <li><strong>B:</strong> No mutualismo (+/+), a árvore precisaria obter algum benefício, o que não ocorre.</li>
+                                        <li><strong>C:</strong> Não há disputa por luz ou nutrientes.</li>
+                                        <li><strong>E:</strong> O amensalismo (+/-) ocorre ao liberar toxinas que inibem outra espécie.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um campo agrícola foi completamente abandonado e, com o passar das décadas, biólogos observaram a substituição gradual das espécies no local. Inicialmente, o terreno foi coberto por gramíneas de crescimento rápido. Anos depois, surgiram arbustos e, por fim, estabeleceu-se uma floresta densa com árvores de grande porte, atingindo a fase de clímax.</p>
+                                <p><strong>Enunciado:</strong> Durante esse processo de sucessão ecológica, ao se aproximar da fase clímax, a comunidade passa por alterações em suas taxas metabólicas. Qual das seguintes dinâmicas descreve corretamente a transição para o estágio clímax?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A produtividade primária líquida (PPL) aumenta continuamente, superando a taxa de respiração da comunidade.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A biomassa total do ecossistema diminui, favorecendo a colonização por novas espécies pioneiras.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> A produtividade primária bruta (PPB) se estabiliza em níveis altos, mas a produtividade primária líquida (PPL) tende a zero.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A diversidade de espécies diminui drasticamente, pois poucas espécies conseguem sobreviver à competição por luz.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A teia alimentar torna-se mais simples e linear, devido à eliminação dos predadores de topo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Em uma comunidade clímax, a floresta produz muita energia via fotossíntese (alta PPB). Porém, como a comunidade atingiu seu tamanho máximo (muita biomassa), o consumo dessa energia pela respiração é igualmente alto. Portanto, tudo o que é produzido é consumido, fazendo com que a "sobra", que é a PPL (PPB - Respiração), aproxime-se de zero.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A PPL diminui e estabiliza perto de zero.</li>
+                                        <li><strong>B:</strong> No clímax, a biomassa atinge o ponto máximo, não diminui.</li>
+                                        <li><strong>D e E:</strong> A diversidade e a teia alimentar atingem a maior complexidade possível.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O descarte inadequado de esgoto doméstico não tratado em lagoas e represas fornece uma carga excessiva de matéria orgânica e minerais, como nitratos e fosfatos, para esses ambientes. Após algumas semanas, nota-se uma proliferação intensa de microalgas na superfície, conferindo uma coloração verde opaca à água. Pouco tempo depois, observa-se a mortandade em massa de peixes no local.</p>
+                                <p><strong>Enunciado:</strong> O fenômeno descrito é a eutrofização. A morte dos peixes ocorre principalmente em consequência da:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> intoxicação direta causada pelos nitratos do esgoto doméstico.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> obstrução das brânquias dos peixes pelas algas superficiais.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> ausência de oxigênio dissolvido na água, consumido por bactérias decompositoras aeróbicas.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> diminuição do pH da lagoa devido à intensa fotossíntese realizada pelas microalgas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> proliferação excessiva de macrófitas aquáticas que invadem o habitat dos peixes.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A camada verde de algas na superfície bloqueia a luz solar, matando a vegetação submersa. Bactérias aeróbicas se multiplicam freneticamente para decompor essa matéria morta e esgotam todo o oxigênio ($O_2$) dissolvido na água. Os peixes morrem por asfixia.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Nitratos agem como fertilizantes para as algas, não como venenos para peixes.</li>
+                                        <li><strong>B:</strong> A causa é a falta de oxigênio, não bloqueio físico.</li>
+                                        <li><strong>D:</strong> Excesso de fotossíntese tenderia a aumentar o pH (tornando mais alcalina), pois consome $CO_2$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O mexilhão-dourado (Limnoperna fortunei) é um molusco bivalve originário da Ásia que chegou ao Brasil na década de 1990, trazido acidentalmente na água de lastro de navios cargueiros. Desde então, espalhou-se por diversas bacias hidrográficas do país, entupindo tubulações de usinas hidrelétricas e ameaçando a biodiversidade aquática local.</p>
+                                <p><strong>Enunciado:</strong> O sucesso na rápida expansão e proliferação dessa espécie invasora nos ecossistemas sul-americanos é atribuído principalmente à:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> sua baixa taxa de reprodução, que evita a competição intraespecífica.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> ausência de predadores naturais e de parasitas específicos no novo ambiente.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> hibridização do mexilhão-dourado com espécies nativas, gerando descendentes mais adaptados.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> incapacidade das espécies nativas de realizar fotossíntese em águas turvas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> sua preferência por águas com alta concentração de metais pesados.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Espécies exóticas transformam-se em pragas invasoras severas porque chegam a um ambiente novo onde não existem seus controladores populacionais históricos (predadores e doenças). Sem essa resistência do meio, a espécie atinge seu potencial biótico de forma explosiva.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Pragas invasoras possuem taxa de reprodução altíssima.</li>
+                                        <li><strong>C:</strong> O mexilhão não cruza com espécies locais; ele as elimina por competição.</li>
+                                        <li><strong>E:</strong> Metais pesados são tóxicos. A proliferação ocorre pela falta de freios biológicos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Este bioma ocupa cerca de um quarto do território brasileiro. Sua vegetação característica apresenta árvores de pequeno a médio porte, com caules tortuosos, folhas espessas e casca grossa. Possui um clima com duas estações bem definidas: um verão chuvoso e um inverno extremamente seco. Muitas das plantas desse bioma possuem raízes muito profundas, que atingem lençóis freáticos, e suas sementes muitas vezes dependem de queimadas naturais para germinar.</p>
+                                <p><strong>Enunciado:</strong> O texto descreve adaptações típicas da vegetação do bioma brasileiro conhecido como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Mata Atlântica.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Caatinga.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Pampa.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Cerrado.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Pantanal.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Os caules tortuosos, a casca grossa (isolante térmico contra fogo), as raízes profundas em busca de água e o clima com clara divisão entre seca e chuva são as adaptações definidoras do Cerrado (savana brasileira).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A Mata Atlântica é chuvosa, sem adaptação ao fogo.</li>
+                                        <li><strong>B:</strong> A Caatinga tem plantas xerófitas (espinhos), sem dependência do fogo.</li>
+                                        <li><strong>C:</strong> O Pampa caracteriza-se por planícies com gramíneas e arbustos baixos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A Floresta Amazônica muitas vezes é incorretamente chamada de "o pulmão do mundo", sob a falsa premissa de que ela fornece a maior parte do oxigênio que respiramos. Ecologistas apontam que a maior parte da contribuição de oxigênio para a atmosfera terrestre provém, na verdade, do ecossistema marinho.</p>
+                                <p><strong>Enunciado:</strong> Os verdadeiros responsáveis pela maior parte do oxigênio livre liberado na atmosfera terrestre são:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> os corais que habitam as zonas costeiras rasas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> as bactérias decompositoras do fundo oceânico.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> as grandes macroalgas bentônicas em zonas abissais.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> o fitoplâncton, formado por microalgas e cianobactérias marinhas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> as espécies de zooplâncton presentes na superfície dos oceanos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Florestas clímax consomem quase todo o oxigênio que produzem. Nos oceanos, o fitoplâncton possui uma taxa gigantesca de fotossíntese combinada com alta renovação (não acumula madeira), permitindo a liberação da maior parte do $O_2$ líquido da atmosfera.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Corais são animais e não respondem pela maior produção de $O_2$.</li>
+                                        <li><strong>B:</strong> Decompositores apenas consomem oxigênio.</li>
+                                        <li><strong>C:</strong> Zona abissal não tem luz, logo não há fotossíntese.</li>
+                                        <li><strong>E:</strong> Zooplâncton são seres heterótrofos (animais) que apenas respiram.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Ao representar graficamente a quantidade de biomassa em cada nível trófico de um ecossistema, os ecologistas utilizam a pirâmide de biomassa. Na grande maioria dos ecossistemas terrestres, essa pirâmide tem a base larga (produtores) e o topo estreito. No entanto, em ecossistemas aquáticos abertos, observa-se frequentemente uma pirâmide de biomassa invertida, onde o nível dos consumidores primários possui biomassa maior que a dos produtores.</p>
+                                <p><strong>Enunciado:</strong> A manutenção desse ecossistema com uma pirâmide de biomassa invertida é possível porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> o fluxo de energia na água ocorre dos consumidores para os produtores.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> os produtores aquáticos possuem uma taxa de reprodução extremamente alta, compensando sua baixa biomassa momentânea.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> o zooplâncton realiza fotossíntese durante o dia e atua como consumidor primário à noite.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a ausência de gravidade na água permite que poucas algas sustentem peixes de grande porte.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a eficiência ecológica no ambiente aquático é de 100%, sem perda de calor entre os níveis tróficos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O fitoplâncton é devorado rapidamente, parecendo ter pouca massa. Contudo, a taxa de reprodução dele é explosiva, fornecendo matéria orgânica em ciclos muito curtos para sustentar os predadores.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> O fluxo de energia é sempre dos produtores para os consumidores.</li>
+                                        <li><strong>C:</strong> Zooplâncton não realiza fotossíntese.</li>
+                                        <li><strong>E:</strong> Nenhum sistema tem 100% de eficiência térmica (perde-se energia em forma de calor).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Ecologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O Protocolo de Kyoto e o Acordo de Paris são tratados internacionais que visam combater as mudanças climáticas e o Aquecimento Global. Uma das principais estratégias discutidas e fomentadas por esses acordos é o reflorestamento de áreas degradadas ao redor do mundo através do plantio de árvores nativas em larga escala.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista biogeoquímico, o reflorestamento atua diretamente na mitigação do Aquecimento Global porque as árvores em fase de crescimento:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> absorvem a radiação ultravioleta prejudicial que atravessa o buraco na camada de ozônio.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> consomem enormes quantidades de gás carbônico ($CO_2$) atmosférico para produzir biomassa orgânica.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> aumentam a retenção de calor na superfície terrestre através do sombreamento do solo.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> liberam gás metano ($CH_4$), que reage com a poluição atmosférica e neutraliza os gases estufa.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> fixam o nitrogênio atmosférico em suas folhas, diminuindo a acidez da chuva nas grandes cidades.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O motor do Efeito Estufa é o excesso de $CO_2$. Árvores jovens realizam muito mais fotossíntese do que respiração, sequestrando ativamente o $CO_2$ do ar e convertendo-o em madeira, mitigando o aquecimento.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Buraco na camada de ozônio não é a causa direta do Aquecimento Global.</li>
+                                        <li><strong>C:</strong> O sombreamento resfria a superfície, não aumenta a retenção de calor.</li>
+                                        <li><strong>D:</strong> O metano ($CH_4$) é um gás estufa, não um neutralizador.</li>
+                                        <li><strong>E:</strong> Bactérias no solo fixam o nitrogênio, não as folhas; além disso, a acidez da chuva não é impedida por isso.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 15 • Dinâmica de Ecossistemas</span>
+                                        <div class="large-text">Qual a diferença fundamental entre o fluxo de energia e o ciclo da matéria em um ecossistema?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Energia = Unidirecional<br>Matéria = Cíclico</div>
+                                        <span class="card-hint">A energia tem fluxo unidirecional e decrescente (é perdida como calor). A matéria tem fluxo cíclico (é constantemente reciclada pelos decompositores).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 15 • Pirâmides Ecológicas</span>
+                                        <div class="large-text">Em qualquer ecossistema, por que a pirâmide de energia nunca pode ser representada de forma invertida?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Perda constante de energia.</div>
+                                        <span class="card-hint">Porque grande parte da energia é gasta no metabolismo ou perdida na forma de calor a cada mudança de nível trófico.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 15 • Pirâmides Ecológicas</span>
+                                        <div class="large-text">Em uma teia alimentar marinha, o que permite que a pirâmide de biomassa seja invertida (fitoplâncton menor que zooplâncton)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Altíssima taxa de reprodução.</div>
+                                        <span class="card-hint">O fitoplâncton possui uma altíssima taxa de reprodução, sustentando a biomassa dos predadores mesmo com uma massa instantânea menor.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 15 • Dinâmica Populacional</span>
+                                        <div class="large-text">Qual conceito ecológico define o conjunto de fatores (como falta de água, espaço, predadores e doenças) que impede o crescimento exponencial de uma população?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Resistência do Meio.</div>
+                                        <span class="card-hint">Atua como freio estabilizando a população na capacidade suporte do ambiente.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 15 • Relações Ecológicas</span>
+                                        <div class="large-text">O pássaro-chupim bota seus ovos no ninho de outras aves, obrigando-as a gastar energia criando seu filhote. Qual é a relação ecológica descrita?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Parasitismo (+/-)</div>
+                                        <span class="card-hint">Específicamente conhecido como parasitismo de ninho, onde o hospedeiro é prejudicado por perda de recursos e energia.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 15 • Ciclos Biogeoquímicos</span>
+                                        <div class="large-text">Na prática agrícola da rotação de culturas, qual é o papel essencial desempenhado pelas bactérias associadas às raízes das leguminosas?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Fixação do Nitrogênio.</div>
+                                        <span class="card-hint">Convertem o gás nitrogênio ($N_2$) do ar em amônia para nutrir o solo de forma natural.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 15 • Ciclos Biogeoquímicos</span>
+                                        <div class="large-text">Qual é o único grande ciclo biogeoquímico cuja dinâmica não possui uma fase gasosa (ou seja, não circula pela atmosfera)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O Ciclo do Fósforo.</div>
+                                        <span class="card-hint">Ele se move de forma mais lenta apenas entre as rochas, a água, o solo e os seres vivos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 15 • Sucessão Ecológica</span>
+                                        <div class="large-text">Durante o processo de sucessão ecológica, o que acontece com a Produtividade Primária Líquida (PPL) quando o ecossistema atinge a fase clímax?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A PPL tende a zero.</div>
+                                        <span class="card-hint">A comunidade atinge o limite de biomassa, então tudo o que é produzido pela fotossíntese é consumido pela própria respiração celular.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 15 • Biomas Brasileiros</span>
+                                        <div class="large-text">Caules muito tortuosos, casca grossa atuando como isolante térmico contra o fogo e raízes extremamente profundas são adaptações botânicas de qual bioma?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Cerrado.</div>
+                                        <span class="card-hint">Essas adaptações garantem a sobrevivência às queimadas naturais e às longas estações secas do bioma.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 15 • Biomas Brasileiros</span>
+                                        <div class="large-text">Em qual bioma brasileiro as plantas apresentam características xerófitas (perda de folhas na seca, espinhos, acúmulo de água) em resposta a um clima semiárido extremo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Caatinga.</div>
+                                        <span class="card-hint">Um bioma exclusivamente brasileiro altamente adaptado à escassez hídrica crônica.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 11 de 15 • Impactos Ambientais</span>
+                                        <div class="large-text">No fenômeno de Eutrofização de um lago por descarte de esgoto, qual é a causa química letal que resulta na morte em massa dos peixes?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A asfixia (falta de oxigênio).</div>
+                                        <span class="card-hint">O oxigênio ($O_2$) dissolvido na água é totalmente consumido pela multiplicação de bactérias decompositoras aeróbicas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 12 de 15 • Impactos Ambientais</span>
+                                        <div class="large-text">Por que, no fenômeno ambiental da Magnificação Trófica (ou Bioacumulação), os predadores de topo são sempre os mais afetados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Acúmulo cumulativo de toxinas.</div>
+                                        <span class="card-hint">Porque compostos não biodegradáveis (como mercúrio) não são eliminados pelo organismo e se acumulam a cada nível da cadeia alimentar.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 13 de 15 • Impactos Ambientais</span>
+                                        <div class="large-text">O clorofluorcarboneto (CFC) destrói a camada de ozônio. Esse é o fenômeno causador do Aquecimento Global?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Não. São problemas diferentes.</div>
+                                        <span class="card-hint">O buraco na camada de ozônio permite a entrada de raios UV (câncer de pele). O aquecimento global é causado por gases de efeito estufa (como $CO_2$ e Metano).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 14 de 15 • Aquecimento Global</span>
+                                        <div class="large-text">Do ponto de vista biogeoquímico e fotossintético, como o plantio de florestas jovens ajuda a combater o Aquecimento Global?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Sequestro ativo de carbono.</div>
+                                        <span class="card-hint">Florestas em crescimento têm alta taxa de fotossíntese, sequestrando ativamente o $CO_2$ da atmosfera para transformá-lo em biomassa (troncos e galhos).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 15 de 15 • Espécies Invasoras</span>
+                                        <div class="large-text">Qual é o principal motivo pelo qual a introdução de uma espécie exótica (como o javali no Brasil) a torna uma praga ecológica devastadora?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Ausência de predadores naturais.</div>
+                                        <span class="card-hint">A falta de predadores e doenças naturais no novo ambiente permite que a espécie invasora se reproduza e compita sem restrições populacionais.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+                   
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termologia - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para Fórmulas Matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Natureza) ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <!-- Física recebe a classe active -->
+            <a href="fisica.html" class="nav-link active" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Física / Termologia</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Termologia: Calor, Propagação e Termodinâmica</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (FÍSICA - TERMOLOGIA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <!-- SEÇÃO 1: Calor e Temperatura -->
+                        <h2>Conceitos Iniciais: Calor e Temperatura</h2>
+                        
+                        <p><strong>Temperatura:</strong> É a medida do grau de agitação das moléculas de um corpo. Quanto mais rápido as moléculas vibram ou se movem, maior a temperatura.</p>
+                        
+                        <div class="example-box">
+                            <strong>Analogia da Pista de Dança:</strong> Se as pessoas estão apenas balançando a cabeça (pouca agitação), a temperatura é baixa. Se estão pulando em um show de rock (alta agitação), a temperatura é alta.
+                        </div>
+
+                        <p><strong>Calor:</strong> É a energia térmica em trânsito. O calor só existe quando há uma <em>diferença de temperatura</em> entre dois corpos, fluindo sempre, de forma natural, do corpo mais quente para o mais frio, até que ambos atinjam o <strong>equilíbrio térmico</strong> (mesma temperatura).</p>
+
+                        <div class="example-box">
+                            <strong>Analogia do PIX (Nunca mais erre na prova!):</strong><br><br>
+                            O calor é como um PIX. Você não "guarda" um PIX na carteira, você guarda dinheiro (energia interna). O PIX (calor) é apenas a <em>transferência</em> de fundos da conta mais cheia para a conta mais vazia.<br><br>
+                            Portanto, na física, é errado dizer "estou com calor". O correto seria "estou recebendo muito calor do ambiente".
+                        </div>
+
+                        <!-- SEÇÃO 2: Propagação de Calor -->
+                        <h2 style="margin-top: 3rem;">Propagação de Calor</h2>
+                        
+                        <ul>
+                            <li><strong>Condução:</strong> É a transferência de calor que ocorre prioritariamente em sólidos. A energia passa de molécula para molécula através de choques, sem que a matéria saia do lugar.
+                                <br><em>Analogia:</em> É como passar um balde de água de mão em mão em uma fila para apagar um incêndio. O balde (energia) se move, mas as pessoas (moléculas) ficam paradas.
+                                <br><em>Exemplo:</em> Deixar uma colher de metal dentro da panela no fogo. O cabo esquenta porque a agitação viajou pelo metal até a sua mão.
+                            </li>
+                            
+                            <li style="margin-top: 1.5rem;"><strong>Convecção:</strong> Ocorre exclusivamente em fluidos (líquidos e gases). Baseia-se na diferença de densidade. Quando um fluido é aquecido, ele se expande, fica menos denso (mais leve) e sobe. O fluido frio, mais denso (pesado), desce para ocupar o lugar, criando correntes de convecção.
+                                <br><em>Exemplo:</em> O ar-condicionado é instalado no alto da parede (o ar frio desce) e o aquecedor no chão (o ar quente sobe). Também é o motor dos ventos.
+                            </li>
+                            
+                            <li style="margin-top: 1.5rem;"><strong>Irradiação (ou Radiação):</strong> É a transferência de calor através de ondas eletromagnéticas (principalmente infravermelho). É o <strong>único</strong> processo que ocorre no vácuo (ausência de matéria).
+                                <br><em>Exemplo:</em> É assim que a energia do Sol viaja pelo espaço vazio até aquecer a Terra, e como você sente o rosto esquentar perto de uma fogueira.
+                            </li>
+                        </ul>
+
+                        <!-- SEÇÃO 3: Calorimetria -->
+                        <h2 style="margin-top: 3rem;">Calorimetria (Cálculos de Energia)</h2>
+                        
+                        <h3>Calor Sensível</h3>
+                        <p>É a energia fornecida ou retirada que muda a temperatura do corpo, mas <strong>sem alterar</strong> seu estado físico.</p>
+                        $$ Q = m \cdot c \cdot \Delta\theta $$
+                        <p>Na fórmula, $m$ é a massa, $c$ é o calor específico (a "dificuldade" que o material tem para esquentar ou esfriar) e $\Delta\theta$ é a variação de temperatura.</p>
+                        <p><em>Exemplo:</em> Aquecer a água de $20^\circ\text{C}$ para $90^\circ\text{C}$. Fica mais quente, mas continua líquida.</p>
+
+                        <h3>Calor Latente</h3>
+                        <p>É a energia envolvida na <strong>mudança de estado físico</strong>. Durante a transição de fase (derretimento ou fervura), a temperatura <strong>não muda</strong>. A energia é usada inteiramente para quebrar ou formar ligações moleculares.</p>
+                        $$ Q = m \cdot L $$
+                        <p>Na fórmula, $m$ é a massa e $L$ é o calor latente da substância.</p>
+                        
+                        <div class="example-box">
+                            <strong>Dica Prática:</strong> Se você tem um copo com água e gelo, a temperatura ali será exatamente $0^\circ\text{C}$ enquanto houver uma única pedrinha de gelo boiando. Só após todo o gelo derreter é que a temperatura voltará a subir.
+                        </div>
+
+                        <h3>Potência Térmica</h3>
+                        <p>Mede a rapidez com que o calor é transferido. É a quantidade de energia térmica dividida pelo tempo gasto.</p>
+                        $$ P = \frac{\Delta E}{\Delta t} \quad \text{ou} \quad P = \frac{Q}{\Delta t} $$
+                        <p><em>Analogia:</em> Um micro-ondas de $1000\text{W}$ esquenta sua marmita muito mais rápido (menor $\Delta t$) do que um micro-ondas de $500\text{W}$ para transferir a mesma quantidade de energia ($Q$).</p>
+
+                        <!-- SEÇÃO 4: Dilatação e Anomalia da Água -->
+                        <h2 style="margin-top: 3rem;">Dilatação Térmica e a Anomalia da Água</h2>
+                        <p><strong>Dilatação Térmica:</strong> Quando aquecemos um corpo, suas moléculas se agitam mais e se afastam umas das outras. O corpo aumenta de volume (dilata). Ao esfriar, ele contrai. Por isso, trilhos de trem têm juntas de dilatação, evitando que entortem no sol.</p>
+
+                        <div class="example-box">
+                            <strong>A Anomalia da Água e a Vida na Terra</strong><br><br>
+                            A água tem um comportamento rebelde (anômalo) entre $0^\circ\text{C}$ e $4^\circ\text{C}$. Ao ser aquecida de $0$ para $4^\circ\text{C}$, em vez de expandir, ela <strong>se contrai</strong> (reduz volume). Consequentemente, a água atinge sua <strong>densidade máxima a $4^\circ\text{C}$</strong>.<br><br>
+                            <strong>Consequência Vital:</strong> É por isso que o gelo ($0^\circ\text{C}$) é menos denso que a água líquida e flutua. O gelo na superfície de um lago atua como um isolante térmico (irradiação não passa bem por ele e não há convecção de sólido), permitindo que a água no fundo continue líquida a $4^\circ\text{C}$, preservando a vida marinha no inverno.
+                        </div>
+
+                        <!-- SEÇÃO 5: Termodinâmica -->
+                        <h2 style="margin-top: 3rem;">Termodinâmica e Máquinas Térmicas</h2>
+                        
+                        <ul>
+                            <li><strong>1ª Lei da Termodinâmica (Conservação da Energia):</strong> O calor ($Q$) fornecido a um sistema gás pode ser usado para duas coisas: realizar Trabalho ($W$), movendo um pistão (energia mecânica), e o restante vai variar a Energia Interna ($\Delta U$), esquentando o gás.</li>
+                            <li><strong>2ª Lei da Termodinâmica:</strong> O calor flui espontaneamente do quente para o frio. Além disso, nenhuma máquina térmica tem 100% de rendimento, pois sempre há calor desperdiçado para o ambiente (entropia).</li>
+                            <li><strong>Ciclo de Carnot:</strong> É uma máquina térmica idealizada. Carnot provou que mesmo a máquina mais perfeita do universo jamais atingiria 100% de eficiência. O rendimento máximo é ditado por este ciclo.</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>Motores vs. Geladeiras</strong><br><br>
+                            <strong>Máquinas Térmicas (Motores):</strong> Transformam calor em trabalho. Retiram energia da queima de combustível (fonte quente), realizam trabalho (girar rodas) e rejeitam o resto, obrigatoriamente, pelo escapamento (fonte fria).<br><br>
+                            <strong>Máquinas Frigoríficas (Geladeiras):</strong> Fazem o caminho inverso: forçam o calor a ir do corpo frio para o quente. Para contrariar a natureza, exigem <strong>trabalho externo</strong> (compressor na tomada). Retiram calor de dentro (fonte fria) e jogam na grade traseira para a cozinha (fonte quente).
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - FÍSICA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em resgates de vítimas de hipotermia ou acidentes em locais de clima frio, os socorristas frequentemente envolvem a pessoa em uma "manta térmica aluminizada". Esse cobertor é extremamente fino, leve e metálico, lembrando um papel alumínio, não possuindo a espessura e as fibras dos cobertores tradicionais de lã.</p>
+                                <p><strong>Enunciado:</strong> O uso dessa manta térmica aluminizada é eficaz para manter a pessoa aquecida porque sua superfície brilhante atua:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> gerando calor ativamente a partir do contato com o oxigênio do ar.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> refletindo as ondas eletromagnéticas na faixa do infravermelho emitidas pelo corpo da vítima.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> aumentando a condução térmica entre o ambiente externo e a pele da pessoa.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> absorvendo a radiação ultravioleta do ambiente para aquecer a vítima.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> anulando as correntes de convecção do ar interno por meio de reações químicas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O corpo humano perde muito calor por <strong>irradiação térmica</strong> (ondas de infravermelho). A superfície metálica e espelhada da manta reflete essas ondas de volta para o corpo, impedindo a perda dessa energia térmica para o ambiente externo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e E:</strong> A manta é passiva, ou seja, não realiza reações químicas para gerar calor.</li>
+                                        <li><strong>C:</strong> A intenção é isolar o corpo. Se aumentasse a condução, a vítima perderia calor mais rápido.</li>
+                                        <li><strong>D:</strong> A função não é absorver calor externo (que pode nem existir à noite), mas reter o calor interno do paciente.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Durante um dia ensolarado na praia, um banhista percebe que a areia está tão quente que queima os pés, obrigando-o a correr para a água. Ao mergulhar, ele nota que a água do mar está surpreendentemente fria. À noite, ao retornar à mesma praia, ele percebe o fenômeno inverso: a areia esfriou rapidamente e está gelada, enquanto a água do mar apresenta uma temperatura amena, parecendo mais quente que a areia.</p>
+                                <p><strong>Enunciado:</strong> O fenômeno físico que explica a grande diferença no aquecimento e resfriamento entre a areia e a água do mar é o fato de a água possuir:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> alta condutividade térmica.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> baixo calor latente de fusão.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> alto calor específico.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> baixo coeficiente de dilatação térmica.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> alta capacidade de reflexão da radiação solar.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O <strong>calor específico</strong> mede a dificuldade de uma substância em mudar sua temperatura. A água tem um calor específico muito alto (cerca de $1\text{ cal/g}^\circ\text{C}$), necessitando absorver muita energia para esquentar e perdendo muita energia para esfriar. A areia tem calor específico baixo, logo, esquenta e esfria muito mais rápido.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Condutividade explica a rapidez com que o calor viaja <em>dentro</em> do material (como um metal), não a facilidade de alterar sua temperatura global sob o sol.</li>
+                                        <li><strong>B:</strong> O calor latente refere-se à mudança de estado físico, o que não está ocorrendo.</li>
+                                        <li><strong>E:</strong> A areia reflete mais luz que a água. Se reflexão fosse o motivo, a água (que absorve mais) esquentaria mais rápido que a areia.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em um projeto de arquitetura sustentável para uma região de clima muito quente, o engenheiro recomenda que as saídas de ar-condicionado sejam instaladas na parte superior das paredes, próximas ao teto, e não próximas ao chão.</p>
+                                <p><strong>Enunciado:</strong> Essa recomendação técnica baseia-se no processo de propagação de calor em fluidos, garantindo a eficiência da climatização porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> o ar frio, sendo menos denso, tende a descer, misturando-se uniformemente no ambiente.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> a irradiação do ar frio ocorre mais facilmente de cima para baixo pela ação da gravidade.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> o ar frio possui maior densidade que o ar quente, tendendo a descer e forçando o ar quente a subir.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a condução térmica pelo ar é maximizada quando a fonte fria se encontra no ponto mais alto.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> o ar frio expande-se rapidamente no teto, absorvendo o calor latente do cômodo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Este é o princípio da <strong>convecção térmica</strong>. O ar resfriado pelo aparelho se contrai, tornando-se mais <strong>denso</strong> (pesado), e desce por gravidade. O ar quente, menos denso (leve), sobe, onde será resfriado pelo aparelho, criando correntes que refrescam todo o cômodo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> O ar frio é <em>mais</em> denso, não menos denso.</li>
+                                        <li><strong>B e D:</strong> Fluidos (ar e água) transferem calor majoritariamente por <em>convecção</em>, pois o ar é um péssimo condutor térmico. Irradiação independe da gravidade.</li>
+                                        <li><strong>E:</strong> O ar frio sofre contração, não expansão. Não há calor latente (mudança de fase) no ar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O "filtro de barro", invenção brasileira, é reconhecido mundialmente por sua eficácia em manter a água fresca, mesmo em dias quentes. Ele é feito de argila porosa, o que permite que uma pequena fração da água armazenada atravesse suas paredes e umedeça a superfície externa do filtro.</p>
+                                <p><strong>Enunciado:</strong> A água no interior do filtro de barro é mantida fresca (em temperatura abaixo da ambiente) devido ao processo físico de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> condensação do vapor d'água ambiente sobre a superfície externa do filtro.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> absorção de calor latente pela água externa durante o seu processo de evaporação.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> isolamento térmico perfeito fornecido pela argila, impedindo qualquer troca de calor.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> emissão de radiação térmica pela água interna através dos poros da argila.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> aumento da pressão interna do filtro, que reduz a agitação molecular do líquido.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A água que transpira pelos poros da argila evapora na parte externa. Para passar do estado líquido para o gasoso, a água precisa <strong>absorver energia (calor latente de vaporização)</strong>. Ela rouba essa energia térmica do próprio filtro e da água no interior, provocando o resfriamento geral. (É o mesmo princípio do suor no corpo humano).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A condensação (gás virando líquido) <em>libera</em> calor, o que aqueceria o filtro.</li>
+                                        <li><strong>C:</strong> Nenhum material isola $100\%$ do calor, muito menos um material poroso que deixa fluido vazar.</li>
+                                        <li><strong>D:</strong> O resfriamento brutal ocorre pela evaporação, não pela irradiação natural.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em manhãs de inverno rigoroso na região Sul do Brasil, ao acordar e caminhar descalço pela casa, um morador pisa inicialmente em um tapete de lã e, logo em seguida, no piso de cerâmica. Ele sente a cerâmica muito mais "gelada" do que o tapete. No entanto, ao medir a temperatura de ambos com um termômetro de infravermelho, constata que piso e tapete estão exatamente à mesma temperatura ($15^\circ\text{C}$).</p>
+                                <p><strong>Enunciado:</strong> A sensação tátil de que a cerâmica é mais fria que o tapete ocorre porque a cerâmica:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> possui um calor específico maior, transferindo calor latente para o pé.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> apresenta maior condutividade térmica, retirando calor do pé mais rapidamente que a lã.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> emite ondas de frio que reduzem a temperatura dos receptores nervosos da pele.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> tem menor capacidade térmica, esfriando o pé apenas na superfície de contato.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> reflete o calor irradiado pelo corpo humano, enquanto a lã o absorve.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O corpo humano não sente a "temperatura" absoluta, ele percebe a <strong>taxa de perda de calor</strong>. A cerâmica é um bom condutor térmico, roubando o calor do seu pé (que está a $\sim 36^\circ\text{C}$) muito mais rápido do que a lã, que é um isolante térmico (má condutora). Por perder calor mais rápido, você sente a cerâmica mais "gelada".</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não ocorre mudança de fase, logo não há calor latente envolvido.</li>
+                                        <li><strong>C:</strong> Na física clássica, o "frio" não existe como entidade a ser transferida; apenas o <em>calor</em> flui.</li>
+                                        <li><strong>E:</strong> Se a cerâmica refletisse o calor de volta para o pé, o pé sentiria aquecimento, não resfriamento.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um estudante, numa tentativa de resfriar a cozinha de sua casa durante um dia de verão intenso de $35^\circ\text{C}$, decide fechar todas as portas e janelas do cômodo e deixar a porta da geladeira (que estava em pleno funcionamento) totalmente aberta.</p>
+                                <p><strong>Enunciado:</strong> Considerando a geladeira como uma máquina frigorífica real regida pelas Leis da Termodinâmica, após algumas horas nessa situação, a temperatura média da cozinha fechada irá:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> diminuir, pois o ar frio da geladeira se espalha pelo cômodo por convecção.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> permanecer inalterada, pois o ar frio liberado anula o calor do ar da cozinha.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> aumentar, pois o compressor dissipará mais calor no ambiente do que a quantidade de calor retirada pelo interior do refrigerador.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> diminuir, já que a geladeira viola a 2ª Lei da Termodinâmica ao transferir frio para o meio externo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> permanecer inalterada, pois o sistema atingirá o equilíbrio térmico instantaneamente.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A geladeira retira calor do seu interior ($Q_{\text{frio}}$) e o joga para o exterior pela grade traseira. Porém, para fazer isso (contrariar a natureza), o motor realiza um trabalho elétrico ($W$) que <strong>também se dissipa em calor</strong> na traseira. Logo, o calor jogado na cozinha ($Q_{\text{quente}} = Q_{\text{frio}} + W$) é sempre maior do que o frio liberado pela porta. Num ambiente fechado, o saldo final é o aquecimento.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> Ignoram que o motor da geladeira gera um calor excedente oriundo da energia elétrica consumida da tomada.</li>
+                                        <li><strong>D:</strong> Máquinas reais não violam as Leis da Termodinâmica, e não se transfere "frio".</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A água pura apresenta um comportamento anômalo em relação à maioria das substâncias. Enquanto a regra geral é que os materiais se contraiam continuamente ao serem resfriados, a água, ao ser resfriada de $4^\circ\text{C}$ até $0^\circ\text{C}$, sofre uma expansão de volume.</p>
+                                <p><strong>Enunciado:</strong> Qual consequência natural e biológica de extrema importância decorre diretamente dessa anomalia da água?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A formação de correntes marítimas quentes em zonas equatoriais, que equilibram o clima.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A ebulição da água em temperaturas menores quando em grandes altitudes (menor pressão).</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> O congelamento de lagos apenas em sua superfície, garantindo a sobrevivência da fauna aquática nas águas profundas no inverno.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A alta tensão superficial da água, que permite que insetos caminhem sobre ela.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A evaporação da água dos rios durante o dia e a sua precipitação durante a noite.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Como a água se expande ao congelar (de $4^\circ\text{C}$ a $0^\circ\text{C}$), o gelo ($0^\circ\text{C}$) torna-se <strong>menos denso</strong> (mais leve) que a água líquida a $4^\circ\text{C}$. O gelo sobe, formando uma crosta superficial isolante que impede que o resto do lago congele, mantendo peixes e plantas vivos no fundo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Correntes ocorrem por convecção em todas as temperaturas, não apenas pela anomalia.</li>
+                                        <li><strong>B:</strong> Isso ocorre devido à baixa da pressão atmosférica sobre a água, não à dilatação.</li>
+                                        <li><strong>D:</strong> Tensão superficial decorre das pontes de hidrogênio (coesão), não do comportamento anômalo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Engenheiros mecânicos buscam constantemente projetar motores a combustão para veículos que sejam cada vez mais eficientes, gastando menos combustível. Contudo, sabe-se teoricamente que é impossível construir um motor que transforme 100% da energia da queima da gasolina em energia de movimento (trabalho).</p>
+                                <p><strong>Enunciado:</strong> O princípio físico fundamental que decreta a impossibilidade de um motor térmico atingir 100% de rendimento é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Lei da Gravitação Universal, que gera arrasto constante nas rodas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 1ª Lei da Termodinâmica (Princípio da Conservação da Energia).</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Lei de Fourier sobre condutividade e isolamento térmico.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 2ª Lei da Termodinâmica, que exige a rejeição de parte do calor para uma fonte fria.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Equação da Calorimetria de mudança de fase da gasolina.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A <strong>2ª Lei da Termodinâmica</strong> (Ciclo de Carnot) determina que é impossível construir uma máquina operando em ciclos que transforme integralmente calor em trabalho útil. Sempre haverá um aumento da entropia e a obrigatoriedade de <strong>rejeitar uma parcela do calor</strong> para o ambiente externo (através do escapamento e radiador).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> A 1ª Lei apenas diz que energia se conserva, mas não proíbe (matematicamente) que ela vire 100% trabalho. Quem impõe a perda obrigatória é a 2ª Lei.</li>
+                                        <li><strong>A e C:</strong> A gravidade causa atrito nas rodas, mas o que trava o limite físico do motor em si é a Termodinâmica, não a Lei de Fourier ou de Newton.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Deixar um carro estacionado sob o Sol com os vidros fechados transforma o interior do veículo em um ambiente insuportavelmente quente, com temperaturas muito superiores à do ar externo. Esse fenômeno, semelhante ao que ocorre em estufas de plantas, está intimamente ligado à forma como o vidro interage com a radiação eletromagnética.</p>
+                                <p><strong>Enunciado:</strong> O interior do veículo atinge altas temperaturas porque os vidros:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> impedem as trocas de calor por condução com o oxigênio externo.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> são transparentes à radiação visível do Sol, mas opacos à radiação infravermelha emitida pelos bancos do carro, aprisionando o calor.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> refratam os raios solares para o interior, multiplicando a frequência da radiação incidente.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> absorvem a radiação ultravioleta e a reemitem na forma de raios gama altamente energéticos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> anulam as correntes de convecção internas, concentrando todo o ar frio próximo ao assoalho do carro.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>É a exata definição do <strong>Efeito Estufa</strong>. A luz do sol (visível, alta frequência) atravessa o vidro e aquece os bancos. Os bancos quentes passam a emitir radiação térmica (infravermelho, baixa frequência). O vidro não deixa o infravermelho passar para fora (ele é <strong>opaco</strong> ao infravermelho). A energia entra, mas não sai.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>C:</strong> A refração apenas muda a direção da luz, mas é impossível "multiplicar" a frequência (energia) do sol.</li>
+                                        <li><strong>D:</strong> Objetos no cotidiano não emitem raios gama (altíssima energia atômica).</li>
+                                        <li><strong>E:</strong> A convecção continua ocorrendo normalmente dentro do carro (ar quente subindo).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Ao tomar banho em dias frios de inverno, é comum que a água do chuveiro elétrico não atinja a temperatura desejada, mesmo com a chave seletora na posição "inverno" (que garante a potência elétrica máxima). Para conseguir uma água visivelmente mais quente nessas situações, o usuário costuma reduzir o fluxo da água, abrindo menos o registro.</p>
+                                <p><strong>Enunciado:</strong> Focando no conceito de potência térmica ($P = \frac{m \cdot c \cdot \Delta\theta}{\Delta t}$), a água sai mais quente ao se fechar parcialmente o registro porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a potência elétrica dissipada pelo resistor elétrico aumenta.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> a diminuição da pressão nos canos aumenta a condutividade da água.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> a massa de água que passa pela resistência por unidade de tempo é menor, permitindo maior variação de temperatura.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> o calor específico da água diminui com o fechamento do registro, aquecendo-a com mais facilidade.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> o fluxo lento gera maior atrito mecânico da água contra o resistor, gerando calor extra.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A potência elétrica ($P$) gerada pelo chuveiro é fixa (se a chave está no inverno). Olhando a fórmula, o termo $(m/\Delta t)$ é a vazão de água (massa/tempo). Se você diminui a quantidade de água (massa) que cai por segundo, o chuveiro concentrará a mesma energia térmica em <strong>menos água</strong>. Matematicamente, para o $P$ se manter constante, o $\Delta\theta$ (temperatura) tem que aumentar.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A potência elétrica depende apenas da tomada e da resistência física da peça ($P = U^2/R$), não do registro de água.</li>
+                                        <li><strong>D:</strong> O calor específico ($c$) é constante para a água líquida ($1\text{ cal/g}^\circ\text{C}$).</li>
+                                        <li><strong>E:</strong> O calor mecânico gerado pelo "atrito" da água na peça é nulo perto do calor elétrico gerado (Efeito Joule).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Transferência de Calor</span>
+                                        <div class="large-text">Do ponto de vista da Física, por que a frase "Feche a janela para o frio não entrar" está conceitualmente errada?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O "frio" não se move.</div>
+                                        <span class="card-hint">O correto é evitar que o calor (energia térmica em trânsito) escape do ambiente mais quente (dentro) para o ambiente mais frio (fora).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Condução Térmica</span>
+                                        <div class="large-text">Ao pegar uma colher de metal e uma de madeira, ambas à mesma temperatura ambiente, a de metal parece mais fria. Por quê?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Maior condutividade.</div>
+                                        <span class="card-hint">Porque o metal é um excelente condutor térmico. Ele retira o calor da sua mão de forma muito mais rápida que a madeira.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Convecção Térmica</span>
+                                        <div class="large-text">Por que aparelhos de ar-condicionado devem ser instalados no alto das paredes e aquecedores perto do chão?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Para favorecer a convecção.</div>
+                                        <span class="card-hint">O ar frio é mais denso (pesado) e desce, enquanto o ar quente é menos denso e sobe, gerando correntes que misturam o ar do cômodo inteiro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Irradiação Térmica</span>
+                                        <div class="large-text">Como a imensa energia térmica do Sol consegue chegar até a Terra atravessando o vácuo do espaço?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Através da irradiação.</div>
+                                        <span class="card-hint">A irradiação (ou radiação) é o único processo de transferência de calor que ocorre via ondas eletromagnéticas e, portanto, não precisa de matéria para viajar.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Calor Específico</span>
+                                        <div class="large-text">A areia da praia esquenta rápido de dia e esfria rápido à noite. A água do mar demora para esquentar e para esfriar. Qual o motivo físico?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Diferença de calor específico.</div>
+                                        <span class="card-hint">A água possui um altíssimo calor específico ($c$), precisando absorver (ou perder) muita energia para conseguir sofrer variação de temperatura.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Calor Latente</span>
+                                        <div class="large-text">Ao aquecer uma panela com gelo, o que acontece com a temperatura da água no exato momento em que o gelo está derretendo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A temperatura não muda.</div>
+                                        <span class="card-hint">Fica constante a $0^\circ\text{C}$. Todo o calor recebido (calor latente) está sendo gasto exclusivamente para quebrar ligações e mudar o estado físico.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Dilatação Térmica</span>
+                                        <div class="large-text">Qual fenômeno térmico natural impede que os peixes morram congelados em lagos de países com invernos rigorosos?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A anomalia da água.</div>
+                                        <span class="card-hint">Ao esfriar de $4^\circ\text{C}$ para $0^\circ\text{C}$ a água se expande, tornando o gelo menos denso que o líquido. O gelo flutua e age como um "teto" isolante térmico para a água do fundo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • 1ª Lei da Termodinâmica</span>
+                                        <div class="large-text">Em um motor a combustão, a energia da explosão da gasolina não vira 100% velocidade para o carro. Segundo a 1ª Lei, para onde vai o resto?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Variação da energia interna.</div>
+                                        <span class="card-hint">O calor da explosão divide-se em: realizar trabalho (girar as rodas do carro) e aumentar a energia interna do sistema (aquecer fisicamente o próprio bloco do motor).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • 2ª Lei da Termodinâmica</span>
+                                        <div class="large-text">Por que é impossível construir um motor de carro perfeito, que não necessite de escapamento ou sistema de resfriamento (radiador)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Devido à 2ª Lei da Termodinâmica.</div>
+                                        <span class="card-hint">A lei estipula que nenhuma máquina térmica converte 100% do calor em trabalho útil, sendo fisicamente obrigatório rejeitar calor para o ambiente externo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Máquinas Frigoríficas</span>
+                                        <div class="large-text">O calor flui naturalmente do quente para o frio. Como a geladeira consegue fazer o inverso, tirando calor do seu interior e jogando para a cozinha?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Realizando trabalho externo.</div>
+                                        <span class="card-hint">Esse fluxo forçado e artificial só ocorre graças à energia elétrica gasta pelo motor compressor da geladeira para contrariar a natureza termodinâmica.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

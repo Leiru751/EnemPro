@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química Básica - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para notação química e matemática -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link active" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Química / Química Básica e Propriedades da Matéria</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Química Básica</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (QUÍMICA BÁSICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <h2>Propriedades da Matéria</h2>
+                        <p>A matéria é tudo aquilo que tem massa e ocupa lugar no espaço. Suas propriedades são divididas em duas categorias principais para nos ajudar a identificar do que as coisas são feitas:</p>
+                        <ul>
+                            <li><strong>Propriedades Gerais:</strong> São comuns a toda e qualquer matéria, não servindo para identificar uma substância. As principais são a <strong>massa</strong> (quantidade de matéria) e a <strong>extensão/volume</strong> (o espaço que ocupa). Pense na inércia: um ônibus cheio e um vazio se comportam de forma diferente ao frear, mas ambos são feitos de matéria. Outro exemplo clássico é a impenetrabilidade: dois corpos não ocupam o mesmo lugar no espaço ao mesmo tempo.</li>
+                            <li><strong>Propriedades Específicas:</strong> Funcionam como a "impressão digital" da matéria. Elas são exclusivas de cada material, como o <strong>Ponto de Fusão (PF)</strong>, o <strong>Ponto de Ebulição (PE)</strong> e a <strong>Densidade</strong>. As propriedades organolépticas também entram aqui, sendo aquelas que percebemos pelos sentidos (cor, brilho, odor e sabor).</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Estados Físicos e Mudanças de Estado</h2>
+                        <p>A matéria se apresenta na natureza basicamente em três estados, dependendo do grau de agitação e atração de suas partículas:</p>
+                        <ul>
+                            <li><strong>Sólido:</strong> Partículas muito unidas e organizadas. Forma e volume constantes.</li>
+                            <li><strong>Líquido:</strong> Partículas mais soltas, permitindo fluidez. Volume constante, mas forma variável (adquire a forma do recipiente).</li>
+                            <li><strong>Gasoso:</strong> Partículas altamente agitadas e afastadas. Forma e volume variáveis (ocupam todo o espaço disponível).</li>
+                        </ul>
+                        
+                        <div class="example-box">
+                            <strong>Quando a matéria absorve ou libera calor, ocorrem as mudanças de estado físico:</strong>
+                            <ul>
+                                <li><strong>Fusão:</strong> Sólido para líquido (derretimento do gelo).</li>
+                                <li><strong>Vaporização:</strong> Líquido para gasoso. Pode ocorrer de forma lenta (evaporação, como a roupa secando no varal) ou rápida/turbulenta (ebulição, como a água fervendo no fogão).</li>
+                                <li><strong>Condensação ou Liquefação:</strong> Gasoso para líquido (o "suor" na parte externa do copo de refrigerante gelado).</li>
+                                <li><strong>Solidificação:</strong> Líquido para sólido.</li>
+                                <li><strong>Sublimação:</strong> Passagem direta do sólido para o gás ou vice-versa, sem passar pelo estado líquido (gelo seco, naftalina).</li>
+                            </ul>
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">Substâncias Puras e Misturas</h2>
+                        <p>Para a Química, a pureza não significa estar "limpo", mas sim a sua composição química.</p>
+                        <ul>
+                            <li><strong>Substância Pura:</strong> Possui composição química fixa e propriedades constantes (PF e PE definidos).
+                                <ul>
+                                    <li><strong>Simples:</strong> Formada por apenas um elemento químico (ex: $O_2$, gás oxigênio; $Fe$, ferro metálico).</li>
+                                    <li><strong>Composta:</strong> Formada por dois ou mais elementos químicos diferentes combinados em proporção fixa (ex: $H_2O$, água; $CO_2$, gás carbônico).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Misturas:</strong> Reunião de duas ou mais substâncias que não reagem entre si, mantendo suas características individuais. Não possuem PF e PE constantes.
+                                <ul>
+                                    <li><strong>Mistura Homogênea:</strong> Apresenta uma única fase (aspecto visual uniforme). Você não consegue distinguir os componentes. Ex: água + sal dissolvido, ar atmosférico sem poeira.</li>
+                                    <li><strong>Mistura Heterogênea:</strong> Apresenta duas ou mais fases visíveis. Ex: água + óleo (duas fases líquidas), água com gás (uma fase líquida e uma gasosa), granito (três fases sólidas).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Métodos de Separação de Misturas</h2>
+                        <p>No Enem, o foco é entender qual propriedade física permite a separação.</p>
+                        <ul>
+                            <li><strong>Filtração:</strong> Separa misturas heterogêneas de Sólido-Líquido ou Sólido-Gás. O filtro retém as partículas maiores. Ex: coar café (água passa, pó fica) ou aspirador de pó.</li>
+                            <li><strong>Destilação Simples:</strong> Separa misturas homogêneas de Sólido-Líquido (ex: água e sal). Baseia-se na diferença extrema do Ponto de Ebulição. A água evapora, é condensada e recolhida, e o sal fica no fundo.</li>
+                            <li><strong>Destilação Fracionada:</strong> Separa misturas homogêneas de Líquido-Líquido (ex: água e álcool, <strong>refino de petróleo</strong>). Usa uma coluna de fracionamento para separar líquidos com Pontos de Ebulição próximos, recolhendo do mais volátil ao menos volátil.</li>
+                            <li><strong>Decantação:</strong> Separa misturas heterogêneas de Sólido-Líquido (água e barro) ou Líquido-Líquido (água e óleo). O componente mais denso vai para o fundo pela ação da gravidade.</li>
+                            <li><strong>Flotação:</strong> Separa misturas de sólidos com densidades diferentes. Adiciona-se um líquido com densidade intermediária para que um sólido afunde e o outro flutue. Muito usado no tratamento de água e minérios (bolhas de ar fazem a sujeira leve flutuar).</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Fenômenos Físicos vs. Fenômenos Químicos</h2>
+                        <ul>
+                            <li><strong>Fenômeno Físico:</strong> Altera apenas a forma, o tamanho ou o estado de agregação, mas a identidade química da matéria continua a mesma. A substância não muda. Ex: rasgar um papel, derreter um cubo de gelo.</li>
+                            <li><strong>Fenômeno Químico (Reação Química):</strong> Ocorre uma transformação íntima da matéria, rompendo ligações e formando novas substâncias com propriedades diferentes das iniciais. Indícios visuais: liberação de gás (efervescência), mudança de cor, liberação de calor ou luz. Ex: queimar um papel, enferrujar um prego, digestão.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Densidade e Solubilidade</h2>
+                        <ul>
+                            <li><strong>Densidade ($d = \frac{m}{v}$):</strong> É a relação entre a massa de um corpo e o volume que ele ocupa. Ela determina quem flutua e quem afunda. Em uma mistura heterogênea, o material menos denso sempre fica na parte de cima (o óleo flutua na água porque a densidade do óleo é menor que a da água).</li>
+                            <li><strong>Solubilidade:</strong> É a capacidade que uma substância (soluto) tem de se dissolver em outra (solvente).
+                                <ul>
+                                    <li><strong>Coeficiente de Solubilidade (CS):</strong> Quantidade máxima de soluto que consegue se dissolver em uma quantidade padrão de solvente a uma determinada temperatura.</li>
+                                    <li>Se colocar a quantidade máxima: solução <strong>saturada</strong>.</li>
+                                    <li>Se colocar menos: <strong>insaturada</strong>.</li>
+                                    <li>Se colocar a mais: o excesso não se dissolve e forma um <strong>corpo de chão ou precipitado</strong>.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">Curvas de Solubilidade e Gráficos de Aquecimento</h2>
+                        <ul>
+                            <li><strong>Gráficos de Aquecimento (Tempo vs. Temperatura):</strong>
+                                <ul>
+                                    <li>Em uma <strong>Substância Pura</strong>, a temperatura se mantém rigorosamente constante (linhas horizontais ou <em>patamares</em>) durante as mudanças de estado físico. O PF e o PE formam degraus perfeitos no gráfico. A energia térmica fornecida é usada apenas para quebrar a atração entre as partículas.</li>
+                                    <li>Em uma <strong>Mistura</strong>, a temperatura varia (linha inclinada) durante as mudanças de estado, pois componentes diferentes fervem e derretem em momentos diferentes. Não há patamares horizontais.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Curvas de Solubilidade (Temperatura vs. Soluto):</strong>
+                                <ul>
+                                    <li><strong>Curva ascendente (Endotérmica):</strong> A solubilidade aumenta ao aquecer (o soluto dissolve melhor no quente). Caso da maioria dos sais em água.</li>
+                                    <li><strong>Curva descendente (Exotérmica):</strong> A solubilidade diminui ao aquecer (dissolve melhor no frio). Comportamento clássico dos <strong>gases</strong> (por isso um refrigerante quente perde gás rápido).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O petróleo bruto, logo após ser extraído, é uma mistura complexa de hidrocarbonetos e não possui utilidade prática direta. Para que seus derivados (gasolina, diesel, gás de cozinha) sejam comercializados, ele passa por refino em grandes torres. O petróleo é aquecido e seus componentes são separados à medida que o vapor sobe pela torre e resfria, condensando em diferentes níveis.</p>
+                                <p><strong>Enunciado:</strong> O principal método de separação de misturas utilizado no refino do petróleo e a propriedade física específica que permite essa separação são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Decantação e diferença de densidade.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Filtração a vácuo e tamanho das partículas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Destilação fracionada e diferença nos pontos de ebulição.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Centrifugação e diferença de massa molar.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Dissolução fracionada e solubilidade em água.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O refino do petróleo é feito através da <strong>destilação fracionada</strong>. Como o petróleo é uma mistura homogênea de líquidos, o aquecimento faz com que os componentes com menor <strong>ponto de ebulição</strong> (mais voláteis) vaporizem primeiro e condensem no topo da torre.</p>
+                                    <ul>
+                                        <li><strong>A:</strong> A decantação separa líquidos imiscíveis (ou sólido-líquido) por densidade, não misturas homogêneas líquidas.</li>
+                                        <li><strong>B:</strong> Filtração separa sólido de fluido por retenção física em um poro, o que não se aplica.</li>
+                                        <li><strong>E:</strong> Hidrocarbonetos do petróleo são apolares e insolúveis em água.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O preparo do tradicional "cafezinho" brasileiro envolve o uso de pó de café torrado e moído, água quente e um coador. Ao despejar a água quente sobre o pó, ela dissolve os compostos solúveis responsáveis pelo sabor e cor, enquanto a borra (parte insolúvel) fica retida no filtro.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista químico, as duas operações sucessivas que ocorrem durante o preparo do café são denominadas:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Destilação e decantação.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Evaporação e sublimação.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Levigação e cristalização.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Extração e filtração.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Flotação e catação.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Primeiro ocorre a <strong>extração</strong>, onde a água quente atua como solvente extraindo as substâncias solúveis do pó de café. Em seguida, ocorre a <strong>filtração</strong>, onde o coador atua como uma barreira física, deixando passar o café líquido e retendo a borra sólida insolúvel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Considere os cinco fenômenos listados abaixo:<br>
+                                I. O derretimento de um cubo de gelo.<br>
+                                II. A fotossíntese realizada pelas plantas.<br>
+                                III. O enferrujamento de um prego de ferro.<br>
+                                IV. A evaporação do álcool etílico de um frasco.<br>
+                                V. A queima da gasolina no motor de um carro.</p>
+                                <p><strong>Enunciado:</strong> Dentre os fenômenos descritos, classificam-se como <strong>transformações químicas</strong> apenas:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> I e IV.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> I, II e III.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> II, III e V.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> III, IV e V.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> I, IV e V.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Fenômenos químicos alteram a natureza íntima da matéria, formando <strong>novas substâncias</strong>. A fotossíntese (II) transforma $CO_2$ e água em glicose e $O_2$; o enferrujamento (III) oxida o ferro metálico; e a queima da gasolina (V) é uma reação de combustão.</p>
+                                    <p>Os fenômenos I (fusão do gelo) e IV (evaporação do álcool) são apenas mudanças de <strong>estado físico</strong> da matéria, não alterando a substância em si.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O rótulo de uma garrafa de água mineral lista diversos íons dissolvidos, como sódio ($Na^+$), cálcio ($Ca^{2+}$), magnésio ($Mg^{2+}$), bicarbonato ($HCO_3^-$) e cloreto ($Cl^-$). Apesar de conter tantos componentes, a água apresenta um aspecto límpido e totalmente uniforme a olho nu e ao microscópio.</p>
+                                <p><strong>Enunciado:</strong> De acordo com os conceitos de classificação da matéria, a água mineral engarrafada deve ser classificada como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Substância pura simples.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Substância pura composta.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Mistura heterogênea.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Mistura homogênea (solução).</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Suspensão coloidal.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A água mineral contém o solvente (água) e vários solutos (sais minerais dissolvidos), portanto é uma <strong>mistura</strong>, e não uma substância pura. Como ela apresenta aspecto totalmente uniforme (uma única fase), trata-se de uma <strong>mistura homogênea</strong>, também chamada de <strong>solução</strong>.</p>
+                                    <p><strong>C:</strong> Uma mistura heterogênea apresentaria mais de uma fase visível (ex: água e óleo). <strong>E:</strong> Coloides espalham a luz, como o leite ou a neblina, o que não ocorre com a água mineral límpida.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> No início do séc. XX, Ernest Rutherford bombardeou uma finíssima lâmina de ouro com partículas alfa (carga positiva). Observou que a esmagadora maioria atravessava em linha reta, enquanto uma minúscula quantidade sofria grandes desvios ou rebatia de volta.</p>
+                                <p><strong>Enunciado:</strong> Com base nessas observações, Rutherford propôs um novo modelo atômico. A principal conclusão desse experimento foi a de que o átomo:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> É uma esfera maciça, indivisível e indestrutível.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> É uma massa contínua de carga positiva com elétrons negativos nela incrustados.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Possui enormes espaços vazios e um núcleo central denso, muito pequeno e de carga positiva.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> É formado por elétrons que orbitam o núcleo em níveis de energia quantizados.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Consiste em um núcleo neutro, contendo apenas nêutrons em sua composição.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O fato de a maioria das partículas alfa atravessar provou que o átomo é essencialmente <strong>espaço vazio</strong> (a eletrosfera). Os grandes desvios e rebatimentos provaram a existência de um núcleo muito pequeno, <strong>denso</strong> (onde se concentra a massa) e <strong>positivo</strong> (repelindo as partículas alfa, que também eram positivas).</p>
+                                    <ul>
+                                        <li><strong>A:</strong> Descreve o modelo de Dalton (bola de bilhar).</li>
+                                        <li><strong>B:</strong> Descreve o modelo de Thomson (pudim de passas).</li>
+                                        <li><strong>D:</strong> Orbitais quantizados foram postulados depois, por Bohr.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O grafite (usado em lápis) é escuro, mole, opaco e conduz eletricidade. O diamante (joias) é transparente, extremamente duro e não conduz eletricidade. Apesar dessas imensas diferenças, ambos são formados única e exclusivamente por átomos do elemento químico Carbono ($C$).</p>
+                                <p><strong>Enunciado:</strong> O fenômeno químico em que um mesmo elemento forma duas ou mais substâncias simples diferentes, variando o arranjo espacial dos átomos ou a atomicidade, é conhecido como:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Isomeria.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Isotopia.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Alotropia.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Polimerização.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Hibridação.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A <strong>alotropia</strong> é o fenômeno no qual o mesmo elemento químico forma substâncias simples diferentes. Os casos clássicos são o Carbono (grafite, diamante, fulereno) e o Oxigênio (gás oxigênio $O_2$ e gás ozônio $O_3$).</p>
+                                    <p><strong>A:</strong> Isomeria ocorre em compostos orgânicos com mesma fórmula molecular. <strong>B:</strong> Isotopia refere-se a átomos do mesmo elemento com diferente número de nêutrons (massa).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em uma usina, fragmentos de plástico PEAD (densidade $0,95\text{ g/cm}^3$) e PET (densidade $1,30\text{ g/cm}^3$) são misturados. Para separá-los, a usina despeja água pura (densidade exata de $1,00\text{ g/cm}^3$) no tanque.</p>
+                                <p><strong>Enunciado:</strong> Com base no conceito de densidade, o resultado esperado após a adição da água no tanque é que:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ambos os plásticos flutuem, pois são derivados do petróleo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Ambos os plásticos afundem, formando um precipitado homogêneo.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> O PEAD flutue na água e o PET vá para o fundo do tanque.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> O PET flutue na água e o PEAD vá para o fundo do tanque.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A água dissolva o PEAD, separando-o do PET por dissolução fracionada.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A densidade determina o comportamento em fluidos. Como o PEAD ($0,95\text{ g/cm}^3$) é <strong>menos denso</strong> que a água ($1,0\text{ g/cm}^3$), ele flutua. O PET ($1,30\text{ g/cm}^3$) é <strong>mais denso</strong> que a água, logo irá afundar para o fundo do tanque.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Os metais alcalinos são reativos. O Sódio ($Na$), por exemplo, possui $Z=11$ e $A=23$. Na natureza, ele não é encontrado na forma neutra, mas sim estabilizado na forma do cátion $Na^+$.</p>
+                                <p><strong>Enunciado:</strong> A transformação do átomo neutro de Sódio ($Na$) no cátion monovalente ($Na^+$) ocorre porque o átomo original:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ganhou um próton no núcleo, tornando-se eletricamente positivo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Perdeu um próton do núcleo, tornando-se mais leve.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Ganhou um elétron na eletrosfera, completando seu octeto.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Perdeu um elétron da camada de valência, desequilibrando suas cargas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Perdeu um nêutron, alterando seu número de massa.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Íons são formados exclusivamente por ganho ou <strong>perda de elétrons</strong>. Um átomo neutro de Sódio tem 11 prótons (+) e 11 elétrons (-). Para se tornar um cátion com carga +1, ele <strong>perde 1 elétron</strong> da camada de valência, passando a ter 11 prótons e apenas 10 elétrons.</p>
+                                    <p>Mudar o número de prótons (núcleo) alteraria o elemento químico, algo que não acontece em reações químicas padrão.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O professor monta um circuito com lâmpada e dois fios desencapados, testando a condutividade em três béqueres:<br>
+                                1: Água destilada.<br>
+                                2: Água destilada com sal de cozinha ($NaCl$).<br>
+                                3: Água destilada com açúcar (sacarose).<br>
+                                A lâmpada acende brilhantemente <strong>apenas</strong> no Béquer 2.</p>
+                                <p><strong>Enunciado:</strong> A lâmpada acende apenas na solução com sal de cozinha porque a dissolução do $NaCl$ em água gera:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Moléculas de sal neutras que facilitam a passagem da corrente contínua.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Uma rede cristalina sólida capaz de conduzir elétrons livres da bateria.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> A dissociação iônica do composto, liberando cátions e ânions livres na solução.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A ionização do cloreto de sódio, quebrando ligações puramente covalentes.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Gás oxigênio e hidrogênio, que sofrem combustão e acendem a lâmpada.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O sal ($NaCl$) é iônico. Quando dissolvido em água, sofre <strong>dissociação iônica</strong>, quebrando o retículo cristalino e liberando os íons $Na^+$ e $Cl^-$. Esses íons adquirem grande mobilidade na água, permitindo a condução da corrente elétrica.</p>
+                                    <p>Açúcar (Béquer 3) dissolve formando moléculas neutras (sem carga), e portanto não conduz corrente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Química</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um computador registra o gráfico de aquecimento de uma amostra isolada. A curva apresenta a temperatura subindo durante a fase sólida, criando um "patamar" (linha horizontal constante) na temperatura de fusão, voltando a subir na fase líquida e criando um segundo "patamar" horizontal constante na ebulição.</p>
+                                <p><strong>Enunciado:</strong> A análise desse perfil gráfico revela que o material contido no interior do sistema fechado é, obrigatoriamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Uma mistura eutética, pois seu ponto de fusão é constante.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Uma mistura azeotrópica, devido à constância do ponto de ebulição.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Uma mistura homogênea comum, por apresentar duas fases distintas.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> Uma substância pura, já que apresenta constância de temperatura durante ambas as mudanças de estado físico.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Um gás liquefeito, pois o experimento atingiu rapidamente a ebulição.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A característica fundamental que diferencia graficamente uma <strong>substância pura</strong> de uma mistura é o comportamento duplo nas mudanças de estado. A substância pura possui patamares totalmente constantes e horizontais <strong>tanto na fusão quanto na ebulição</strong>.</p>
+                                    <p>Misturas eutéticas têm patamar apenas na fusão, azeotrópicas apenas na ebulição, e misturas comuns variam a temperatura nas duas fases de transição.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Separação de Misturas</span>
+                                        <div class="large-text">No refino do petróleo, a separação das frações em uma torre ocorre porque os hidrocarbonetos possuem diferentes ____________. (Nomeie a propriedade e o método respectivo).</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Pontos de Ebulição e Destilação.</div>
+                                        <span class="card-hint"><strong>Propriedade:</strong> Pontos de ebulição.<br><strong>Método:</strong> Destilação fracionada.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Processos Físicos</span>
+                                        <div class="large-text">No preparo do café cotidiano, a água dissolve compostos de sabor e o coador de papel retém a borra. Quais são, em ordem cronológica, os dois processos de separação envolvidos?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Extração e Filtração.</div>
+                                        <span class="card-hint"><strong>1º Extração:</strong> Dissolução seletiva com solvente quente.<br><strong>2º Filtração:</strong> Retenção mecânica da fase sólida insolúvel.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Fenômenos Químicos</span>
+                                        <div class="large-text">O enferrujamento de um prego e a evaporação do álcool são transformações. Qual deles representa um fenômeno químico e qual a evidência principal desse fato?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O enferrujamento é Químico.</div>
+                                        <span class="card-hint"><strong>Evidência:</strong> Formação de uma nova substância irreversível, com propriedades diferentes das iniciais (óxido de ferro). A evaporação é apenas física.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Classificação da Matéria</span>
+                                        <div class="large-text">A água mineral comercializada é límpida, mas seu rótulo lista diversos íons dissolvidos ($Na^+$, $Ca^{2+}$, $Mg^{2+}$). Como a química classifica rigorosamente esse sistema de fase única?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Mistura Homogênea.</div>
+                                        <span class="card-hint">Também chamada de <strong>solução</strong>, pois apresenta solvente e múltiplos solutos interagindo visualmente em uma única fase inseparável a olho nu.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Modelos Atômicos</span>
+                                        <div class="large-text">No clássico experimento de Rutherford, o fato de raríssimas partículas alfa (carga +) "rebaterem" contra a lâmina de ouro comprovou a existência de qual característica no átomo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O Núcleo Atômico Positivo.</div>
+                                        <span class="card-hint">Comprovou a existência de um núcleo central minúsculo, extremamente denso e de carga positiva (que repeliu eletrostaticamente as partículas alfa).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Elementos Químicos</span>
+                                        <div class="large-text">Grafite (mole/condutor) e diamante (duro/isolante) são compostos única e exclusivamente pelo elemento carbono. Qual é o nome desse fenômeno e a causa física da disparidade?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Alotropia e Arranjo.</div>
+                                        <span class="card-hint"><strong>Fenômeno:</strong> Alotropia.<br><strong>Causa:</strong> Diferença drástica na estrutura molecular geométrica e no arranjo espacial das ligações entre os átomos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Densidade</span>
+                                        <div class="large-text">Fragmentos plásticos de PEAD ($d=0,95$) e PET ($d=1,30$) caem num tanque com água pura ($d=1,00$). Como a decantação opera para separá-los?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">PEAD flutua, PET afunda.</div>
+                                        <span class="card-hint">O PEAD flutua no tanque por ter densidade menor que a água, enquanto o PET afunda por possuir densidade maior que a água.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Íons e Cargas</span>
+                                        <div class="large-text">Para alcançar estabilidade, um átomo neutro de Sódio ($Na$) transforma-se no íon Sódio ($Na^+$). O que deve ocorrer na eletrosfera e no núcleo para consolidar essa carga +1?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Perda de 1 Elétron.</div>
+                                        <span class="card-hint">Ocorre a perda de 1 elétron da camada de valência. Atenção: o <strong>núcleo atômico permanece absolutamente inalterado</strong> em quantidade de prótons e nêutrons.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Condutividade</span>
+                                        <div class="large-text">Um circuito elétrico não acende lâmpada em água destilada, mas brilha intensamente ao se adicionar $NaCl$ (sal). Qual evento microscópico viabiliza a corrente?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Dissociação Iônica.</div>
+                                        <span class="card-hint">A dissociação do sal na água quebra o retículo cristalino e libera íons com forte mobilidade no líquido ($Na^+$ e $Cl^-$), transportando a carga.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Gráficos Térmicos</span>
+                                        <div class="large-text">Ao plotar um gráfico de aquecimento, observam-se dois "patamares" perfeitos (linhas horizontais constantes na fusão e ebulição). Isso indica que a amostra é uma ____________.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Substância Pura.</div>
+                                        <span class="card-hint">Apenas substâncias puras possuem PF e PE constantes. Qualquer mistura comum apresentaria variação de temperatura (linhas inclinadas) nas transições.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

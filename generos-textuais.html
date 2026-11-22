@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêneros Textuais - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-lang"> <!-- Tema roxo/magenta ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <!-- Linguagens recebe a classe active -->
+            <a href="linguagens.html" class="nav-link active" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Linguagens / Gêneros Textuais e Tipologias</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Gêneros Textuais e Tipologias</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (LINGUAGENS)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <!-- SEÇÃO 1 -->
+                        <h2>1. Diferença entre Tipologia Textual e Gênero Textual</h2>
+                        
+                        <div class="example-box">
+                            <strong>Resumo de Ouro:</strong><br>
+                            As <strong>Tipologias</strong> são limitadas e representam a estrutura "óssea" (narração, descrição, dissertação, injunção).<br>
+                            Os <strong>Gêneros Textuais</strong> são infinitos e representam os textos na vida real (receita, bula, e-mail, conto, notícia), utilizando as tipologias como base.
+                        </div>
+
+                        <h4>Tipologia Textual (Tipos Textuais)</h4>
+                        <p>É a estrutura linguística fundamental, o "esqueleto" de como o texto se apresenta. Existem poucas tipologias, sendo cinco as principais:</p>
+                        <ul>
+                            <li><strong>Narração:</strong> Conta uma história, estruturando-se em torno de personagens, tempo, espaço e enredo (ex: contos, fábulas, romances).</li>
+                            <li><strong>Dissertação:</strong> Explica, debate ou apresenta ideias. Quando o objetivo principal é defender uma tese para convencer o leitor, chamamos de <em>Argumentação</em>, que é a base estrutural da redação do ENEM.</li>
+                            <li><strong>Descrição:</strong> Cria uma "fotografia mental", detalhando as características físicas ou psicológicas de seres, objetos ou ambientes. É comum como um elemento dentro de textos literários.</li>
+                            <li><strong>Injunção (ou Prescrição):</strong> Tem caráter imperativo. Dá ordens, instruções ou orienta o leitor sobre como realizar um procedimento (ex: receitas culinárias, bulas, manuais, leis).</li>
+                        </ul>
+
+                        <h4>Gêneros Textuais</h4>
+                        <p>São os textos reais e práticos que circulam na sociedade. Eles são infinitos e adaptáveis às nossas necessidades de comunicação diárias. Um e-mail, um meme, um post de rede social, uma notícia, uma carta e uma receita são gêneros textuais que utilizam a estrutura dos tipos textuais para existirem no mundo real.</p>
+
+                        <!-- SEÇÃO 2 -->
+                        <h2 style="margin-top: 3rem;">2. Principais Gêneros Textuais Cobrados no ENEM</h2>
+                        <p>A prova exige a leitura rápida e a interpretação de textos do cotidiano. Os grupos mais cobrados são:</p>
+                        
+                        <ul>
+                            <li><strong>Jornalísticos e Midiáticos:</strong> Incluem a notícia (relato direto de um fato), a reportagem (investigação aprofundada), o artigo de opinião e o editorial (textos opinativos), além da carta do leitor e da crônica (reflexão sobre fatos do dia a dia).</li>
+                            <li><strong>Publicitários:</strong> Envolvem anúncios publicitários (comerciais ou de conscientização social), além de cartoons, charges e tirinhas. Estes últimos focam fortemente no humor, na crítica social e na mistura de elementos verbais e visuais.</li>
+                            <li><strong>Instrucionais e Reguladores:</strong> Textos que ditam regras ou procedimentos, como manuais, regulamentos, bulas e leis.</li>
+                            <li><strong>Científicos e Acadêmicos:</strong> Textos com o objetivo de transmitir ou arquivar conhecimento formal, como artigos científicos, verbetes de dicionário/enciclopédia e resumos.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 3 -->
+                        <h2 style="margin-top: 3rem;">3. Conceitos e Habilidades Essenciais na Prova</h2>
+                        <p>Para interpretar os gêneros textuais com precisão e resolver as questões, o domínio das seguintes ferramentas é indispensável:</p>
+
+                        <ul>
+                            <li><strong>Multimodalidade:</strong> É a combinação de diferentes linguagens em um mesmo texto. No ENEM, isso significa ler simultaneamente a linguagem <em>verbal</em> (palavras escritas) e a <em>não verbal</em> (imagens, gráficos, cores e até as expressões faciais de personagens em charges). O sentido completo do texto só é alcançado pela união das duas.</li>
+                            <li><strong>Funções da Linguagem:</strong> Identificam o foco principal da comunicação. O ENEM cobra exaustivamente duas delas: 
+                                <ul style="margin-top: 0.5rem;">
+                                    <li><em>Função Conativa (ou Apelativa):</em> Foco em convencer e mudar o comportamento do leitor (típica de propagandas).</li>
+                                    <li><em>Função Referencial:</em> Focada em informar sobre um assunto de maneira direta e objetiva (base das notícias).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Figuras de Linguagem:</strong> São recursos estilísticos que tiram as palavras de seu sentido literal para criar novos significados. O domínio da metáfora (comparação implícita), metonímia (substituição por proximidade, como "ler Machado" em vez de "ler o livro"), ironia, comparação e eufemismo é vital para interpretar charges, poemas e crônicas.</li>
+                            <li><strong>Coesão e Coerência:</strong> Formam a "costura" do texto. A <em>coesão</em> é a ligação física das palavras e frases através de conectivos (conjunções, pronomes), garantindo a fluidez. A <em>coerência</em> é a lógica interna, garantindo que o texto tenha um sentido global e não entre em contradição.</li>
+                        </ul>
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - LINGUAGENS)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Como agir em caso de princípio de incêndio:<br>
+                                1. Mantenha a calma. O pânico dificulta a evacuação.<br>
+                                2. Acione o alarme de incêndio mais próximo e ligue imediatamente para o Corpo de Bombeiros (193).<br>
+                                3. Utilize as escadas para abandonar o edifício. Em hipótese alguma utilize os elevadores.<br>
+                                4. Caso haja fumaça, abaixe-se e rasteje em direção à saída, pois o ar mais puro fica próximo ao chão. <em>(Cartilha de Segurança contra Incêndio. Adaptado.)</em></p>
+                                <p><strong>Enunciado:</strong> O texto acima cumpre uma função social específica de orientar o público em situações de emergência. Para alcançar esse objetivo prático, a estrutura linguística predominante apoia-se na tipologia:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> narrrativa, pois relata uma sequência de eventos cronológicos que levaram ao incêndio.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> argumentativa, pois defende a tese de que os elevadores são perigosos.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> injuntiva, evidenciada pelo uso de verbos no imperativo para comandar e instruir o leitor.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> descritiva, uma vez que detalha as características físicas do fogo e da fumaça.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> expositiva, porque apenas apresenta dados informativos sobre o Corpo de Bombeiros.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A tipologia injuntiva (ou prescritiva) tem como característica principal a instrução, a ordem ou o conselho, marcados fortemente por verbos no modo imperativo ("Mantenha", "Acione", "Utilize").</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não relata uma história com personagens (narração).</li>
+                                        <li><strong>B:</strong> Não defende um ponto de vista com teses lógicas, apenas fornece instruções de sobrevivência.</li>
+                                        <li><strong>D:</strong> Não adjetiva o cenário nem cria fotografias mentais (descrição).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O acesso à internet deixou de ser um luxo para se tornar uma necessidade básica e um direito humano. Em uma era onde a educação, o trabalho e os serviços governamentais estão cada vez mais digitalizados, estar desconectado significa estar excluído da cidadania plena. É inadmissível que, em um país continental, as áreas rurais e periféricas ainda sofram com um apagão digital. O Estado precisa, com urgência, subsidiar a infraestrutura de redes nestas regiões. <em>(Fragmento de Editorial - Jornal O Cidadão)</em></p>
+                                <p><strong>Enunciado:</strong> O editorial é um gênero textual que reflete a opinião do veículo de comunicação sobre um fato de relevância social. No fragmento lido, o autor utiliza a tipologia argumentativa cujo objetivo principal é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> informar o leitor, de maneira neutra, sobre os números do acesso à internet nas zonas rurais.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> narrar a trajetória histórica do desenvolvimento da internet no país.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> persuadir o leitor acerca da necessidade de políticas públicas para a inclusão digital.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> instruir os governantes sobre como instalar cabos de rede nas periferias.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> descrever minuciosamente a vida cotidiana das pessoas sem internet no campo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O texto apresenta uma tese clara (internet é direito humano) e utiliza argumentos lógicos para convencer (persuadir) de que o Estado deve agir com políticas públicas. Essa persuasão é o coração da argumentação.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> O texto não tem nada de neutro (usa expressões como "É inadmissível").</li>
+                                        <li><strong>D:</strong> O texto cobra ações (política), mas não é um manual de instruções (injunção) de como instalar a internet.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Receita para um final de semana perfeito<br>
+                                <em>Ingredientes:</em> 2 xícaras de sono sem despertador; 1 pitada de sol na janela; 3 colheres bem cheias de risadas com amigos; Preocupações e estresse a gosto (recomenda-se zero).<br>
+                                <em>Modo de preparo:</em> Misture as horas de sono com o sol da manhã até obter um sorriso leve. Leve ao sofá e deixe descansar por algumas horas. Adicione a companhia dos amigos e sirva imediatamente sem olhar para o relógio.</p>
+                                <p><strong>Enunciado:</strong> Na comunicação cotidiana, é comum que autores utilizem a estrutura de um gênero textual para cumprir a função social de outro. O texto lido caracteriza-se por:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> utilizar o formato de receita (injunção) para construir um texto literário com função poética e reflexiva.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> ser um manual científico rigoroso disfarçado de poesia sobre o comportamento humano.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> empregar a tipologia argumentativa para convencer o leitor a adotar hábitos mais saudáveis na alimentação.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> ser um artigo de opinião que critica a exaustão provocada pelo mercado de trabalho contemporâneo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> apresentar características estritamente jornalísticas, focando na precisão da informação sobre o lazer.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>O texto brinca com a forma/estrutura do gênero "receita" (que é injuntivo) não para te ensinar a cozinhar comida real, mas para criar uma metáfora poética e figurada sobre como aproveitar a vida.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Não possui qualquer rigor científico.</li>
+                                        <li><strong>C:</strong> Embora use o formato de culinária, o tema não é alimentação saudável do corpo, mas relaxamento da mente.</li>
+                                        <li><strong>D e E:</strong> Não usa a estrutura nem o rigor objetivo de artigos de opinião ou notícias.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Eram cinco horas da manhã e o cortiço acordava, abrindo, não os olhos, mas a sua infinidade de portas e janelas alinhadas. Um acordar alegre e farto de quem dormiu de uma assentada sete horas de chumbo. Como que se sentiam ainda na indolência de neblina as derradeiras respirações da noite... <em>(AZEVEDO, Aluísio. O Cortiço. Adaptado.)</em></p>
+                                <p><strong>Enunciado:</strong> O trecho do romance "O Cortiço" apresenta predominantemente a tipologia descritiva. Nesse contexto literário naturalista, a função dessa descrição é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> instruir o leitor sobre a arquitetura dos conjuntos habitacionais do século XIX.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> caracterizar o espaço físico de forma tão intensa que o ambiente ganha ares de personagem vivo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> interromper a narrativa temporal para inserir a opinião do autor sobre a desigualdade social.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> expor, de forma neutra e científica, as condições sanitárias da época retratada.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> argumentar a favor da construção de moradias mais dignas para a população urbana.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A descrição atribui ações, respirações e sentimentos humanos ao espaço físico (o cortiço "acordava"). Esse recurso literário (personificação ou animismo) torna o ambiente do cortiço o protagonista (personagem vivo) da história.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Literatura não é manual de engenharia (não é injunção).</li>
+                                        <li><strong>D:</strong> A linguagem literária cheia de metáforas ("dormiu de chumbo") nunca é neutra ou estritamente científica.</li>
+                                        <li><strong>E:</strong> A função do trecho é poética e descritiva, e não um panfleto político argumentativo formal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> [Descrição de Imagem: Uma charge onde duas pessoas estão sentadas em um banco de praça. Ambas estão olhando fixamente para seus respectivos smartphones, de cabeças baixas, isoladas. Acima deles, há um balão de fala apontando para um deles, que diz animado: "Que bom que viemos ao parque para aproveitar a companhia um do outro e a natureza!"]</p>
+                                <p><strong>Enunciado:</strong> A charge é um gênero textual altamente explorado no jornalismo e em redes sociais. A construção de sentido da charge descrita acima fundamenta-se na:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> exposição minuciosa de dados sobre o tempo de uso de celulares no Brasil contemporâneo.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> contradição irônica gerada pela relação entre a fala do personagem (verbal) e a atitude retratada na imagem (não verbal).</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> narrativa extensa sobre como a amizade dos personagens se deteriorou ao longo dos anos devido à tecnologia.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> instrução didática fornecida aos jovens sobre como utilizar a internet em locais públicos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> defesa explícita e escrita de uma tese acadêmica sobre a alienação digital.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A charge depende totalmente da multimodalidade. O humor ácido e a crítica nascem exclusivamente do contraste (ironia) entre o que as palavras dizem ("aproveitar a companhia") e o que o desenho mostra de fato (isolamento alienado nas telas).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Charges não usam tabelas ou estatísticas para expor dados científicos.</li>
+                                        <li><strong>C:</strong> É uma cena rápida (flash), não uma narrativa cronológica extensa.</li>
+                                        <li><strong>E:</strong> A crítica está implícita no desenho, e não defendida num texto acadêmico escrito longo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Fui ao banco pagar uma conta. Coisa simples, rápida, achei. Mas a fila, ah, a fila tinha vontade própria. Na minha frente, uma senhora contava moedas com a precisão de um relojoeiro suíço. Atrás, um rapaz suspirava tão forte que quase me despenteava. Entre moedas e suspiros, comecei a pensar em como gastamos nosso tempo esperando que a vida aconteça, enquanto, na verdade, ela é justamente a espera. <em>(Fragmento inédito)</em></p>
+                                <p><strong>Enunciado:</strong> O texto apresentado possui as características do gênero crônica, muito presente na literatura e no jornalismo brasileiro. A característica principal que define este texto como uma crônica é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> o uso exclusivo da linguagem culta e rebuscada para tratar de temas filosóficos abstratos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> o relato de um acontecimento histórico marcante que mudou os rumos da sociedade.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> a utilização de um evento corriqueiro e banal como ponto de partida para uma reflexão subjetiva.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a estrutura rígida composta por introdução, desenvolvimento e conclusão, típica da dissertação.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a apresentação de uma notícia em tempo real, informando fatos sem envolvimento emocional.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A essência do gênero crônica é capturar um fragmento comum, urbano e banal do dia a dia (como estar entediado em uma fila de banco) e transformar isso, através da sensibilidade literária do autor, numa grande reflexão poética sobre a própria existência humana (a espera).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A crônica prefere linguagem coloquial e próxima do leitor, não rebuscada.</li>
+                                        <li><strong>B:</strong> Foca no microevento cotidiano, não no macroevento histórico épico.</li>
+                                        <li><strong>E:</strong> É um texto absurdamente pessoal e subjetivo, o oposto de uma notícia imparcial de jornal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Prezado Diretor do Departamento de Trânsito, Nós, moradores da Rua das Primaveras, vimos por meio desta comunicar nossa indignação com o abandono da via. Há mais de seis meses solicitamos o reparo dos semáforos no cruzamento principal, que tem gerado acidentes diários. Não podemos mais aceitar o descaso com a segurança pública e exigimos providências em até 15 dias, sob pena de acionarmos o Ministério Público. <em>(Texto adaptado)</em></p>
+                                <p><strong>Enunciado:</strong> Considerando a situação comunicativa e a estrutura linguística, reconhece-se no texto o gênero:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> notícia, visto que seu propósito é relatar o fato dos acidentes para os moradores do bairro.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> carta de reclamação, marcada pela exposição do problema aliada à exigência de uma solução à autoridade competente.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> artigo científico, pois comprova de forma lógica as causas e consequências da falta de manutenção urbana.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> editorial, uma vez que expressa a opinião do jornal do bairro a respeito da prefeitura.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> manual de trânsito, já que estabelece prazos e regras para a conduta de motoristas em cruzamentos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A estrutura de cumprimento cerimonial ("Prezado Diretor") somada à apresentação formal de um problema coletivo ("acidentes") e, principalmente, a exigência de ação ("exigimos providências"), definem a Carta de Reclamação/Reivindicação.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não é uma notícia isenta informando o público, pois é produzida pelas próprias vítimas querendo uma solução oficial.</li>
+                                        <li><strong>D:</strong> O texto é assinado por cidadãos ("Nós, moradores") e não pelo jornal (editorial).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> <strong>Mitose:</strong> sf. Biologia. Processo de divisão celular em que uma célula-mãe dá origem a duas células-filhas geneticamente idênticas, contendo, portanto, o mesmo número de cromossomos da célula original. É fundamental para o crescimento e a regeneração de tecidos em organismos multicelulares. <em>(Definição de Dicionário)</em></p>
+                                <p><strong>Enunciado:</strong> O gênero verbete de dicionário ou enciclopédia é um excelente representante da tipologia expositiva. Sua principal finalidade comunicativa é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> argumentar com o leitor sobre a importância de estudar biologia celular no Ensino Médio.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> narrar como os cientistas descobriram o processo de divisão celular no passado.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> prescrever um tratamento médico baseado na regeneração de tecidos.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> informar, de maneira objetiva, impessoal e conceitual, o significado de um termo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> convencer o público-alvo a adotar um comportamento preventivo em relação a doenças celulares.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O verbete (dicionário/wikipédia) tem função 100% referencial e denotativa (literal). Ele apenas expõe a informação para conceituar um termo da maneira mais fria e exata possível, sem deixar espaço para dupla interpretação.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e E:</strong> Não há argumento, opinião ou apelo para convencer o leitor.</li>
+                                        <li><strong>B:</strong> Não conta uma história cronológica (narração).</li>
+                                        <li><strong>C:</strong> Não é um receituário médico ditando um procedimento (injunção).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> [Descrição de Imagem: Um anúncio com fundo escuro. No centro, a imagem de um pulmão humano real, porém, formado inteiramente por bitucas de cigarro sujas e cinzas. No canto inferior direito, lê-se o texto escrito em letras fortes: "O cigarro destrói você por dentro. Pare de fumar. Disque 136 e busque ajuda."]</p>
+                                <p><strong>Enunciado:</strong> Os gêneros publicitários, como campanhas de conscientização do governo, valem-se de variados recursos para atingir seu objetivo. No anúncio descrito, o principal mecanismo utilizado para mobilizar o receptor é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> predominância da tipologia narrativa, descrevendo o passo a passo da doença pulmonar no organismo humano.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> ausência de modalização verbal, utilizando a linguagem puramente estética sem pretensão de influenciar decisões.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> combinação de linguagem não verbal impactante (metáfora visual) com a tipologia injuntiva ("Pare de fumar", "Disque").</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> exposição imparcial e científica das substâncias tóxicas do cigarro, deixando a conclusão por conta exclusiva do leitor.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> utilização de intertextualidade com contos de fadas para atingir o público infanto-juvenil de forma sutil.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O anúncio funciona justamente porque mistura duas linguagens poderosas (multimodalidade): A linguagem não verbal (o pulmão de cinzas) causa o choque visual, que prepara o leitor para receber e obedecer às ordens dadas no imperativo no texto (injunção: "Pare", "Disque"), gerando o efeito persuasivo completo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B e D:</strong> A propaganda não tem nada de neutra ou estética pura; o objetivo único dela é influenciar a atitude do leitor (fazer o viciado largar o cigarro).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Linguagens</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O que é um Meme?<br>
+                                O termo foi cunhado pelo biólogo Richard Dawkins em 1976, mas na internet, o meme se tornou um gênero textual dinâmico. Consiste em uma unidade de informação (uma imagem, vídeo, frase ou combinação destes) que se multiplica rapidamente entre usuários de redes sociais, geralmente acompanhada de humor, ironia e forte adaptação ao contexto do momento (o <em>timing</em> da piada).</p>
+                                <p><strong>Enunciado:</strong> A partir das características descritas, compreende-se que o meme atua como um gênero textual central da cultura digital moderna porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> exige do leitor conhecimentos profundos de programação e códigos de computador para ser compreendido.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> substituiu formalmente gêneros como o artigo de opinião nos jornais impressos de grande circulação.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> recusa o hibridismo de linguagens, utilizando-se estritamente da linguagem verbal e formal.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> adapta-se rapidamente aos contextos comunicativos diários, dialogando com os usuários por meio de intertextualidade e humor.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> possui uma estrutura rígida e engessada que impede o público de modificá-lo após sua criação inicial.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O meme é a síntese da linguagem da internet: é muito rápido, altamente adaptável e depende totalmente do conhecimento de mundo compartilhado pelas pessoas no momento (intertextualidade com filmes, BBB, política) para gerar o efeito de humor pretendido.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Memes são extremamente populares e fáceis de fazer; não precisam de TI.</li>
+                                        <li><strong>C:</strong> O meme é a própria definição de misturar linguagens (hibridismo de foto com texto).</li>
+                                        <li><strong>E:</strong> O meme não é rígido; ele só existe porque os usuários modificam e criam novas versões dele o tempo todo (viralização).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 8 • Estruturas</span>
+                                        <div class="large-text">Enquanto a tipologia textual representa a estrutura fixa de um texto (como o "esqueleto" narrativo ou descritivo), o ______________ é a materialização adaptável e infinita dessa estrutura no nosso dia a dia.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Gênero Textual.</div>
+                                        <span class="card-hint">Exemplos reais: carta, meme, bula, e-mail, crônica, notícia.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 8 • Tipologias e Funções</span>
+                                        <div class="large-text">Campanhas de trânsito ("Use o cinto") e receitas utilizam predominantemente verbos no imperativo para mudar o comportamento do leitor. Qual é a tipologia e a função da linguagem presentes aqui?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Injuntiva / Conativa.</div>
+                                        <span class="card-hint"><strong>Tipologia:</strong> Injuntiva (ou Prescritiva).<br><br><strong>Função:</strong> Conativa (ou Apelativa).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 8 • Interpretação Híbrida</span>
+                                        <div class="large-text">Nas questões do ENEM sobre charges e cartoons, a resolução nunca está apenas no que está escrito, exigindo a leitura simultânea de palavras e imagens. Qual conceito define essa união?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Multimodalidade (texto híbrido).</div>
+                                        <span class="card-hint">É a interpretação conjunta das linguagens verbal e não verbal para extrair o sentido completo do texto.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 8 • Identificação de Gêneros</span>
+                                        <div class="large-text">Um texto inicia narrando uma cena banal (alguém na fila da padaria) e, a partir desse fato trivial, o autor desenvolve uma reflexão profunda ou irônica sobre a sociedade. Qual é esse gênero?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Crônica.</div>
+                                        <span class="card-hint">Gênero comum no jornalismo e literatura, marcado por transformar o cotidiano em reflexão subjetiva.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 8 • Gêneros Jornalísticos</span>
+                                        <div class="large-text">Em provas de linguagens, qual é a principal diferença de intenção (objetivo) e de tipologia entre uma Notícia e um Editorial/Artigo de Opinião?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Notícia informa, Editorial opina.</div>
+                                        <span class="card-hint"><strong>Notícia:</strong> Informa fatos de forma neutra (Expositiva).<br><br><strong>Editorial/Artigo:</strong> Defende uma tese para convencer o leitor (Argumentativa).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 8 • Figuras de Linguagem</span>
+                                        <div class="large-text">Em charges e tirinhas, a crítica social geralmente nasce de uma quebra de expectativa ou de um contraste gritante entre o que o personagem fala e o que a imagem mostra. Qual figura de linguagem baseia isso?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Ironia.</div>
+                                        <span class="card-hint">Afirmar algo, mas demonstrar o oposto por meio do contexto visual ou situacional.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 8 • Gêneros Jornalísticos</span>
+                                        <div class="large-text">É um texto dissertativo-argumentativo publicado em jornais, mas que não leva a assinatura de um autor específico, pois representa a opinião institucional/oficial da empresa jornalística sobre um fato recente.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Editorial.</div>
+                                        <span class="card-hint">Apesar de estar no jornal, ele não apenas noticia os fatos; ele emite uma opinião coletiva em nome do veículo de comunicação.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 8 • Funções da Linguagem</span>
+                                        <div class="large-text">Gêneros científicos, relatórios, verbetes de dicionário e manuais utilizam uma linguagem puramente objetiva, literal (denotativa) e sem marcas emocionais. Qual é a função da linguagem predominante?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Função Referencial (Informativa).</div>
+                                        <span class="card-hint">Seu único foco é transmitir o dado/informação com a máxima clareza, neutralidade e impessoalidade.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

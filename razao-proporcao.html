@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razão e Proporção - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para Fórmulas Matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-math"> <!-- Tema AZUL ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <!-- Matemática recebe a classe active -->
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Razão e Proporção</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Razão e Proporção</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (MATEMÁTICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <!-- SEÇÃO 1: Conceitos Básicos -->
+                        <h2>Razão e Proporção</h2>
+                        <ul>
+                            <li><strong>Razão:</strong> É a comparação matemática entre dois valores através de uma divisão. Pense nela como uma "fração de referência". Se uma receita pede 2 xícaras de farinha para cada 3 de açúcar, a razão é de 2 para 3 (ou $\frac{2}{3}$).</li>
+                            <li><strong>Proporção:</strong> É a igualdade entre duas ou mais razões. Se você dobrar a receita acima, usará 4 xícaras de farinha e 6 de açúcar. A proporção garante que a relação se mantenha equilibrada: $\frac{2}{3} = \frac{4}{6}$.</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>Propriedade Fundamental das Proporções</strong><br><br>
+                            Em toda proporção verdadeira, o produto dos extremos é igual ao produto dos meios. Na prática, é a famosa "multiplicação cruzada".<br><br>
+                            Matematicamente, se $\frac{a}{b} = \frac{c}{d}$, então obrigatoriamente $a \cdot d = b \cdot c$. Essa propriedade é o motor lógico que faz a Regra de Três funcionar.
+                        </div>
+
+                        <!-- SEÇÃO 2: Escalas -->
+                        <h2 style="margin-top: 3rem;">Escalas (Linear, de Área e de Volume)</h2>
+                        <p>A escala é uma razão matemática constante entre o tamanho de um modelo (como um mapa ou maquete) e o tamanho real do objeto.</p>
+                        <ul>
+                            <li><strong>Escala Linear (1D):</strong> Usada para medir comprimentos ou distâncias simples. Uma escala de 1:100 indica que 1 cm no papel equivale a 100 cm na realidade.</li>
+                            <li><strong>Escala de Área (2D):</strong> Ao ampliar ou reduzir uma figura bidimensional, a proporção das áreas é o <em>quadrado</em> da escala linear. Se você dobrar a lateral de um terreno (escala linear = 2), a área não dobra; ela quadruplica ($2^2 = 4$).</li>
+                            <li><strong>Escala de Volume (3D):</strong> Para objetos tridimensionais, a proporção dos volumes é o <em>cubo</em> da escala linear. Se você dobrar a altura, a largura e a profundidade de uma caixa d'água (escala linear = 2), o volume dela ficará 8 vezes maior ($2^3 = 8$).</li>
+                        </ul>
+
+                        <!-- SEÇÃO 3: Grandezas -->
+                        <h2 style="margin-top: 3rem;">Grandezas Diretamente e Inversamente Proporcionais</h2>
+                        <ul>
+                            <li><strong>Diretamente Proporcionais:</strong> Quando uma grandeza aumenta, a outra também aumenta na mesma proporção. A <em>divisão</em> (razão) entre elas é constante. Exemplo: Se você for à padaria, dobrar a quantidade de pães comprados fará com que o preço final também dobre.</li>
+                            <li><strong>Inversamente Proporcionais:</strong> Quando uma grandeza aumenta, a outra diminui na exata mesma proporção. O <em>produto</em> (multiplicação) entre elas é constante. Exemplo: Se você dobrar a velocidade do seu carro em uma rodovia, o tempo da viagem cairá pela metade.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 4: Regras de Três -->
+                        <h2 style="margin-top: 3rem;">Regras de Três</h2>
+                        
+                        <h4>Regra de Três Simples</h4>
+                        <p>É a técnica utilizada para descobrir um quarto valor desconhecido quando comparamos apenas duas grandezas.</p>
+                        <ul>
+                            <li><strong>Passo 1:</strong> Estruture o problema alinhando grandezas da mesma espécie na mesma coluna.</li>
+                            <li><strong>Passo 2:</strong> Analise a relação lógica. Se as grandezas forem <em>diretas</em>, aplique a propriedade fundamental e multiplique cruzado.</li>
+                            <li><strong>Passo 3:</strong> Se forem <em>inversas</em>, você deve obrigatoriamente inverter uma das frações antes de multiplicar cruzado (ou, de forma mais direta, basta multiplicar os valores em linha reta).</li>
+                        </ul>
+
+                        <h4>Regra de Três Composta</h4>
+                        <p>Usada para resolver problemas que envolvem três ou mais grandezas interagindo simultaneamente. O segredo aqui não é cruzar setas, mas sim isolar o desconhecido.</p>
+                        <ul>
+                            <li><strong>Técnica Prática:</strong> Separe a coluna que contém o "$x$" (o valor desconhecido). Compare cada uma das outras grandezas <em>isoladamente</em> com a grandeza do $x$, fingindo que o resto do problema não existe.</li>
+                            <li>Se a relação for <em>diretamente proporcional</em> à do $x$, mantenha a coluna como está. Se for <em>inversa</em>, inverta os valores dessa coluna.</li>
+                            <li>Por fim, monte uma equação: a fração que contém o $x$ será igual à <strong>multiplicação</strong> de todas as outras frações (já devidamente ajustadas).</li>
+                        </ul>
+
+                        <!-- SEÇÃO 5: Divisão Proporcional -->
+                        <h2 style="margin-top: 3rem;">Divisão Proporcional (Direta e Inversa)</h2>
+                        <ul>
+                            <li><strong>Divisão Diretamente Proporcional:</strong> É dividir um montante baseado em "pesos" em que quem tem o maior peso, leva mais. Exemplo: dividir os lucros de uma empresa entre os sócios. Para resolver, some todos os valores investidos (pesos) e divida o lucro total por essa soma. O resultado é a constante de proporcionalidade ($k$). Multiplique o investimento de cada sócio por $k$ para achar a parte de cada um.</li>
+                            <li><strong>Divisão Inversamente Proporcional:</strong> É dividir um montante de forma que o menor número receba a maior fatia. Exemplo: um bônus financeiro distribuído de acordo com o menor número de faltas. Para resolver, você transforma o problema em uma divisão direta utilizando o <em>inverso matemático</em> dos pesos. Se dois funcionários faltaram 2 e 4 vezes, o prêmio será dividido de forma diretamente proporcional às frações $\frac{1}{2}$ e $\frac{1}{4}$.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - MATEMÁTICA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um engenheiro está analisando a planta de um futuro loteamento urbano. Na legenda do projeto, consta que a escala linear utilizada foi de $1 : 50.000$. Ao medir com uma régua a distância em linha reta entre a praça principal e o hospital do loteamento na planta, o engenheiro encontrou o valor de $6$ centímetros.</p>
+                                <p><strong>Enunciado:</strong> Qual será a distância real, em quilômetros, entre a praça principal e o hospital?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $0,3$</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> $3$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $30$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $300$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $3.000$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A escala $1 : 50.000$ significa que $1\text{ cm}$ no papel equivale a $50.000\text{ cm}$ na realidade. Multiplicando a medida do papel pela escala: $6 \times 50.000 = 300.000\text{ cm}$. Para converter de centímetros para quilômetros, divide-se por $100.000$ (cortam-se 5 zeros). Logo, $300.000\text{ cm} = 3.000\text{ m} = 3\text{ km}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e C:</strong> Erro na conversão de unidades (cortar zeros a mais ou a menos na passagem de cm para km).</li>
+                                        <li><strong>D:</strong> O cálculo parou em metros ($3.000\text{ m}$) e foi assumido como quilômetros.</li>
+                                        <li><strong>E:</strong> O valor bruto ($300.000$) foi utilizado sem realizar nenhuma conversão de unidade.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma fábrica produz caixas de papelão em formato de cubo para transporte de mercadorias. Para fins de demonstração, eles criaram uma miniatura exata da caixa, utilizando uma escala linear de redução de $1 : 4$. Sabe-se que o volume da caixa em miniatura é de $15\text{ cm}^3$.</p>
+                                <p><strong>Enunciado:</strong> A capacidade volumétrica da caixa original, em centímetros cúbicos, é igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $60$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $240$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $480$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $960$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $3.840$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A proporção entre os volumes de dois sólidos semelhantes é igual ao <strong>cubo</strong> da razão de semelhança (escala linear). Se a escala linear é $4$ (ampliação), a escala de volume é $4^3 = 64$. O volume original é $15 \times 64 = 960\text{ cm}^3$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Multiplicou o volume diretamente pela escala linear ($15 \times 4 = 60$).</li>
+                                        <li><strong>B:</strong> Utilizou a proporção de área (escala ao quadrado, $4^2 = 16$), fazendo $15 \times 16 = 240$.</li>
+                                        <li><strong>E:</strong> Multiplicou o resultado correto novamente por 4 de forma arbitrária ($960 \times 4 = 3.840$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma família decide viajar para o interior em um feriado prolongado. Planejando a viagem, o motorista calcula que, se mantiver uma velocidade média de $90\text{ km/h}$, o trajeto total até o destino durará exatamente $4\text{ horas}$. No dia da viagem, por conta de um imprevisto, eles saem atrasados. Para compensar, o motorista faz a viagem mantendo uma velocidade média de $120\text{ km/h}$.</p>
+                                <p><strong>Enunciado:</strong> Nessas novas condições, o tempo total de viagem será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $2\text{ horas e } 30\text{ minutos.}$</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> $3\text{ horas.}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $4\text{ horas e } 30\text{ minutos.}$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $5\text{ horas.}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $5\text{ horas e } 20\text{ minutos.}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Velocidade e tempo são grandezas <strong>inversamente proporcionais</strong> (se a velocidade aumenta, o tempo diminui). Usando regra de três simples inversa (multiplica-se em linha reta):<br>
+                                    $90 \times 4 = 120 \times t \Rightarrow 360 = 120t \Rightarrow t = \frac{360}{120} = 3\text{ horas}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Erro no cálculo da divisão final da equação.</li>
+                                        <li><strong>D e E:</strong> Ocorreu um erro conceitual fatal: tratar as grandezas como diretamente proporcionais ($\frac{90}{4} = \frac{120}{t}$), resultando num aumento ilógico de tempo ($5,33\text{ h}$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em uma gráfica, um parque de impressões conta com máquinas idênticas trabalhando com a mesma capacidade. Sabe-se que $6$ dessas máquinas operando simultaneamente são capazes de imprimir $9.000$ folhetos em exatas $3\text{ horas}$. Para atender a uma encomenda de urgência, o gerente precisa imprimir $12.000$ folhetos em apenas $2\text{ horas}$.</p>
+                                <p><strong>Enunciado:</strong> Para cumprir a meta do pedido de urgência, qual o número total de máquinas que deverão operar simultaneamente?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $4$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $8$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $10$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $12$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $16$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Regra de três composta. Coluna do $x$: Máquinas. <br>
+                                    Comparação: Máquinas e Folhetos = direta (mais folhetos exige mais máquinas). <br>
+                                    Máquinas e Horas = inversa (menos horas exige mais máquinas).<br>
+                                    Montagem: $\frac{6}{x} = \frac{9.000}{12.000} \cdot \frac{2}{3} \Rightarrow \frac{6}{x} = \frac{3}{4} \cdot \frac{2}{3} \Rightarrow \frac{6}{x} = \frac{6}{12} \Rightarrow \frac{1}{x} = \frac{1}{2} \Rightarrow x = 12$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Inverteu o raciocínio inteiro das proporções.</li>
+                                        <li><strong>B:</strong> Tratou a relação de máquinas e horas como direta (sem inverter a fração $\frac{3}{2}$).</li>
+                                        <li><strong>E:</strong> Tratou folhetos como inverso e horas como direto.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Três amigos, Ana, Bruno e Carlos, abriram uma pequena empresa de e-commerce e decidiram que a divisão dos lucros seria diretamente proporcional ao valor investido por cada um no negócio. Ana investiu $\text{R\$} 2.000,00$, Bruno investiu $\text{R\$} 3.000,00$ e Carlos investiu $\text{R\$} 5.000,00$. No fim do primeiro semestre, a empresa obteve um lucro líquido de $\text{R\$} 12.000,00$ que deverá ser integralmente dividido.</p>
+                                <p><strong>Enunciado:</strong> O valor em reais que caberá a Carlos na divisão do lucro será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $2.400,00$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $3.600,00$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $4.000,00$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $6.000,00$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $7.200,00$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Soma-se os investimentos totais (pesos): $2.000 + 3.000 + 5.000 = 10.000$. Encontra-se a constante de proporcionalidade ($k$) dividindo o lucro total pelo investido: $k = \frac{12.000}{10.000} = 1,2$. <br>
+                                    O lucro de Carlos será: $5.000 \times 1,2 = \text{R\$} 6.000,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> São os lucros de Ana ($\text{R\$} 2.400$) e Bruno ($\text{R\$} 3.600$).</li>
+                                        <li><strong>C:</strong> Divisão exata por 3 partes iguais ($\frac{12.000}{3}$), ignorando os pesos dos investimentos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Para incentivar a assiduidade, uma fábrica destinou um bônus especial de final de ano no valor de $\text{R\$} 6.600,00$ para três operários de uma mesma equipe. O regulamento prevê que a divisão desse valor seja feita de forma inversamente proporcional ao número de faltas não justificadas de cada um durante o ano. O operário A faltou $2$ vezes, o operário B faltou $3$ vezes e o operário C faltou $6$ vezes.</p>
+                                <p><strong>Enunciado:</strong> O valor do prêmio, em reais, recebido pelo operário A será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $1.100,00$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $1.200,00$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $2.200,00$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $3.300,00$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $3.600,00$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Na divisão inversamente proporcional, somamos os inversos das faltas: $\frac{1}{2} (A) + \frac{1}{3} (B) + \frac{1}{6} (C)$. Tirando o MMC (6), temos: $\frac{3+2+1}{6} = \frac{6}{6} = 1$ inteiro. <br>
+                                    O valor do inteiro é o total $\text{R\$} 6.600,00$. O operário A tem direito à fração $\frac{3}{6}$ (ou $\frac{1}{2}$) do montante. Logo, $\frac{6.600}{2} = \text{R\$} 3.300,00$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Valor recebido pelo operário C.</li>
+                                        <li><strong>B:</strong> Calculou de forma diretamente proporcional, achando $k = 600$ e multiplicando por 2 (premiou quem faltou mais).</li>
+                                        <li><strong>C:</strong> Valor recebido pelo operário B.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um comerciante precisa comprar café para o seu estabelecimento. Ao pesquisar em diferentes distribuidores, ele encontrou o mesmo tipo e marca de café embalado em cinco formatos de peso e preço distintos, conforme a tabela abaixo:<br>
+                                • Loja 1: Pacote de $500\text{ g}$ por $\text{R\$} 12,00$.<br>
+                                • Loja 2: Pacote de $750\text{ g}$ por $\text{R\$} 15,00$.<br>
+                                • Loja 3: Pacote de $1\text{ kg}$ por $\text{R\$} 22,00$.<br>
+                                • Loja 4: Pacote de $1,5\text{ kg}$ por $\text{R\$} 31,50$.<br>
+                                • Loja 5: Pacote de $2\text{ kg}$ por $\text{R\$} 46,00$.</p>
+                                <p><strong>Enunciado:</strong> Buscando economizar, o comerciante comprará o café no distribuidor que apresentar a menor razão entre o preço cobrado e a quantidade de produto. Essa compra deverá ser feita na:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Loja 1.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Loja 2.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Loja 3.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Loja 4.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Loja 5.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Para achar a opção mais barata, calcula-se o preço por kg (Razão = Preço / Massa em kg). <br>
+                                    Loja 2: $\frac{15}{0,75} = \text{R\$} 20,00$ por quilo. Dentre todas, é a menor razão.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> $\frac{12}{0,5} = \text{R\$} 24,00\text{/kg}$. É o mais caro de todos.</li>
+                                        <li><strong>C:</strong> A razão direta é $\text{R\$} 22,00\text{/kg}$.</li>
+                                        <li><strong>D:</strong> $\frac{31,50}{1,5} = \text{R\$} 21,00\text{/kg}$.</li>
+                                        <li><strong>E:</strong> $\frac{46}{2} = \text{R\$} 23,00\text{/kg}$. Engano comum de achar que a embalagem maior de atacado sempre é linearmente mais barata.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A densidade demográfica de uma região é uma razão que relaciona o número de habitantes com a área ocupada por eles (hab/$\text{km}^2$). A cidade Alfa possui uma população de $50.000$ habitantes distribuídos em uma área de $200\text{ km}^2$. O IBGE constatou que a cidade vizinha, Beta, que possui uma área territorial de $500\text{ km}^2$, tem uma densidade demográfica que é o dobro da densidade da cidade Alfa.</p>
+                                <p><strong>Enunciado:</strong> Com base nesses dados, a população da cidade Beta é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $100.000\text{ habitantes.}$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $125.000\text{ habitantes.}$</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> $250.000\text{ habitantes.}$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $500.000\text{ habitantes.}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $1.000.000\text{ habitantes.}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Primeiro, calcula-se a densidade de Alfa: $\frac{50.000}{200} = 250\text{ hab/km}^2$.<br>
+                                    Como a densidade de Beta é o dobro, vale $500\text{ hab/km}^2$. <br>
+                                    Aplicando a fórmula em Beta: $\frac{\text{População}}{500\text{ km}^2} = 500 \Rightarrow \text{População} = 500 \times 500 = 250.000\text{ habitantes}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Dobrou apenas a população de Alfa direto, ignorando as áreas.</li>
+                                        <li><strong>B:</strong> Usou a densidade antiga de Alfa ($250$) multiplicada pela área de Beta ($500$), esquecendo que a densidade dobrou.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um designer gráfico está ajustando a resolução de uma imagem para que ela preencha perfeitamente a tela de um novo monitor. O monitor possui uma proporção de tela (aspect ratio) de $16 : 9$, o que significa que a razão entre a largura e a altura da tela é de $16$ para $9$.</p>
+                                <p><strong>Enunciado:</strong> Se o monitor possui uma largura física de $64$ centímetros, a medida de sua altura, em centímetros, deve ser igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $28$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $32$</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> $36$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $48$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $54$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Aplicando a propriedade fundamental das proporções, montamos a razão: $\frac{\text{Largura}}{\text{Altura}} = \frac{16}{9}$. <br>
+                                    Substituindo a largura real: $\frac{64}{h} = \frac{16}{9}$. <br>
+                                    Podemos simplificar multiplicadores: $64$ é exatamente $16 \times 4$. Logo, a altura $h$ deve ser $9 \times 4 = 36\text{ cm}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Dividiu o 64 pela metade, presumindo arbitrariamente uma proporção 2:1.</li>
+                                        <li><strong>D:</strong> Multiplicou o fator 16 por 3 em vez de aplicar a regra cruzada no 9.</li>
+                                        <li><strong>E:</strong> Inverteu a proporção ($\frac{9}{16} = \frac{64}{h}$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em um sistema de abastecimento de água, existe uma relação matemática entre o volume de um reservatório ($V$), a vazão da torneira que o abastece ($Q$) e o tempo necessário para enchê-lo totalmente ($T$). Sabe-se que o tempo $T$ é diretamente proporcional ao volume do reservatório e inversamente proporcional à vazão da água.</p>
+                                <p><strong>Enunciado:</strong> Se a prefeitura decidir instalar um novo reservatório com o <strong>dobro</strong> da capacidade do anterior e, simultaneamente, utilizar uma tubulação que forneça o <strong>dobro</strong> da vazão de água, o que acontecerá com o tempo de enchimento deste novo reservatório em relação ao antigo?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Reduz-se à metade.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Permanece o mesmo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Duplica.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Quadruplica.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Reduz-se à quarta parte.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A relação é dada pela fórmula $T = \frac{V}{Q}$. Se dobrarmos o volume ($2V$) e dobrarmos a vazão ($2Q$), a nova equação do tempo será $T' = \frac{2V}{2Q}$. <br>
+                                    Os números "2" se cancelam na fração, resultando no mesmo $T' = \frac{V}{Q}$. O tempo permanece igual, pois a exigência dobrou, mas a capacidade de trabalho também dobrou.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e C:</strong> Focaram em apenas uma variável (vazão ou volume) ignorando que a outra neutraliza o efeito.</li>
+                                        <li><strong>D e E:</strong> Trataram ambas as grandezas como sendo iguais (ou as duas diretas resultando em $4\times$, ou as duas inversas resultando em divisão por 4).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 8 • Escala Volumétrica</span>
+                                        <div class="large-text">Ao construir a maquete de um reservatório d'água, o projetista dobra as dimensões lineares originais do projeto. O volume final do reservatório será ampliado em quantas vezes?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Em 8 vezes.</div>
+                                        <span class="card-hint">A proporção de volume (3D) acompanha o cubo da escala linear ($2^3 = 8$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 8 • Interpretação de Escalas</span>
+                                        <div class="large-text">Na interpretação de mapas, se a distância no papel (em cm) é multiplicada por uma escala de 1:500.000, em qual unidade de medida o resultado numérico estará inicialmente?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Em centímetros.</div>
+                                        <span class="card-hint">A mesma unidade do papel. Para respostas reais no ENEM, quase sempre é obrigatório converter esse resultado para metros ou quilômetros.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 8 • Grandezas Inversas</span>
+                                        <div class="large-text">Quando duas grandezas são inversamente proporcionais (como velocidade média e tempo de viagem), o que se mantém constante matemático entre elas: a razão (divisão) ou o produto (multiplicação)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O produto.</div>
+                                        <span class="card-hint">Se a velocidade dobra, o tempo cai pela metade, mas a multiplicação de ambos resulta na mesma distância (que é a constante).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 8 • Regra de Três Composta</span>
+                                        <div class="large-text">Na Regra de Três Composta, ao montar a equação para isolar a grandeza desconhecida ($X$), como devemos analisar a relação com as outras colunas?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Analisando de forma isolada.</div>
+                                        <span class="card-hint">Compara-se a coluna do $X$ com cada uma das outras colunas de forma isolada, invertendo as frações das grandezas que forem inversamente proporcionais ao $X$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 8 • Divisão Inversamente Proporcional</span>
+                                        <div class="large-text">Para distribuir um bônus financeiro priorizando quem teve menos faltas no ano (divisão inversamente proporcional), qual transformação obrigatória deve ser feita nos pesos?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Utilizar o inverso matemático.</div>
+                                        <span class="card-hint">Deve-se utilizar o inverso dos pesos (ex: quem faltou 2 e 4 vezes recebe de forma diretamente proporcional às frações $\frac{1}{2}$ e $\frac{1}{4}$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 8 • Escala de Área</span>
+                                        <div class="large-text">Se a área (2D) de uma figura projetada no quadro aumenta em 100 vezes, qual foi o fator de aumento aplicado à escala linear (1D) da imagem?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O aumento linear foi de 10 vezes.</div>
+                                        <span class="card-hint">A escala linear é a raiz quadrada da proporção de área ($\sqrt{100} = 10$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 8 • Propriedade Fundamental</span>
+                                        <div class="large-text">A "multiplicação cruzada" utilizada na Regra de Três baseia-se na propriedade fundamental das proporções, que dita que em qualquer igualdade ($\frac{a}{b} = \frac{c}{d}$), o produto dos ______ é igual ao produto dos ______.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Extremos / Meios.</div>
+                                        <span class="card-hint">O produto dos extremos ($a \cdot d$) é igual ao produto dos meios ($b \cdot c$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 8 • Constante de Proporcionalidade</span>
+                                        <div class="large-text">Na divisão diretamente proporcional de lucros entre sócios, como se calcula matematicamente a constante de proporcionalidade ($k$)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Montante total dividido pela soma dos pesos.</div>
+                                        <span class="card-hint">Divide-se o montante total (lucro a ser distribuído) pela soma de todos os pesos (capital total investido por todos os sócios).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

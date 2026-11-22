@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Espacial - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subject-theme-math"> <!-- Tema Matemática -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Geometria Espacial</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Geometria Espacial</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>A geometria espacial exige a capacidade de visualizar e manipular mentalmente objetos tridimensionais, competência central no ENEM, que frequentemente relaciona sólidos geométricos a embalagens, arquitetura e fenômenos cotidianos.</p>
+
+                        <h2 style="margin-top: 2.5rem;">1. Poliedros e Relação de Euler</h2>
+                        <p>Poliedros são sólidos fechados formados por polígonos planos. A <strong>Relação de Euler</strong> (<strong>V - A + F = 2</strong>) conecta Vértices, Arestas e Faces.</p>
+                        <ul>
+                            <li>Para descobrir o número de arestas, multiplica-se o número de faces pelos seus respectivos lados e divide-se por dois (pois cada aresta une duas faces).</li>
+                            <li>Os Poliedros de Platão são regulares e existem apenas cinco: Tetraedro, Hexaedro (cubo), Octaedro, Dodecaedro e Icosaedro.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">2. Prismas, Cubos e Paralelepípedos</h2>
+                        <ul>
+                            <li><strong>Prismas:</strong> Possuem duas bases paralelas e iguais. O volume é sempre <strong>V = A<sub>b</sub> &middot; h</strong>. A área total é a soma da área lateral (retângulos, nos prismas retos) com o dobro da área da base. No prisma triangular regular, a base é um triângulo equilátero (A = l&sup2;&radic;3 / 4); no hexagonal, são seis triângulos equiláteros.</li>
+                            <li><strong>Paralelepípedo (caixa):</strong> De dimensões <em>a, b, c</em>. O volume é V = a &middot; b &middot; c. A <strong>diagonal principal</strong> (a maior vareta que cabe dentro da caixa) é D = &radic;(a&sup2; + b&sup2; + c&sup2;).</li>
+                            <li><strong>Cubo:</strong> Todas as arestas são iguais (a=b=c). O volume é V = a&sup3; e a diagonal é D = a&radic;3.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">3. Pirâmides e Cones (Corpos Pontiagudos)</h2>
+                        <p>Sólidos que afunilam para um vértice. O volume é sempre <strong>um terço</strong> do prisma ou cilindro correspondente (<strong>V = 1/3 &middot; A<sub>b</sub> &middot; h</strong>).</p>
+                        <ul>
+                            <li><strong>Pirâmides:</strong> O <em>apótema da pirâmide</em> é a altura do triângulo que forma a face lateral. Ele forma um triângulo retângulo no interior da pirâmide com a altura do sólido e o apótema da base (resolve-se por Pitágoras).</li>
+                            <li><strong>Cone:</strong> Tem base circular (V = 1/3 &middot; &pi;r&sup2;h). A face lateral planificada é um setor circular. A <strong>geratriz (g)</strong> é a "lateral inclinada", que se relaciona por Pitágoras: g&sup2; = h&sup2; + r&sup2;. A área lateral é A<sub>l</sub> = &pi; &middot; r &middot; g.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">4. Cilindro e Esfera</h2>
+                        <ul>
+                            <li><strong>Cilindro:</strong> Semelhante ao prisma, com base circular. Volume: V = &pi;r&sup2;h. A <strong>secção meridiana</strong> (corte vertical pelo centro) é um retângulo; se for um cilindro equilátero, é um quadrado (h = 2r).</li>
+                            <li><strong>Esfera:</strong> Sólido perfeitamente redondo. Volume: V = 4/3 &middot; &pi;r&sup3;. Área da superfície: A = 4&pi;r&sup2;.</li>
+                        </ul>
+
+                        <div class="example-box" style="margin-top: 2.5rem;">
+                            <strong>5. Troncos e Semelhança de Sólidos (k, k², k³)</strong><br>
+                            Ao cortar uma pirâmide ou cone paralelamente à base, formam-se um sólido menor (no topo) e um tronco (embaixo). Se a razão geométrica entre as alturas (ou raios) do sólido menor e do maior for <strong>k</strong> (razão linear):
+                            <ul style="margin-top: 0.5rem;">
+                                <li>A razão entre as <strong>Áreas</strong> será <strong>k&sup2;</strong>.</li>
+                                <li>A razão entre os <strong>Volumes</strong> será <strong>k&sup3;</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <h2 style="margin-top: 2.5rem;">6. Sólidos de Revolução</h2>
+                        <p>São formados pela rotação de 360° de uma figura plana em torno de um eixo fixo.</p>
+                        <ul>
+                            <li>Rotação de retângulo gera um <strong>cilindro</strong>.</li>
+                            <li>Rotação de triângulo retângulo gera um <strong>cone</strong>.</li>
+                            <li>Rotação de semicírculo gera uma <strong>esfera</strong>.</li>
+                        </ul>
+
+                        <h2 style="margin-top: 2.5rem;">7. Geometria de Posição e Vistas Ortogonais</h2>
+                        <ul>
+                            <li><strong>Posição no Espaço:</strong> Retas podem ser paralelas, concorrentes ou <em>reversas</em> (não se cruzam, não são paralelas e estão em planos diferentes).</li>
+                            <li><strong>Projeção Ortogonal:</strong> É a "sombra" que um objeto 3D (ou seu movimento) faz em um plano, com os raios incidindo a exatos 90°.</li>
+                            <li><strong>Vistas:</strong> Representação 2D de um objeto 3D. A vista superior (planta baixa) é o que se vê de cima; a frontal, de frente; e a lateral, de lado.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- Q1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um arquiteto projetou uma escultura formada por um cilindro reto, sobre o qual foi afixado um cone reto de mesma base, e, no topo do cone, foi colocada uma esfera cujo diâmetro é igual ao raio da base do cone.</p>
+                                <p>Quando o sol está a pino (exatamente acima da escultura, emitindo raios perpendiculares ao solo), a sombra projetada (projeção ortogonal) dessa escultura no chão plano da praça forma um:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> Círculo.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Triângulo sobreposto a um retângulo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Retângulo.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Círculo com um triângulo inscrito.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Trapézio isósceles.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa A</strong></p>
+                                    <p>A projeção ortogonal vista de cima de um cilindro em pé é um círculo. A do cone de mesma base também é o mesmo círculo (cujos pontos "caem" dentro do contorno da base). A da esfera no topo, sendo menor (diâmetro = raio do cilindro), gerará um círculo que ficará totalmente contido dentro do círculo maior.</p>
+                                    <p>Portanto, a "sombra" global que engloba tudo, vista no chão, será apenas um único grande <strong>Círculo</strong> correspondente à base do cilindro.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>A clássica bola de futebol é um poliedro chamado icosaedro truncado, costurada utilizando 12 pentágonos regulares e 20 hexágonos regulares. Para montar uma réplica em acrílico, um artesão precisará de pequenos conectores, sendo um conector para cada vértice.</p>
+                                <p>O número de conectores (vértices) que o artesão deverá adquirir para montar uma única bola é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 32</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 60</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 90</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 120</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 180</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Total de Faces (F) = 12 + 20 = 32 faces.<br>
+                                    Total de Arestas (A): somamos os lados de todas as figuras e dividimos por 2 (pois cada aresta une duas faces):<br>
+                                    A = (12 &middot; 5 + 20 &middot; 6) / 2 = (60 + 120) / 2 = 180 / 2 = 90 arestas.</p>
+                                    <p>Usando a Relação de Euler (V - A + F = 2):<br>
+                                    V - 90 + 32 = 2 &rarr; V - 58 = 2 &rarr; V = 60 vértices.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Uma empresa produz suco em caixas com formato de paralelepípedo reto-retângulo. As dimensões da caixa são 6 cm de largura, 8 cm de profundidade e 24 cm de altura. Um canudo reto será inserido internamente de um vértice inferior até o vértice superior oposto.</p>
+                                <p>O comprimento exato dessa maior diagonal interna que a embalagem comporta é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 14 cm</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 24 cm</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 26 cm</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 28 cm</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 38 cm</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>A diagonal principal (D) de um paralelepípedo retângulo é dada por <strong>D = &radic;(a&sup2; + b&sup2; + c&sup2;)</strong>.</p>
+                                    <p>D = &radic;(6&sup2; + 8&sup2; + 24&sup2;)<br>
+                                    D = &radic;(36 + 64 + 576)<br>
+                                    D = &radic;(100 + 576)<br>
+                                    D = &radic;(676) = 26 cm.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um recipiente cônico, com o vértice voltado para baixo, tem 12 cm de altura e base com 10 cm de diâmetro. Um líquido é despejado nesse funil até preencher exatamente a metade da altura (6 cm a partir do vértice).</p>
+                                <p>O volume do líquido no funil, em relação à capacidade total do recipiente, representa a fração:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1/2</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 1/3</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 1/4</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 1/6</button>
+                                <button class="option-btn" data-correct="true"><span>E)</span> 1/8</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa E</strong></p>
+                                    <p>Podemos usar o teorema da semelhança de sólidos. A razão linear (k) entre a altura do líquido e a altura do cone total é k = 6/12 = <strong>1/2</strong>.</p>
+                                    <p>A razão entre os volumes é dada pelo cubo da razão linear (k&sup3;).<br>
+                                    Volume_liquido / Volume_total = (1/2)&sup3; = <strong>1/8</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Para sustentar o telhado, um pilar de concreto tem o formato de um prisma regular hexagonal. O pilar tem 3 metros de altura e a aresta do hexágono da base mede 0,5 metro.</p>
+                                <p>Considerando &radic;3 = 1,7, o volume de concreto utilizado na concretagem de um pilar é de aproximadamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1,15 m&sup3;</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 1,91 m&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 3,82 m&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 5,73 m&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 7,65 m&sup3;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>Volume de prisma = Área da base &middot; Altura.<br>
+                                    A base é um hexágono regular, formado por 6 triângulos equiláteros:<br>
+                                    A<sub>b</sub> = 6 &middot; (L&sup2;&radic;3 / 4) = 6 &middot; (0,5&sup2; &middot; 1,7) / 4<br>
+                                    A<sub>b</sub> = 6 &middot; (0,25 &middot; 1,7) / 4 = 1,5 &middot; 0,425 = 0,6375 m&sup2;.</p>
+                                    <p>Volume = 0,6375 &middot; 3 = 1,9125 m&sup3; &rarr; <strong>1,91 m&sup3;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um triângulo retângulo tem catetos medindo 3 cm e 4 cm. Um artista acopla o cateto maior (4 cm) a um eixo giratório e liga o motor, fazendo o triângulo girar 360° em alta velocidade.</p>
+                                <p>Qual sólido geométrico é gerado no espaço por esse movimento de revolução e qual é o seu volume? (Use &pi; = 3)</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Cilindro; 108 cm&sup3;</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Cone; 36 cm&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Cone; 48 cm&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Pirâmide; 36 cm&sup3;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Esfera; 113 cm&sup3;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa B</strong></p>
+                                    <p>A rotação de um triângulo retângulo em torno de um de seus catetos sempre gera um <strong>Cone reto</strong>.<br>
+                                    O cateto fixado no eixo torna-se a altura (h = 4 cm). O cateto que gira torna-se o raio da base (r = 3 cm).</p>
+                                    <p>Volume do Cone = (1/3) &middot; &pi; &middot; r&sup2; &middot; h<br>
+                                    V = (1/3) &middot; 3 &middot; 3&sup2; &middot; 4<br>
+                                    V = 1 &middot; 9 &middot; 4 = <strong>36 cm&sup3;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Uma máquina produz chocolates esféricos com 1 cm de raio. Para um lançamento promocional, solicitou-se a produção de uma versão "Gigante", perfeitamente esférica, cujo raio seja o <strong>triplo</strong> do raio original.</p>
+                                <p>A razão entre o volume de chocolate utilizado em um doce "Gigante" e o volume utilizado em um doce original é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 3</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 6</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 9</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 18</button>
+                                <button class="option-btn" data-correct="true"><span>E)</span> 27</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa E</strong></p>
+                                    <p>Pela relação de semelhança de sólidos: se ampliamos todas as medidas lineares (como o raio) de um sólido em uma proporção k = 3, o seu volume aumentará na proporção de k&sup3;.</p>
+                                    <p>k&sup3; = 3&sup3; = 3 &middot; 3 &middot; 3 = <strong>27 vezes</strong> mais chocolate.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>O teto de uma tenda tem o formato de uma pirâmide quadrangular regular. A aresta da base mede 8 metros e a altura da pirâmide (distância do centro do chão da tenda ao topo) mede 3 metros. A lona cobrirá apenas as quatro faces laterais dessa pirâmide.</p>
+                                <p>Quantos metros quadrados de lona serão necessários, no mínimo, para cobrir esse teto?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 24 m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 48 m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 64 m&sup2;</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 80 m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 96 m&sup2;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa D</strong></p>
+                                    <p>Primeiro, precisamos do apótema da pirâmide (a altura do triângulo que forma a lona). Ele forma um triângulo retângulo com a altura da pirâmide (3m) e o apótema da base (metade da base = 4m).<br>
+                                    Por Pitágoras: g&sup2; = 3&sup2; + 4&sup2; &rarr; g = 5m.</p>
+                                    <p>A área de UM triângulo lateral = (Base &middot; g) / 2 = (8 &middot; 5) / 2 = 20 m&sup2;.<br>
+                                    Como são 4 faces laterais: 4 &middot; 20 = <strong>80 m&sup2;</strong> de lona.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Um silo agrícola é um cilindro reto acoplado a um piso e teto plano. Se o volume interno de um silo cilíndrico de 10 metros de altura é de <strong>250&pi; m&sup3;</strong>, qual deve ser a medida da <strong>área lateral</strong> desse cilindro, que precisará de pintura anticorrosiva?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 25&pi; m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 50&pi; m&sup2;</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> 100&pi; m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 150&pi; m&sup2;</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 250&pi; m&sup2;</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>1º passo: Descobrir o raio usando a fórmula do Volume (V = &pi;r&sup2;h).<br>
+                                    250&pi; = &pi; &middot; r&sup2; &middot; 10<br>
+                                    r&sup2; = 25 &rarr; r = 5 metros.</p>
+                                    <p>2º passo: Calcular a Área Lateral do cilindro (retângulo planificado de base 2&pi;r e altura h).<br>
+                                    A<sub>l</sub> = 2&pi;rh = 2 &middot; &pi; &middot; 5 &middot; 10 = <strong>100&pi; m&sup2;</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p>Observe um cubo transparente. Uma mosca pousa em um vértice inferior e caminha sobre as arestas. Ela sobe completamente uma aresta vertical, vira à direita percorrendo completamente a aresta horizontal superior, e para.</p>
+                                <p>Qual figura geométrica corresponde à <strong>projeção ortogonal (vista de cima)</strong> do trajeto completo que essa mosca realizou sobre o chão plano?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Um quadrado fechado.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Duas linhas formando um ângulo reto ("L").</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Uma única linha reta correspondente a uma aresta.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Um triângulo retângulo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Um ponto sobreposto a uma reta.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito: Alternativa C</strong></p>
+                                    <p>1) O trajeto de subir a aresta vertical (90° com o solo) não possui deslocamento horizontal. Ao ser iluminado perpendicularmente de cima, a sombra desse movimento inteiro é apenas um <strong>ponto</strong> (o próprio vértice da base).</p>
+                                    <p>2) Em seguida, ao caminhar pela aresta horizontal, a "sombra" projetada será uma <strong>linha reta</strong> sobre o contorno da base do cubo.</p>
+                                    <p>Portanto, a vista completa de cima revelará apenas uma linha reta (cujo início é o ponto inicial da subida).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Relação Numérica</span>
+                                        <div class="large-text">O que diz a Relação de Euler e para quais sólidos ela é válida?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">V - A + F = 2</div>
+                                        <span class="card-hint">Significa: Vértices - Arestas + Faces = 2. É válida universalmente para todos os poliedros convexos (como prismas e pirâmides sem "furos").</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Pirâmides</span>
+                                        <div class="large-text">Qual a diferença visual e matemática entre as "alturas" utilizadas para calcular o volume e a área lateral de uma Pirâmide?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Altura Interna vs Apótema.</div>
+                                        <span class="card-hint">O <strong>Volume</strong> usa a altura do sólido (reta vertical descendo do topo ao chão). A <strong>Área Lateral</strong> usa o apótema da pirâmide (a "altura inclinada" sobre a face).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Equivalência Volumétrica</span>
+                                        <div class="large-text">Se uma taça cônica e um copo cilíndrico possuem mesma base e mesma altura, qual a relação entre as suas capacidades volumétricas?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O cilindro cabe 3 cones.</div>
+                                        <span class="card-hint">O volume do cilindro é 3 vezes maior. A fórmula do cone tem o fator 1/3 (V = 1/3 &pi;r&sup2;h), indicando que cabem exatos três cones inteiros dentro de um cilindro.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Secções e Cortes</span>
+                                        <div class="large-text">O que é a Secção Meridiana de um cilindro e qual formato ela adquire se o cilindro for dito "equilátero"?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Corte Retangular.</div>
+                                        <span class="card-hint">É o corte vertical descendo pelo eixo central. Gera um retângulo de base 2R e altura h. Sendo um cilindro equilátero (onde h = 2R), a fatia visualizada será um <strong>Quadrado</strong> perfeito.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Semelhança (Escala 3D)</span>
+                                        <div class="large-text">Se uma estátua triplica de tamanho, o que acontece com a quantidade de material (volume) e a quantidade de tinta (área da superfície)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Tinta x9, Material x27.</div>
+                                        <span class="card-hint">A área multiplicará pelo fator ao quadrado (k&sup2; = 3&sup2; = 9 vezes). O material multiplicará pelo fator ao cubo (k&sup3; = 3&sup3; = 27 vezes).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CARD 6 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Paralelepípedos</span>
+                                        <div class="large-text">O que é e como se calcula a diagonal principal de um paralelepípedo reto-retângulo (caixa)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A maior haste possível.</div>
+                                        <span class="card-hint">É o maior segmento de reta livre por dentro da caixa, unindo um vértice inferior ao vértice superior do lado oposto. É calculado por D = &radic;(a&sup2; + b&sup2; + c&sup2;).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CARD 7 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Rotação</span>
+                                        <div class="large-text">Como é formada e qual sólido é gerado pela rotação de 360° de um semicírculo em torno do seu diâmetro?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Forma uma Esfera.</div>
+                                        <span class="card-hint">Ele se enquadra como um Sólido de Revolução. Ao girar a figura plana (meia-lua) de maneira muito rápida, o rastro do movimento gera o volume de uma Esfera perfeita.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Geometria de Posição</span>
+                                        <div class="large-text">Na visualização espacial 3D, o que significa dizer que duas retas são classificadas como "reversas"?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Nem se cruzam, nem são paralelas.</div>
+                                        <span class="card-hint">Retas reversas não possuem ponto de interseção e não podem ser consideradas paralelas porque residem em planos dimensionais independentes (ex: eixo x e eixo z com diferentes profundidades).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CARD 9 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Lógica de Fórmulas</span>
+                                        <div class="large-text">Sem memorizar todas as fórmulas separadas, como se determina a lógica estrutural para o volume de um cilindro e de qualquer prisma reto?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Área da Base &times; Altura</div>
+                                        <span class="card-hint">Para ambos os sólidos contínuos, a lógica matemática é idêntica: calcula-se a área da figura que forma o "chão" e empilha-se multiplicando pela "altura" do edifício (V = A<sub>b</sub> &middot; h).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 (ADICIONADO) -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Planificação</span>
+                                        <div class="large-text">Qual é o formato geométrico resultante da planificação (corte e abertura) da superfície lateral isolada de um cone reto?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Um Setor Circular.</div>
+                                        <span class="card-hint">Ao ser "desenrolada" na mesa, a face lateral do cone revela-se como uma fatia de pizza (Setor Circular). O arco é o contorno da base e o raio do setor é a <strong>geratriz</strong> do cone.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

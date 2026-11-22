@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoologia e Parasitologia - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link active" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Biologia / Zoologia</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Zoologia e Parasitologia Humana</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (BIOLOGIA - ZOOLOGIA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>A Zoologia é o ramo da Biologia dedicado ao estudo do Reino Animal. Para o Enem e vestibulares, o foco não é a memorização vazia de características, mas sim a <strong>história evolutiva da vida na Terra</strong>. O segredo para dominar esse assunto é enxergar a Zoologia como uma linha do tempo: observar como o surgimento de novas adaptações (tecidos, exoesqueleto, pulmões, ovo amniótico) permitiu que os animais deixassem o oceano e conquistassem definitivamente o ambiente terrestre. A seguir, exploraremos a evolução dos principais filos animais e como essas relações se conectam à saúde humana através da parasitologia.</p>
+
+                        <!-- PORÍFEROS E CNIDÁRIOS -->
+                        <h2 style="margin-top: 2.5rem;">Poríferos e Cnidários</h2>
+                        <ul>
+                            <li><strong>Poríferos (Esponjas):</strong> São os animais mais simples do planeta. Não possuem tecidos verdadeiros nem órgãos. Vivem fixos (sésseis) e funcionam como grandes filtros aquáticos. Sua célula principal é o <strong>coanócito</strong>, que possui um flagelo para bater a água, criar uma corrente e capturar partículas de alimento.</li>
+                            <li><strong>Cnidários (Águas-vivas, anêmonas e corais):</strong> São os primeiros a apresentar tecidos de verdade e uma cavidade digestória (a boca também funciona como ânus).
+                                <ul>
+                                    <li><strong>Cnidócitos:</strong> São células de defesa e captura exclusivas do grupo. Funcionam como "arpões microscópicos" que injetam toxinas (causando as famosas queimaduras de água-viva).</li>
+                                    <li><strong>Corais:</strong> São cnidários que secretam um esqueleto de calcário. Eles abrigam algas (zooxantelas) em seus tecidos, numa relação de mutualismo. O aumento da temperatura da água mata ou expulsa essas algas, causando o <strong>branqueamento dos corais</strong>, um grave impacto ambiental.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- PLATELMINTOS E NEMATELMINTOS -->
+                        <h2 style="margin-top: 2.5rem;">Platelmintos e Nematelmintos</h2>
+                        <ul>
+                            <li><strong>Platelmintos (Vermes Achatados):</strong> Parecem uma fita.
+                                <ul>
+                                    <li><strong>Teníase e Cisticercose:</strong> Causadas pela <em>Taenia</em> (solitária). A teníase ocorre ao comer carne (boi/porco) crua ou malpassada contendo o cisticerco (larva). A cisticercose (mais grave) ocorre quando o humano ingere diretamente os ovos da <em>Taenia</em> através de água ou alimentos contaminados (o humano faz o papel do porco).</li>
+                                    <li><strong>Esquistossomose (Barriga d'água):</strong> A larva (cercária) penetra na pele de pessoas nadando em lagoas de água doce contaminadas. O hospedeiro intermediário obrigatório é o caramujo <em>Biomphalaria</em>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Nematelmintos (Vermes Cilíndricos):</strong> Corpo liso e em formato de tubo (parecem fios de espaguete).
+                                <ul>
+                                    <li><strong>Ascaridíase (Lombriga):</strong> Transmissão fecal-oral (ingestão de ovos em água ou alimentos mal lavados).</li>
+                                    <li><strong>Ancilostomose (Amarelão / Doença do Jeca Tatu):</strong> A larva penetra ativamente pela pele, geralmente pelos pés de quem anda descalço em solo contaminado. O verme suga sangue no intestino, causando anemia severa.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>Profilaxia (Prevenção):</strong> A regra de ouro do Enem para verminoses é o <strong>saneamento básico</strong>. Outras medidas incluem: cozinhar bem as carnes, lavar as mãos e os alimentos, usar calçados (para o amarelão) e combater hospedeiros intermediários (como o caramujo).
+                        </div>
+
+                        <!-- ANELÍDEOS E MOLUSCOS -->
+                        <h2 style="margin-top: 2.5rem;">Anelídeos e Moluscos</h2>
+                        <ul>
+                            <li><strong>Anelídeos (Minhocas, Sanguessugas):</strong> A grande novidade evolutiva é a <strong>metameria</strong> (corpo segmentado em anéis). Essa divisão facilita a locomoção.
+                                <br><em>Importância Ecológica:</em> As minhocas são os "arados da natureza". Ao cavar, elas aeram o solo (facilitando a entrada de água e raízes) e ingerem terra, defecando o húmus, que é um fertilizante orgânico riquíssimo.
+                            </li>
+                            <li><strong>Moluscos (Caracóis, Ostras, Polvos e Lulas):</strong> Animais de corpo mole, muitos protegidos por uma concha calcária.
+                                <ul>
+                                    <li><strong>Rádula:</strong> Uma "língua raspadora" cheia de dentes de quitina que a maioria dos moluscos (exceto bivalves, como ostras) usa para raspar algas ou perfurar presas.</li>
+                                    <li><strong>Cefalópodes (Polvos e lulas):</strong> São a exceção dos invertebrados: possuem um sistema nervoso extremamente desenvolvido, com olhos complexos e alta inteligência.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- ARTRÓPODES -->
+                        <h2 style="margin-top: 2.5rem;">Artrópodes</h2>
+                        <ul>
+                            <li><strong>Características Gerais:</strong> É o grupo com maior sucesso e diversidade na Terra (insetos, aracnídeos, crustáceos). Seu grande triunfo é o <strong>exoesqueleto de quitina</strong>, uma armadura externa rígida que protege contra choques físicos e evita a desidratação (perda de água), permitindo a conquista do ambiente terrestre seco.</li>
+                            <li><strong>Ecdise ou Muda:</strong> Como a "armadura" não cresce, o artrópode precisa abandoná-la de tempos em tempos para crescer, fabricando uma nova logo em seguida. Por isso, o gráfico de crescimento deles não é uma curva contínua, mas sim uma curva em degraus (escada).</li>
+                            <li><strong>Metamorfose dos Insetos:</strong> Muitos insetos (como as borboletas e moscas) são <strong>holometábolos</strong>, ou seja, mudam radicalmente de forma ($Ovo \rightarrow Larva \rightarrow Pupa \rightarrow Adulto$). Isso é uma vantagem ecológica porque a larva não compete por comida com o adulto.</li>
+                            <li><strong>Vetores de Doenças:</strong> Insetos, especialmente os mosquitos (como o <em>Aedes aegypti</em> e o prego <em>Anopheles</em>), e carrapatos são transmissores (vetores) de grandes viroses e parasitoses mundiais (Dengue, Zika, Malária, Febre Amarela).</li>
+                        </ul>
+
+                        <!-- EQUINODERMOS -->
+                        <h2 style="margin-top: 2.5rem;">Equinodermos</h2>
+                        <ul>
+                            <li><strong>Características:</strong> Estrelas-do-mar, ouriços e pepinos-do-mar. Exclusivamente marinhos.</li>
+                            <li><strong>Sistema Aquífero (Ambulacral):</strong> É uma rede de canais internos cheios de água do mar. Eles bombeiam essa água para encher e esvaziar pequenos "pés" (pés ambulacrais) que funcionam como ventosas. Isso serve para locomoção, respiração e captura de presas.</li>
+                            <li><strong>Parentesco Evolutivo (Ponto Crítico):</strong> Apesar de não terem cérebro ou formato complexo, eles são o grupo invertebrado mais próximo evolutivamente de nós (Cordados). Motivo: ambos somos <strong>deuterostômios</strong> (durante a fase embrionária, o primeiro orifício que se forma é o ânus; a boca se forma depois).</li>
+                        </ul>
+
+                        <!-- CARACTERÍSTICAS EVOLUTIVAS DOS CORDADOS -->
+                        <h2 style="margin-top: 2.5rem;">Características Evolutivas dos Cordados</h2>
+                        <p>Para um animal ser considerado um cordado (grupo que inclui peixes, anfíbios, répteis, aves e mamíferos), ele precisa apresentar quatro características exclusivas em pelo menos alguma fase da vida (geralmente na fase embrionária):</p>
+                        <ol>
+                            <li><strong>Notocorda:</strong> Um bastão flexível no dorso que serve de eixo de sustentação. Nos vertebrados, ela desaparece e é substituída pela coluna vertebral.</li>
+                            <li><strong>Tubo Neural Dorsal:</strong> Um tubo oco que fica acima da notocorda. Em nós, ele se desenvolve e forma o cérebro e a medula espinhal (Sistema Nervoso Central).</li>
+                            <li><strong>Fendas Faríngeas (ou Branquiais):</strong> Aberturas na região do pescoço. Nos peixes, viram brânquias; nos animais terrestres, fecham-se antes do nascimento.</li>
+                            <li><strong>Cauda Pós-anal:</strong> Uma extensão do corpo além do ânus (ajuda na natação inicial).</li>
+                        </ol>
+
+                        <!-- PEIXES -->
+                        <h2 style="margin-top: 2.5rem;">Peixes</h2>
+                        <ul>
+                            <li><strong>Linha Lateral:</strong> Um canal cheio de nervos nas laterais do peixe que funciona como um "radar", detectando vibrações e mudanças de pressão na água.</li>
+                            <li><strong>Condrícties (Peixes Cartilaginosos - Tubarões e Raias):</strong> Esqueleto de cartilagem. Não possuem opérculo (tampa que cobre as brânquias). Para flutuar, possuem um fígado imenso e cheio de óleo (óleo é menos denso que a água). Excretam ureia.</li>
+                            <li><strong>Osteícties (Peixes Ósseos - Sardinha, Tilápia, Salmão):</strong> Esqueleto de osso. Possuem opérculo, o que permite respirar parados (bombeando água). Para flutuar, possuem a <strong>bexiga natatória</strong>, uma bolsa interna que eles enchem ou esvaziam de gás, funcionando como uma boia de mergulho. Excretam amônia (muito tóxica, mas dissolve rápido na água).</li>
+                        </ul>
+
+                        <!-- ANFÍBIOS -->
+                        <h2 style="margin-top: 2.5rem;">Anfíbios</h2>
+                        <ul>
+                            <li><strong>Transição Incompleta:</strong> Foram os primeiros vertebrados a pisar na terra firme (sapos, rãs, salamandras), mas vivem uma "vida dupla", amarrados à água para a reprodução. Seus ovos não têm casca e ressecariam no seco.</li>
+                            <li><strong>Metamorfose:</strong> O girino (aquático) respira por brânquias e tem cauda. Na fase adulta, perde a cauda, desenvolve patas e pulmões para viver na terra.</li>
+                            <li><strong>Respiração Cutânea:</strong> O pulmão do sapo adulto é muito simples (pouco eficiente). Por isso, ele complementa a absorção de oxigênio através da pele (respiração cutânea). A pele precisa ser fina, sem escamas e estar sempre úmida, o que restringe os anfíbios a ambientes sombreados e aquáticos.</li>
+                        </ul>
+
+                        <!-- RÉPTEIS -->
+                        <h2 style="margin-top: 2.5rem;">Répteis</h2>
+                        <ul>
+                            <li><strong>A Conquista Definitiva da Terra:</strong> Tartarugas, lagartos, cobras e jacarés foram os primeiros a se libertar da dependência da água.</li>
+                            <li><strong>Ovo Amniótico:</strong> A maior invenção evolutiva dos répteis. O ovo possui uma casca calcária/coriácea (impede que a água evapore) e bolsas internas (como o âmnio, uma piscina particular para o embrião flutuar). É como um traje de astronauta que permitiu colocar ovos no deserto.</li>
+                            <li><strong>Pele Seca:</strong> Ao contrário do sapo, a pele do réptil é grossa, queratinizada (escamas/placas), bloqueando a perda de água por transpiração.</li>
+                            <li><strong>Excreção de Ácido Úrico:</strong> A amônia dos peixes exige muita água para ser eliminada. Os répteis transformaram a excreção em ácido úrico (uma pasta branca e pastosa, insolúvel), o que economiza o máximo de água possível.</li>
+                        </ul>
+
+                        <!-- AVES -->
+                        <h2 style="margin-top: 2.5rem;">Aves</h2>
+                        <ul>
+                            <li><strong>Adaptações ao Voo:</strong> O corpo da ave é uma máquina projetada para ser leve e aerodinâmica.
+                                <ul>
+                                    <li><strong>Ossos Pneumáticos:</strong> Seus ossos não são maciços, são ocos, cheios de cavidades com ar (muito leves, mas resistentes).</li>
+                                    <li>Não possuem dentes e não possuem bexiga urinária (armazenar urina seria carregar "peso morto").</li>
+                                </ul>
+                            </li>
+                            <li><strong>Sacos Aéreos:</strong> São bolsas de ar conectadas aos pulmões (e por dentro dos ossos). Eles não fazem troca de gases, mas funcionam como foles, garantindo que o ar flua continuamente e em mão única pelos pulmões, sustentando o imenso gasto de oxigênio do voo.</li>
+                            <li><strong>Endotermia:</strong> As aves produzem calor internamente e mantêm a temperatura do corpo constante, não importando se está frio ou calor lá fora. As penas atuam como isolante térmico para segurar esse calor.</li>
+                        </ul>
+
+                        <!-- MAMÍFEROS -->
+                        <h2 style="margin-top: 2.5rem;">Mamíferos</h2>
+                        <ul>
+                            <li><strong>Características Exclusivas:</strong> Presença de glândulas mamárias (para nutrir os filhotes), pelos (isolamento térmico) e diafragma (músculo da respiração). Também são endotérmicos.</li>
+                            <li><strong>Subclasses Evolutivas:</strong>
+                                <ol>
+                                    <li><strong>Monotremados (Ornitorrinco, Équidna):</strong> Os mamíferos mais primitivos. Eles botam ovo, não têm mamilos (o leite escorre pela pele da barriga da mãe) e possuem cloaca.</li>
+                                    <li><strong>Marsupiais (Canguru, Coala, Gambá):</strong> O filhote nasce prematuro, rasteja até uma bolsa na barriga da mãe (o marsúpio), onde abocanha o mamilo e termina seu desenvolvimento do lado de fora do corpo da mãe.</li>
+                                    <li><strong>Placentários (Humanos, Cachorros, Baleias):</strong> A placenta é hiperdesenvolvida. Ela é uma via de troca de nutrientes, gases e excretas entre o sangue da mãe e do feto, permitindo que o desenvolvimento embrionário seja longo e ocorra totalmente dentro do útero protetor.</li>
+                                </ol>
+                            </li>
+                        </ul>
+
+                        <!-- PARASITOLOGIA HUMANA E ZOONOSES -->
+                        <h2 style="margin-top: 2.5rem;">Parasitologia Humana e Zoonoses</h2>
+                        <ul>
+                            <li><strong>Conceitos Essenciais:</strong>
+                                <ul>
+                                    <li><strong>Hospedeiro Definitivo:</strong> É o animal onde o parasita atinge a fase adulta e realiza a reprodução sexuada.</li>
+                                    <li><strong>Hospedeiro Intermediário:</strong> É o animal onde o parasita fica na fase larval ou realiza reprodução assexuada. (Ex: Na malária, o mosquito <em>Anopheles</em> é o hospedeiro definitivo, e o ser humano é o intermediário).</li>
+                                    <li><strong>Vetor:</strong> O organismo (geralmente inseto) que transporta o patógeno de um doente para uma pessoa sã.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Medidas Preventivas Básicas (Profilaxia):</strong> Muitas questões do Enem pedem a solução (intervenção) para quebrar o ciclo da doença:
+                                <ul>
+                                    <li><strong>Ciclos de ingestão (Lombriga, Cólera, Ameba):</strong> Saneamento básico, tratamento e fervura da água, higienização de alimentos folhosos.</li>
+                                    <li><strong>Ciclos de penetração pela pele (Esquistossomose, Amarelão):</strong> Uso de calçados (botas), evitar banho em "lagoas de coceira", combate ao caramujo vetor.</li>
+                                    <li><strong>Doenças transmitidas por vetores (Chagas, Malária, Dengue, Leishmaniose):</strong> Instalação de telas em janelas, uso de mosquiteiros, aplicação de repelentes, substituição de casas de pau-a-pique por alvenaria (para combater o barbeiro, no caso de Chagas) e eliminação de criadouros de água parada (para o <em>Aedes</em>).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - ZOOLOGIA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Nos últimos anos, biólogos têm alertado para o fenômeno do branqueamento dos corais na Grande Barreira da Austrália e no Nordeste brasileiro. Esse evento está ligado ao aumento da temperatura dos oceanos, que causa estresse fisiológico nos corais, levando-os a expulsar os microrganismos coloridos que habitam seus tecidos. Sem eles, os corais perdem sua fonte de nutrientes e podem morrer.</p>
+                                <p><strong>Enunciado:</strong> O microrganismo expulso e a relação ecológica prejudicada pelo aquecimento das águas são, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Bactérias decompositoras e comensalismo.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Zooxantelas (algas) e mutualismo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Microcrustáceos e predação.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Esponjas do mar e inquilinismo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Fungos marinhos e parasitismo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Os corais (animais) mantêm uma relação de <strong>mutualismo obrigatório</strong> ($+/+$) com algas unicelulares chamadas <strong>zooxantelas</strong>. As algas fazem fotossíntese e cedem alimento ao coral; o coral oferece abrigo e sais minerais. O estresse térmico rompe essa parceria vital, causando o branqueamento e a morte por fome.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Bactérias decompositoras agem em matéria morta, não nutrem o coral vivo via comensalismo.</li>
+                                        <li><strong>D:</strong> Esponjas (Poríferos) são animais maiores e independentes, não vivem "dentro" dos tecidos de um coral.</li>
+                                        <li><strong>E:</strong> Se fosse parasitismo, expulsar o hóspede traria benefício e saúde ao coral, mas ocorre exatamente o contrário (ele morre sem as algas).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um paciente apresentou fortes convulsões e, após tomografia, foi diagnosticado com neurocisticercose, uma grave doença caracterizada pelo alojamento de cisticercos (larvas) no tecido cerebral do paciente.</p>
+                                <p><strong>Enunciado:</strong> Com base no ciclo de vida do parasita causador dessa enfermidade, o paciente adquiriu a doença por ter:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> ingerido carne de porco crua ou malcozida contendo larvas encistadas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> andado descalço em solo contaminado, permitindo a penetração ativa da larva.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> nadado em lagoas de água doce habitadas por caramujos transmissores.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> ingerido água ou alimentos contaminados com fezes humanas contendo ovos de <em>Taenia</em>.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> sido picado pelo mosquito vetor durante uma viagem a uma área endêmica.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A Cisticercose ocorre quando o ser humano ingere acidentalmente os <strong>ovos</strong> da <em>Taenia solium</em> presentes em água/alimentos, fazendo o papel que seria do porco. O ovo eclode no intestino, a larva cai no sangue e fura os tecidos do corpo humano, alojando-se nos músculos ou no cérebro (neurocisticercose).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Ingerir a carne com a larva causa a doença <em>Teníase</em> (o verme cresce e mora isolado no seu intestino).</li>
+                                        <li><strong>B:</strong> Penetração da larva no pé descalço é a forma de contágio do Amarelão (Ancilostomose).</li>
+                                        <li><strong>C:</strong> Nadar em "lagoas de coceira" transmite a Esquistossomose (barriga d'água).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A fim de promover uma agricultura sustentável, um produtor decidiu reduzir agrotóxicos e máquinas pesadas de aragem. Em vez disso, introduziu milhares de minhocas no solo de suas plantações, aproveitando as características naturais desses invertebrados.</p>
+                                <p><strong>Enunciado:</strong> O benefício direto trazido pela introdução das minhocas para a produtividade agrícola deve-se:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> à predação de insetos herbívoros que destroem a folhagem das culturas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> à produção de ureia, que acidifica o solo e facilita a germinação.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> à fixação biológica de gás nitrogênio diretamente da atmosfera para as raízes.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> à formação de galerias que aeram a terra e à produção de húmus rico em nutrientes.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> ao mutualismo entre as minhocas e fungos causadores de doenças nas plantas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>As minhocas (Anelídeos) são os "arados vivos". Ao escavarem, criam túneis que melhoram a <strong>aeração</strong> (entrada de oxigênio) e a retenção de água. Além disso, ingerem matéria orgânica morta e defecam o <strong>húmus</strong>, um fertilizante natural espetacular para o solo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Minhocas são detritívoras (comem terra e restos mortos), não são "caçadoras ágeis" de gafanhotos.</li>
+                                        <li><strong>C:</strong> Quem fixa o nitrogênio atmosférico são as <em>bactérias</em> do solo (como as <em>Rhizobium</em>), não um animal invertebrado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O gráfico de crescimento de dois animais foi traçado. A curva do Animal I apresentava crescimento contínuo em "S". A curva do Animal II permanecia com o comprimento constante por meses, seguida de aumentos bruscos de tamanho, formando um gráfico em "degraus" (como uma escada).</p>
+                                <p><strong>Enunciado:</strong> A dinâmica de crescimento em degraus do Animal II é justificada pela presença de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> coluna vertebral óssea, característica dos cordados terrestres.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> esqueleto hidrostático interno, que impede a expansão gradual dos tecidos.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> exoesqueleto de quitina, que exige processos periódicos de muda (ecdise).</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> conchas calcárias, que são abandonadas e trocadas à medida que o molusco envelhece.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> desenvolvimento direto, no qual o filhote nasce com a mesma morfologia do adulto.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Os Artrópodes (insetos, aracnídeos, crustáceos) vestem uma armadura inelástica (o <strong>exoesqueleto de quitina</strong>) que limita o aumento de volume físico. Para crescer, eles precisam realizar a <strong>ecdise ou muda</strong>: abandonam o esqueleto velho, incham de tamanho e endurecem a nova armadura. Isso forma os saltos bruscos no gráfico em formato de "escada".</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Animais com esqueleto interno vivo (osso ou cartilagem) crescem de forma contínua em formato de S longo.</li>
+                                        <li><strong>D:</strong> Moluscos não fazem muda das conchas; eles apenas secretam mais carbonato pelas bordas para expandi-la continuamente enquanto vivem.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Surpreendentemente para o senso comum, uma estrela-do-mar (Equinodermo) apresenta um grau de parentesco evolutivo com a espécie humana (Cordado) muito mais próximo e recente do que com um polvo ou um inseto.</p>
+                                <p><strong>Enunciado:</strong> A proximidade filogenética entre equinodermos e cordados baseia-se no fato de ambos:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> apresentarem notocorda durante as primeiras semanas de desenvolvimento embrionário.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> possuírem sistema nervoso centralizado com tubo neural dorsal.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> serem animais deuterostômios, nos quais o blastóporo embrionário dá origem primeiro ao ânus.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> desenvolverem um exoesqueleto articulado a partir da mesoderme.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> apresentarem simetria radial durante a fase adulta.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Tanto nós quanto as estrelas-do-mar somos animais <strong>deuterostômios</strong>. O que isso significa? Durante os primeiros dias como embrião, forma-se um orifício digestório inicial chamado blastóporo. Nos deuterostômios, esse buraco dá origem primeiro ao <strong>ânus</strong> (a boca surge depois no lado oposto). Em quase todos os outros invertebrados, vira primeiro a boca.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> Notocorda e Tubo Neural são "direitos autorais" exclusivos do grupo dos Cordados (daí o nome). As estrelas não possuem nada disso.</li>
+                                        <li><strong>D:</strong> Estrela-do-mar possui <em>endoesqueleto</em> (calcário interno, sob a epiderme), e não exoesqueleto (artrópodes).</li>
+                                        <li><strong>E:</strong> Apenas os equinodermos assumem simetria radial na fase adulta (nós, cordados, somos de simetria bilateral).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Os tubarões, devido à sua alta densidade corporal, tendem a afundar caso parem de nadar. Já muitos peixes ósseos, como o robalo, conseguem ficar "parados" e estáveis em diferentes profundidades com esforço muscular quase nulo.</p>
+                                <p><strong>Enunciado:</strong> A estrutura anatômica ausente nos tubarões, mas presente nos peixes ósseos, que lhes confere essa capacidade de controle hidrostático é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> bexiga natatória, que atua como um flutuador interno regulável através de gases.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> linha lateral, que detecta as correntes de água e ajusta a posição do corpo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> glândula de sal, que elimina o peso do excesso de minerais na corrente sanguínea.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> cloaca, que retém grandes volumes de urina leve para contrabalançar o peso dos ossos.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> presença de um fígado extremamente volumoso e rico em lipídios (óleos).</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>A <strong>bexiga natatória</strong> é uma bolsa membranosa interna exclusiva dos peixes ósseos (osteícties). Ao enviar oxigênio/gases do sangue para dentro dessa bolsa, o peixe diminui sua densidade e flutua como uma boia. Ao murchar a bolsa, ele afunda.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> A linha lateral é o "sexto sentido" para perceber vibrações na água, e está presente tanto no tubarão quanto no robalo.</li>
+                                        <li><strong>D:</strong> Peixes ósseos nem possuem cloaca (possuem orifícios intestinais e urogenitais separados).</li>
+                                        <li><strong>E:</strong> O fígado de óleo é a resposta evolutiva do próprio <em>tubarão</em> para tentar não afundar tanto. A questão pedia a estrutura exclusiva do peixe ósseo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A transição do meio aquático para o terrestre foi gradual. Os anfíbios deram o primeiro passo, mas ainda permaneceram amarrados a ambientes úmidos para poderem se reproduzir. Somente com o surgimento dos répteis primitivos foi possível conquistar praias, desertos e cânions escaldantes.</p>
+                                <p><strong>Enunciado:</strong> A inovação evolutiva que garantiu aos répteis a independência definitiva da água para a reprodução foi o(a):</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> fecundação externa, que aumentou a variabilidade genética da prole no solo seco.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> ovo amniótico com casca calcária/coriácea, que evitou a desidratação do embrião.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> desenvolvimento de pulmões alveolares, substituindo a respiração branquial dos girinos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> surgimento da endotermia, permitindo a regulação da temperatura sob o sol escaldante.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> excreção de amônia, que gasta menos energia metabólica do embrião.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Os sapos botam ovos gelatinosos em formato de "cacho de uva"; no seco, aquele material evapora em poucas horas e mata o embrião. A genialidade dos répteis foi criar o <strong>ovo com casca rígida</strong> e bolsa d'água interna (âmnio). É literalmente um astronauta num traje hermético com suporte de vida interno, capaz de sobreviver numa rocha no deserto.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Fecundação externa em terra seca não funciona, o sêmen morreria desidratado antes de fecundar a fêmea. Todo animal terrestre superior tem fecundação interna.</li>
+                                        <li><strong>D:</strong> Répteis (lagartos, tartarugas, jacarés) não são endotérmicos; eles são de sangue-frio (ectotérmicos) e precisam do sol de manhã para o metabolismo ligar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O voo ativo demanda um gasto energético fenomenal e exige que o animal tenha a melhor relação possível entre força motriz e peso corporal. Para viabilizar a conquista dos céus, a anatomia das aves modernas passou por adaptações morfológicas e fisiológicas extremas.</p>
+                                <p><strong>Enunciado:</strong> Qual conjunto de características morfológicas atua diretamente na <strong>redução severa do peso</strong> corporal das aves, facilitando o voo?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ossos maciços e bexiga urinária de alta capacidade.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Endotermia e presença de glândulas uropigianas impermeabilizantes.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Ossos pneumáticos e ausência total de dentes e de bexiga urinária.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Respiração por pulmões foliáceos e circulação sanguínea simples.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Penas coloridas espessas e exoesqueleto quitinoso resistente.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O corpo da ave é um chassi de avião projetado contra o "peso morto". Os ossos da mandíbula/dentes deram lugar a um <strong>bico leve de queratina</strong>. Elas não armazenam líquidos estagnados no corpo (não têm <strong>bexiga</strong>, excretam urina branca e pastosa junto com as fezes). Seus ossos pernas/asas não são preenchidos por tutano denso, mas são <strong>ossos pneumáticos</strong> (ocos e cheios de bolhas de ar dos sacos aéreos).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Ossos maciços e estocar água na bexiga é exatamente o que ancoraria a ave no chão.</li>
+                                        <li><strong>B:</strong> A glândula uropigiana secreta óleo na base do rabo, essencial para as penas não encharcarem de água no mar (patos, pinguins), mas não é uma estrutura focada em "redução estrutural do peso".</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O gambá brasileiro é, muitas vezes, confundido com um rato. No entanto, o gambá pertence à linhagem dos marsupiais (assim como cangurus e coalas australianos), apresentando uma estratégia reprodutiva e de gestação muito diferente daquela vista em cães, cavalos e humanos (placentários).</p>
+                                <p><strong>Enunciado:</strong> A principal diferença reprodutiva fisiológica que separa marsupiais de placentários é que, nos marsupiais:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a fecundação ocorre de forma externa, no interior de poças d'água das florestas.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> a fêmea não produz leite, alimentando os filhotes com restos de insetos e frutas regurgitados.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> os filhotes nascem muito imaturos (prematuros) e completam o desenvolvimento do lado de fora do útero, no marsúpio.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> o embrião se desenvolve inteiramente no interior de ovos com casca, que são chocados pelo macho.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a placenta é hiperdesenvolvida, garantindo um período de gestação uterina muito superior ao dos humanos.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Como os marsupiais não contam com uma <em>placenta</em> complexa, robusta e nutritiva o suficiente para segurar o bebê por muito tempo no útero, a gestação uterina é um relâmpago. O filhote nasce ainda parecendo uma larva, escorrega pelo pelo da mãe até a bolsa (o <strong>marsúpio</strong>), morde o mamilo do leite e termina todo o seu crescimento ali dentro.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Se é "mamífero" tem glândula mamária. O canguru produz e jorra leite sim.</li>
+                                        <li><strong>D:</strong> Apenas os monotremados (ornitorrinco) botam ovos com casca.</li>
+                                        <li><strong>E:</strong> É exatamente o contrário da biologia do grupo (quem tem placenta de elite para gestações superlongas somos nós, os eutérios/placentários).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> A Doença de Chagas é causada pelo protozoário <em>Trypanosoma cruzi</em> e está intimamente ligada à baixa qualidade das moradias no interior rural do país. As paredes esburacadas de pau a pique e telhados de palha servem de excelente abrigo para a reprodução e esconderijo do principal inseto vetor durante o dia.</p>
+                                <p><strong>Enunciado:</strong> Considerando o modo de transmissão, a principal medida profilática estrutural para erradicar surtos endêmicos dessa doença nessas regiões é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> o uso de calçados de borracha por trabalhadores rurais em plantações com córregos irrigados.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> a substituição de moradias de pau a pique (taipa) por casas de alvenaria devidamente rebocadas e lisas.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> a eliminação de pneus velhos, garrafas e pequenos recipientes que acumulem água da chuva limpa.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a instalação de redes de esgoto e fossas para evitar a contaminação da água potável de poços.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a vacinação em massa do gado bovino e dos animais silvestres hospedeiros intermediários.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O inseto vetor é o percevejo sugador popularmente chamado de <strong>barbeiro</strong>. Ele é fotofóbico (odeia luz), passando o dia escondido e procriando nas fendas de buracos das paredes rústicas de barro da casa. Substituir essas construções por casas de tijolo e reboco liso (alvenaria) elimina o esconderijo físico da praga, quebrando a cadeia de transmissão na zona endêmica.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Calçados ajudam contra vermes que penetram na pele do solo (Esquistossomose, Amarelão).</li>
+                                        <li><strong>C:</strong> Pneus com água parada é o foco exclusivo contra o mosquito <em>Aedes aegypti</em> (Dengue, Zika). O barbeiro de Chagas não tem fase aquática na vida.</li>
+                                        <li><strong>E:</strong> Até hoje não existe vacina com eficácia populacional testada contra a Doença de Chagas para distribuição em postos de saúde.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 15 • Ecologia & Cnidários</span>
+                                        <div class="large-text">O que causa o branqueamento dos corais sob estresse térmico oceânico e qual a consequência imediata para o ecossistema?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Expulsão das zooxantelas.</div>
+                                        <span class="card-hint">O coral perde as algas simbiontes (mutualismo), ficando sem sua fonte de nutrição fotossintética e morrendo de fome, destruindo a base do habitat marinho.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 15 • Parasitologia</span>
+                                        <div class="large-text">Qual a diferença na forma de contágio que faz uma pessoa desenvolver cisticercose em vez de teníase?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Ovos vs. Larvas.</div>
+                                        <span class="card-hint"><strong>Teníase:</strong> Ingestão de carne (boi/porco) malcozida contendo larvas (cisticercos).<br><br><strong>Cisticercose:</strong> Ingestão direta dos ovos da <em>Taenia</em> (água ou alimentos contaminados com fezes humanas).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 15 • Anelídeos & Agricultura</span>
+                                        <div class="large-text">Do ponto de vista agrícola, por que a presença de minhocas no solo aumenta significativamente a produtividade vegetal?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Aeração e Húmus.</div>
+                                        <span class="card-hint">Elas constroem galerias que aeram e drenam o solo, além de excretarem o húmus, matéria orgânica decomposta riquíssima em nutrientes.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 15 • Artrópodes</span>
+                                        <div class="large-text">Por que o gráfico de crescimento corporal de um inseto apresenta formato em "degraus" (escada), diferente do crescimento contínuo dos vertebrados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Exoesqueleto de quitina.</div>
+                                        <span class="card-hint">A "armadura" externa é rígida e não cresce junto com o corpo, exigindo trocas periódicas (ecdises/mudas) para que o animal consiga expandir em tamanho.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 15 • Metamorfose dos Insetos</span>
+                                        <div class="large-text">Qual é a principal vantagem ecológica de insetos com metamorfose completa (holometábolos, como moscas e borboletas)?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Divisão de nichos.</div>
+                                        <span class="card-hint">A ausência de competição alimentar direta entre a larva e o adulto, pois exploram alimentos e nichos ecológicos totalmente distintos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 15 • Embriologia & Evolução</span>
+                                        <div class="large-text">Qual característica embrionária coloca os equinodermos (estrelas-do-mar) mais próximos evolutivamente dos cordados do que dos outros invertebrados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Deuterostomia.</div>
+                                        <span class="card-hint">O blastóporo embrionário dá origem primeiramente ao ânus, enquanto a boca se forma em uma etapa posterior do desenvolvimento.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 15 • Embriologia dos Cordados</span>
+                                        <div class="large-text">Quais são as 4 estruturas anatômicas exclusivas que todo cordado apresenta obrigatoriamente em pelo menos uma fase do desenvolvimento?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Notocorda, Tubo Neural, Fendas e Cauda.</div>
+                                        <span class="card-hint">Notocorda, tubo neural dorsal, fendas faríngeas (branquiais) e cauda pós-anal.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 15 • Adaptações dos Peixes</span>
+                                        <div class="large-text">Como peixes ósseos e peixes cartilaginosos (tubarões) resolvem, de formas diferentes, o problema da flutuação na coluna d'água?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Bexiga Natatória vs. Fígado Oleoso.</div>
+                                        <span class="card-hint"><strong>Ósseos:</strong> usam a bexiga natatória (bolsa de gás regulável).<br><br><strong>Cartilaginosos:</strong> usam um fígado gigante rico em óleos (menos denso que a água).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 15 • Anfíbios</span>
+                                        <div class="large-text">Por que os anfíbios adultos, mesmo possuindo pulmões terrestres, continuam dependentes de ambientes aquáticos ou muito úmidos para sobreviver?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Respiração Cutânea e Ovos.</div>
+                                        <span class="card-hint">Seus pulmões são simples e exigem respiração cutânea (pele fina e úmida para trocas gasosas), além de seus ovos não possuírem casca contra desidratação.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 15 • Répteis</span>
+                                        <div class="large-text">Qual foi a inovação reprodutiva decisiva que permitiu aos répteis a conquista definitiva do ambiente terrestre seco?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Ovo Amniótico com Casca.</div>
+                                        <span class="card-hint">O ovo amniótico com casca (calcária/coriácea) protege o embrião contra a dessecação e fornece bolsa d'água (âmnio) e suporte nutritivo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 11 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 11 de 15 • Excreção Comparada</span>
+                                        <div class="large-text">Como o tipo de excreta nitrogenada dos répteis (ácido úrico) se relaciona com a sua adaptação ao meio terrestre árido?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Economia de Água.</div>
+                                        <span class="card-hint">O ácido úrico é atóxico e quase insolúvel em água, permitindo ser eliminado como uma pasta sem promover a perda hídrica do animal.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 12 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 12 de 15 • Aves & Voo</span>
+                                        <div class="large-text">Citando duas adaptações anatômicas, como as aves solucionaram o problema do "excesso de peso corporal" para viabilizar o voo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Esqueleto Leve e Sem Bexiga.</div>
+                                        <span class="card-hint">Ossos pneumáticos (ocos), ausência de dentes (bico leve) e ausência de bexiga urinária (eliminação contínua de excretas).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 13 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 13 de 15 • Mamíferos</span>
+                                        <div class="large-text">Por que o filhote de um marsupial (como o gambá ou canguru) precisa nascer extremamente imaturo e migrar para o marsúpio?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Placenta Rudimentar.</div>
+                                        <span class="card-hint">Porque esses animais possuem uma placenta rudimentar, incapaz de sustentar um desenvolvimento embrionário prolongado dentro do útero.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 14 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 14 de 15 • Zoonoses & Chagas</span>
+                                        <div class="large-text">Como ocorre a infecção real da Doença de Chagas e qual a medida profilática residencial mais eficaz contra o seu vetor?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Fezes do Barbeiro & Alvenaria.</div>
+                                        <span class="card-hint"><strong>Infecção:</strong> coceira das fezes do barbeiro na pele picada.<br><br><strong>Profilaxia:</strong> substituição de casas de pau a pique por alvenaria rebocada.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 15 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 15 de 15 • Parasitologia</span>
+                                        <div class="large-text">No ciclo da esquistossomose, qual é a forma infectante para o ser humano e qual é a medida preventiva focada no hospedeiro intermediário?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Cercária & Controle do Caramujo.</div>
+                                        <span class="card-hint"><strong>Forma infectante:</strong> larva cercária (penetra ativamente pela pele).<br><br><strong>Prevenção:</strong> erradicação e controle dos caramujos (<em>Biomphalaria</em>).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

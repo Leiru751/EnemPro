@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Básica - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+</head>
+<body class="subject-theme-math">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Matemática Básica</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Matemática Básica</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        <h2>Operações Básicas: Inteiros, Decimais, Frações e Radicais</h2>
+
+                        <h3>1. Números Inteiros</h3>
+                        <p>São os números positivos, negativos e o zero. Para facilitar, pense sempre em dinheiro: os números positivos são o que você tem na carteira (saldo) e os negativos são o que você está devendo (dívida).</p>
+                        
+                        <h4>Adição e Subtração com Sinais Iguais:</h4>
+                        <p>Você junta os valores e mantém o sinal. Se juntar duas dívidas, o resultado é uma dívida maior.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $-4 - 3 = -7$ (Devo 4 e faço outra dívida de 3, passo a dever 7).
+                        </div>
+
+                        <h4>Adição e Subtração com Sinais Diferentes:</h4>
+                        <p>Você diminui o menor do maior e mantém o sinal do número maior. Pague a dívida com o que tem e veja se sobra troco ou se continua devendo.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $5 - 9 = -4$ (Tenho 5 na carteira, mas a conta deu 9. Fico devendo 4).
+                        </div>
+
+                        <h4>Multiplicação e Divisão:</h4>
+                        <p>Use a regra de sinais: Sinais iguais dão resultado positivo (+). Sinais diferentes dão resultado negativo (-).</p>
+                        <div class="example-box">
+                            <strong>Sinais Iguais:</strong> $(-3) \cdot (-4) = 12$<br>
+                            <strong>Sinais Diferentes:</strong> $20 \div (-5) = -4$
+                        </div>
+
+                        <h3>2. Números Decimais</h3>
+                        <p>São os números com vírgula. O segredo aqui é a organização na hora de montar a conta.</p>
+
+                        <h4>Adição e Subtração:</h4>
+                        <p>Coloque sempre vírgula embaixo de vírgula. Se um número for mais curto, complete os espaços vazios com zeros.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $2,5 + 1,32 \rightarrow$ monte como $2,50 + 1,32 = 3,82$.
+                        </div>
+
+                        <h4>Multiplicação:</h4>
+                        <p>Faça a conta de vezes normalmente, fingindo que a vírgula não existe. No final, conte quantas casas existem depois da vírgula nos dois números juntos e coloque no resultado.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $1,2 \cdot 0,3 = 0,36$ (O $1,2$ tem uma casa e o $0,3$ tem uma casa. O resultado precisa ter duas casas).
+                        </div>
+
+                        <h4>Divisão:</h4>
+                        <p>Coloque zeros até que os dois números tenham a mesma quantidade de casas depois da vírgula. Feito isso, apague a vírgula e divida como se fossem números normais.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $4,5 \div 0,15 \rightarrow$ igualando fica $4,50 \div 0,15 \rightarrow$ tirando a vírgula fica $450 \div 15 = 30$.
+                        </div>
+
+                        <h3>3. Frações</h3>
+                        <p>A fração é um pedaço de algo. O número de baixo (denominador) diz em quantas fatias a pizza foi cortada, e o de cima (numerador) diz quantas fatias você pegou.</p>
+
+                        <h4>Adição e Subtração (Mesmo número embaixo):</h4>
+                        <p>Apenas some ou subtraia os números de cima e repita o de baixo.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $\frac{2}{5} + \frac{1}{5} = \frac{3}{5}$
+                        </div>
+
+                        <h4>Adição e Subtração (Números diferentes embaixo):</h4>
+                        <p>Você não pode somar direto. Primeiro, encontre o MMC (Mínimo Múltiplo Comum) dos números de baixo para deixá-los iguais. Depois, ajuste os de cima e some.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $\frac{1}{2} + \frac{1}{3} \rightarrow$ o MMC é 6. Fica $\frac{3}{6} + \frac{2}{6} = \frac{5}{6}$
+                        </div>
+
+                        <h4>Multiplicação:</h4>
+                        <p>É só multiplicar o de cima pelo de cima e o de baixo pelo de baixo.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $\frac{2}{3} \cdot \frac{4}{5} = \frac{8}{15}$
+                        </div>
+
+                        <h4>Divisão:</h4>
+                        <p>Copie a primeira fração do jeito que está e multiplique pela segunda fração de cabeça para baixo (invertida).</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $\frac{1}{2} \div \frac{3}{4} = \frac{1}{2} \cdot \frac{4}{3} = \frac{4}{6}$ (simplificando por 2, fica $\frac{2}{3}$)
+                        </div>
+
+                        <h3>4. Radicais</h3>
+                        <p>São os números dentro de raízes (como a raiz quadrada). Trate a raiz como se fosse um objeto, como uma "caixa" ou uma letra "x".</p>
+
+                        <h4>Adição e Subtração:</h4>
+                        <p>Você só pode somar ou subtrair se as raízes forem exatamente iguais. Basta fazer a conta com os números do lado de fora.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $4\sqrt{3} + 2\sqrt{3} = 6\sqrt{3}$ (Imagine: 4 caixas + 2 caixas = 6 caixas).
+                        </div>
+
+                        <h4>Multiplicação e Divisão:</h4>
+                        <p>Mantenha o desenho da raiz e faça a conta com os números de dentro.</p>
+                        <div class="example-box">
+                            <strong>Multiplicação:</strong> $\sqrt{2} \cdot \sqrt{5} = \sqrt{10}$<br>
+                            <strong>Divisão:</strong> $\sqrt{20} \div \sqrt{4} = \sqrt{5}$
+                        </div>
+
+                        <h4>Simplificação de Radicais:</h4>
+                        <p>Desmonte o número de dentro em multiplicações menores. Na raiz quadrada, a cada par de números iguais, um deles "pula" para fora da raiz.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> $\sqrt{12} \rightarrow$ como $12 = 4 \cdot 3$, e a raiz de $4$ é $2$, o $2$ sai e o $3$ fica preso: $2\sqrt{3}$
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um estudante universitário decide organizar suas finanças após perder o controle dos gastos. Ele começa o mês com um saldo devedor de R$ 150,00 no cheque especial de seu banco. Durante a semana, sua conta registra as seguintes movimentações: ele recebe sua bolsa de estágio de R$ 600,00, paga a conta de internet no valor de R$ 120,00, faz uma compra de supermercado no débito de R$ 280,00 e, por fim, recebe uma transferência de R$ 50,00 de um amigo que lhe devia dinheiro.</p>
+                                <p><strong>Enunciado:</strong> Após todas essas movimentações financeiras, qual será o saldo final na conta bancária do estudante?</p>
+                            </div>
+                            
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ -100,00</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> R$ 0,00</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> R$ 100,00</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 250,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 900,00</button>
+                            </div>
+                            
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Pense na conta bancária como um balde. O saldo devedor é um buraco que precisa ser tampado primeiro. Vamos passo a passo:</p>
+                                    <ul>
+                                        <li><strong>Passo 1 (O buraco inicial):</strong> O estudante começa no negativo: -150 reais.</li>
+                                        <li><strong>Passo 2 (Entra dinheiro):</strong> Ele ganha 600 reais. Desses 600, 150 são "engolidos" para cobrir a dívida inicial. Sobram 450 reais positivos na conta (-150 + 600 = 450).</li>
+                                        <li><strong>Passo 3 (Sai dinheiro da internet):</strong> A internet custa 120 reais. Tirando isso dos 450 que ele tem, sobram 330 reais (450 - 120 = 330).</li>
+                                        <li><strong>Passo 4 (Sai dinheiro do mercado):</strong> A compra foi de 280. Tirando isso de 330, sobram apenas 50 reais (330 - 280 = 50).</li>
+                                        <li><strong>Passo 5 (Entra dinheiro do amigo):</strong> Ele recebe mais 50 reais. Somando com os 50 que já tinha, o saldo final é 100 reais positivos (50 + 50 = 100).</li>
+                                    </ul>
+                                    <p><strong>Por que as outras estão erradas?</strong> A alternativa D é a clássica "casca de banana". Ela é o resultado de quem soma os ganhos e subtrai os gastos (600 - 120 - 280 + 50 = 250), mas esquece completamente que o aluno já começou o mês devendo 150.</p>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+<div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em um açougue de bairro, o preço do quilograma da carne de primeira foi fixado em R$ 38,50. Um cliente pede ao açougueiro um pedaço de carne que, ao ser colocado na balança de precisão, registra exatos 1,8 kg. O cliente decide pagar a compra inteiramente em dinheiro, utilizando uma nota de R$ 100,00.</p>
+                                <p><strong>Enunciado:</strong> Considerando as operações com números decimais, o valor exato do troco que esse cliente deve receber é igual a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> R$ 29,70</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> R$ 30,70</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> R$ 38,50</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> R$ 61,50</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> R$ 69,30</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Temos duas missões aqui: descobrir o preço da carne e, depois, calcular o troco.</p>
+                                    <ul>
+                                        <li><strong>Passo 1 (O valor da compra):</strong> Precisamos multiplicar 38,50 por 1,8. A dica didática é: ignore as vírgulas na hora da conta. Multiplique 385 por 18, como se fossem números inteiros. O resultado será 6930.</li>
+                                        <li><strong>Passo 2 (Devolvendo a vírgula):</strong> Agora, conte quantas casas decimais (números depois da vírgula) os números originais tinham. O 38,50 tem duas casas. O 1,8 tem uma casa. Total: 3 casas. Pegue o 6930 e pule três casas para a esquerda: chegamos a 69,30 reais. Esse é o preço da carne.</li>
+                                        <li><strong>Passo 3 (O troco):</strong> O cliente deu 100 reais. Para subtrair 69,30 de 100,00, coloque estritamente vírgula embaixo de vírgula. 100,00 menos 69,30 dá 30,70 reais.</li>
+                                    </ul>
+                                    <p><strong>Por que as outras estão erradas?</strong> A alternativa E (69,30) é o preço da carne. O ENEM adora colocar o resultado da "metade do caminho" nas alternativas para pegar o aluno que não leu a palavra "troco" no comando da questão.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma confeiteira está preparando uma receita de bolo de cenoura que, tradicionalmente, rende 8 fatias e exige $\frac{3}{4}$ de xícara de óleo em seus ingredientes. Para atender a uma encomenda de festa infantil, ela precisará preparar uma quantidade de massa correspondente a exatas 20 fatias desse mesmo bolo, mantendo a proporção rigorosa da receita original para não alterar o sabor.</p>
+                                <p><strong>Enunciado:</strong> Qual é a quantidade de xícaras de óleo necessária para o preparo dessa encomenda?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $\frac{15}{4}$</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> $\frac{15}{8}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $\frac{5}{4}$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $\frac{60}{4}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $\frac{9}{4}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Imagine que você precisa ampliar uma receita sem estragar o sabor. Você precisa descobrir o seu "fator multiplicador".</p>
+                                    <ul>
+                                        <li><strong>Passo 1:</strong> A receita faz 8 fatias, mas você quer 20. O seu fator de aumento é a divisão do que você quer pelo que você tem: $\frac{20}{8}$.</li>
+                                        <li><strong>Passo 2 (Simplificando):</strong> Trabalhar com $\frac{20}{8}$ é ruim. Vamos simplificar dividindo em cima e embaixo por 4. Chegamos a $\frac{5}{2}$. Isso significa "duas receitas e meia".</li>
+                                        <li><strong>Passo 3 (Calculando):</strong> Multiplique o óleo original ($\frac{3}{4}$) por $\frac{5}{2}$. Na multiplicação de frações, a regra é direta: de cima pelo de cima, e de baixo pelo de baixo.</li>
+                                        <li><strong>Passo 4:</strong> $3 \cdot 5 = 15$. $4 \cdot 2 = 8$. O resultado final é $\frac{15}{8}$ de xícara.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um agricultor possui uma ampla propriedade rural e decide separar previamente $\frac{2}{5}$ da área total para o plantio de soja. Após delimitar essa área, ele destinará $\frac{1}{3}$ de toda a área que sobrou do terreno para a criação extensiva de gado.</p>
+                                <p><strong>Enunciado:</strong> A fração da área total da propriedade que será efetivamente destinada à criação de gado corresponde a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> $\frac{1}{5}$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $\frac{2}{15}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $\frac{3}{8}$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $\frac{1}{15}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $\frac{3}{5}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>Esse é o clássico problema da "fração do resto".</p>
+                                    <ul>
+                                        <li><strong>Passo 1 (O que sobrou?):</strong> Imagine o terreno dividido em 5 fatias. Usou 2 para soja ($\frac{2}{5}$). Logicamente, sobraram 3 fatias livres, ou seja, $\frac{3}{5}$ do terreno.</li>
+                                        <li><strong>Passo 2 (O gado):</strong> O gado vai ocupar $\frac{1}{3}$ desses $\frac{3}{5}$. Sempre que calcular "uma fração DE outra", a palavra "DE" vira multiplicação.</li>
+                                        <li><strong>Passo 3:</strong> Multiplicamos $\frac{1}{3}$ por $\frac{3}{5}$. Numerador com numerador ($1 \cdot 3 = 3$) e denominador com denominador ($3 \cdot 5 = 15$). Chegamos a $\frac{3}{15}$.</li>
+                                        <li><strong>Passo 4 (Simplificação):</strong> O ENEM sempre simplifica. Dividindo em cima e embaixo por 3, chegamos a $\frac{1}{5}$.</li>
+                                    </ul>
+                                    <p><strong>Pegadinha:</strong> A alternativa B ($\frac{2}{15}$) é para quem calculou sobre a área da soja, e não sobre a área que sobrou.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Para cercar um loteamento quadrado, um construtor verifica na planta que a área total é de $800$ metros quadrados. O projeto exige a instalação de 3 fios paralelos de arame farpado em todo o contorno da propriedade.</p>
+                                <p><strong>Enunciado:</strong> Quantos metros de arame farpado serão necessários no total para realizar o cercamento?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $60\sqrt{2}$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $80\sqrt{2}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $120\sqrt{2}$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $240\sqrt{2}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $2400$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <ul>
+                                        <li><strong>Passo 1 (O lado do lote):</strong> A área de um quadrado é $L^2$. Se a área é 800, o lado é a $\sqrt{800}$.</li>
+                                        <li><strong>Passo 2 (Simplificando a raiz):</strong> Sabemos que $800 = 400 \cdot 2$. A raiz quadrada de 400 é 20, que "pula" para fora da raiz. Fica $20\sqrt{2}$ (medida de apenas um lado).</li>
+                                        <li><strong>Passo 3 (Perímetro):</strong> O quadrado tem 4 lados. Multiplicamos por 4: $4 \cdot 20\sqrt{2} = 80\sqrt{2}$ metros (uma volta completa).</li>
+                                        <li><strong>Passo 4 (Os três fios):</strong> O enunciado exige 3 voltas de arame. Multiplicamos o perímetro por 3: $3 \cdot 80\sqrt{2} = 240\sqrt{2}$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma fábrica de embalagens produz fitas adesivas em grandes rolos de 31,5 metros. Para o comércio, esses rolos precisam ser cortados em pedaços menores e iguais, todos com exatos 0,45 metro de comprimento.</p>
+                                <p><strong>Enunciado:</strong> Quantos rolos menores serão obtidos a partir do corte total de um único rolo industrial?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 65</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 70</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 75</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 700</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 750</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O problema fala em "cortar em pedaços menores e iguais", o que significa divisão: 31,5 por 0,45.</p>
+                                    <ul>
+                                        <li><strong>Passo 1 (Igualar as casas):</strong> O 31,5 tem apenas uma casa decimal. O 0,45 tem duas. Adicionamos um zero para empatar: fica $31,50 \div 0,45$.</li>
+                                        <li><strong>Passo 2 (Sumir com as vírgulas):</strong> Agora podemos apagar as vírgulas. A conta é $3150 \div 45$.</li>
+                                        <li><strong>Passo 3 (O cálculo):</strong> O 45 cabe no 315 exatamente 7 vezes. Como tem um zero sobrando, ele vai para o resultado. Total: 70 rolos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um arquiteto projeta um vitral retangular exigindo que a base meça exatamente $\sqrt{12}$ metros e a altura meça $\sqrt{27}$ metros.</p>
+                                <p><strong>Enunciado:</strong> O valor exato da área desse vitral em metros quadrados é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> 18</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 24</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 36</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $\sqrt{39}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $9\sqrt{3}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <ul>
+                                        <li><strong>Passo 1:</strong> Área de retângulo é base vezes altura. Multiplicamos $\sqrt{12} \cdot \sqrt{27}$. Como ambas são raízes quadradas, colocamos na mesma raiz: $\sqrt{12 \cdot 27}$.</li>
+                                        <li><strong>Passo 2:</strong> Multiplicando $12 \cdot 27$, temos 324. O problema agora é calcular a $\sqrt{324}$.</li>
+                                        <li><strong>Passo 3:</strong> Sabendo que $10 \cdot 10 = 100$ e $20 \cdot 20 = 400$, testamos o 18 (termina em 4). 18 vezes 18 é exatamente 324.</li>
+                                    </ul>
+                                    <p><strong>Pegadinha:</strong> A alternativa D soma 12 com 27. É proibido somar números internos de raízes como se fossem inteiros livres!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Na Antártica, um termômetro registrava a temperatura de $-14^\circ\text{C}$ à meia-noite. Com a forte ventania, a temperatura despencou mais $8^\circ\text{C}$. Porém, ao longo da manhã, a temperatura apresentou uma elevação de $15^\circ\text{C}$.</p>
+                                <p><strong>Enunciado:</strong> De acordo com os registros, qual foi a temperatura assinalada pelo termômetro ao final dessa manhã?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $-21^\circ\text{C}$</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> $-7^\circ\text{C}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $-1^\circ\text{C}$</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> $7^\circ\text{C}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $9^\circ\text{C}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <ul>
+                                        <li><strong>Passo 1 (Onde estamos?):</strong> O termômetro começa no $-14$.</li>
+                                        <li><strong>Passo 2 (Descendo mais):</strong> Despencou 8 graus. Juntamos as dívidas: $-14 - 8 = -22$.</li>
+                                        <li><strong>Passo 3 (Subindo):</strong> Elevação de 15 graus. Subimos 15 partindo do -22. Regra matemática: sinais diferentes, você subtrai e mantém o sinal do "maior". A diferença entre 22 e 15 é 7. O negativo era maior, então paramos no $-7^\circ\text{C}$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um motorista observa que, para esvaziar exatos $\frac{1}{4}$ da capacidade total do tanque de combustível, o carro consumiu 12,5 litros de gasolina.</p>
+                                <p><strong>Enunciado:</strong> Se ele parar em um posto com o tanque vazio e pedir para enchê-lo até a capacidade máxima, quantos litros a bomba registrará?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 25</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 37,5</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 40</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 50</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 62,5</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <ul>
+                                        <li><strong>Passo 1:</strong> A fração $\frac{1}{4}$ significa que de 4 fatias totais, 1 fatia foi gasta.</li>
+                                        <li><strong>Passo 2:</strong> Essa única fatia corresponde a 12,5 litros.</li>
+                                        <li><strong>Passo 3:</strong> A capacidade máxima (o tanque inteiro) são as 4 fatias juntas. Basta pegar 12,5 e multiplicar por 4.</li>
+                                        <li><strong>Passo 4:</strong> $12,5 \cdot 4 = 50$ litros exatos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática Básica</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um enigma de videogame possui três etapas exatas: "Pegue o resultado da divisão matemática de $\sqrt{50}$ por $\sqrt{2}$, em seguida subtraia o número 8 e, finalmente, eleve o número obtido ao quadrado".</p>
+                                <p><strong>Enunciado:</strong> Seguindo estritamente os passos lógicos do enigma, qual número o jogador deve digitar para abrir a porta secreta?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 3</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 9</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 16</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> -3</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 25</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <ul>
+                                        <li><strong>Passo 1 (Divisão):</strong> $\sqrt{50} \div \sqrt{2}$. Colocamos na mesma raiz: $\sqrt{50 \div 2} = \sqrt{25}$. A raiz de 25 é 5.</li>
+                                        <li><strong>Passo 2 (Subtração):</strong> Pegue o 5 e subtraia 8. Você tem 5, deve 8. Fica devendo 3. Logo, $-3$.</li>
+                                        <li><strong>Passo 3 (Potenciação):</strong> Eleve ao quadrado: $(-3) \cdot (-3)$. Menos com menos dá mais. Três vezes três é 9.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                    
+                   <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Conta Bancária</span>
+                                        <div class="large-text">Ao analisar o saldo de uma conta bancária que estava negativo (-R\$ 200) e sofreu uma cobrança de tarifa bancária (-R\$ 30), a operação lógica é uma _____ de dívidas, que resulta na conservação do sinal _____.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Soma; negativo.</div>
+                                        <span class="card-hint">Ex: dívida de 200 adicionada a uma dívida de 30<br><br>= dívida total de 230 (-230).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Divisão de Decimais</span>
+                                        <div class="large-text">Em questões de conversão de medidas ou cálculo de densidade no Enem (ex: $8,4 \div 0,02$), qual é o primeiro passo algorítmico obrigatório antes de efetuar a divisão no papel?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Igualar as casas decimais (acrescentando zeros) e eliminar as vírgulas.</div>
+                                        <span class="card-hint">O cálculo $8,40 \div 0,02$<br><br>se transforma em $840 \div 2$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Multiplicação de Decimais</span>
+                                        <div class="large-text">No fechamento de uma compra de mercado, ao multiplicar 1,5 kg de alimento por R\$ 20,40, como se define a posição da vírgula no resultado final sem depender da calculadora?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Soma-se o total de casas decimais originais.</div>
+                                        <span class="card-hint">Ignoram-se as vírgulas durante a conta ($15 \cdot 2040 = 30600$).<br><br>No resultado, contam-se as casas originais (3 casas), resultando em 30,600.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Soma de Frações</span>
+                                        <div class="large-text">Qual é o erro conceitual grave em somar diretamente as frações $\frac{1}{2}$ de um terreno com $\frac{1}{3}$ de outro mantendo os denominadores originais? O que deve ser feito?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Erro: somar partes fatiadas em tamanhos incompatíveis.</div>
+                                        <span class="card-hint">Deve-se aplicar o M.M.C. nos denominadores para criar frações equivalentes de mesma base.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Operador "DE"</span>
+                                        <div class="large-text">Nos problemas de probabilidade, porcentagem ou geometria do Enem, quando o texto pede para calcular uma fração "DE" um valor ou área (ex: "$\frac{3}{5}$ DA área restante"), a preposição indica qual operação?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Multiplicação de frações.</div>
+                                        <span class="card-hint">Exemplo: $\frac{3}{5} \cdot$ (Valor da área restante).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Divisão de Frações</span>
+                                        <div class="large-text">Para descobrir exatamente quantas embalagens menores de $\frac{2}{3}$ de litro podem ser preenchidas usando um barril cheio de 10 litros, qual regra matemática deve ser aplicada?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Divisão de frações.</div>
+                                        <span class="card-hint">Conserva-se o volume total (10) e multiplica-se pelo inverso da capacidade menor ($\frac{3}{2}$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Adição de Radicais</span>
+                                        <div class="large-text">Ao somar os lados de um muro para calcular o perímetro, só é permitido juntar valores como $4\sqrt{3}$ e $2\sqrt{3}$ porque eles são radicais ______. O resultado exato da soma será _____.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Semelhantes; $6\sqrt{3}$</div>
+                                        <span class="card-hint">Eles possuem o mesmo índice e número interno. O resultado será $6\sqrt{3}$ (soma-se apenas os coeficientes externos).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Multiplicação de Radicais</span>
+                                        <div class="large-text">O cálculo da área de um piso retangular com lados medindo $\sqrt{8}$ e $\sqrt{2}$ não exige radicais semelhantes. Qual é a regra de operação e o valor final em metros quadrados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Mantém-se a raiz e multiplicam-se os números internos.</div>
+                                        <span class="card-hint">Resultado: $\sqrt{16}$, que equivale ao número inteiro 4.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Simplificação de Radicais</span>
+                                        <div class="large-text">Ao calcular a diagonal de um quadrado, você chega ao resultado $\sqrt{200}$, mas as alternativas do Enem só possuem valores acompanhados de $\sqrt{2}$. Qual técnica destrava a questão?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Simplificação (fatoração).</div>
+                                        <span class="card-hint">Desmembrando $\sqrt{100 \cdot 2}$, a raiz de 100 é 10, que "pula" para fora, resultando em $10\sqrt{2}$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Amplitude Térmica</span>
+                                        <div class="large-text">Se a temperatura de uma serra passa de -8 °C de madrugada para 5 °C ao meio-dia, a amplitude térmica (diferença entre a maior e a menor) é calculada por qual operação estruturada?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Subtração do maior pelo menor: $5 - (-8)$</div>
+                                        <span class="card-hint">O choque de sinais negativos vira adição ($5 + 8$), resultando em 13 °C de variação térmica.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

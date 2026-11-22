@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Mecânica e Trabalho - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para Fórmulas Matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Natureza) ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <!-- Física recebe a classe active -->
+            <a href="fisica.html" class="nav-link active" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Física / Energia Mecânica e Trabalho</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Energia Mecânica e Trabalho</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (FÍSICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <!-- SEÇÃO 1: Trabalho -->
+                        <h2>Trabalho de uma Força Constante e Variável</h2>
+                        <p><strong>O que é:</strong> Na física, o Trabalho ($\tau$) é a medida da energia transferida para um corpo quando uma força atua sobre ele, provocando um deslocamento.</p>
+                        
+                        <ul>
+                            <li><strong>Trabalho de Força Constante:</strong> Ocorre quando a força aplicada não muda de intensidade ou direção. É calculado pela equação:
+                            $$ \tau = F \cdot d \cdot \cos(\theta) $$
+                            <em>(Onde $F$ é a força, $d$ é o deslocamento e $\theta$ é o ângulo entre a força e a direção do movimento).</em>
+                            </li>
+                            <li style="margin-top: 1rem;"><strong>Trabalho de Força Variável:</strong> Ocorre quando a força muda ao longo do caminho (como ao esticar uma mola). Neste caso, não usamos a fórmula acima, mas calculamos a <strong>área do gráfico</strong> de Força versus Deslocamento.</li>
+                        </ul>
+
+                        <div class="example-box">
+                            <strong>Analogia Prática:</strong> Pense em empurrar um carro enguiçado. Se você empurra e ele anda, você realizou trabalho (transferiu energia para o carro). Se você empurra uma parede de concreto e ela não se move, seu cansaço físico é real, mas o trabalho físico é ZERO, pois não houve deslocamento ($d = 0$).
+                        </div>
+
+                        <!-- SEÇÃO 2: Energias -->
+                        <h2 style="margin-top: 3rem;">As Três Formas de Energia Mecânica</h2>
+                        
+                        <h3>1. Energia Cinética</h3>
+                        <p><strong>O que é:</strong> É a energia do movimento. Qualquer corpo que possua massa e velocidade possui energia cinética.</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ E_c = \frac{m \cdot v^2}{2} $$
+                        <p><em>(Onde $m$ é a massa e $v$ é a velocidade).</em></p>
+                        <p><strong>Detalhe crucial:</strong> Como a velocidade está elevada ao quadrado na equação, dobrar a velocidade de um carro não dobra sua energia; ela se torna <strong>quatro vezes maior</strong>.</p>
+                        
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Ser atingido por uma bicicleta a $10\text{ km/h}$ é muito diferente de ser atingido por um caminhão na mesma velocidade, por causa da diferença de massa. Da mesma forma, um carro a $80\text{ km/h}$ precisa de uma distância de frenagem muito maior que a $40\text{ km/h}$, por causa do aumento exponencial ligado à velocidade.
+                        </div>
+
+                        <h3>2. Energia Potencial Gravitacional</h3>
+                        <p><strong>O que é:</strong> É a energia armazenada em um corpo devido à sua altura em relação a um ponto de referência (como o chão), existindo sempre que há um campo gravitacional puxando o corpo para baixo.</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ E_{pg} = m \cdot g \cdot h $$
+                        <p><em>(Onde $m$ é a massa, $g$ é a aceleração da gravidade e $h$ é a altura).</em></p>
+                        
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Um tijolo no chão não oferece perigo. Mas o mesmo tijolo na beirada de uma varanda no 10º andar tem uma grande quantidade de energia "escondida" (potencial). Se ele cair, essa energia de altura se transforma imediatamente em energia de movimento (cinética).
+                        </div>
+
+                        <h3>3. Energia Potencial Elástica</h3>
+                        <p><strong>O que é:</strong> É a energia armazenada em corpos que podem ser deformados (esticados ou comprimidos) e que tendem a voltar ao seu formato original, como molas, elásticos e arcos.</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ E_{pe} = \frac{k \cdot x^2}{2} $$
+                        <p><em>(Onde $k$ é a constante elástica da mola, que mede sua "dureza", e $x$ é a deformação, ou seja, o quanto ela foi esticada ou comprimida).</em></p>
+                        
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Puxar a corda de um arco e flecha. Quanto mais você puxa (maior o $x$), mais força você faz e mais energia elástica fica armazenada. Ao soltar, essa energia acumulada é transferida para a flecha.
+                        </div>
+
+                        <!-- SEÇÃO 3: Teoremas e Conservação -->
+                        <h2 style="margin-top: 3rem;">Teoremas e Conservação de Energia</h2>
+
+                        <h3>Teorema do Trabalho e da Energia Cinética</h3>
+                        <p><strong>O que é:</strong> Este teorema conecta força e movimento de forma brilhante: o trabalho total realizado por todas as forças sobre um corpo é exatamente igual à variação da sua energia cinética.</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ \tau_{total} = \Delta E_c = E_{c(final)} - E_{c(inicial)} $$
+                        
+                        <div class="example-box">
+                            <strong>Analogia:</strong> O motor do carro realizando trabalho (acelerando) aumenta a energia cinética do veículo (trabalho positivo). Pisar no freio aciona o atrito que realiza trabalho contrário ao movimento, "roubando" a energia cinética até o carro parar (trabalho negativo).
+                        </div>
+
+                        <h3>Conservação da Energia Mecânica</h3>
+                        <p><strong>O que é:</strong> A Energia Mecânica ($E_m$) é a soma de todas as energias de movimento e armazenadas em um corpo ($E_m = E_c + E_p$). Em sistemas isolados, onde ignoramos atrito ou resistência do ar, a energia mecânica total nunca muda; ela apenas se transforma de um tipo para outro.</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ E_{m(inicial)} = E_{m(final)} $$
+
+                        <div class="example-box">
+                            <strong>Analogia:</strong> O funcionamento de uma montanha-russa. O carrinho é puxado até o ponto mais alto, acumulando muita energia potencial gravitacional. Ao despencar, a altura diminui e a velocidade aumenta vertiginosamente: a energia potencial está se transformando em energia cinética. No ponto mais baixo, a velocidade é máxima. A energia não foi criada nem destruída, apenas mudou de "roupa".
+                        </div>
+
+                        <h3>Forças Dissipativas e Sistemas Não Conservativos</h3>
+                        <p><strong>O que é:</strong> No mundo real, a energia mecânica quase nunca se conserva perfeitamente por causa das forças dissipativas, como o atrito e a resistência do ar. Elas transformam a energia mecânica útil em formas não recuperáveis, geralmente calor (energia térmica) e som.</p>
+                        <p><strong>Como lidar:</strong> Em um sistema não conservativo, a energia mecânica final será menor que a inicial. A diferença entre elas é justamente o trabalho realizado pelas forças dissipativas.</p>
+
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Escorregar de meia em um chão de madeira polida (pouco atrito) faz você ir longe. Tentar escorregar de meia no asfalto (muito atrito) faz você parar na hora, e a sola da sua meia vai esquentar (energia mecânica dissipada em calor).
+                        </div>
+
+                        <!-- SEÇÃO 4: Potência e Rendimento -->
+                        <h2 style="margin-top: 3rem;">Potência e Eficiência Energética</h2>
+
+                        <h3>Potência</h3>
+                        <p><strong>O que é:</strong> A potência ($P$) mede a rapidez com que o trabalho é realizado ou a rapidez com que a energia é transformada. Em suma, é a taxa de transferência de energia no tempo. No Sistema Internacional, é medida em Watts (W).</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ P = \frac{\tau}{\Delta t} \quad \text{ou} \quad P = \frac{\Delta E}{\Delta t} $$
+                        <p><em>(Onde $\tau$ ou $\Delta E$ é a energia e $\Delta t$ é o intervalo de tempo).</em></p>
+
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Imagine dois guindastes, A e B, erguendo caixas de $500\text{ kg}$ para o topo de um prédio. Ambos realizam exatamente o mesmo trabalho (erguem o mesmo peso para a mesma altura). Mas o guindaste A faz isso em $10\text{ segundos}$, enquanto o B leva $1\text{ minuto}$. O guindaste A tem uma potência muito maior.
+                        </div>
+
+                        <h3>Rendimento e Eficiência Energética</h3>
+                        <p><strong>O que é:</strong> Nenhuma máquina no universo é perfeita. O rendimento ($\eta$) é a porcentagem da energia total consumida por uma máquina que é de fato transformada na energia útil que desejamos, descontando o que foi perdido (dissipado).</p>
+                        <p><strong>Como calcular:</strong></p>
+                        $$ \eta = \frac{P_{util}}{P_{total}} $$
+                        <p><em>(O resultado será um número decimal entre $0$ e $1$, que multiplicamos por $100$ para ter a porcentagem).</em></p>
+
+                        <div class="example-box">
+                            <strong>Analogia:</strong> Uma lâmpada incandescente antiga é péssima em eficiência. Ela consome $60\text{W}$ de energia elétrica ($P_{total}$), mas transforma apenas cerca de $5\%$ disso em luz ($P_{util}$); os outros $95\%$ viram calor (energia dissipada). Já uma lâmpada de LED transforma a maior parte da energia recebida diretamente em luz, por isso possui um rendimento altíssimo.
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - FÍSICA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Campanhas de segurança no trânsito frequentemente alertam sobre os perigos do excesso de velocidade. Um perito criminal, ao analisar um acidente, constata que um carro trafegando a $40\text{ km/h}$ precisou de $10\text{ metros}$ de marcas de frenagem no asfalto para parar completamente. O perito precisa calcular qual seria a distância de frenagem se esse mesmo carro estivesse a $80\text{ km/h}$, assumindo que a força de atrito gerada pelos freios seja constante e a mesma em ambos os casos.</p>
+                                <p><strong>Enunciado:</strong> Com base no Teorema do Trabalho e da Energia Cinética, a distância de frenagem necessária para o carro parar a $80\text{ km/h}$ será de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> $10\text{ metros.}$</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $20\text{ metros.}$</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> $30\text{ metros.}$</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> $40\text{ metros.}$</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $80\text{ metros.}$</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O trabalho da força de atrito (Força $\cdot$ Distância) é igual à variação da Energia Cinética ($\frac{m \cdot v^2}{2}$). Como a velocidade ($v$) está ao quadrado na fórmula, dobrar a velocidade (de $40$ para $80$) faz a energia cinética ser multiplicada por $4$ ($2^2 = 4$). Logo, o trabalho para frear precisa ser $4$ vezes maior. Como a força do freio é constante, a distância deve ser $4$ vezes maior ($10\text{m} \times 4 = 40\text{m}$).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Erro comum de achar que a relação é diretamente proporcional (dobrou a velocidade, dobra a distância). A física real é exponencial.</li>
+                                        <li><strong>E:</strong> Confunde o fator multiplicativo, multiplicando a distância por $8$ sem base na fórmula cinética.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em um parque de diversões, a montanha-russa é uma das atrações mais procuradas. O carrinho é puxado por um motor até o ponto mais alto da pista e, a partir dali, é solto, completando o restante do trajeto apenas sob a ação da gravidade e dos trilhos. Para garantir que o carrinho consiga completar um looping (volta completa de cabeça para baixo), os engenheiros devem calcular a altura exata da primeira queda.</p>
+                                <p><strong>Enunciado:</strong> Desprezando-se as forças de atrito e a resistência do ar, o princípio físico que garante que o carrinho atinja a velocidade necessária no ponto mais baixo para completar o looping é a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> conservação da quantidade de movimento do sistema.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> transformação de energia térmica em energia cinética.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> dissipação da energia mecânica ao longo dos trilhos.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> conservação da energia mecânica do sistema.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> anulação do trabalho realizado pela força peso.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Sem forças dissipativas (atrito nulo), o sistema é conservativo. Toda a energia potencial gravitacional acumulada no topo da queda se converte perfeitamente em energia cinética na base, garantindo a Conservação da Energia Mecânica do sistema.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Conservação da quantidade de movimento estuda colisões isoladas, não a queda sob ação do peso.</li>
+                                        <li><strong>C:</strong> O enunciado mandou desprezar o atrito, logo não há dissipação de energia.</li>
+                                        <li><strong>E:</strong> A Força Peso realiza trabalho intenso na descida, ela não é anulada.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Com a crise energética e o aumento nas contas de luz, as antigas lâmpadas incandescentes foram retiradas do mercado brasileiro, sendo substituídas pelas lâmpadas de LED. Uma lâmpada incandescente comum consumia $60\text{ W}$ de potência elétrica para iluminar um ambiente. Hoje, uma lâmpada de LED que consome apenas $9\text{ W}$ consegue produzir exatamente o mesmo nível de iluminação.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista da física, a principal razão pela qual a lâmpada de LED é mais econômica para iluminar o ambiente é porque ela:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> possui maior energia mecânica em seus componentes eletrônicos.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> apresenta um rendimento (eficiência energética) muito superior, dissipando menos energia em forma de calor.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> burla o princípio da conservação da energia, gerando mais luz a partir do nada.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> funciona através de forças conservativas que anulam o consumo elétrico.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> converte toda a energia elétrica recebida exclusivamente em energia cinética fotônica.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Rendimento é a razão entre a energia útil (luz) e a energia total gasta. A lâmpada velha (incandescente) dissipava cerca de 95% da energia apenas esquentando o ambiente. O LED é mais eficiente porque transforma quase toda a energia consumida em luz e quase nada em calor dissipado.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Não existe energia mecânica macroscópica em uma lâmpada parada (não há engrenagens rodando).</li>
+                                        <li><strong>C:</strong> É impossível burlar o princípio da conservação; nada se cria do nada.</li>
+                                        <li><strong>E:</strong> Nenhuma máquina do universo tem rendimento de 100%. O LED ainda aquece um pouco.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Em esportes de aventura, o <em>bungee jumping</em> consiste em saltar de uma grande altura preso pelos tornozelos a uma corda elástica. Durante o salto, o praticante experimenta uma sensação de queda livre seguida por uma forte desaceleração quando a corda começa a esticar, até que ele pare momentaneamente no ponto mais baixo da trajetória, antes de ser puxado de volta para cima.</p>
+                                <p><strong>Enunciado:</strong> No exato instante em que o praticante atinge o ponto mais baixo de sua queda (velocidade instantânea igual a zero), como se encontram as formas de energia mecânica envolvidas, adotando o ponto mais baixo como referencial zero de altura?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> A energia cinética é máxima e a energia potencial elástica é mínima.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A energia potencial gravitacional é máxima e a energia potencial elástica é nula.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> A energia cinética é nula e a energia potencial elástica é máxima.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> A energia cinética e a energia potencial gravitacional são máximas.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A energia mecânica total do sistema é nula.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>No ponto mais baixo da queda, o praticante para momentaneamente ($v = 0$, logo Energia Cinética nula). Como este ponto é o nosso referencial de chão, a altura é zero ($h = 0$, Gravitacional nula). Porém, a corda elástica atingiu sua deformação ($x$) máxima; portanto, toda a energia do sistema está estocada no pico da Energia Potencial Elástica.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e D:</strong> Se a velocidade é zero, é impossível a Cinética ser máxima.</li>
+                                        <li><strong>B:</strong> A corda está totalmente esticada, então a Elástica é máxima, não nula.</li>
+                                        <li><strong>E:</strong> A energia total não sumiu, ela apenas mudou de forma (gravitacional para cinética, e depois para elástica).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Na construção de edifícios, é comum o uso de guindastes para erguer blocos de concreto do solo até os andares superiores. Considere dois guindastes, A e B. O guindaste A eleva um bloco de $1.000\text{ kg}$ a $20\text{ metros}$ de altura em $1\text{ minuto}$. O guindaste B eleva um bloco idêntico ($1.000\text{ kg}$) à mesma altura de $20\text{ metros}$, mas realiza a tarefa em $30\text{ segundos}$.</p>
+                                <p><strong>Enunciado:</strong> Comparando o desempenho físico dos dois guindastes ao realizar essa tarefa, é correto afirmar que:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> O guindaste B realizou o dobro do trabalho que o guindaste A.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> O guindaste A tem o dobro da potência do guindaste B, pois gastou mais tempo.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Ambos desenvolveram a mesma potência, já que a altura e a massa são as mesmas.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> O trabalho realizado por ambos é o mesmo, mas o guindaste B desenvolveu o dobro da potência.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> O guindaste A não realizou trabalho, pois a velocidade do bloco foi menor.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>O <strong>Trabalho</strong> ($\tau$) de subir o bloco depende só do peso e da altura ($mgh$); como peso e altura são iguais, o Trabalho é exatamente o mesmo. Porém, a <strong>Potência</strong> é a velocidade com que se realiza esse trabalho ($P = \tau / \Delta t$). Como o Guindaste B fez o mesmo trabalho na metade do tempo, sua Potência foi duas vezes maior.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> O trabalho não depende do tempo, apenas da Força $\times$ Deslocamento (altura).</li>
+                                        <li><strong>B:</strong> Quem gasta mais tempo é mais lento, logo, tem menor (e não maior) potência.</li>
+                                        <li><strong>E:</strong> Se houve elevação de peso, houve Trabalho, independentemente de ser mais rápido ou mais devagar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um atleta de halterofilismo levanta uma barra de $150\text{ kg}$ do chão até colocá-la acima de sua cabeça, a $2\text{ metros}$ de altura. Em seguida, após o comando do árbitro, ele mantém a barra completamente parada no alto por $3\text{ segundos}$, demonstrando controle absoluto sobre o peso.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista estrito da Física, qual é o trabalho realizado pela força que o atleta aplica sobre a barra <strong>durante os 3 segundos</strong> em que ela é mantida parada no alto?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Máximo, pois a força muscular exigida para segurar $150\text{ kg}$ é muito grande.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> $3.000\text{ Joules}$, calculados pela multiplicação do peso ($1.500\text{ N}$) pela altura ($2\text{ m}$).</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Zero, pois, embora haja aplicação de força, não ocorre deslocamento da barra nesse intervalo.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Depende apenas do metabolismo basal do atleta e da energia química consumida.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> $4.500\text{ Joules}$, considerando o peso multiplicado pelo tempo de $3\text{ segundos}$.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A fórmula física clássica é $\tau = F \cdot d$. Para haver trabalho mecânico transferido à barra, deve ocorrer obrigatoriamente um deslocamento ($d$). Como a barra fica $100\%$ estática durante os $3$ segundos ($d = 0$), o trabalho físico realizado sobre ela é nulo, por maior que seja a exaustão fisiológica do atleta.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Confunde cansaço biológico/muscular com o conceito matemático de Trabalho Físico.</li>
+                                        <li><strong>B:</strong> Este foi o trabalho da <strong>subida</strong>, mas a pergunta é sobre os segundos que ela ficou parada no ar.</li>
+                                        <li><strong>E:</strong> Tenta inventar uma fórmula absurda multiplicando força por tempo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> No retorno à Terra, cápsulas espaciais entram na atmosfera a velocidades impressionantes. Durante a reentrada, ocorre um fenômeno visual intenso: o exterior da cápsula chega a ficar incandescente, atingindo temperaturas de milhares de graus Celsius. Por isso, essas espaçonaves são equipadas com escudos térmicos robustos.</p>
+                                <p><strong>Enunciado:</strong> O intenso aquecimento sofrido pela cápsula espacial decorre diretamente do(a):</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> aumento contínuo da sua energia potencial gravitacional ao se aproximar da Terra.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> conservação de sua energia mecânica, que se converte inteiramente em calor.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> trabalho realizado por forças dissipativas (atrito com o ar), que transforma energia cinética em energia térmica.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> absorção direta da radiação solar que fica aprisionada nas camadas altas da atmosfera.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> expansão elástica dos metais da cápsula sob a ação do vácuo espacial.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A cápsula reentra com uma gigantesca energia cinética (velocidade). O impacto com a atmosfera cria uma força de atrito extrema. O atrito é uma força dissipativa que realiza um trabalho resistente, "roubando" a energia cinética e dissipando-a violentamente na forma de calor (energia térmica), gerando o fogo e o brilho.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Ao cair em direção à Terra, a altura diminui, então a gravitacional diminui.</li>
+                                        <li><strong>B:</strong> Se virou calor, o sistema dissipou (perdeu) energia, logo não houve conservação mecânica.</li>
+                                        <li><strong>D:</strong> O calor brutal vem do atrito dinâmico, não do brilho estático do sol.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> As usinas hidrelétricas reversíveis são uma solução inteligente de engenharia. Durante o dia, quando o consumo da cidade é alto, a água desce de um reservatório superior para gerar eletricidade. De madrugada, quando o consumo urbano cai vertiginosamente e há sobra de energia elétrica na rede, motores bombeiam a água de volta do lago inferior para o reservatório superior, guardando essa água para o dia seguinte.</p>
+                                <p><strong>Enunciado:</strong> Ao bombear a água de volta para o reservatório superior, o sistema atua armazenando energia elétrica excedente sob a forma de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Energia térmica da água.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Energia potencial elástica do encanamento.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Energia potencial gravitacional da água.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Energia cinética da água no lago inferior.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Energia química nos geradores das turbinas.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A energia usada para bombear a água montanha acima (aumentando a altura $h$) resulta em um gigantesco estoque de energia ligada à gravidade no topo do reservatório. Essa energia "estocada" é a Energia Potencial Gravitacional ($mgh$), que virará velocidade de novo pela manhã.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e B:</strong> Não se aquece a água e não se usam molas gigantes elásticas no sistema.</li>
+                                        <li><strong>D:</strong> A energia cinética se refere ao movimento turbulento, mas o objetivo de bombear para cima é deixá-la estática e acumulada (potencial) lá no alto.</li>
+                                        <li><strong>E:</strong> Baterias de celular armazenam energia química, represas não; elas armazenam energia mecânica gravitacional.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> No esporte do tiro com arco, o arqueiro exerce uma força com os braços para puxar a corda do arco para trás. Diferente de empurrar um caixote pelo chão, a força que o arqueiro faz não é constante: quanto mais para trás ele puxa a corda, mais dura ela fica e mais força ele precisa aplicar. O gráfico da Força ($F$) em função da Deformação da corda ($x$) forma um triângulo retângulo.</p>
+                                <p><strong>Enunciado:</strong> Como a força sobre o arco elástico é <strong>variável</strong>, a forma correta e rigorosa de calcular a energia que ele armazenou, baseando-se no gráfico citado, é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> multiplicando a força máxima aplicada pelo deslocamento máximo e depois elevando ao quadrado.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> dividindo o valor máximo da força pelo tempo que ele ficou segurando o arco.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> calculando a área sob a curva do gráfico de Força em função do Deslocamento.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> aplicando a fórmula $mgh$, utilizando a altura do ombro do arqueiro.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> assumindo que força variável não produz trabalho mecânico, apenas deformação estrutural.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Quando a força não é constante (ex: molas e elásticos variam conforme esticam), não podemos usar a fórmula escolar $\tau = F \cdot d$. A regra suprema da física nesses casos é: o trabalho (e a energia transferida) é numericamente idêntico à <strong>Área interna do gráfico Força x Deslocamento</strong>.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Inventa uma operação matemática sem validade física.</li>
+                                        <li><strong>D:</strong> Usa a fórmula de energia ligada à altura da gravidade ($mgh$), ignorando que a energia do arco é puramente elástica horizontal.</li>
+                                        <li><strong>E:</strong> A deformação elástica sob tensão é a prova cabal de que um trabalho intenso ocorreu.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Física</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um engenheiro está testando dois sistemas de mola distintos (Mola X e Mola Y) para o amortecedor de um carro. A Mola X é muito "dura" e requer $5.000\text{ Newtons}$ de força para ser comprimida em $10\text{ centímetros}$. A Mola Y é bem macia e requer apenas $1.000\text{ Newtons}$ para sofrer a mesma compressão de $10\text{ centímetros}$.</p>
+                                <p><strong>Enunciado:</strong> Se as duas molas forem comprimidas fisicamente na mesma exata medida ($10\text{ cm}$), ao serem liberadas bruscamente, o que se pode afirmar sobre a energia cinética que elas devolverão ao sistema?</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Ambas devolverão a mesma quantidade de energia, pois a deformação ($10\text{ cm}$) foi idêntica.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> A Mola Y devolverá mais energia, pois molas macias têm maior constante elástica de alívio.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> A energia devolvida será nula para ambas, devido ao princípio de dissipação elástica metálica.</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> A Mola X devolverá maior quantidade de energia, pois, sendo mais dura (maior constante elástica), armazenou mais energia potencial no processo.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> A Mola X devolverá mais energia apenas se a liberação ocorrer em um ambiente isento de gravidade.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>A energia de uma mola é dada por $E = \frac{k \cdot x^2}{2}$. A deformação ($x$) foi igual ($10\text{ cm}$). Mas a mola X precisou de muita força bruta ($5000\text{ N}$) para chegar lá, o que significa que sua constante de dureza ($k$) é muito maior. Como $k$ é maior, o cálculo prova que ela acumulou e liberará muito mais energia.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Ignora que a energia elástica não depende apenas da distância apertada, mas da força da mola ($k$).</li>
+                                        <li><strong>B:</strong> Inverte o conceito: mola macia é fácil de apertar porque tem constante elástica <em>menor</em>, guardando menos energia.</li>
+                                        <li><strong>C:</strong> Molas não dissipam energia primariamente, elas são fábricas bi-direcionais de conservação elástica.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 10 • Energia Cinética</span>
+                                        <div class="large-text">Se um motorista dobra a velocidade do carro, o que acontece com a distância de frenagem necessária para parar completamente?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A distância quadruplica.</div>
+                                        <span class="card-hint">Pois a energia cinética do carro é proporcional ao quadrado da velocidade ($v^2$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 10 • Trabalho Mecânico</span>
+                                        <div class="large-text">Um atleta mantém uma barra de $150\text{ kg}$ perfeitamente imóvel acima da cabeça por $5\text{ segundos}$. Qual o trabalho da força aplicada nesse intervalo?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Trabalho Zero.</div>
+                                        <span class="card-hint">Na física, sem deslocamento ($d = 0$), não há realização de trabalho mecânico, independentemente do esforço físico do atleta.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 10 • Força Variável</span>
+                                        <div class="large-text">Como se determina o trabalho realizado por uma força que estica um elástico, sabendo que essa força é variável?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Área do gráfico.</div>
+                                        <span class="card-hint">Calculando a área sob a curva do gráfico de Força versus Deslocamento.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 10 • Usinas Hidrelétricas</span>
+                                        <div class="large-text">Como as usinas hidrelétricas reversíveis "guardam" a energia excedente da madrugada para ser usada durante o dia?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Bombeando água para cima.</div>
+                                        <span class="card-hint">Elas usam a energia para bombear água de volta ao reservatório alto, estocando-a na forma de Energia Potencial Gravitacional.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 10 • Forças Dissipativas</span>
+                                        <div class="large-text">Por que a couraça de uma cápsula espacial fica incandescente ao reentrar na atmosfera terrestre?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Atrito e dissipação térmica.</div>
+                                        <span class="card-hint">Porque o atrito com o ar (força dissipativa) realiza trabalho, transformando a imensa energia cinética da cápsula em calor (energia térmica).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 10 • Teoremas da Física</span>
+                                        <div class="large-text">Qual a relação direta entre o trabalho realizado pelos freios de um carro e a sua mudança de velocidade?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O Teorema do Trabalho e Energia Cinética.</div>
+                                        <span class="card-hint">O trabalho total das forças (atrito) equivale à variação da energia cinética do veículo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 10 • Potência</span>
+                                        <div class="large-text">Dois guindastes erguem cargas iguais à mesma altura. O guindaste A leva $10\text{s}$ e o B leva $5\text{s}$. Qual deles realizou mais trabalho? E qual tem mais potência?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Mesmo trabalho, potência o dobro no B.</div>
+                                        <span class="card-hint">Ambos realizam o mesmo trabalho (mesma energia gasta). Porém, o guindaste B possui o dobro da potência, pois faz o serviço na metade do tempo.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 10 • Energia Elástica</span>
+                                        <div class="large-text">Dois elásticos, um fino e um grosso (maior constante elástica $k$), são esticados em exatos $10\text{ cm}$. Qual acumula mais energia potencial?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O elástico grosso.</div>
+                                        <span class="card-hint">Pois para a mesma deformação ($x$), a energia elástica é diretamente proporcional à constante da mola/elástico ($k$).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 10 • Rendimento</span>
+                                        <div class="large-text">Por que uma lâmpada de LED de $9\text{W}$ ilumina o mesmo que uma antiga lâmpada incandescente de $60\text{W}$?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Eficiência (Rendimento).</div>
+                                        <span class="card-hint">O LED possui um rendimento muito maior, transformando quase toda a energia recebida em luz, enquanto a incandescente dissipa a maior parte em calor.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 10 • Conservação</span>
+                                        <div class="large-text">Em uma pista de skate em formato de "U" perfeitamente lisa (sem atrito), o que garante que o skatista alcance a mesma altura de ambos os lados?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A Conservação da Energia Mecânica.</div>
+                                        <span class="card-hint">Toda a energia cinética na base da rampa volta a se transformar integralmente em energia potencial gravitacional no topo, sem perdas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

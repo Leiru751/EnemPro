@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisiologia Humana - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para notação química e biológica -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-nature"> <!-- Tema Verde (Ciências da Natureza) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link active" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Biologia / Fisiologia Humana</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Fisiologia Humana e Homeostase</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (BIOLOGIA - FISIOLOGIA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    <div class="article-content">
+                        
+                        <p>A Fisiologia é o estudo de como o nosso corpo funciona. Para o Enem, o grande segredo é abandonar a decoreba de nomes difíceis e focar em duas coisas: a <strong>integração entre os sistemas</strong> e a <strong>manutenção da homeostase</strong> (o equilíbrio interno). As questões da prova raramente perguntam o que um órgão faz isoladamente; elas criam uma situação-problema (como uma pessoa subindo uma montanha, fazendo exercício intenso, comendo muito açúcar ou desidratada) e exigem que você saiba como o sistema respiratório, endócrino ou excretor vai reagir para "consertar" o problema e devolver o corpo ao estado de equilíbrio.</p>
+
+                        <!-- SISTEMA DIGESTÓRIO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Digestório</h2>
+                        <ul>
+                            <li><strong>Boca ($\text{pH}$ Neutro $\sim 7$):</strong> A digestão começa aqui com a trituração mecânica e a ação da enzima <strong>amilase salivar (ptialina)</strong>, que quebra exclusivamente carboidratos (amido).</li>
+                            <li><strong>Estômago ($\text{pH}$ Ácido $\sim 2$):</strong> O ambiente é extremamente ácido graças ao ácido clorídrico ($\text{HCl}$). Esse ácido ativa a enzima <strong>pepsina</strong>, responsável por iniciar a digestão das proteínas.</li>
+                            <li><strong>Intestino Delgado ($\text{pH}$ Básico $\sim 8$):</strong> É onde ocorre a maior parte da digestão e a absorção de nutrientes.
+                                <ul>
+                                    <li><strong>Duodeno (Início):</strong> Recebe o suco pancreático, rico em enzimas (lipase para gorduras, amilase para amido, tripsina para proteínas) e bicarbonato, que neutraliza a acidez do estômago. Também recebe a <strong>bile</strong>, produzida no fígado e armazenada na vesícula biliar.
+                                        <div class="example-box" style="margin: 0.8rem 0;">
+                                            <strong>Atenção para o Enem:</strong> A bile <strong>não possui enzimas</strong>; ela funciona como um "detergente" que <strong>emulsifica</strong> as gorduras, quebrando-as em gotas microscópicas para aumentar a área de contato e facilitar a ação da lipase.
+                                        </div>
+                                    </li>
+                                    <li><strong>Jejuno e Íleo (Meio e Fim):</strong> Possuem paredes cheias de dobras e <strong>microvilosidades</strong>, que aumentam drasticamente a superfície de contato para absorver os nutrientes e mandá-los para a corrente sanguínea.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Intestino Grosso:</strong> Não há digestão química. Sua função principal é a reabsorção de água e sais minerais, além da formação da massa fecal.</li>
+                        </ul>
+
+                        <!-- SISTEMA RESPIRATÓRIO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Respiratório</h2>
+                        <ul>
+                            <li><strong>Hematose:</strong> É a troca gasosa que ocorre nos alvéolos pulmonares (pequenos sacos rodeados por capilares). O oxigênio ($O_2$) passa para o sangue e o gás carbônico ($CO_2$) passa para os pulmões por simples difusão.</li>
+                            <li><strong>Transporte de Gases:</strong>
+                                <ul>
+                                    <li>O $O_2$ é transportado quase inteiramente ligado à molécula de hemoglobina dentro das hemácias (glóbulos vermelhos).</li>
+                                    <li>O $CO_2$ é transportado de três formas, mas a principal (cerca de 70%) é dissolvido no plasma sanguíneo na forma de <strong>íon bicarbonato</strong> ($HCO_3^-$).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Controle Químico da Respiração:</strong> O ritmo da nossa respiração não é controlado pela falta de oxigênio, mas sim pelo <strong>excesso de $CO_2$</strong>. Muito $CO_2$ no sangue reage com a água e forma ácido carbônico, baixando o $\text{pH}$ sanguíneo. Uma estrutura no cérebro chamada <strong>bulbo</strong> detecta essa acidez e acelera a frequência respiratória (hiperventilação) para expulsar o gás e normalizar o $\text{pH}$.</li>
+                        </ul>
+
+                        <!-- SISTEMA CIRCULATÓRIO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Circulatório</h2>
+                        <ul>
+                            <li><strong>Pequena Circulação (Pulmonar):</strong> Coração $\rightarrow$ Pulmões $\rightarrow$ Coração. O objetivo é levar sangue venoso (rico em $CO_2$) para os pulmões para ser oxigenado (hematose) e voltar ao coração como sangue arterial.</li>
+                            <li><strong>Grande Circulação (Sistêmica):</strong> Coração $\rightarrow$ Corpo $\rightarrow$ Coração. O objetivo é bombear o sangue arterial (rico em $O_2$) para nutrir todas as células do corpo e recolher os resíduos metabólicos.</li>
+                            <li><strong>Componentes do Sangue:</strong>
+                                <ul>
+                                    <li><strong>Hemácias (Glóbulos vermelhos):</strong> Transportam oxigênio acoplado à hemoglobina.</li>
+                                    <li><strong>Leucócitos (Glóbulos brancos):</strong> Atuam na defesa imunológica do organismo.</li>
+                                    <li><strong>Plaquetas:</strong> Fragmentos celulares responsáveis pela coagulação sanguínea.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Anatomia e Pressão nos Vasos:</strong>
+                                <ul>
+                                    <li><strong>Artérias:</strong> Tiram o sangue do coração. Têm paredes espessas e musculares para suportar a altíssima pressão do bombeamento.</li>
+                                    <li><strong>Veias:</strong> Trazem o sangue de volta ao coração. Trabalham sob baixa pressão e possuem <strong>válvulas internas</strong> para impedir o refluxo do sangue contra a gravidade.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- SISTEMA EXCRETOR -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Excretor</h2>
+                        <p><strong>Funcionamento do Néfron:</strong> O néfron é a unidade funcional e filtradora do rim.</p>
+                        <ol>
+                            <li><strong>Filtração Glomerular:</strong> O sangue chega sob alta pressão e o plasma (com água, ureia, glicose, sais) é espremido para dentro da cápsula do néfron.</li>
+                            <li><strong>Reabsorção Tubular:</strong> O corpo não pode perder tudo o que filtrou. Nos túbulos renais, substâncias úteis ($100\%$ da glicose e grande parte da água e sais) voltam para o sangue. O líquido que permanece nos tubos vira a urina final (água, sais em excesso e ureia).</li>
+                        </ol>
+
+                        <div class="example-box">
+                            <strong>Ação Hormonal na Regulação Osmótica:</strong>
+                            <ul>
+                                <li><strong>ADH (Hormônio Antidiurético):</strong> Produzido no hipotálamo, age quando estamos desidratados. Ele aumenta a reabsorção de água nos rins, reduzindo o volume de urina (urina superconcentrada) para poupar água. <em>O álcool inibe o ADH</em>, fazendo a pessoa urinar em excesso e causando a desidratação típica da ressaca.</li>
+                                <li><strong>Aldosterona:</strong> Produzida nas suprarrenais quando a pressão arterial cai. Faz o rim reabsorver mais sódio ($Na^+$). A água segue o sódio por osmose, retornando ao sangue e elevando a pressão arterial.</li>
+                            </ul>
+                        </div>
+
+                        <!-- SISTEMA ENDÓCRINO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Endócrino</h2>
+                        <ul>
+                            <li><strong>Feedback Negativo (Retroalimentação):</strong> É o mecanismo de freio do corpo, funcionando como um termostato. Se a glândula tireoide produz muito hormônio, esse excesso no sangue envia um sinal inibitório para o cérebro parar de estimulá-la, mantendo os níveis em equilíbrio.</li>
+                            <li><strong>Pâncreas e o Controle da Glicemia:</strong>
+                                <ul>
+                                    <li><strong>Insulina:</strong> Liberada após as refeições (glicose alta no sangue). Ela estimula a entrada de glicose nas células e orienta o fígado a armazenar o excesso na forma de glicogênio.</li>
+                                    <li><strong>Glucagon:</strong> Liberado durante o jejum (glicose baixa). Ele manda o fígado quebrar o glicogênio estocado e liberar glicose na corrente sanguínea, prevenindo a hipoglicemia.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Hormônios da Tireoide ($T_3$ e $T_4$):</strong> Regulam a velocidade do metabolismo basal (geração de energia e calor). Eles necessitam de <strong>iodo</strong> em sua estrutura química; por isso, o sal de cozinha é iodado obrigatoriamente no Brasil para prevenir o bócio endêmico.</li>
+                        </ul>
+
+                        <!-- SISTEMA NERVOSO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Nervoso</h2>
+                        <ul>
+                            <li><strong>Impulso Nervoso:</strong> É um sinal elétrico gerado pelo fluxo de íons. Em repouso, há mais Sódio ($Na^+$) fora e Potássio ($K^+$) dentro da célula. Durante a despolarização, canais de sódio se abrem e o $Na^+$ entra rapidamente, invertendo a carga elétrica do neurônio e propagando o sinal.</li>
+                            <li><strong>Sinapse:</strong> O espaço físico entre dois neurônios. A corrente elétrica não atravessa essa lacuna sozinha; o primeiro neurônio libera substâncias químicas chamadas <strong>neurotransmissores</strong> (ex: dopamina, serotonina), que se ligam a receptores na membrana da célula seguinte para reiniciar o impulso elétrico.</li>
+                            <li><strong>Sistema Nervoso Autônomo (Involuntário):</strong>
+                                <ul>
+                                    <li><strong>Simpático (Luta ou Fuga):</strong> Prepara o organismo para situações de estresse ou emergência. Atua via noradrenalina/adrenalina: dilata a pupila, acelera a frequência cardíaca, dilata os brônquios e reduz a atividade digestiva.</li>
+                                    <li><strong>Parassimpático (Descanso e Digestão):</strong> Promove o relaxamento. Atua via acetilcolina: contrai a pupila, desacelera o coração e estimula a motilidade digestiva e a salivação.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- SISTEMA IMUNOLÓGICO -->
+                        <h2 style="margin-top: 2.5rem;">Sistema Imunológico</h2>
+                        <div class="example-box">
+                            <strong>Vacina vs. Soro (Clássico do Enem):</strong>
+                            <ul>
+                                <li><strong>Vacina (Imunização Ativa):</strong> Contém o antígeno inativado ou atenuado. Induz o próprio corpo a produzir anticorpos e <strong>células de memória</strong>. Tem caráter preventivo e proteção duradoura.</li>
+                                <li><strong>Soro (Imunização Passiva):</strong> Fornece anticorpos prontos (ex: soro antiofídico). Usado em emergências para neutralizar toxinas rapidamente. Tem caráter curativo e imediato, mas <strong>não gera memória imunológica</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <!-- HOMEOSTASE E TERMORREGULAÇÃO -->
+                        <h2 style="margin-top: 2.5rem;">Homeostase e Termorregulação</h2>
+                        <p><strong>Homeostase:</strong> É a capacidade do organismo de manter a estabilidade do meio interno (temperatura, $\text{pH}$, osmolalidade, glicemia) independentemente das oscilações do meio externo.</p>
+                        <ul>
+                            <li><strong>Controle Térmico no Frio:</strong>
+                                <ul>
+                                    <li><em>Vasoconstrição periférica:</em> Os vasos sanguíneos da pele se contraem para desviar o sangue aquecido para os órgãos vitais internos, reduzindo a perda de calor.</li>
+                                    <li><em>Tremores:</em> Contrações involuntárias dos músculos esqueléticos que consomem $\text{ATP}$ exclusivamente para gerar calor.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Controle Térmico no Calor:</strong>
+                                <ul>
+                                    <li><em>Vasodilatação periférica:</em> Os vasos da pele se dilatam, trazendo o sangue quente para a superfície para irradiar calor para o ar.</li>
+                                    <li><em>Sudorese:</em> As glândulas sudoríparas secretam suor na pele. Ao <strong>evaporar</strong> (mudança do estado líquido para o gasoso), a água absorve uma grande quantidade de energia térmica da pele, resfriando o corpo eficientemente.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- DEMAIS ABAS (PLACEHOLDERS) -->
+               <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - FISIOLOGIA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Pacientes com cálculos biliares (pedras na vesícula) muitas vezes realizam a colecistectomia (remoção da vesícula biliar). Após a cirurgia, a bile produzida pelo fígado passa a gotejar continuamente no intestino, sem ser armazenada. Por isso, os médicos recomendam que o paciente adote uma dieta com restrições severas, especialmente nas primeiras semanas.</p>
+                                <p><strong>Enunciado:</strong> A restrição alimentar mais importante para um paciente que não possui mais a vesícula biliar deve recair sobre alimentos ricos em:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Carboidratos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Proteínas.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> Lipídios.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Vitaminas hidrossolúveis.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Sais minerais.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A bile funciona como um "detergente" que emulsifica os <strong>lipídios (gorduras)</strong>, quebrando-os em gotículas menores para facilitar a ação da enzima lipase. Sem a vesícula para armazenar e liberar um jato concentrado de bile durante as refeições, a digestão de gorduras fica prejudicada, gerando diarreia e desconforto.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Carboidratos são digeridos pelas amilases (salivar e pancreática), que não usam bile.</li>
+                                        <li><strong>B:</strong> Proteínas são digeridas no estômago (pepsina) e intestino (tripsina), sem dependência da bile.</li>
+                                        <li><strong>D e E:</strong> Vitaminas hidrossolúveis e sais minerais são absorvidos diretamente na mucosa intestinal junto com a água.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Antes de mergulhar em apneia, alguns nadadores hiperventilam (fazem respirações rápidas e profundas). O procedimento é perigoso, pois o nadador pode desmaiar debaixo d'água antes de sentir a necessidade urgente de voltar à superfície para respirar.</p>
+                                <p><strong>Enunciado:</strong> A hiperventilação provoca o atraso no reflexo de respirar porque altera a concentração sanguínea de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> oxigênio ($O_2$), superestimulando o bulbo raquidiano.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> gás carbônico ($CO_2$), cuja redução retarda o estímulo do bulbo para a respiração.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> ácido lático, que, ao se acumular, paralisa o músculo do diafragma.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> monóxido de carbono, bloqueando permanentemente a hemoglobina.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> íons bicarbonato, que aumentam a acidez extrema (queda do $\text{pH}$) do plasma sanguíneo.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>O centro respiratório no cérebro (bulbo) monitora prioritariamente o <strong>excesso de $CO_2$</strong>. Ao hiperventilar, a pessoa expulsa muito $CO_2$ do sangue. Como o nível de gás carbônico cai drasticamente, o bulbo demora a emitir o sinal de emergência para respirar, fazendo a pessoa desmaiar por falta de oxigênio sem ter sentido "falta de ar".</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A variação de $O_2$ não é o gatilho principal utilizado pelo bulbo para ajustar a frequência respiratória regular.</li>
+                                        <li><strong>C:</strong> Ácido lático é gerado em esforço anaeróbico muscular, não sendo expulso pela hiperventilação prévia.</li>
+                                        <li><strong>E:</strong> Ao eliminar o $CO_2$, a acidez do sangue <em>diminui</em> (o $\text{pH}$ fica mais alcalino/básico).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Durante uma festa, um jovem consome uma quantidade considerável de bebidas alcoólicas. Algumas horas depois, percebe que está urinando com frequência muito maior do que o normal. No dia seguinte, acorda com uma forte dor de cabeça, sintoma clássico de desidratação (ressaca).</p>
+                                <p><strong>Enunciado:</strong> O aumento excessivo do volume urinário descrito ocorre porque o álcool atua no sistema endócrino e excretor, provocando a:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> inibição da secreção do hormônio antidiurético (ADH) pelo cérebro.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> superprodução de aldosterona pelas glândulas suprarrenais.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> diminuição da taxa de filtração glomerular nos rins.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> secreção excessiva de insulina, que arrasta água para a urina.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> estimulação intensa da reabsorção de água nos túbulos renais.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>O <strong>ADH (Hormônio Antidiurético)</strong> atua promovendo a reabsorção de água nos rins para impedir a perda hídrica. O álcool inibe a liberação de ADH pelo hipotálamo/hipófise. Sem o hormônio, os rins deixam de reabsorver água, gerando um volume enorme de urina diluída e levando à desidratação.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> A aldosterona reabsorve sódio e água, o que <em>reduziria</em> o volume urinário.</li>
+                                        <li><strong>C:</strong> Reduzir a filtração glomerular diminuiria o volume de urina produzido.</li>
+                                        <li><strong>E:</strong> Estimular a reabsorção reteria água no corpo, exatamente o oposto do efeito diurético do álcool.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um estudante dormiu por 8 horas e foi fazer o Enem sem tomar café da manhã. Às 14 horas, já contabilizava mais de 14 horas de jejum. Apesar da fome, ele não sofreu um desmaio, pois seu corpo manteve os níveis de glicose no sangue estabilizados.</p>
+                                <p><strong>Enunciado:</strong> Nesse período de jejum prolongado, a homeostase da glicemia é garantida principalmente pela liberação do hormônio:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> insulina, que promove a quebra do glicogênio estocado no fígado.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> glucagon, que estimula o fígado a converter glicogênio em glicose e lançá-la no sangue.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> adrenalina, que facilita a entrada de glicose diretamente nas células musculares.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> tiroxina, que reduz drasticamente a taxa metabólica basal para poupar energia.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> aldosterona, que promove a reabsorção tubular de glicose pelos rins.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Durante o jejum, a glicemia cai. O pâncreas responde secretando <strong>glucagon</strong>. Esse hormônio estimula o fígado a realizar a glicogenólise (quebra do glicogênio em glicose), lançando o açúcar na corrente sanguínea para manter a glicemia normal e nutrir o cérebro.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A insulina é liberada após as refeições (glicemia alta) para guardar a glicose nas células.</li>
+                                        <li><strong>C:</strong> A adrenalina atua em emergências e estresse agudo; quem abre a porta da célula para a glicose é a insulina.</li>
+                                        <li><strong>E:</strong> A aldosterona regula o equilíbrio de sódio e a pressão arterial, não a glicemia de jejum.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Durante uma maratona em um dia de verão, a pele do rosto dos corredores fica avermelhada e eles transpiram abundantemente. Essas alterações corporais são automáticas e vitais para a sobrevivência do atleta.</p>
+                                <p><strong>Enunciado:</strong> A vermelhidão e a sudorese são mecanismos de termorregulação que têm como objetivos fisiológicos, respectivamente:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> contrair os vasos periféricos para aumentar a pressão e reter água no plasma sanguíneo.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> aumentar a irradiação de calor superficial e resfriar o corpo pela evaporação da água.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> elevar a taxa metabólica basal e eliminar o excesso de toxinas através dos poros da pele.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> bombear mais sangue para os músculos esqueléticos e lubrificar a epiderme ressecada pelo sol.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> diminuir a pressão arterial diastólica e absorver ativamente o calor do ambiente.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A vermelhidão resulta da <strong>vasodilatação periférica</strong>, que traz o sangue aquecido para a superfície da pele para dissipar calor por irradiação. A sudorese libera água que, ao <strong>evaporar</strong>, retira energia térmica da pele, resfriando o corpo.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A contração dos vasos (vasoconstrição) ocorre no frio para evitar a perda de calor.</li>
+                                        <li><strong>C:</strong> O objetivo primário da sudorese é o resfriamento por mudança de estado físico da água, não a eliminação de toxinas.</li>
+                                        <li><strong>E:</strong> O objetivo do corpo é dissipar calor para o ambiente, e não absorvê-lo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um pedestre é surpreendido por um cão feroz. Imediatamente, seu coração acelera, as pupilas se dilatam, a respiração fica ofegante e a digestão é paralisada temporariamente.</p>
+                                <p><strong>Enunciado:</strong> Essas reações fisiológicas de "luta ou fuga" são desencadeadas pela ativação do sistema nervoso:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> autônomo parassimpático, mediado pela liberação do neurotransmissor acetilcolina.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> somático voluntário, que promove a contração acelerada das fibras do miocárdio.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> autônomo simpático, mediado pela liberação de noradrenalina e adrenalina.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> central cortical, através do bloqueio maciço de sinapses inibitórias na medula espinhal.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> entérico, responsável exclusivamente pela interrupção do fluxo sanguíneo gástrico.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>O <strong>Sistema Nervoso Autônomo Simpático</strong> é ativado em situações de emergência ou estresse ("luta ou fuga"). Através da adrenalina e noradrenalina, ele mobiliza energia: aumenta o ritmo cardíaco/respiratório, dilata as pupilas e inibe funções não essenciais no momento, como a digestão.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> O parassimpático atua em momentos de repouso e digestão, desacelerando o coração via acetilcolina.</li>
+                                        <li><strong>B:</strong> O sistema somático comanda ações voluntárias dos músculos esqueléticos; o miocárdio (coração) tem controle involuntário/autônomo.</li>
+                                        <li><strong>E:</strong> As respostas envolvem órgãos variados (olhos, coração, pulmões), caracterizando uma resposta sistêmica do simpático.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um trabalhador rural picado por uma cobra jararaca é levado ao posto de saúde, onde o médico administra uma dose de soro antiofídico na veia do paciente.</p>
+                                <p><strong>Enunciado:</strong> A escolha do soro, em vez da vacina, é a conduta correta nesse caso de emergência médica porque esse imunobiológico:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> contém o veneno enfraquecido, que força o corpo do paciente a fabricar anticorpos em minutos.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> introduz linfócitos T citotóxicos treinados previamente para destruir as proteínas da peçonha.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> promove uma imunização ativa e duradoura, garantindo que ele não sofra mais envenenamentos.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> estimula a medula óssea a acelerar a produção de macrófagos para realizar a fagocitose.</button>
+                                <button class="option-btn" data-correct="true"><span>E)</span> fornece anticorpos prontos e específicos que neutralizam o veneno imediatamente no sangue.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa E</strong></p>
+                                    <p>O <strong>soro</strong> é um método de <strong>imunização passiva</strong>. Ele contém anticorpos já prontos (geralmente produzidos em outro organismo, como cavalos) que neutralizam a toxina imediatamente. Como o veneno age rápido, não há tempo para o corpo produzir suas próprias defesas (o que ocorreria via vacina).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Introduzir antígeno enfraquecido para induzir resposta imune é a definição de <em>vacina</em>.</li>
+                                        <li><strong>C:</strong> O soro é temporário/curativo e não gera células de memória (não garante imunização ativa duradoura).</li>
+                                        <li><strong>D:</strong> O soro atua diretamente por anticorpos específicos contra as toxinas, e não por estipulação medular de macrófagos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O dióxido de carbono ($CO_2$) gerado pelo metabolismo celular é um resíduo tóxico que precisa ser transportado pelo sangue das células teciduais até os alvéolos pulmonares, de onde é exalado.</p>
+                                <p><strong>Enunciado:</strong> Ao contrário do oxigênio, a maior parte do gás carbônico gerado pelo metabolismo é transportada pelo sangue na forma de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> gás livre em bolhas microscópicas aprisionadas dentro das hemácias.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> carboxiemoglobina, formando uma ligação irreversível e competitiva com o ferro.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> íon bicarbonato dissolvido diretamente no plasma sanguíneo.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> ácido úrico precipitado no interior dos leucócitos de defesa.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> compostos agregados aos fatores de coagulação e proteínas plaquetárias.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Cerca de 70% do $CO_2$ entra nas hemácias, reage com a água via anidrase carbônica e se converte em ácido carbônico, que se dissocia em $H^+$ e <strong>íon bicarbonato ($HCO_3^-$)</strong>. O bicarbonato sai para o plasma e viaja dissolvido até os pulmões, onde a reação se inverte para exalar o $CO_2$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Gases não são transportados como "bolhas" livres na circulação.</li>
+                                        <li><strong>B:</strong> A carboxiemoglobina (ligação irreversível) é formada pela combinação com o monóxido de carbono ($CO$).</li>
+                                        <li><strong>D:</strong> O ácido úrico é uma excreta nitrogenada resultante do metabolismo de purinas, não do transporte de $CO_2$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O estômago mantém seu interior em $\text{pH} \sim 2$ devido ao ácido clorídrico ($\text{HCl}$). Pessoas com azia frequente usam antiácidos potentes que, em excesso, podem elevar o $\text{pH}$ estomacal para um valor próximo ao neutro ($\text{pH} \sim 7$).</p>
+                                <p><strong>Enunciado:</strong> O uso excessivo desse antiácido pode prejudicar drasticamente a eficiência da digestão química primária de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> carboidratos complexos, devido à desnaturação prematura da ptialina.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> proteínas, uma vez que a enzima pepsina atua de forma ótima em meio altamente ácido.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> lipídios, devido à inativação direta dos sais biliares na luz do estômago.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> vitaminas lipossolúveis, pois a absorção delas é restrita ao epitélio gástrico ácido.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> ácidos nucleicos, devido à inibição das nucleases pancreáticas pelo novo $\text{pH}$.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A principal enzima do estômago é a <strong>pepsina</strong>, responsável por quebrar <strong>proteínas</strong>. Ela necessita de um ambiente fortemente ácido ($\text{pH} \sim 2$) fornecido pelo $\text{HCl}$ para sua ativação e funcionamento ótimo. A elevação do $\text{pH}$ inibe a atividade da pepsina.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> A ptialina atua na boca em $\text{pH}$ neutro; o meio ácido gástrico natural é que a inativa.</li>
+                                        <li><strong>C:</strong> Sais biliares e lipases atuam no duodeno (intestino delgado), não no estômago.</li>
+                                        <li><strong>E:</strong> As nucleases pancreáticas são secretadas e atuam no intestino delgado em $\text{pH}$ alcalino.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Biologia</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Medicamentos psiquiátricos e anestésicos frequentemente atuam na fenda sináptica, o espaço existente entre um neurônio e outro, alterando a intensidade da propagação da informação nervosa.</p>
+                                <p><strong>Enunciado:</strong> A comunicação entre dois neurônios vizinhos em uma sinapse química ocorre fundamentalmente por meio da:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> passagem ininterrupta de corrente elétrica por pontes físicas de sódio entre o axônio e o dendrito.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> liberação de vesículas contendo enzimas que destroem a mielina do neurônio receptor.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> secreção de moléculas neurotransmissoras que se acoplam a receptores específicos na membrana seguinte.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> fusão temporária das membranas plasmáticas das duas células, formando uma rede citoplasmática única.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> liberação de íons de ferro que magnetizam o terminal dendrítico, atraindo o pulso elétrico.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>Nas sinapses químicas, o sinal elétrico não salta diretamente a fenda sináptica. O neurônio pré-sináptico libera <strong>neurotransmissores</strong> (ex: dopamina, serotonina) armazenados em vesículas. Essas substâncias se difundem pela fenda e se ligam a receptores específicos no neurônio pós-sináptico, gerando um novo impulso elétrico.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Em sinapses químicas não há passagem direta de corrente elétrica por pontes físicas.</li>
+                                        <li><strong>B:</strong> A destruição da bainha de mielina compromete a condução do impulso, não sendo a forma de comunicação fisiológica.</li>
+                                        <li><strong>D:</strong> Os neurônios permanecem anatomicamente separados pela fenda sináptica.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 12 • Sistema Digestório</span>
+                                        <div class="large-text">Por que a remoção cirúrgica da vesícula biliar exige uma dieta restrita em gorduras nas primeiras semanas?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Falta de armazenamento de bile.</div>
+                                        <span class="card-hint">Sem a vesícula para armazenar e liberar o jato de bile concentrada, o corpo perde a capacidade de emulsificar gorduras, dificultando a ação da lipase.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 12 • Sistema Digestório</span>
+                                        <div class="large-text">Qual é a consequência direta do uso excessivo de medicamentos antiácidos para a digestão de proteínas no estômago?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Inativação da pepsina.</div>
+                                        <span class="card-hint">O aumento do $\text{pH}$ inativa a enzima pepsina, que necessita do meio altamente ácido ($\text{pH} \sim 2$) fornecido pelo $\text{HCl}$ para quebrar proteínas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 12 • Sistema Respiratório</span>
+                                        <div class="large-text">O que dispara o desejo incontrolável de respirar quando prendemos o fôlego: a falta de $O_2$ ou o excesso de $CO_2$?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">O excesso de $CO_2$.</div>
+                                        <span class="card-hint">Ele acidifica o sangue, estimulando o bulbo raquidiano a acelerar a ventilação para expurgar o gás e equilibrar o $\text{pH}$.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 12 • Sistema Respiratório</span>
+                                        <div class="large-text">Como o gás carbônico ($CO_2$) gerado no metabolismo celular é transportado em sua maior parte pelo sangue?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Como íon bicarbonato.</div>
+                                        <span class="card-hint">Na forma de íons bicarbonato ($HCO_3^-$) dissolvidos diretamente no plasma sanguíneo, gerados pela reação do $CO_2$ com a água dentro das hemácias.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 12 • Sistema Circulatório</span>
+                                        <div class="large-text">Qual a função das válvulas presentes no interior das veias e por que elas são ausentes nas artérias?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Impedir o refluxo do sangue.</div>
+                                        <span class="card-hint">Elas impedem o refluxo de sangue sob baixa pressão contra a gravidade. Nas artérias a pressão é alta e contínua, tornando as válvulas desnecessárias.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 12 • Sistema Excretor</span>
+                                        <div class="large-text">De que maneira o consumo de bebidas alcoólicas altera a fisiologia renal, provocando o grande volume de urina e a ressaca?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Inibe o hormônio ADH.</div>
+                                        <span class="card-hint">O álcool inibe a secreção do hormônio ADH (Antidiurético), bloqueando a reabsorção de água nos néfrons e gerando urina copiosa e desidratação.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 7 de 12 • Sistema Excretor</span>
+                                        <div class="large-text">Diante de uma queda na pressão arterial, como a ação do hormônio aldosterona ajuda o corpo a recuperar a homeostase?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Reabsorção de Sódio ($Na^+$).</div>
+                                        <span class="card-hint">Estimula a reabsorção de sódio ($Na^+$) nos rins. A água retorna ao sangue por osmose, aumentando o volume sanguíneo e a pressão.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 8 de 12 • Sistema Endócrino</span>
+                                        <div class="large-text">Em um período de jejum prolongado, qual hormônio pancreático evita a hipoglicemia e qual é a sua ação no fígado?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Glucagon.</div>
+                                        <span class="card-hint">O glucagon estimula o fígado a quebrar suas reservas de glicogênio em glicose e lançá-las ativamente na corrente sanguínea.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 9 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 9 de 12 • Sistema Nervoso</span>
+                                        <div class="large-text">Por que o impulso elétrico nervoso não consegue saltar diretamente entre dois neurônios vizinhos na fenda sináptica?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Uso de neurotransmissores.</div>
+                                        <span class="card-hint">Porque a eletricidade não se propaga no fluido extracelular da fenda. A mensagem é convertida em neurotransmissores químicos para atravessar o espaço.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 10 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 10 de 12 • Sistema Nervoso Autônomo</span>
+                                        <div class="large-text">Qual é a diferença de atuação entre o sistema nervoso simpático e o parassimpático sobre o coração e o sistema digestório?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Luta/Fuga vs Repouso.</div>
+                                        <span class="card-hint"><strong>Simpático (luta/fuga):</strong> Acelera os batimentos cardíacos e inibe a digestão.<br><strong>Parassimpático (repouso):</strong> Desacelera o coração e estimula a atividade digestiva.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 11 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 11 de 12 • Sistema Imunológico</span>
+                                        <div class="large-text">Por que em acidentes com animais peçonhentos (como picada de cobra) a indicação médica é o uso de soro e não de vacina?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Necessidade de ação imediata.</div>
+                                        <span class="card-hint">O soro fornece anticorpos prontos para ação imediata e curativa, enquanto a vacina exige semanas para o corpo fabricar a própria defesa.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 12 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 12 de 12 • Homeostase</span>
+                                        <div class="large-text">De que forma o mecanismo de sudorese promove o resfriamento corporal durante um exercício físico em dia quente?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Pela evaporação.</div>
+                                        <span class="card-hint">Ao evaporar sobre a pele, a água absorve (rouba) uma grande quantidade de energia térmica (calor) do corpo, reduzindo a temperatura sistêmica.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

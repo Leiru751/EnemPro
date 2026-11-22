@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatística - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do MathJax para Fórmulas Matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+</head>
+<body class="subject-theme-math"> <!-- Tema Azul (Matemática) ativado -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <!-- Matemática recebe a classe active -->
+            <a href="matematica.html" class="nav-link active" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Matemática / Estatística</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Estatística: Medidas de Tendência Central</h1>
+            </header>
+
+            <nav class="tabs-nav">
+                <!-- Abas restritas agora a 3 opções -->
+                <button class="tab-btn active" data-target="tab-conteudo">Conteúdo</button>
+                <button class="tab-btn" data-target="tab-exercicios">Exercícios</button>
+                <button class="tab-btn" data-target="tab-flashcards">Flash Cards</button>
+            </nav>
+
+            <div class="tab-content-area">
+                
+                <!-- =========================================
+                     ABA 1: CONTEÚDO (MATEMÁTICA - ESTATÍSTICA)
+                     ========================================= -->
+                <div id="tab-conteudo" class="tab-pane active">
+                    
+                    <div class="article-content">
+                        
+                        <p>A estatística é a ferramenta matemática que transforma dados brutos em decisões inteligentes, sendo essencial para interpretar pesquisas, tabelas e padrões da realidade. Veja abaixo como cada conceito funciona na prática:</p>
+
+                        <!-- SEÇÃO 1: Organização dos Dados -->
+                        <h2 style="margin-top: 2rem;">Organização dos Dados</h2>
+                        
+                        <ul>
+                            <li><strong>Rol:</strong> É a organização prévia e obrigatória dos dados em ordem crescente ou decrescente. Sem colocar os números em Rol, tentar encontrar a Mediana sempre dará errado.
+                                <br><br>
+                                <em>Exemplo:</em> Foram coletadas as idades soltas: $15, 12, 18, 10, 14$.<br>
+                                <em>Resposta:</em> O Rol é <strong>$10, 12, 14, 15, 18$</strong>.
+                            </li>
+                        </ul>
+
+                        <!-- SEÇÃO 2: Medidas de Tendência Central -->
+                        <h2 style="margin-top: 3rem;">Medidas de Tendência Central</h2>
+                        
+                        <h3>Média Aritmética Simples</h3>
+                        <p>Funciona como o "ponto de equilíbrio". Para encontrá-la, basta somar todos os valores e dividir pela quantidade de elementos.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> Um aluno tirou as notas $6, 8$ e $10$ nos três trimestres. Qual a sua média?<br>
+                            <strong>Resposta:</strong> Soma-se tudo ($6 + 8 + 10 = 24$) e divide-se por $3$. A média é <strong>8</strong>.
+                        </div>
+
+                        <h3>Média Aritmética Ponderada</h3>
+                        <p>Utilizada quando os números possuem "pesos" (graus de importância diferentes). Você multiplica cada valor pelo seu peso, soma os resultados e divide pela soma dos pesos.</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> Uma prova tem peso 3 e um trabalho tem peso 2. O aluno tirou $8$ na prova e $6$ no trabalho.<br>
+                            <strong>Resposta:</strong> Multiplica-se cada nota pelo seu peso:
+                            $$ \frac{(8 \times 3) + (6 \times 2)}{3 + 2} = \frac{24 + 12}{5} = \frac{36}{5} = 7,2 $$
+                        </div>
+
+                        <h3>Média em Tabelas de Frequência e Histogramas</h3>
+                        <p>Quando os dados estão agrupados em tabelas, a frequência (número de vezes que o dado aparece) atua como se fosse o "peso".</p>
+                        <div class="example-box">
+                            <strong>Exemplo:</strong> Em uma van escolar, $4$ crianças têm $5$ anos e $6$ crianças têm $10$ anos. Qual a idade média?<br>
+                            <strong>Resposta:</strong>
+                            $$ \frac{(4 \times 5) + (6 \times 10)}{10} = \frac{20 + 60}{10} = \frac{80}{10} = 8\text{ anos} $$
+                        </div>
+
+                        <h3>Moda</h3>
+                        <p>É o dado "mais popular", ou seja, o valor com a maior frequência absoluta na pesquisa.</p>
+                        <ul>
+                            <li><strong>Unimodal (uma moda):</strong> Exemplo: $2, 4, \mathbf{4}, \mathbf{4}, 7, 9$. (A moda é $4$).</li>
+                            <li><strong>Bimodal (duas modas):</strong> Exemplo: $\mathbf{2}, \mathbf{2}, 5, \mathbf{7}, \mathbf{7}, 9$. (As modas são $2$ e $7$, pois ambos aparecem duas vezes).</li>
+                            <li><strong>Amodal (nenhuma moda):</strong> Exemplo: $1, 3, 5, 7, 9$. (Não há moda, pois nenhum número se repete).</li>
+                        </ul>
+
+                        <h3>Mediana</h3>
+                        <p>É o valor posicional que corta a amostra exatamente no meio. <strong>Regra de ouro:</strong> os dados precisam estar ordenados em Rol.</p>
+                        <ul>
+                            <li><strong>Quantidade Ímpar:</strong> Exemplo de Rol de idades: $10, 12, \mathbf{15}, 18, 20$. A mediana é <strong>15</strong>, pois está isolada exatamente no centro.</li>
+                            <li><strong>Quantidade Par:</strong> Exemplo de Rol de idades: $10, 12, \mathbf{15, 17}, 18, 20$. Como não há um centro único, tira-se a média aritmética dos dois centrais: $\frac{15 + 17}{2}$. A mediana é <strong>16</strong>.</li>
+                        </ul>
+
+                        <!-- SEÇÃO 3: Outliers e Tomada de Decisão -->
+                        <h2 style="margin-top: 3rem;">Impacto de Outliers e Tomada de Decisão</h2>
+                        
+                        <p><strong>O Efeito dos Outliers (Valores Discrepantes):</strong> Valores absurdamente altos ou baixos distorcem muito a Média, mas quase não afetam a Mediana.</p>
+                        <div class="example-box">
+                            <strong>Exemplo Clássico do Bar:</strong><br><br>
+                            Cinco amigos estão em um bar. Suas rendas mensais são: $\text{R\$} 1\text{ mil, R\$} 1\text{ mil, R\$} 1\text{ mil, R\$} 1\text{ mil e R\$} 96\text{ mil}$ (um milionário sentou na mesa).<br><br>
+                            <em>O que acontece?</em> A <strong>Média</strong> salarial da mesa saltou para $\text{R\$} 20\text{ mil}$ (o que é uma ilusão estatística, pois 4 deles são pobres). A <strong>Mediana</strong> continua sendo $\text{R\$} 1\text{ mil}$ (mostrando o retrato fiel da realidade típica da maioria da mesa).
+                        </div>
+
+                        <p><strong>Comparação na Tomada de Decisão:</strong> Cada medida serve para um objetivo específico do mundo real.</p>
+                        <ul>
+                            <li><strong>Exemplo prático de Moda:</strong> O dono de uma sapataria quer decidir qual tamanho de sapato comprar para o estoque. Se ele usar a Média, pode chegar ao número $37,3$ (um tamanho que não existe na fábrica). Ele inteligentemente usa a <em>Moda</em> para encomendar mais pares do tamanho $38$ (o que tem mais demanda/frequência).</li>
+                            <li><strong>Exemplo prático de Gráficos:</strong> Se uma prova for muito fácil e quase toda a turma tirar $10$, mas três alunos faltarem e tirarem $0$ (outliers negativos), a linha do gráfico formará uma longa cauda para a esquerda. Nesse caso, a Média será arrastada violentamente para baixo pelo peso dos zeros, ficando <em>menor</em> que a Mediana e a Moda.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 2: EXERCÍCIOS (INTERATIVO - ESTATÍSTICA)
+                     ========================================= -->
+                <div id="tab-exercicios" class="tab-pane">
+                    
+                    <div class="carousel-container">
+                        
+                        <!-- CARTÃO DA QUESTÃO 1 -->
+                        <div class="question-card active" id="q1">
+                            <div class="question-header">
+                                <span class="question-number">Questão 1 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O gerente de uma agência bancária monitorou o tempo de espera (em minutos) que sete clientes levaram na fila até serem atendidos em um dia de pico. Os tempos anotados de forma bruta em sua prancheta foram: $15, 22, 14, 45, 18, 25 \text{ e } 20$. O gerente precisa enviar um relatório à ouvidoria informando o tempo mediano de espera desses clientes.</p>
+                                <p><strong>Enunciado:</strong> O valor da mediana do tempo de espera, em minutos, é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 18</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 20</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 22</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 22,7</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 45</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Para calcular a mediana com uma quantidade ímpar de elementos (7 dados), o passo <strong>obrigatório</strong> é colocar os dados em Rol (ordem crescente):<br>
+                                    $14, 15, 18, \mathbf{20}, 22, 25, 45$.<br>
+                                    O número central que divide a amostra exatamente ao meio (3 números para a esquerda, 3 para a direita) é o <strong>20</strong>.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>C:</strong> Pegou a lista na ordem desorganizada em que foi dada ($15, 22, 14, \mathbf{45}, 18, 25, 20$) e escolheu o número do meio fisicamente ($45$) ou errou achando que era $22$. Sem o Rol, a conta sempre dará errado.</li>
+                                        <li><strong>D:</strong> Calculou a <em>Média Aritmética</em> (soma = $159$; $159 \div 7 \approx 22,7$) em vez da mediana pedida.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 2 -->
+                        <div class="question-card" id="q2">
+                            <div class="question-header">
+                                <span class="question-number">Questão 2 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma corretora de imóveis está avaliando o preço de aluguel de apartamentos de um quarto em um mesmo bairro. Foram selecionados 8 imóveis com os seguintes valores mensais de aluguel (em reais): $1.100, 1.200, 1.250, 1.300, 1.350, 1.400, 1.500 \text{ e } 6.000$ (sendo este último uma cobertura de luxo que foge do padrão).</p>
+                                <p><strong>Enunciado:</strong> Para evitar que a cobertura de luxo distorça a realidade do bairro, a corretora utilizará a mediana dos preços. O valor dessa mediana é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1.300</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 1.325</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 1.350</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 1.887</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 3.650</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Os dados já estão em Rol. Como são 8 elementos (quantidade <strong>par</strong>), não há um único termo no centro. Os termos centrais são o 4º e o 5º termo ($1.300$ e $1.350$).<br>
+                                    A mediana será a média aritmética entre eles: 
+                                    $$ \frac{1.300 + 1.350}{2} = \frac{2.650}{2} = 1.325 $$</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A e C:</strong> Escolheu apenas um dos valores centrais, esquecendo que quantidades pares exigem o cálculo da média entre os dois do meio.</li>
+                                        <li><strong>D:</strong> Calculou a <em>Média Aritmética</em> de todos os imóveis (soma = $15.100$; $15.100 \div 8 = 1.887,50$), caindo exatamente na distorção causada pelo <em>outlier</em> (a cobertura de $6.000$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 3 -->
+                        <div class="question-card" id="q3">
+                            <div class="question-header">
+                                <span class="question-number">Questão 3 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma fábrica estipula que a meta de produção de uma equipe deve ser, em média, de 50 peças diárias ao longo de uma semana de 5 dias úteis. Nos quatro primeiros dias, a equipe produziu:<br>
+                                • Segunda: 40 peças<br>
+                                • Terça: 55 peças<br>
+                                • Quarta: 45 peças<br>
+                                • Quinta: 50 peças</p>
+                                <p><strong>Enunciado:</strong> Para que a meta semanal de produção estabelecida pela fábrica seja atingida exatamente na média prevista, a quantidade de peças que a equipe deverá obrigatoriamente produzir na sexta-feira é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 47</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 50</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 55</button>
+                                <button class="option-btn" data-correct="true"><span>D)</span> 60</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 65</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa D</strong></p>
+                                    <p>Se a média de 5 dias deve ser 50 peças, o <strong>total</strong> da produção da semana deve ser obrigatoriamente $5 \times 50 = 250\text{ peças}$.<br>
+                                    Até quinta-feira, a equipe produziu: $40 + 55 + 45 + 50 = 190\text{ peças}$.<br>
+                                    Logo, a produção de sexta-feira deve ser a diferença para bater o total da semana: $250 - 190 = \mathbf{60\text{ peças}}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Tirou a média aritmética apenas dos 4 dias já realizados ($190 \div 4 = 47,5$) e acreditou que "repetir a média atual" manteria a meta de $50$.</li>
+                                        <li><strong>B:</strong> Confundiu a <em>meta da média</em> com o <em>valor de um único dia</em>, achando que produzir $50$ na sexta garante a média geral, ignorando o déficit somado dos dias anteriores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 4 -->
+                        <div class="question-card" id="q4">
+                            <div class="question-header">
+                                <span class="question-number">Questão 4 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O edital de um concurso público determina que a nota final será calculada por uma média ponderada das quatro etapas, com os seguintes pesos:<br>
+                                Prova Escrita (peso 4), Prova Prática (peso 3), Avaliação de Títulos (peso 2) e Entrevista (peso 1).<br>
+                                Um candidato obteve: 8,0 na Escrita; 7,0 na Prática; 5,0 nos Títulos; e 9,0 na Entrevista.</p>
+                                <p><strong>Enunciado:</strong> A nota final obtida por esse candidato no concurso foi de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 7,00</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 7,20</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 7,25</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 8,00</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 18,00</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Cálculo da <strong>média ponderada</strong>: multiplica-se as notas pelos seus pesos e divide-se pela <strong>soma dos pesos</strong> (que é $4 + 3 + 2 + 1 = 10$).<br>
+                                    Numerador: $(8 \times 4) + (7 \times 3) + (5 \times 2) + (9 \times 1) = 32 + 21 + 10 + 9 = 72$.<br>
+                                    Média final: $72 \div 10 = \mathbf{7,20}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>C:</strong> Ignorou completamente os pesos e calculou a <em>Média Aritmética Simples</em> das 4 notas: $(8 + 7 + 5 + 9) \div 4 = 29 \div 4 = 7,25$.</li>
+                                        <li><strong>E:</strong> Multiplicou as notas pelos pesos, mas dividiu por 4 (a quantidade de provas) em vez de dividir por 10 (a <em>soma</em> dos pesos), gerando um valor irreal (18) para uma prova que só vai até 10.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 5 -->
+                        <div class="question-card" id="q5">
+                            <div class="question-header">
+                                <span class="question-number">Questão 5 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O departamento de Recursos Humanos de uma empresa tabulou o tamanho das camisas dos funcionários:<br>
+                                • Tamanho P: 12 funcionários<br>
+                                • Tamanho M: 30 funcionários<br>
+                                • Tamanho G: 30 funcionários<br>
+                                • Tamanho GG: 8 funcionários</p>
+                                <p><strong>Enunciado:</strong> Com base na tabela de frequências, em relação à moda do tamanho dos uniformes dessa empresa, conclui-se que o conjunto de dados é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> amodal, pois não há um único tamanho majoritário.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> unimodal, sendo a moda o valor 30.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> bimodal, sendo as modas os tamanhos M e G.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> bimodal, sendo as modas os valores 12 e 8.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> multimodal, pois todos os tamanhos apresentam frequência positiva.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A <strong>moda</strong> é a <em>variável</em> que aparece com a maior frequência. Neste caso, os tamanhos <strong>M</strong> e <strong>G</strong> empataram no topo, ambos com 30 solicitações. Quando há dois "picos" de mesma altura máxima no conjunto de dados, ele é classificado como <strong>Bimodal</strong>, e as modas são "M" e "G".</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Amodalidade só ocorre quando nenhum valor se repete ou se destaca; aqui houve claro destaque, só que dividido.</li>
+                                        <li><strong>B:</strong> Confundiu o valor numérico da frequência ($30$) com o valor da variável nominal pesquisada (o tamanho da camisa). A moda é o que a pessoa respondeu na pesquisa, não quantas pessoas responderam.</li>
+                                        <li><strong>E:</strong> Ter frequência positiva não cria multimodalidade; a moda se restringe apenas às frequências MÁXIMAS (os campeões de votos).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 6 -->
+                        <div class="question-card" id="q6">
+                            <div class="question-header">
+                                <span class="question-number">Questão 6 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um censo sobre animais de estimação em 50 apartamentos gerou a seguinte frequência:<br>
+                                • 0 animais: 15 apartamentos<br>
+                                • 1 animal: 20 apartamentos<br>
+                                • 2 animais: 10 apartamentos<br>
+                                • 3 animais: 5 apartamentos</p>
+                                <p><strong>Enunciado:</strong> Com base nessa distribuição, o número médio de animais de estimação por apartamento nesse condomínio é de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> 1,1</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> 1,5</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 10,0</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 12,5</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 13,7</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>Este é o cálculo da média em <strong>tabelas de frequência</strong> (funciona como uma média ponderada). Multiplica-se a variável (quantidade de animais) pela sua frequência (apartamentos):<br>
+                                    $(0 \times 15) + (1 \times 20) + (2 \times 10) + (3 \times 5) = 0 + 20 + 20 + 15 = \mathbf{55\text{ animais no total do prédio}}$.<br>
+                                    Divide-se o total de animais pelo total de apartamentos pesquisados: $55 \div 50 = \mathbf{1,1}$ animal por apartamento.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Calculou a média aritmética simples apenas da coluna "animais" (o Eixo X): $(0 + 1 + 2 + 3) \div 4 = 6 \div 4 = 1,5$, ignorando totalmente os "pesos" da frequência.</li>
+                                        <li><strong>D:</strong> Calculou a média aritmética apenas da coluna de frequências (os apartamentos no Eixo Y): $(15 + 20 + 10 + 5) \div 4 = 50 \div 4 = 12,5$.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 7 -->
+                        <div class="question-card" id="q7">
+                            <div class="question-header">
+                                <span class="question-number">Questão 7 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O gerente de um museu registrou o número total de visitantes recebidos a cada dia, durante cinco dias consecutivos:<br>
+                                Dia 1: 102 | Dia 2: 115 | Dia 3: 108 | Dia 4: 120 | Dia 5: 111</p>
+                                <p><strong>Enunciado:</strong> Analisando exclusivamente a medida de tendência central "Moda" para essa amostra de visitantes, conclui-se que o conjunto é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> Amodal, com moda igual a zero.</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> Amodal, pois não há valor que se repita.</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Unimodal, sendo a moda 111 (o valor mediano).</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Unimodal, sendo a moda 120 (o valor máximo).</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Multimodal, pois cada valor aparece exatamente uma vez.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>A moda é o elemento que possui a <strong>maior repetição</strong> em um conjunto de dados. Como no rol fornecido ($102, 108, 111, 115, 120$) cada número aparece <strong>exatamente uma única vez</strong>, não há frequência de destaque. Logo, o conjunto é classificado como <strong>Amodal</strong> (não possui moda).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Dizer que "a moda é igual a zero" estaria incorreto na estatística, pois $0$ é um número válido (significaria que o número mais frequente de visitantes no museu foi $0$, o que não ocorreu).</li>
+                                        <li><strong>C:</strong> Confundiu o conceito de Moda com o de Mediana, selecionando o termo central do rol ordenado.</li>
+                                        <li><strong>E:</strong> Inventou o conceito de multimodalidade para justificar dados não repetidos (onde todos têm $1$ de frequência), quando isso é a própria definição de amodalidade.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 8 -->
+                        <div class="question-card" id="q8">
+                            <div class="question-header">
+                                <span class="question-number">Questão 8 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Uma pequena startup tem 20 funcionários. O cenário salarial é: 19 programadores ganham R$ 4.000 mensais cada, e 1 diretor possui pró-labore de R$ 124.000 mensais. Ao divulgar uma vaga, a empresa anunciou: "O salário médio da nossa equipe é de R$ 10.000". O sindicato afirmou que a empresa estava iludindo os candidatos.</p>
+                                <p><strong>Enunciado:</strong> Do ponto de vista estatístico, a crítica do sindicato é pertinente porque:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> a média foi calculada incorretamente pela empresa, já que o valor real deveria excluir o diretor.</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> a média aritmética é uma medida de dispersão e não serve para avaliar salários.</button>
+                                <button class="option-btn" data-correct="true"><span>C)</span> a mediana e a moda seriam medidas mais adequadas, pois a média foi distorcida pelo valor discrepante do diretor.</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> a moda do conjunto é R$ 10.000,00, mas a mediana comprova a tese do sindicato.</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> a variância salarial é igual a zero, o que anula a validade da média calculada pela empresa.</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa C</strong></p>
+                                    <p>A <strong>média aritmética</strong> é extremamente sensível a valores extremos (<em>outliers</em>). O salário gigantesco do diretor "puxa" a média agressivamente para cima. A empresa <strong>não errou</strong> a matemática da média, mas usou a estatística para mascarar a realidade. A <strong>Mediana</strong> ou a <strong>Moda</strong> ignoram os extremos e mostram o retrato "típico" da amostra (que é R$ 4.000).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>A:</strong> Matematicamente, a empresa calculou a média de todos perfeitamente: $[(19 \times 4.000) + 124.000] \div 20 = 10.000$. O erro está na escolha conceitual da ferramenta, e a matemática não autoriza excluir arbitrariamente alguém da equipe para o cálculo geral.</li>
+                                        <li><strong>D:</strong> A moda não é 10.000; a moda é R$ 4.000, pois é o valor que se repete incríveis 19 vezes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 9 -->
+                        <div class="question-card" id="q9">
+                            <div class="question-header">
+                                <span class="question-number">Questão 9 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> Um professor perguntou a 7 alunos quantos livros eles leram no ano anterior. As respostas dadas foram as seguintes: $2, 2, 2, 3, 4, 5 \text{ e } 10$.</p>
+                                <p><strong>Enunciado:</strong> Ao calcular a Moda, a Mediana e a Média dessa amostra, e em seguida organizá-las em ordem estritamente crescente, a relação correta entre essas três medidas é:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="true"><span>A)</span> Moda < Mediana < Média</button>
+                                <button class="option-btn" data-correct="false"><span>B)</span> Moda < Média < Mediana</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> Mediana < Moda < Média</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> Média < Mediana < Moda</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> Mediana < Média < Moda</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa A</strong></p>
+                                    <p>Calculando os 3 elementos um a um:<br>
+                                    • <strong>Moda:</strong> É o número que mais se repete (o $2$ aparece três vezes).<br>
+                                    • <strong>Mediana:</strong> A amostra ($2, 2, 2, 3, 4, 5, 10$) já está em Rol (7 termos). O termo central (4º termo) é o $3$.<br>
+                                    • <strong>Média:</strong> A soma total ($28$) dividida por 7 é igual a $4$.<br>
+                                    Colocando em ordem crescente: Moda ($2$) < Mediana ($3$) < Média ($4$).</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>B:</strong> Inverte Média e Mediana, provavelmente ignorando o $10$ na hora de somar, o que faria a média ser menor.</li>
+                                        <li><strong>D:</strong> Ignorou os cálculos e tentou aplicar uma teoria de "cauda de gráfico", não percebendo que o "10" é um outlier <em>positivo</em> que puxa a média para cima, e não para baixo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARTÃO DA QUESTÃO 10 -->
+                        <div class="question-card" id="q10">
+                            <div class="question-header">
+                                <span class="question-number">Questão 10 de 10</span>
+                                <span class="question-source">EnemPro - Matemática</span>
+                            </div>
+                            <div class="question-body">
+                                <p><strong>Texto de Apoio:</strong> O departamento de trânsito gerou um gráfico mostrando o número de passageiros que estavam dentro dos carros em um pedágio:<br>
+                                • Carros com 1 passageiro: 4 veículos<br>
+                                • Carros com 2 passageiros: 5 veículos<br>
+                                • Carros com 3 passageiros: 2 veículos<br>
+                                • Carros com 4 passageiros: 1 veículo</p>
+                                <p><strong>Enunciado:</strong> A partir da leitura desse cenário de frequência, o número médio de passageiros por veículo que passou por esse pedágio foi de:</p>
+                            </div>
+                            <div class="question-options">
+                                <button class="option-btn" data-correct="false"><span>A)</span> 1,5</button>
+                                <button class="option-btn" data-correct="true"><span>B)</span> 2,0</button>
+                                <button class="option-btn" data-correct="false"><span>C)</span> 2,5</button>
+                                <button class="option-btn" data-correct="false"><span>D)</span> 3,0</button>
+                                <button class="option-btn" data-correct="false"><span>E)</span> 12,0</button>
+                            </div>
+                            <div class="feedback-box hidden">
+                                <h3 class="feedback-title">Resolução Detalhada</h3>
+                                <div class="feedback-content">
+                                    <p><strong>Gabarito Oficial: Alternativa B</strong></p>
+                                    <p>Para achar a média em um cenário de frequências, multiplicamos a variável (passageiros) pela sua frequência (veículos) para achar o <strong>total de pessoas</strong>, e dividimos pelo <strong>total de veículos</strong>.<br>
+                                    Soma das pessoas: $(1 \times 4) + (2 \times 5) + (3 \times 2) + (4 \times 1) = 4 + 10 + 6 + 4 = 24\text{ pessoas}$.<br>
+                                    Total de veículos: $4 + 5 + 2 + 1 = 12\text{ veículos}$.<br>
+                                    Média = $24 \div 12 = \mathbf{2,0\text{ passageiros por carro}}$.</p>
+                                    <ul>
+                                        <li><strong>Por que as outras estão erradas?</strong></li>
+                                        <li><strong>C:</strong> Tirou a média aritmética simples apenas do Eixo X do gráfico ($1, 2, 3$ e $4$ passageiros): $(1+2+3+4)\div 4 = 2,5$, ignorando os "pesos" dos veículos.</li>
+                                        <li><strong>E:</strong> Somou a quantidade de veículos do eixo de frequência ($12$) e achou que essa soma da população era a média.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE EXERCÍCIOS -->
+                        <div class="carousel-controls">
+                            <button class="btn-secondary" id="prevQuestion" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextQuestion" disabled>Próxima Questão</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     ABA 3: FLASH CARDS (CARROSSEL GIGANTE 3D)
+                     ========================================= -->
+                <div id="tab-flashcards" class="tab-pane">
+                    
+                    <div class="fc-carousel-container">
+                        
+                        <!-- CARD 1 -->
+                        <div class="fc-slide active">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 1 de 6 • Impacto dos Outliers</span>
+                                        <div class="large-text">O IBGE vai divulgar a renda de um bairro onde há forte desigualdade: muitos ganham um salário mínimo e três moradores são milionários. Qual medida representa melhor a "renda típica" da maioria e por quê?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">A Mediana.</div>
+                                        <span class="card-hint">Ela é "cega" para valores discrepantes (outliers), enquanto a Média seria drasticamente puxada para cima pela renda dos milionários, não refletindo a realidade da maioria.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 2 de 6 • O Maior Erro do ENEM</span>
+                                        <div class="large-text">[LACUNA] Ao ler o comando de uma questão do Enem que pede o valor da Mediana, a sua primeira ação instintiva, antes de fazer qualquer cálculo, deve ser colocar os dados em ________.</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Rol.</div>
+                                        <span class="card-hint">Colocar em Rol significa organizar em ordem crescente ou decrescente. Esquecer esse passo é o erro mais comum, e a prova sempre coloca o "falso centro" desordenado nas alternativas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 3 de 6 • Leitura de Tabelas</span>
+                                        <div class="large-text">Em uma tabela, a Coluna 1 traz o "Número de filhos" e a Coluna 2 traz o "Número de famílias". Qual é o erro fatal ao calcular a média somando apenas os valores da Coluna 1?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Tratar como Média Simples.</div>
+                                        <span class="card-hint">O correto é aplicar a Média Ponderada: você deve multiplicar os "filhos" pelas "famílias" (sua frequência), somar todos os resultados e dividir pelo total de famílias pesquisadas.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 4 de 6 • Classificação da Moda</span>
+                                        <div class="large-text">O dono de uma lanchonete analisa as vendas. Na sexta-feira, os pratos mais vendidos empataram no topo: 80 hambúrgueres e 80 pizzas. Estatisticamente, como classificamos a moda desse dia?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Amostra Bimodal.</div>
+                                        <span class="card-hint">Existem duas modas simultâneas (Hambúrguer e Pizza), pois as duas variáveis atingiram a exata mesma frequência máxima absoluta.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 5 de 6 • Mediana com Quantidade Par</span>
+                                        <div class="large-text">O seu Rol de idades possui 6 pessoas (quantidade par). Como não há um único número que divida a fila exatamente ao meio, como a Mediana é calculada?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Média dos centrais.</div>
+                                        <span class="card-hint">Calcula-se através da Média Aritmética Simples restrita aos dois termos centrais (neste caso, soma-se o 3º e o 4º termo e divide-se o resultado por dois).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="fc-slide">
+                            <div class="flashcard-container large-card">
+                                <div class="flashcard-3d">
+                                    <div class="card-front">
+                                        <span class="card-type">Card 6 de 6 • Pegadinhas de Conceito</span>
+                                        <div class="large-text">Uma sala tem 5 alunos e as notas foram: 4, 6, 7, 8 e 9. Quando perguntado sobre a Moda, um aluno responde: "A moda é zero". Qual o erro estatístico dessa afirmação?</div>
+                                        <span class="card-hint" style="position: absolute; bottom: 20px;">Clique na carta para virar</span>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="large-answer">Zero é diferente de Amodal.</div>
+                                        <span class="card-hint">Zero é um valor numérico válido (como se a nota zero fosse a mais tirada na sala). O correto é afirmar que a amostra é Amodal (não possui moda), pois nenhum dado se repete.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLES DO CARROSSEL DE FLASHCARDS -->
+                        <div class="carousel-controls" style="width: 100%; max-width: 800px; margin-top: 1rem;">
+                            <button class="btn-secondary" id="prevFc" disabled>Anterior</button>
+                            <button class="btn-primary" id="nextFc">Próximo Card</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
