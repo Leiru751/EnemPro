@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia da Redação ENEM - ENEMPro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .redacao-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .redacao-table th,
+        .redacao-table td {
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+        .redacao-table th {
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 700;
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .alert-zero {
+            border-left: 4px solid #ef4444;
+            background: rgba(239, 68, 68, 0.08);
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body class="subject-theme-lang">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <a href="home.html" class="brand-link">
+                <h2>ENEM<span>Pro</span></h2>
+            </a>
+            <button class="close-btn" id="closeMenu">&times;</button>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="simulados.html" class="nav-link" data-subject="exam">Simulados</a>
+            <a href="cronograma.html" class="nav-link" data-subject="schedule">Cronograma</a>
+            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+            <a href="matematica.html" class="nav-link" data-subject="math">Matemática</a>
+            <a href="biologia.html" class="nav-link" data-subject="nature">Biologia</a>
+            <a href="quimica.html" class="nav-link" data-subject="nature">Química</a>
+            <a href="fisica.html" class="nav-link" data-subject="nature">Física</a>
+            <a href="historia.html" class="nav-link" data-subject="human">História</a>
+            <a href="geografia.html" class="nav-link" data-subject="human">Geografia</a>
+            <a href="filosofia.html" class="nav-link" data-subject="human">Filosofia/Sociologia</a>
+            <a href="linguagens.html" class="nav-link" data-subject="lang">Linguagens</a>
+            <a href="redacao.html" class="nav-link active" data-subject="lang">Redação</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <button class="menu-toggle" id="openMenu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="breadcrumb">Redação / Guia Completo</div>
+        </header>
+
+        <main class="content-area">
+            <header class="page-header">
+                <h1>Guia da Redação ENEM</h1>
+                <p style="opacity: 0.8; margin-top: 0.5rem;">Competências, Estrutura Nota 1000 e Regras Eliminatórias</p>
+            </header>
+
+            <div class="article-content">
+
+                <!-- =========================================
+                     PARTE 1: AS 5 COMPETÊNCIAS AVALIADAS
+                     ========================================= -->
+                <h2>Parte 1: As 5 Competências Avaliadas (0 a 200 pontos cada)</h2>
+                <p>A banca do Inep avalia o seu texto por meio de cinco eixos independentes. A nota máxima (<strong>1000 pontos</strong>) exige alcançar <strong>200 pontos</strong> em cada um deles.</p>
+
+                <!-- COMPETÊNCIA 1 -->
+                <h3 style="margin-top: 2.5rem;">Competência 1: Domínio da Norma-Padrão da Língua Portuguesa</h3>
+                <p>Avalia o domínio da escrita formal: ortografia, acentuação, pontuação, uso da crase, concordância verbal e nominal, regência e estrutura sintática (construção completa e bem organizada das frases).</p>
+                <ul>
+                    <li><strong>A régua dos 200 pontos:</strong> Para atingir a nota máxima na C1, a banca admite no máximo <strong>2 desvios gramaticais</strong> (ortografia, vírgula, acento, crase) e <strong>1 falha de estrutura sintática</strong> (frases truncadas, falta de conectivo ou justaposição indevida de orações) ao longo de todo o texto.</li>
+                </ul>
+
+                <p><strong>Exemplos Práticos (O que derruba a nota vs. Como corrigir):</strong></p>
+                <div class="table-responsive">
+                    <table class="redacao-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Desvio</th>
+                                <th>❌ Incorreto (Perde pontos)</th>
+                                <th>✅ Correto (Padrão Nota 1000)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Vírgula entre sujeito e verbo</strong></td>
+                                <td>A Constituição Federal de 1988<strong>,</strong> garante o direito à saúde.</td>
+                                <td>A Constituição Federal de 1988 garante o direito à saúde. <em>(Nunca separe quem pratica a ação do verbo).</em></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Uso do pronome "onde"</strong></td>
+                                <td>O Brasil vive uma crise<strong>, onde</strong> os jovens sofrem.</td>
+                                <td>O Brasil vive uma crise <strong>na qual</strong> (ou <strong>em que</strong>) os jovens sofrem. <em>("Onde" só indica lugar físico).</em></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Crase e Regência</strong></td>
+                                <td>O Estado deve garantir acesso <strong>a</strong> educação.</td>
+                                <td>O Estado deve garantir acesso <strong>à</strong> educação. <em>(Quem tem acesso, tem acesso a + artigo a = à).</em></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Locução de finalidade</strong></td>
+                                <td>Agir <strong>afim</strong> de resolver o impasse.</td>
+                                <td>Agir <strong>a fim de</strong> resolver o impasse. <em>("A fim de" = objetivo; "afim" junto = semelhança/afinidade).</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- COMPETÊNCIA 2 -->
+                <h3 style="margin-top: 2.5rem;">Competência 2: Compreensão do Tema, Tipologia e Repertório Sociocultural</h3>
+                <p>Avalia três pilares simultâneos:</p>
+                <ol>
+                    <li><strong>Abordagem completa da frase-tema:</strong> Você deve mobilizar todas as palavras-chave do recorte temático logo na introdução e ao longo do texto. Focar apenas no assunto geral (ex.: falar só de "tecnologia" quando o tema pede "impactos da inteligência artificial na educação") gera <em>tangenciamento</em>, o que trava sua nota na C2 e na C3.</li>
+                    <li><strong>Respeito à tipologia textual:</strong> O texto deve ser estritamente dissertativo-argumentativo (defesa de uma tese por meio de argumentos, em prosa, na 3ª pessoa).</li>
+                    <li><strong>Repertório Sociocultural:</strong> Uso de referências externas aos textos motivadores. Para valer 200 pontos, o repertório precisa cumprir a tríade:
+                        <ul>
+                            <li><strong>Legitimado:</strong> Tem respaldo em áreas do conhecimento (filosofia, sociologia, história, literatura, cinema, dados oficiais, leis).</li>
+                            <li><strong>Pertinente:</strong> Possui relação direta e lógica com o tema discutido.</li>
+                            <li><strong>Produtivo:</strong> Está articulado à sua argumentação — não é apenas uma citação "jogada" no parágrafo.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="example-box">
+                    <strong>Exemplo de Repertório Improdutivo vs. Produtivo:</strong><br><br>
+                    <strong>❌ Improdutivo (Apenas decorativo):</strong> Zygmunt Bauman criou o conceito de "Modernidade Líquida". No Brasil, o uso excessivo de redes sociais prejudica os jovens. <em>(Não há explicação de como o conceito se liga ao problema).</em><br><br>
+                    <strong>✅ Produtivo (Articulado à tese):</strong> Segundo o sociólogo Zygmunt Bauman, a "Modernidade Líquida" caracteriza-se pela fragilidade dos laços humanos. De maneira análoga à teoria do pensador, o uso excessivo das redes sociais no Brasil substitui o convívio real por conexões superficiais, agravando quadros de ansiedade entre os jovens.
+                </div>
+
+                <!-- COMPETÊNCIA 3 -->
+                <h3 style="margin-top: 2.5rem;">Competência 3: Projeto de Texto e Argumentação</h3>
+                <p>Avalia a inteligência estratégica do texto: a capacidade de selecionar, relacionar, organizar e interpretar informações em defesa de um ponto de vista claro.</p>
+                <ul>
+                    <li><strong>O que garante 200 pontos:</strong> Um Projeto de Texto estratégico, no qual os dois argumentos anunciados na tese (<strong>A1</strong> e <strong>A2</strong>) são desenvolvidos na ordem exata nos parágrafos seguintes, sem contradições, sem afirmações genéricas ("senso comum") e sem deixar "pontas soltas" (problemas levantados que ficam sem explicação ou sem solução).</li>
+                    <li><strong>Regra de ouro da argumentação:</strong> Nunca apenas afirme um problema; demonstre <strong>causa e consequência</strong>.</li>
+                </ul>
+
+                <div class="example-box">
+                    <strong>Exemplo de Encadeamento Causa &rarr; Consequência (Sem senso comum):</strong><br><br>
+                    <strong>❌ Superficial:</strong> Muitas pessoas não conseguem usar o SUS porque não têm dinheiro para ir ao hospital.<br><br>
+                    <strong>✅ Aprofundado (C3 Nota 200):</strong> A concentração de hospitais de alta complexidade nos grandes centros urbanos <em>[Causa]</em> impõe barreiras geográficas e financeiras à população periférica. Como consequência <em>[Consequência]</em>, cidadãos em vulnerabilidade socioeconômica adiam diagnósticos precoces, o que agrava quadros clínicos tratáveis e perpetua a desigualdade no direito à vida.
+                </div>
+
+                <!-- COMPETÊNCIA 4 -->
+                <h3 style="margin-top: 2.5rem;">Competência 4: Coesão Textual</h3>
+                <p>Avalia a "costura" linguística entre os parágrafos e dentro das frases, garantindo que o texto flua sem saltos bruscos ou repetições cansativas.</p>
+                <ul>
+                    <li><strong>A régua dos 200 pontos:</strong> Exige a presença de operadores argumentativos interparágrafos (conectivos iniciando o parágrafo) em pelo menos <strong>dois inícios de parágrafo</strong> (geralmente no Desenvolvimento 2 e na Conclusão), além de conectivos intraparágrafos variados dentro dos períodos e coesão referencial.</li>
+                </ul>
+
+                <p><strong>Arsenal de Conectivos Estratégicos:</strong></p>
+                <div class="table-responsive">
+                    <table class="redacao-table">
+                        <thead>
+                            <tr>
+                                <th>Função Coesiva</th>
+                                <th>Onde Usar</th>
+                                <th>Exemplos de Conectivos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Início de trajetória</strong></td>
+                                <td>Início do D1</td>
+                                <td>Inicialmente; Em uma primeira análise; Sob essa ótica.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adição de argumento</strong></td>
+                                <td>Início do D2 (2ª causa)</td>
+                                <td>Ademais; Outrossim; Além disso; Somado a isso.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oposição / Dialética</strong></td>
+                                <td>Início do D2 (Contraponto)</td>
+                                <td>Em contrapartida; Por outro lado; No entanto; Não obstante.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Explicação / Causa</strong></td>
+                                <td>Meio dos parágrafos</td>
+                                <td>Uma vez que; Visto que; Haja vista que; Sob esse viés.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Consequência</strong></td>
+                                <td>Meio/Fim dos parágrafos</td>
+                                <td>Desse modo; Por conseguinte; Logo; Nesse sentido.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fechamento global</strong></td>
+                                <td>Início da Conclusão</td>
+                                <td>Portanto; Infere-se, portanto, que; Em suma; Diante do exposto.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul>
+                    <li><strong>Coesão Referencial (Evitando repetições):</strong> Se o tema fala sobre "tecnologia" ou "saúde", substitua os termos ao longo do texto por sinônimos e pronomes: <em>essa ferramenta, tal recurso, o sistema público, esse direito constitucional, o cenário em questão</em>.</li>
+                </ul>
+
+                <!-- COMPETÊNCIA 5 -->
+                <h3 style="margin-top: 2.5rem;">Competência 5: Elaboração de Proposta de Intervenção</h3>
+                <p>Avalia a capacidade de propor uma solução concreta para o problema debatido, respeitando integralmente os Direitos Humanos.</p>
+                <ul>
+                    <li><strong>Os 5 Elementos Obrigatórios (Checklist dos 200 pontos):</strong>
+                        <ol>
+                            <li><strong>Agente:</strong> Quem executa a ação. Evite termos vagos como "o governo", "a sociedade", "todos" ou "nós". Especifique: <em>Ministério da Educação (MEC), Ministério da Saúde, Poder Legislativo, mídia, escolas, famílias</em>.</li>
+                            <li><strong>Ação:</strong> O que será feito de forma prática e objetiva.</li>
+                            <li><strong>Meio/Modo:</strong> Como ou por intermédio de quê a ação será executada (<em>"por meio de...", "mediante...", "através de..."</em>).</li>
+                            <li><strong>Finalidade/Efeito:</strong> O objetivo final que se pretende alcançar (<em>"a fim de...", "com o intuito de...", "para que..."</em>).</li>
+                            <li><strong>Detalhamento:</strong> Informação extra que especifica, exemplifica ou explica um dos 4 elementos anteriores (ex.: um aposto explicando a função do agente, ou a especificação de como o meio funcionará na prática).</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <div class="example-box">
+                    <strong>Exemplo Completo e Destrinchado (200 pontos na C5):</strong><br><br>
+                    "Portanto, cabe ao <strong>Ministério da Educação</strong> <em>[1. Agente]</em> <strong>implementar programas obrigatórios de letramento digital nas escolas públicas</strong> <em>[2. Ação]</em>, <strong>por meio da reformulação da Base Nacional Comum Curricular (BNCC) e do repasse de verbas federais</strong> <em>[3. Meio/Modo]</em>. <strong>Essa iniciativa deve contar com oficinas semanais ministradas por pedagogos e especialistas em tecnologia, voltadas à análise crítica de algoritmos</strong> <em>[5. Detalhamento do Meio/Ação]</em>, <strong>a fim de mitigar a manipulação virtual e formar cidadãos autônomos</strong> <em>[4. Finalidade/Efeito]</em>."
+                </div>
+
+                <!-- =========================================
+                     PARTE 2: ESTRUTURA DE 4 PARÁGRAFOS
+                     ========================================= -->
+                <h2 style="margin-top: 3.5rem;">Parte 2: Estrutura Estratégica de 4 Parágrafos (Modelo Nota 1000)</h2>
+                <p>Para manter o equilíbrio estético e argumentativo nas 30 linhas da folha oficial, organize seu texto em quatro blocos proporcionais. Abaixo, veja a arquitetura de cada parágrafo aplicada a um tema-modelo: <strong>"Os impactos da inteligência artificial na educação básica brasileira"</strong>.</p>
+
+                <!-- 1. INTRODUÇÃO -->
+                <h3 style="margin-top: 2rem;">1. Introdução (6 a 7 linhas)</h3>
+                <ul>
+                    <li><strong>Contextualização:</strong> Abertura com repertório sociocultural legitimado conectado ao tema.</li>
+                    <li><strong>Problematização:</strong> Ponte entre o repertório e a realidade do Brasil, inserindo todas as palavras-chave da frase-tema.</li>
+                    <li><strong>Tese + Projeto de Texto:</strong> Posicionamento crítico claro antecipando os dois eixos argumentativos (A1 e A2) que serão desenvolvidos no D1 e no D2.</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Exemplo Comentado (Introdução):</strong><br><br>
+                    <em>[Contextualização]</em> Para o filósofo Pierre Lévy, por meio do conceito de "Inteligência Coletiva", o ciberespaço constitui um ambiente democrático de partilha e ampliação de saberes. <em>[Problematização]</em> Fora da teoria, ao observar os impactos da inteligência artificial na educação básica brasileira, nota-se uma realidade que tensiona essa premissa. <em>[Tese + Projeto de Texto]</em> Nesse cenário, cabe pontuar não apenas o potencial pedagógico dessa ferramenta na personalização do ensino <em>[Argumento 1]</em>, mas, sobretudo, o risco de aprofundamento das desigualdades educacionais decorrente da exclusão digital no país <em>[Argumento 2]</em>.
+                </div>
+
+                <!-- 2. DESENVOLVIMENTO 1 -->
+                <h3 style="margin-top: 2.5rem;">2. Desenvolvimento 1 — Argumento 1 (7 a 8 linhas)</h3>
+                <ul>
+                    <li><strong>Tópico Frasal:</strong> Frase curta e direta apresentando o Argumento 1.</li>
+                    <li><strong>Fundamentação:</strong> Repertório sociocultural que valide ou ilustre esse eixo.</li>
+                    <li><strong>Análise Crítica (Autoria):</strong> Explicação detalhada de como e por que esse fator opera na sociedade (coração da Competência 3).</li>
+                    <li><strong>Fechamento:</strong> Síntese curta encerrando o raciocínio do parágrafo.</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Exemplo Comentado (Desenvolvimento 1):</strong><br><br>
+                    <em>[Tópico Frasal - A1]</em> Inicialmente, é inegável que o uso ético da inteligência artificial oferece recursos valiosos para modernizar o processo de aprendizagem. <em>[Fundamentação]</em> Sob essa ótica, a Constituição Federal de 1988 estabelece a educação como direito social voltado ao pleno desenvolvimento da pessoa, premissa que demanda a atualização constante das práticas escolares. <em>[Análise Crítica]</em> No contexto contemporâneo, plataformas adaptativas permitem identificar dificuldades individuais dos estudantes e sugerir trilhas de estudo personalizadas, otimizando o trabalho docente em salas superlotadas. <em>[Fechamento]</em> Logo, compreende-se que a tecnologia atua como uma aliada estratégica quando integrada de forma planejada ao ambiente pedagógico.
+                </div>
+
+                <!-- 3. DESENVOLVIMENTO 2 -->
+                <h3 style="margin-top: 2.5rem;">3. Desenvolvimento 2 — Argumento 2 (7 a 8 linhas)</h3>
+                <ul>
+                    <li><strong>Conectivo Interparágrafo:</strong> Operador de adição (<em>Ademais, Outrossim, Além disso</em> — quando ambos os parágrafos apontam causas negativas) ou de contraste (<em>Em contrapartida, Por outro lado</em> — na estrutura dialética de dualidade).</li>
+                    <li><strong>Arquitetura:</strong> Repete a engenharia do D1: Tópico Frasal (A2) + Repertório produtivo + Análise Crítica aprofundada + Fechamento.</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Exemplo Comentado (Desenvolvimento 2):</strong><br><br>
+                    <em>[Conectivo Interparágrafo + Tópico Frasal - A2]</em> Em contrapartida, a democratização desses benefícios esbarra na histórica precariedade estrutural das instituições públicas de ensino. <em>[Fundamentação]</em> Tal contradição dialoga com o pensamento do geógrafo Milton Santos, o qual denunciou que a globalização técnica não atinge a todos de maneira uniforme, criando "cidadãos incompletos" à margem da modernidade. <em>[Análise Crítica]</em> De maneira análoga à análise do pensador, enquanto escolas privadas incorporam tutores virtuais avançados, grande parte da rede pública brasileira carece de acesso básico à internet de qualidade e computadores, o que amplia o fosso socioeducacional entre ricos e pobres. <em>[Fechamento]</em> Fica evidente, portanto, que o avanço tecnológico sem inclusão acentua a exclusão escolar.
+                </div>
+
+                <!-- 4. CONCLUSÃO -->
+                <h3 style="margin-top: 2.5rem;">4. Conclusão (6 a 7 linhas)</h3>
+                <ul>
+                    <li><strong>Conectivo Conclusivo:</strong> Operador claro de fechamento (<em>Portanto, Logo, Em suma</em>).</li>
+                    <li><strong>Retomada da Tese:</strong> Breve síntese reafirmando a necessidade de resolver o impasse.</li>
+                    <li><strong>Proposta de Intervenção:</strong> Articulação dos 5 elementos obrigatórios atacando diretamente os problemas expostos no D1 e no D2.</li>
+                    <li><strong>Fechamento Circular (Diferencial):</strong> Retomada rápida do repertório da introdução na última frase para dar unidade estética e coesiva ao texto.</li>
+                </ul>
+                <div class="example-box">
+                    <strong>Exemplo Comentado (Conclusão):</strong><br><br>
+                    <em>[Conectivo + Retomada da Tese]</em> Portanto, infere-se que a incorporação da inteligência artificial na educação brasileira exige medidas urgentes para mitigar a desigualdade digital. <em>[Agente]</em> Para isso, cabe ao Ministério da Educação, <em>[Meio/Modo]</em> por meio do direcionamento de verbas do Fundo de Manutenção e Desenvolvimento da Educação Básica (Fundeb) e de parcerias com universidades públicas, <em>[Ação]</em> universalizar o acesso à infraestrutura tecnológica e promover o letramento digital nas escolas públicas. <em>[Detalhamento]</em> Essa iniciativa deve incluir a instalação de laboratórios conectados nas regiões periféricas e a capacitação continuada dos professores para o uso pedagógico das plataformas, <em>[Finalidade/Efeito]</em> a fim de democratizar o aprendizado e reduzir o abismo educacional no país. <em>[Fechamento Circular]</em> Assim, o Brasil poderá concretizar, na prática, a inteligência coletiva idealizada por Pierre Lévy.
+                </div>
+
+                <!-- =========================================
+                     PARTE 3: ALERTAS DE NOTA ZERO
+                     ========================================= -->
+                <h2 style="margin-top: 3.5rem;">Parte 3: Alertas de Nota Zero (Critérios Eliminatórios)</h2>
+                <p>A banca do Inep atribui <strong>nota zero</strong> e elimina a redação do cálculo da média quando ocorre qualquer uma das situações abaixo:</p>
+
+                <div class="alert-zero">
+                    <h3 style="margin-top: 0;">1. Fuga Total ao Tema ou à Tipologia Textual</h3>
+                    <ul>
+                        <li><strong>Fuga ao tema:</strong> Escrever sobre um assunto completamente diferente do proposto pela banca (ex.: o tema pede <em>"Desafios para combater a insegurança alimentar"</em> e o candidato escreve apenas sobre <em>"Obesidade infantil e estética"</em>).</li>
+                        <li><strong>Não atendimento ao tipo textual:</strong> Produzir um poema, uma narrativa (conto/crônica), uma carta, uma receita ou uma lista de tópicos em vez de um texto dissertativo-argumentativo em prosa.</li>
+                    </ul>
+
+                    <h3>2. Texto Insuficiente</h3>
+                    <ul>
+                        <li>Redigir <strong>até 7 linhas</strong> na folha definitiva de redação.</li>
+                        <li><strong>Atenção à cópia:</strong> Qualquer linha copiada dos textos motivadores ou da frase-tema é descontada da contagem final. Se você escrever 9 linhas, mas 3 forem cópias literais da prova, seu texto ficará com 6 linhas válidas e receberá nota zero.</li>
+                    </ul>
+
+                    <h3>3. Anulação Formal e Desrespeito à Prova</h3>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>Folha em branco:</strong> Não transcrever o rascunho para a folha definitiva.</li>
+                        <li><strong>Identificação do candidato:</strong> Assinar o nome, colocar iniciais, rubricas ou qualquer marca que identifique o autor fora do campo específico.</li>
+                        <li><strong>Impropérios, desenhos e formas propositalmente desconectadas:</strong> Inserir palavrões, desenhos, recados diretos ao corretor (ex.: <em>"Por favor, me dê 800 pontos"</em>), trechos de hinos, receitas de bolo ou qualquer segmento deliberadamente desconectado do tema.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
